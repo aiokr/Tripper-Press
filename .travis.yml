@@ -1,0 +1,15 @@
+language: node_js
+dist: trusty
+node_js:
+  - "6"
+install:
+  - npm install
+script:
+  - hexo clean
+  - hexo g
+  - chmod +x ./deploy.sh
+  - \cp -f assets/CNAME public/CNAME
+  - ./deploy.sh > /dev/null
+cache:
+  directories:
+    - node_modules
