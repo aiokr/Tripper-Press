@@ -15,5 +15,15 @@
     "hexo-renderer-stylus": "^0.3.3",
     "hexo-renderer-marked": "^0.3.2",
     "hexo-server": "^0.3.1"
+  },
+  "devDependencies": {
+    "yuque-hexo": "^1.3.1"
+  },
+  "yuqueConfig": {
+    "baseUrl": "https://www.yuque.com/api/v2",
+    "login": "itypen",
+    "repo": "blog",
+    "mdNameFormat": "title",
+    "postPath": "source/_posts/yuque"
   }
 }
