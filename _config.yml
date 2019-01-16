@@ -73,7 +73,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-melody-1.5.6
+theme: TKL
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
