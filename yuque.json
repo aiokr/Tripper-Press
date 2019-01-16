@@ -1,12 +1,12 @@
 [
   {
-    "title": "测试",
-    "description": "测试持续集成",
-    "created_at": "2019-01-16T09:31:53.000Z",
-    "updated_at": "2019-01-16T09:32:08.000Z",
-    "published_at": "2019-01-16T09:32:08.000Z",
+    "title": "语雀文档自动发布到Hexo",
+    "description": "导言自从用上语雀这一个平台，感觉码字舒服多了，跟语雀相比印象笔记的编辑器简直就是辣鸡，还要收费。   。把码字的工具搬到语雀上后，就想着能不能用持续集成自动发布到博客上，于是找到了一个大佬写的插件：yuque-hexo。这个插件可以将语雀的博客同步到 Hexo 博客的仓库中，然后通过 Trav...",
+    "created_at": "2019-01-16T11:20:17.000Z",
+    "updated_at": "2019-01-16T14:19:09.000Z",
+    "published_at": "2019-01-16T14:19:09.000Z",
     "format": "lake",
-    "slug": "hqe9ub",
+    "slug": "wnrxzi",
     "last_editor": {
       "id": 244524,
       "type": "User",
@@ -23,13 +23,13 @@
       "updated_at": "2019-01-16T04:13:07.000Z",
       "_serializer": "v2.user"
     },
-    "body": "测试持续集成\n"
+    "body": "# 导言\n自从用上语雀这一个平台，感觉码字舒服多了，跟语雀相比印象笔记的编辑器简直就是辣鸡，还要收费。<br />![](https://cdn.nlark.com/yuque/0/2019/png/244524/1547639694167-6b1d6fb3-3530-46dc-9c94-9638784eb7eb.png#align=left&display=inline&height=240&linkTarget=_blank&originHeight=240&originWidth=240&width=240#align=left&display=inline&height=240&linkTarget=_blank&originHeight=240&originWidth=240&width=240#align=left&display=inline&height=240&linkTarget=_blank&originHeight=240&originWidth=240&width=240)   。<br />把码字的工具搬到语雀上后，就想着能不能用持续集成自动发布到博客上，于是找到了一个大佬写的插件：[yuque-hexo](https://github.com/x-cold/yuque-hexo/)。这个插件可以将语雀的博客同步到 Hexo 博客的仓库中，然后通过 Travis CI 的持续集成做自动构建。<br />![](https://cdn.nlark.com/yuque/0/2019/jpeg/244524/1547639922879-a2bc9714-d3d2-4081-ad63-ec6cdf9a7ba6.jpeg#align=left&display=inline&height=180&linkTarget=_blank&originHeight=180&originWidth=180&width=180#align=left&display=inline&height=180&linkTarget=_blank&originHeight=180&originWidth=180&width=180#align=left&display=inline&height=180&linkTarget=_blank&originHeight=180&originWidth=180&width=180)\n# 同步语雀文章\n首先要有一个 Hexo 的工程仓库，然后在这个仓库中执行以下命令安装 yuque-hexo 插件<br />![](https://cdn.nlark.com/yuque/0/2019/png/244524/1547645459885-72657ecd-67e0-45ac-9e75-989c283d25db.png#align=left&display=inline&height=40&linkTarget=_blank&originHeight=40&originWidth=259&width=259#align=left&display=inline&height=40&linkTarget=_blank&originHeight=40&originWidth=259&width=259#align=left&display=inline&height=40&linkTarget=_blank&originHeight=40&originWidth=259&width=259)<br />然后修改 Hexo 仓库的 package.json 文件，插入以下字段<br />![](https://cdn.nlark.com/yuque/0/2019/png/244524/1547645541072-ee289782-b9c9-423a-93b1-19c8aea43fe8.png#align=left&display=inline&height=141&linkTarget=_blank&originHeight=141&originWidth=389&width=389#align=left&display=inline&height=141&linkTarget=_blank&originHeight=141&originWidth=389&width=389#align=left&display=inline&height=141&linkTarget=_blank&originHeight=141&originWidth=389&width=389)<br />这一字段是 yuque-hexo 的配置文件，用于链接语雀的仓库。这一步做好以后，实际上语雀中的文章已经可以被同步到 Hexo 的仓库当中来了，可以执行 `yuque-hexo sync` 尝试一下效果。\n# 持续集成\n在做好语雀文章的同步之后，我们可以使用持续集成功能，便可以在语雀更新文章之后，自动同步到 hexo 博客的。如果 Hexo 的工作仓库托管在 Github 上，那么可以使用 Travis CI 进行持续集成。\n## 配置 Travis CI\n首先我们需要对 Travis CI 进行配置，我使用的配置如下：<br />![](https://cdn.nlark.com/yuque/0/2019/png/244524/1547645513051-25ca873d-4aae-43a7-9f43-788dd4647f4f.png#align=left&display=inline&height=311&linkTarget=_blank&originHeight=311&originWidth=309&width=309#align=left&display=inline&height=311&linkTarget=_blank&originHeight=311&originWidth=309&width=309#align=left&display=inline&height=311&linkTarget=_blank&originHeight=311&originWidth=309&width=309)<br />需要注意的是，node 的版本必须为8或以上，否则 yuque-hexo 插件无法正常工作。并且在我的仓库中，发布和 CNAME 的配置都在其他文件内进行，其中用于发布文章到 Pages 仓库的文件为 [deploy.sh](https://github.com/aiokr/itypen-hexo/blob/master/deploy.sh) 。\n## 配置 serverless （以腾讯云无服务器云函数为例）\n配置好 Travis CI 之后，我们需要用语雀提供的 Webhook 让我们每一次在语雀发布文章，便自动运行 Travis CI。这需要用到 serverless 的功能，例如腾讯云的**无服务器云函数**。首先，我们需要在腾讯云的无服务器云函数中新建一个 PHP 的函数。<br />![](https://cdn.nlark.com/yuque/0/2019/png/244524/1547641591297-1c11acd3-e3bd-4438-853c-34bbce696300.png#align=left&display=inline&height=215&linkTarget=_blank&originHeight=392&originWidth=1359&width=746#align=left&display=inline&height=215&linkTarget=_blank&originHeight=392&originWidth=1359&width=746#align=left&display=inline&height=215&linkTarget=_blank&originHeight=392&originWidth=1359&width=746)<br />随后在函数代码页面粘贴以下代码，并且在第10和第11行进行相应的配置。<br />![](https://cdn.nlark.com/yuque/0/2019/png/244524/1547645622767-9c97f751-b108-4506-8f03-66c52f925afb.png#align=left&display=inline&height=1635&linkTarget=_blank&originHeight=1635&originWidth=740&width=740#align=left&display=inline&height=1635&linkTarget=_blank&originHeight=1635&originWidth=740&width=740#align=left&display=inline&height=1635&linkTarget=_blank&originHeight=1635&originWidth=740&width=740)<br />如何获取 id 与 token，其中 token 可以直接在 Travis CI 的个人设置页面获取，而 id 则需要使用 Travis CI 所提供的 API 来获取。我们可以通过 Fiddler 向 Travis CI 的 API 发送一个请求。<br />![](https://cdn.nlark.com/yuque/0/2019/png/244524/1547641973786-82666fc8-1bc5-4cdc-99de-77331aba5d0f.png#align=left&display=inline&height=236&linkTarget=_blank&originHeight=364&originWidth=1150&width=746#align=left&display=inline&height=236&linkTarget=_blank&originHeight=364&originWidth=1150&width=746#align=left&display=inline&height=236&linkTarget=_blank&originHeight=364&originWidth=1150&width=746)<br />请求的方式为 GET，请求头的信息可以按照如下填写，将其中的 `{{your token}}` 字段替换为你在 Travis CI 中的 token 即可。<br />![](https://cdn.nlark.com/yuque/0/2019/png/244524/1547645637507-386680e0-d300-445f-aec2-d53bbb3fd0d7.png#align=left&display=inline&height=140&linkTarget=_blank&originHeight=140&originWidth=273&width=273#align=left&display=inline&height=140&linkTarget=_blank&originHeight=140&originWidth=273&width=273#align=left&display=inline&height=140&linkTarget=_blank&originHeight=140&originWidth=273&width=273)<br />请求发送后，API 返回的 JSON 字段中则会有 `id=********` 类似的字段，其中的星号部分便是仓库的 ID。将这个 ID 填入 serverless 代码中，点击测试，倘若返回 202 状态码，便说明配置成功。函数配置成功之后，我们需要配置函数的触发器，将 API 服务设置为 SCF_API_SERVER，请求方法设置为 ANY，保存后会得到一个类似于下图中的链接，复制这个链接，将它用于配置语雀的 Web Hook。<br />![](https://cdn.nlark.com/yuque/0/2019/png/244524/1547642676785-c7c8a655-448a-4c4f-8f4f-fd331433d4c8.png#align=left&display=inline&height=325&linkTarget=_blank&originHeight=325&originWidth=600&width=600#align=left&display=inline&height=325&linkTarget=_blank&originHeight=325&originWidth=600&width=600#align=left&display=inline&height=325&linkTarget=_blank&originHeight=325&originWidth=600&width=600)\n## 配置语雀 Web Hook\n打开语雀的知识库的设置页面，在开发者设置板块中，将刚才获取的链接填入 URL 窗口，触发方式设置成所有更新触发即可。<br />![](https://cdn.nlark.com/yuque/0/2019/png/244524/1547642749869-2a73c857-2ff7-404f-a66a-49f14c7fa753.png#align=left&display=inline&height=308&linkTarget=_blank&originHeight=327&originWidth=792&width=746#align=left&display=inline&height=308&linkTarget=_blank&originHeight=327&originWidth=792&width=746#align=left&display=inline&height=308&linkTarget=_blank&originHeight=327&originWidth=792&width=746)\n# 完成\n配置工作这样就算完成了，接下来如果在语雀发布一篇文章，便会触发一次 Travis CI 的持续集成，稍后就能在博客上看到文章了。<br />![](https://cdn.nlark.com/yuque/0/2019/png/244524/1547643221360-1eb71c91-8c80-48a7-8fb2-0d8bd97ecc7d.png#align=left&display=inline&height=172&linkTarget=_blank&originHeight=239&originWidth=1038&width=746#align=left&display=inline&height=172&linkTarget=_blank&originHeight=239&originWidth=1038&width=746#align=left&display=inline&height=172&linkTarget=_blank&originHeight=239&originWidth=1038&width=746)\n"
   },
   {
     "title": "模拟联合国系列 第四章 欧洲议事规则",
     "description": "欧洲议事规则与罗伯特议事规则的「动议导向」不同，欧洲议事规则是一种「文件导向」的议事规则。代表通常在会议开始前进行写作建议案或决议草案，在会议过程中以文件为基础进行磋商。欧规中的大多数概念与罗规相似，但在欧洲议事规则中，决议草案通常需要全体出席代表赞成才能获得通过。",
     "created_at": "2019-01-16T04:56:02.000Z",
-    "updated_at": "2019-01-16T04:56:21.000Z",
+    "updated_at": "2019-01-16T14:16:22.000Z",
     "published_at": null,
     "format": "lake",
     "slug": "esewti",
@@ -55,8 +55,8 @@
     "title": "模拟联合国系列 第三章 罗伯特议事规则",
     "description": "欢迎回来上一章中，我们对模拟联合国的会前准备工作进行了大致的了解。在会前准备工作的同时，我们还需要对议事规则有一定的了解。通常主席团或学术团队会将本会场的议事规则在背景文件中进行阐述。在此，我就模联中常见的议事规则进行简单的介绍，具体会议的议事规则以学术团队公布的为准。在模拟联合国大会中，通常...",
     "created_at": "2019-01-14T15:39:09.000Z",
-    "updated_at": "2019-01-16T07:39:39.000Z",
-    "published_at": "2019-01-16T07:39:39.000Z",
+    "updated_at": "2019-01-16T14:16:37.000Z",
+    "published_at": "2019-01-16T14:16:37.000Z",
     "format": "lake",
     "slug": "lwhb0r",
     "last_editor": {
@@ -81,7 +81,7 @@
     "title": "2019柳州模联系列专访",
     "description": "曾馨睿-2019柳州模联执行秘书长介绍一下你自己和所做的工作2019年的柳州模拟联合国大会有什么特别之处吗你最初是因为什么而参加模拟联合国的活动你所理解的模拟联合国是一个怎样的活动你都有哪些可以与大家分享工作/生活习惯唐荣 | 柳高模联创始人介绍一下你自己和所做的工作最初是由于一个怎样的契机而...",
     "created_at": "2019-01-14T12:22:15.000Z",
-    "updated_at": "2019-01-14T12:22:33.000Z",
+    "updated_at": "2019-01-16T14:16:22.000Z",
     "published_at": null,
     "format": "lake",
     "slug": "tbq6b8",

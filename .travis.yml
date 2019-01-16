@@ -5,6 +5,8 @@ node_js:
 install:
   - npm install
 script:
+  - hexo clean
+  - yuque-hexo clean
   - yuque-hexo sync
   - hexo g
   - chmod +x ./deploy.sh
