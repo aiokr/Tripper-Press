@@ -5,13 +5,13 @@ node_js:
 install:
   - npm install
 script:
-  - hexo clean
   - yuque-hexo sync
-  - yuque-hexo clean
   - hexo g
   - chmod +x ./deploy.sh
   - \cp -f assets/CNAME public/CNAME
   - ./deploy.sh > /dev/null
+  - hexo clean
+  - yuque-hexo clean
 cache:
   directories:
     - node_modules
