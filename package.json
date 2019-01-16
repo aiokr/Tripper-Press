@@ -13,12 +13,11 @@
     "postPath": "source/_posts/yuque"
   },
   "scripts": {
-    "clean": "hexo clean",
-    "clean:yuque": "DEBUG=yuque-hexo.* yuque-hexo clean",
+    "clean": "hexo clean && yuque-hexo clean",
     "deploy": "hexo deploy",
     "publish": "npm run clean && npm run deploy",
     "dev": "hexo s",
-    "sync": "DEBUG=yuque-hexo.* yuque-hexo sync",
+    "sync": "yuque-hexo sync",
     "reset": "npm run clean:yuque && npm run sync"
   },
   "dependencies": {
@@ -30,9 +29,9 @@
     "hexo-renderer-ejs": "^0.3.1",
     "hexo-renderer-stylus": "^0.3.3",
     "hexo-renderer-marked": "^0.3.2",
-    "hexo-server": "^0.3.1"
+    "hexo-server": "^0.3.1",
+    "yuque-hexo": "^1.3.1"
   },
   "devDependencies": {
-    "yuque-hexo": "^1.3.1"
   }
 }
