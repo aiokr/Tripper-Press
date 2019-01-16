@@ -19,6 +19,11 @@
   "devDependencies": {
     "yuque-hexo": "^1.3.1"
   },
+  "scripts": {
+    "sync": "yuque-hexo sync",
+    "clean:yuque": "yuque-hexo clean",
+    "deploy": "npm run sync && hexo clean && hexo g -d"
+  },
   "yuqueConfig": {
     "baseUrl": "https://www.yuque.com/api/v2",
     "login": "itypen",
