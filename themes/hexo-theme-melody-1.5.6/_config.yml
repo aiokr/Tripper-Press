@@ -124,21 +124,21 @@ post_meta:
 
 # Please see doc for more details: https://molunerfinn.com/hexo-theme-melody-doc/#/additional-package-support?id=word-counting
 wordcount:
-  enable: false
+  enable: true
 
 toc:
   enable: true
   # number: true
 
 post_copyright:
-  enable: true
+  enable: false
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 # Please see doc for more details: https://molunerfinn.com/hexo-theme-melody-doc/#/theme-config?id=auto-excerpt
-# auto_excerpt:
-#   enable: false
-#   length: 150
+ auto_excerpt:
+   enable: ture
+   length: 150
 
 # slide
 # For reveal.js config, see https://github.com/hakimel/reveal.js#configuration
