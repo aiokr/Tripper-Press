@@ -6,7 +6,7 @@ install:
   - npm install
 script:
   - hexo clean
-  - yuque sync
+  - yuque-hexo sync
   - hexo g
   - chmod +x ./deploy.sh
   - \cp -f assets/CNAME public/CNAME
