@@ -5,15 +5,12 @@ node_js:
 install:
   - npm install
 script:
-  - hexo clean
-  - yuque-hexo clean
-  - yuque-hexo sync
-  - hexo g
+  - npm run clean
+  - npm run generate
   - chmod +x ./deploy.sh
   - \cp -f assets/CNAME public/CNAME
   - ./deploy.sh > /dev/null
-  - hexo clean
-  - yuque-hexo clean
+  - npm run clean
 cache:
   directories:
     - node_modules

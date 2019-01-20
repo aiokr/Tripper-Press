@@ -13,6 +13,7 @@
     "postPath": "source/_posts/yuque"
   },
   "scripts": {
+    "generate": "yuque-hexo sync && hexo g",
     "clean": "hexo clean && yuque-hexo clean",
     "deploy": "hexo deploy",
     "publish": "npm run clean && npm run deploy",
