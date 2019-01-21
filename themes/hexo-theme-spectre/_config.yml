@@ -112,17 +112,17 @@ sidebar:
     icon: inbox
     divider: false
   pages:
-    #About:
-      #link: "/about"
-      #icon: person
-      #divider: false
+    links:
+      link: "/links"
+      icon: person
+      divider: false
     #About:
       #link: "/about"
       #icon: person
       #divider: false
   article_num:
     use: true
-    divider: false
+    divider: true
   footer:
     upyun_logo:
       link: "https://www.upyun.com/"
