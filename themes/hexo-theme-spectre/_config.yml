@@ -26,8 +26,8 @@ color:
 # Jump Links Settings
 url:
   rss:
-  daily_pic: "#"
-  logo: "#"
+  daily_pic: "https://www.itypen.com"
+  logo: "https://www.itypen.com"
 
 # Images Settings
 img:
@@ -162,7 +162,7 @@ analytics:
 
 # Search Systems
 search:
-  use: true # true || false
+  use: false # true || false
   link: 
 
 # ---------------------------------------------------------------
