@@ -1,12 +1,11 @@
 "use strict";
 (function() {
-    var cacheVersion = "-170816";
+    var cacheVersion = "-190100";
     var staticImageCacheName = "image" + cacheVersion;
     var staticAssetsCacheName = "assets" + cacheVersion;
     var contentCacheName = "content" + cacheVersion;
     var vendorCacheName = "vendor" + cacheVersion;
     var maxEntries = 100;
-    self.importScripts("https://s.nfz.yecdn.com/static/js/sw-t.js");
     self.toolbox.options.debug = false;
     self.toolbox.options.networkTimeoutSeconds = 5;
 
