@@ -31,9 +31,9 @@ url:
 
 # Images Settings
 img:
-  logo: "/img/logo.png"
-  avatar: "/img/avatar.png"
-  daily_pic: "/img/daily_pic.png"#
+  logo: "/img/logo.jpg"
+  avatar: "/img/avatar.jpg"
+  daily_pic: "/img/daily_pic.png"
 
 # Slogan (will show at daily_pic)
 slogan: "Hi, nice to meet you"
@@ -70,7 +70,7 @@ footer:
   # Footer Copyright
   # Specify the date when the site was setup.
   #    For example, if you set it as 2015, then footer will show '© 2015 - 2017'
-  copyright_since:
+  copyright_since: iTypen © 2015 - 2019
 
   # FooterSNS Icon
   sns:
@@ -124,9 +124,9 @@ sidebar:
     use: false
     divider: false
   footer:
-    #upyun_logo:
-      #link: "https://www.upyun.com/"
-      #src: "/img/upyun_logo.svg"
+    upyun_logo:
+      link: "https://www.upyun.com/"
+      src: "/img/upyun_logo.svg"
 
 
 # ---------------------------------------------------------------
