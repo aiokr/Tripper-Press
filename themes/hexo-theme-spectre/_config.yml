@@ -121,7 +121,7 @@ sidebar:
       #icon: person
       #divider: false
   article_num:
-    use: false
+    use: true
     divider: false
   footer:
     upyun_logo:
@@ -156,13 +156,13 @@ comment:
 # Available value:
 #     baidu | google | cnzz
 analytics:
-  google_site_id:
+  google_site_id: UA-123878647-1
   baidu_site_id:
   cnzz_site_id:
 
 # Search Systems
 search:
-  use: false # true || false
+  use: true # true || false
   link: 
 
 # ---------------------------------------------------------------
