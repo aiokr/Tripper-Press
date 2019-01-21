@@ -112,7 +112,7 @@ sidebar:
     icon: inbox
     divider: false
   pages:
-    links:
+    友情链接:
       link: "/links"
       icon: person
       divider: false
