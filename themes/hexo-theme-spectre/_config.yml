@@ -76,13 +76,13 @@ footer:
   # Footer Copyright
   # Specify the date when the site was setup.
   #    For example, if you set it as 2015, then footer will show '© 2015 - 2017'
-  copyright_since: iTypen © 2015 - 2019
+  copyright_since: 2015
 
   # FooterSNS Icon
   sns:
-    facebook: "https://www.facebook.com/facebook"
-    twitter: "https://twitter.com/twitter"
-    googleplus: "https://www.google.com/"
+    facebook:
+    twitter:
+    googleplus:
     weibo: https://weibo.com/stark2chen
     instagram:
     tumblr:

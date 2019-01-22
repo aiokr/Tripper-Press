@@ -4,7 +4,7 @@
 <% } else { %>
     <!--<div class="card no-thumbnail">-->
     <div class="card with-thumbnail">
-        <a href="<%= url_for(post.path) %>" class="post_thumbnail-random card-image"></a>
+        <a href="<%= url_for(post.path) %>" class="post_thumbnail-random card-image lazy"></a>
 <% } %>
     <div class="card-header">
         <a class="card-title h5" href="<%= url_for(post.path) %>"><%= post.title %></a>

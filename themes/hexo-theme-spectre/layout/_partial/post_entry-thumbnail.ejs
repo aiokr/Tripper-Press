@@ -12,7 +12,6 @@
 
         locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
         locatePost.children('.post_thumbnail-random').attr('data-src', '<%= url_for(theme.img.random_thumbnail) %>' + randomNum + '.png');
-        $('.post_thumbnail-random').addClass('lazy');
 
         locatePost = locatePost.next();
     }
