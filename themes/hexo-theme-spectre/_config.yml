@@ -31,7 +31,7 @@ url:
 
 # Images Settings
 img:
-  logo: "/img/logo.jpg"
+  logo: "/img/avatar.jpg"
   avatar: "/img/avatar.jpg"
   daily_pic: "/img/daily_pic.png"
   random_thumbnail: "/img/random/material-"
