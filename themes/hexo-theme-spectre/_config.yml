@@ -34,7 +34,7 @@ img:
   logo: "/img/logo.jpg"
   avatar: "/img/avatar.jpg"
   daily_pic: "/img/daily_pic.png"
-  random_thumbnail: "/img/rondom/material-"
+  random_thumbnail: "/img/random/material-"
 
 # Thumbnail Settings
 thumbnail:
