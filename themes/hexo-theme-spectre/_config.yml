@@ -34,6 +34,12 @@ img:
   logo: "/img/logo.jpg"
   avatar: "/img/avatar.jpg"
   daily_pic: "/img/daily_pic.png"
+  random_thumbnail: "/img/rondom/material-"
+
+# Thumbnail Settings
+thumbnail:
+    purecolor:
+    random_amount: 19
 
 # Slogan (will show at daily_pic)
 slogan: "Hi, nice to meet you"
