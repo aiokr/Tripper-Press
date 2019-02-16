@@ -1,0 +1,138 @@
+# CDN for mathjax
+location:
+
+# style
+style:
+  scheme: 'now'
+  bg_img: /img/bg.png
+  avatar: /img/avatar.png
+  slogan: "模联改变我们 我们改变世界"
+  hoverable: false
+
+# HTML head
+head:
+  favicon: /img/favicon.png
+  high_res_favicon: /img/favicon.png
+  apple_touch_icon: /img/favicon.png
+  keywords: LZMUN, MUN, Conference
+
+# color
+color:
+  primary_color: "white"
+  accent_color: "white"
+  layout:
+  random:
+  bg_color: "#fff"
+
+# appbar
+appbar:
+  title: "柳州模联"
+  search: false
+  text_logo: true
+
+index:
+  welcome: "Welcome to my blog~"
+  notification: false
+
+# post settings
+post:
+  entry_excerpt: 80
+  qr_code: false
+  prism:
+    theme:
+    line_number:
+  license:
+    name: 'CC BY-NC-SA 4.0'
+    link:  'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh'
+  word_count:
+  read_time:
+  toc_list_number: true
+  donate:
+#    wechat:
+#      link: /img/avatar.png
+#      fa: 'fa-wechat'
+#    paypay:
+#      link: 'https://paypal.com'
+#      fa: 'fa-paypal'
+
+
+share_menu:
+#  rss: false
+#  weibo: false
+#  twitter: true
+#  facebook: true
+#  googleplus: true
+#  linkedin: true
+#  qq: false
+#  telegram: false
+
+# use:disqus, valine or custom
+comment:
+    use: gitment
+    shortname:
+    # https://valine.js.org
+    valine:
+      appid:  # your leancloud appId
+      appkey:  # your leancloud appKey
+      notify: false #mail notify
+      verify: false #verify code
+      avatar: mm # gravatar style
+      placeholder: Just go go # comment box placeholder
+      guest_info: nick,mail,link # reviewer attributes
+    gitment:
+      owner: aiokr
+      repo: LZMUN-comment
+      client_id: d287205e23e29633d711
+      client_secret: 9ec6775ca9910e4fa4887b0cf176bacf3b83316f
+
+# pagination
+# github@zllovesuki
+pagination: 2
+
+# footer
+footer:
+  since:
+  ICP:
+  image:
+  last_updated:
+
+# Plugins
+busuanzi:
+#  all_site_uv: true
+#  post_pv: true
+#  busuanzi_pure_mini_js: "//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"
+
+service_woker:
+
+about_me: false
+
+pace: false
+
+random_pics: 44
+
+pages:
+  取得联系:
+    md: "&#xe0ba;"
+    link: "/contact/"
+  友情链接:
+    md: "&#xe0af;"
+    link: "/links/"
+
+sns:
+#  Twitter:
+#    link: https://twitter.com
+#    fa: 'fa-twitter'
+#  Facebook:
+#    link: https://facebook.com
+#    null_icon: true
+
+# Vendors
+vendors:
+  fonts_min_css:
+  style_min_css:
+  js_min_js:
+  outdatedbrowser_min_js:
+  pace_min_js:
+  pace_style_css:
+  custom_head:
+  custom_js:

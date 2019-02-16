@@ -1,0 +1,112 @@
+<!--<script type="text/javascript">
+    $.backstretch([
+        './img/background/bg1.jpg',
+        './img/background/bg4.jpg',
+        './img/background/bg8.jpg',
+        './img/background/bg7.jpg'   
+    ], {
+            fade: 500, // 动画时长
+            duration: 10000 // 切换延时
+        });
+</script>
+-->
+<div class="padding"></div>
+<div class="mdui-container">
+    <div class="mdui-row">
+        <div class="mdui-col-xs-offset
+                    mdui-col-sm-1
+                    mdui-col-md-2
+                    mdui-col-lg-2"></div>
+        <div class="mdui-col-xs-12
+                    mdui-col-sm-10
+                    mdui-col-md-8
+                    mdui-col-lg-8">
+            <div class="mdui-card mdui-shadow-0" style="height: 200px">
+                <div class="index-logo">
+                    <div class="index-logo-text mdui-text-center">
+                        <%- partial('_partials/logo_text') %>
+                    </div>
+                </div>
+                <div class="padding-15"></div>
+                <div class="mdui-row-xs-5">
+                    <div class="mdui-col"></div>
+                    <div class="mdui-col">
+                        <a class="mdui-btn mdui-btn-block mdui-ripple">关于</a>
+                    </div>
+                    <div class="mdui-col">
+                        <a class="mdui-btn mdui-btn-block mdui-ripple" href="/archives/">新闻稿</a>
+                    </div>
+                    <div class="mdui-col">
+                        <button class="mdui-btn mdui-btn-block mdui-ripple" mdui-drawer="{target: '#drawer'}">更多功能</button>
+                    </div>
+                    <div class="mdui-col"></div>
+                </div>
+            </div>
+            <div class="feed-header">
+                <div class="feed-title">
+                    近期活动
+                </div>
+                <div class="feed-subtitle">
+                    Recent Activity
+                </div>
+            </div>
+            <div class="padding"></div>
+            <div class="mdui-card mdui-shadow-0">
+                <div class="mdui-card-primary index-feed-card">
+                    <div class="mdui-card-primary-title">2019 柳州模拟联合国大会</div>
+                    <div class="mdui-card-primary-subtitle">Liuzhou Model United Nations Conference, 2019</div>
+                    <div class="mdui-card-content index-feed-content">柳州市模拟联合国大会终于步入了第八载春秋。令我们感到十分荣幸的是，作为区内规模最大的会议之一，柳州市会每每吸引到来自区内外各式各校的学术团队与活跃代表。近年来，大会更注重寻找本地合作与优质外来资源之间的平衡点，力求更好地结合本土血脉与对外风貌。
+                        生长在春夏之交的节点，柳州市模拟联合国大会已然成为市内各模联社团锻炼新生力量的试兵场，一代代各校模联行政与学术中坚从这里起航。更重要的是，柳州市会的举办传统为本地模联生态圈提供了修复自我、加强联结、挑战边界的恒定契机。愿它屹立于风雨，愿它继续守望。
+                        柳州市会走过的岁月，凝集着柳高模联人无数不眠的夜晚，更凝聚着各校模联人无私的帮助与奉献。当零和博弈烟消云散，我们共聚一堂，是为了更纯粹的学术品质，更细致的会务点滴。当一年年五月我们站立于此，与志同者并肩，放眼龙城大地；当一年年紫荆归去，这净土中根脉纵深，愿携子风雨兼程。</div>
+                </div>
+                <div class="mdui-row-xs-2">
+                    <div class="mdui-col">
+                        <a class="mdui-btn mdui-btn-block mdui-ripple" href="https://mp.weixin.qq.com/s?__biz=MzU4NDU5MzcyMw==&mid=100000267&idx=1&sn=9aabb3a104eafbbbe95256d45da1ab7d&scene=19#wechat_redirect" target="_blank">会议信息</a>
+                    </div>
+                    <div class="mdui-col">
+                        <a class="mdui-btn mdui-btn-block mdui-ripple" href="/apply/">报名通道</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="padding"></div>
+            <div class="feed-header">
+                <div class="feed-title">
+                    博客文章 Beta
+                </div>
+                <div class="feed-subtitle">
+                    Posts (beta)
+                </div>
+            </div>
+            <div class="padding"></div>
+            <div id="posts">
+                <%
+                  var index = 0;
+                  var posts = page.posts.filter(function(post) {
+                    if (post.pinned) {
+                %>
+                      <%-partial('/_partials/posts', { index: index, post })%>
+                    <%
+                      index++;
+                      return false;
+                    }
+                    return true;
+                  })
+                %>
+                <% posts.forEach(function(post) {%>
+                    <%-partial('/_partials/posts', { index: index, post })%>
+                <%
+                  index++;
+                }); %>
+              </div>
+              <div class="padding"></div>
+            <div class="mdui-card opacity">
+                <!--本网站由iTypen开发-->
+            </div>
+        </div>
+        <div class="mdui-col-xs-offset
+                    mdui-col-sm-1
+                    mdui-col-md-2
+                    mdui-col-lg-2"></div>
+    </div>
+</div>

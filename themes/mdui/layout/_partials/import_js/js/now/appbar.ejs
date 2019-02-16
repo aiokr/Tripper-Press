@@ -1,0 +1,26 @@
+<script type="text/ls-javascript" id="appbar-script">
+  /* post appbar */
+  (function() {
+    var pageFlag = false;
+    /* 控制引用栏自动隐藏 */
+    /* var appbar = new mdui.Headroom('#blog-appbar'); */
+    appbar.disable();
+    var toolbar = document.querySelector('#blog-appbar .mdui-toolbar')
+
+    window.addEventListener('scroll', function() {
+      var bodyTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+      var divTop = document.querySelector('div#top').offsetTop
+
+      var pageLocation = divTop - bodyTop;
+      if (!pageFlag && pageLocation < 0) {
+        // toolbar.classList.add('mdui-shadow-0')
+        appbar.enable();
+        pageFlag = true;
+      } else if (pageFlag && pageLocation >= 0) {
+        toolbar.classList.remove('mdui-shadow-0')
+        appbar.disable();
+        pageFlag = false;
+      }
+    })
+  })();
+</script>
