@@ -311,9 +311,12 @@ Content
     min-height: calc(100% - 274px);
 }
 
-.content-area {
-    padding-top: $header-height;
-}
+@media (min-width: 1000px) {
+    .content-area {
+        padding-top: 70px;
+    }
+  }
+
 
 .error404 .content-area,
 .page .content-area {
