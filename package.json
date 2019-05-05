@@ -10,7 +10,7 @@
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "publish": "npm run clean && npm run deploy",
-    "dev": "hexo s",
+    "dev": "hexo s"
   },
   "dependencies": {
     "hexo": "^3.7.0",
