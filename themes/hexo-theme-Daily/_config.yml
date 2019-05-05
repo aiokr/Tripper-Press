@@ -1,12 +1,12 @@
 # basic
 title: iTypen
 subtitle: Minimalism, simplicity and refined details
-favicon: https://hexo.io/icon/favicon-96x96.png
+favicon: https://imgur.itypen.com/picgo/144.png
 
 # avatar: images/avatar.png
 # banner_small: images/banner-small.png
 # banner_large: images/banner-large.png
-logo: https://hexo.io/logo.svg
+logo: https://imgur.itypen.com/picgo/512.png
 
 # disqus
 #disqus_shortname: drakeleung
@@ -19,8 +19,8 @@ highlight:
 
 # nav #
 nav:
-  home: .
-  archive: archives
+  首页: .
+  归档: archives
   # about: about
   # rss: atom.xml
 
@@ -35,7 +35,7 @@ default_post_title: Untitled
 
 # social
 social:
-  github: https://github.com/GallenHu
+  github: https://github.com/aiokr
   # weibo: http://weibo.com/10010800
   # mail: mailto:gallenhu@foxmail.com
   # twitter: https://twitter.com/GallenHu
