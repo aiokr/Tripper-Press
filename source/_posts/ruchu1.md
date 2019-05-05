@@ -7,8 +7,6 @@ photos: https://imgur.itypen.com/picgo/20190425212431.jpg
 
 ![封面 - 你有多久没有好好读过一本书了](https://imgur.itypen.com/picgo/20190425212431.jpg)
 
-
-
 [TOC]
 
 ## 卷首语 - 你有多久没有好好读过一本书了？

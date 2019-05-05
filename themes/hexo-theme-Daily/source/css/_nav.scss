@@ -6,8 +6,6 @@
   position: fixed;
   top: 0;
   left: 0;
-  padding-left: 50px;
-  padding-right: 50px;
   height: 70px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -33,7 +31,8 @@
   display: block;
   position: relative;
   height: 100%;
-  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .logo {
   display: block;
