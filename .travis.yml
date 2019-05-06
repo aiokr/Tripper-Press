@@ -10,7 +10,6 @@ script:
   - chmod +x ./deploy.sh
   - \cp -f assets/CNAME public/CNAME
   - \cp -f assets/googlef15886275820ed2b.html public/googlef15886275820ed2b.html
-  # - \cp -f assets/.nojekyll /.nojekyll
   - ./deploy.sh > /dev/null
   - npm run clean
 cache:
