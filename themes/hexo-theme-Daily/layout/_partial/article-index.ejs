@@ -8,7 +8,7 @@ var isFullUrl = function(str) {
 <div class="padding-15"></div>
 <div class="container">
   <article class="post">
-    <% if (item.cover.length > 0) { %>
+    <% if (item.cover) { %>
       <a href="<%- config.root %><%- item.path %>">
           <img src="<%- item.cover %>" alt="<%- item.title %>" class="attachment-post-thumbnail">
         </a>
