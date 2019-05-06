@@ -22,14 +22,6 @@ a,abbr,acronym,address,applet,big,blockquote,body,caption,cite,code,dd,del,dfn,d
 Typography
 --------------------------------------------------------------*/
 
-p {
-    margin: 1.5em 5px !important;
-    font-size: 16px !important;
-    color: #222831;
-    line-height: 1.8em;
-    letter-spacing: 0.1em;
-}
-
 button,input,select,textarea {    color: $color-text;
     font-family: 'Open sans', sans-serif;
     font-size: 100%;
@@ -40,17 +32,6 @@ address {
     margin: 0 0 1.5em;
 }
 
-pre {
-    background: #eee;
-    font-family: "Courier 10 Pitch", Courier, monospace;
-    font-size: 15px;
-    font-size: 1.5rem;
-    line-height: 1.6;
-    margin-bottom: 1.6em;
-    max-width: 100%;
-    overflow: auto;
-    padding: 1.6em;
-}
 
 code,
 kbd,
@@ -208,63 +189,7 @@ hr {
     width: 80%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 20px 0 10px;
-    padding: 0;
-    font-style: bold !important;
-    color: #5588a3 !important;
-    margin: 1.5em 5px !important;
-    text-align: left !important;
-    font-family: sans-serif;
-    font-weight: bold
-}
 
-h1 {
-    font-size: 22px !important;
-    text-align: center !important;
-}
-
-h2 {
-    font-size: 20px !important;
-}
-
-h3 {
-    font-size: 18px;
-}
-
-h4 {
-    font-size: 16px;
-}
-
-h5 {
-    font-size: 16px;
-}
-
-h6 {
-    font-size: 16px;
-}
-
-blockquote,
-q {
-    border-left: 2px solid #5588a3;
-    padding: 0 10px;
-    color: #777;
-    quotes: none;
-    margin-left: 1em;
-}
-
-strong {
-    font-weight: bold;
-}
-
-em {
-    font-style: italic;
-}
 
 /*--------------------------------------------------------------
 Links
@@ -358,16 +283,13 @@ Content
 
 .entry-title {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang-SC-Regular", "STHeiti", "Helvetica", "Arial", "Verdana", "sans-serif", "Microsoft YaHei";
-    letter-spacing: 0.2em;
-    color: #000;
-    text-align: center;
+    letter-spacing: 0.1em;  
     margin-bottom: 27px;
-    font-weight: 700;
-    font-size: 1.25em;
+    font-weight: bold;
+    font-size: 22px !important;
 
     a {
         color: #000;
-        font-weight: 700;
         text-decoration: none;
     }
 
@@ -385,16 +307,18 @@ Content
 }
 
 .posted-on {
-    text-align: center;
+    text-align: left;
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang-SC-Regular", "STHeiti", "Helvetica", "Arial", "Verdana", "sans-serif", "Microsoft YaHei";
-    font-size: 0.688em;
+    font-size: .75em !important;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    color: #5588a3
+    color: #5588a380;
+    margin-top: 0px !important;
+    margin-bottom: 10px !important;
 }
 
 .tags-links {
-    text-align: center;
+    text-align: left;
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang-SC-Regular", "STHeiti", "Helvetica", "Arial", "Verdana", "sans-serif", "Microsoft YaHei";
     font-size: 0.800em;
     font-style: normal;
@@ -403,10 +327,11 @@ Content
     a {
         margin: 0 5px;
         text-decoration: none;
+        color: #5588a380
     }
 
     &:hover {
-        color: #5588a3
+        color: #5588a380
     }
 }
 
@@ -494,7 +419,7 @@ Footer
     text-transform: uppercase;
     letter-spacing: 0.2em;
     margin: 0 0 20px;
-    text-align: center;
+    text-align: center !important;
 }
 
 .widget-text {
@@ -556,9 +481,9 @@ Footer
 .site-info {
     text-align: center;
     font-size: 0.750em;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    color: #a2a2a2;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    opacity: 0.4;
 
     .split {
         margin: 0 2px;
