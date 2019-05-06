@@ -8,12 +8,8 @@ var isFullUrl = function(str) {
 <div class="padding-15"></div>
 <div class="container">
   <article class="post">
-    <% if (item.photos.length) { %>
-      <% var thumb = item.photos[0]; %>
-      <% var thumbUrl = isFullUrl(thumb) ? thumb : url_for(thumb) %>
-
       <a href="<%- config.root %><%- item.path %>">
-          <img src="<%- thumbUrl %>" alt="<%- item.title %>" class="attachment-post-thumbnail">
+          <img src="<%- item.cover %>" alt="<%- item.title %>" class="attachment-post-thumbnail">
         </a>
     <% } %>
     <h1 class="entry-title">
