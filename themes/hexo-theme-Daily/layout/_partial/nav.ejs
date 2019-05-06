@@ -15,7 +15,7 @@
           <% var site_navs = config.nav || theme.nav  %>
           <% for (var i in site_navs){ %>
             <li>
-              <a href="<%- site_navs[i].url ? url_for(site_navs[i].url) : url_for(site_navs[i]) %>" style="color: black">
+              <a href="<%- site_navs[i].url ? url_for(site_navs[i].url) : url_for(site_navs[i]) %>" style="color: black;font-size: 14px">
                 <% if (site_navs[i].icon) { %>
                   <i class="fa fa-<%= site_navs[i].icon %> fa-stack-2x"></i>
                 <% } else { %>

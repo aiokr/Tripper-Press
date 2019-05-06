@@ -3,9 +3,9 @@ title: iTypen
 subtitle: Minimalism, simplicity and refined details
 favicon: https://imgur.itypen.com/picgo/144.png
 
-# avatar: images/avatar.png
-# banner_small: images/banner-small.png
-# banner_large: images/banner-large.png
+avatar: https://imgur.itypen.com/picgo/512.png
+banner_small: https://imgur.itypen.com/picgo/512.png
+# banner_large: https://imgur.itypen.com/picgo/512.png
 logo: https://imgur.itypen.com/picgo/512.png
 
 # disqus
@@ -20,7 +20,7 @@ highlight:
 # nav #
 nav:
   首页: .
-  归档: archives
+  日志: archives
   # about: about
   # rss: atom.xml
 
