@@ -80,3 +80,19 @@
   }
 
 }
+
+@media (min-width: 768px) {
+  .content-area {
+      padding-top: 70px;
+      padding-bottom: 70px;
+      padding-right: 10px;
+      padding-left: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .content-area {
+      padding-right: 10px;
+      padding-left: 10px;
+  }
+}

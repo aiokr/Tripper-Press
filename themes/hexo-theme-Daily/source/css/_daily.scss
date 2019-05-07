@@ -236,14 +236,6 @@ Content
     min-height: calc(100% - 274px);
 }
 
-@media (min-width: 768px) {
-    .content-area {
-        padding-top: 70px;
-        padding-bottom: 70px;
-    }
-  }
-
-
 .error404 .content-area,
 .page .content-area {
     padding-top: 120px;
