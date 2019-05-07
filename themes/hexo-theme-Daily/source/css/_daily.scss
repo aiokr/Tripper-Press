@@ -303,6 +303,7 @@ Content
     color: #5588a380;
     margin-top: 0px !important;
     margin-bottom: 10px !important;
+    margin-left: 0px !important;
 }
 
 .tags-links {
@@ -311,9 +312,10 @@ Content
     font-size: 0.800em;
     font-style: normal;
     margin-bottom: 30px;
+    
 
     a {
-        margin: 0 5px;
+        margin-left: 0px !important;
         text-decoration: none;
         color: #5588a380
     }
