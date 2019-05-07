@@ -239,6 +239,7 @@ Content
 @media (min-width: 768px) {
     .content-area {
         padding-top: 70px;
+        padding-bottom: 70px;
     }
   }
 
@@ -248,13 +249,8 @@ Content
     padding-top: 120px;
 }
 
-.odd {
-    background: #fff;
-    position: relative;
-}
-
 .even {
-    background: white;
+    background: #ffffff;
     position: relative;
 }
 

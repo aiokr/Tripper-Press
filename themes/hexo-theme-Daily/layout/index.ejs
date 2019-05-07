@@ -2,15 +2,9 @@
   <main class="content-area">
     <div class="padding-70"></div>
     <% page.posts.each(function(item, itemIndex){ %>
-      <% if (itemIndex % 2 === 0) { %>
         <div class="even">
           <%- partial('_partial/article-index', {item: item}) %>
         </div> 
-      <% } else { %>
-        <div class="odd">
-          <%- partial('_partial/article-index', {item: item}) %>
-        </div>
-      <% } %>
     <% }); %>
 
     <%- partial('_partial/pagination') %>
