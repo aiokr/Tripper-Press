@@ -19,8 +19,10 @@ highlight:
 
 # nav #
 nav:
-  首页: .
-  日志: archives
+  ARCH: 
+    link: /archives/
+  ABOUT: 
+    link: /about/
   # about: about
   # rss: atom.xml
 

@@ -1,35 +1,14 @@
-<header class="site-header">
-  <div class="header-inside">
-    <div class="logo">
-      <a href="<%= url_for() %>" rel="home">
-        <% if (config.logo || theme.logo) { %>
-        <img src="<%- config.logo || theme.logo %>" alt="<%- config.title %>" height="60">
+<header class="#site-header">
+  <div class="mdui-appbar mdui-appbar-fixed mdui-color-white">
+    <div class="mdui-toolbar mdui-color-theme">
+      <a href="<%= url_for() %>" class="mdui-typo-headline" style="margin-left:25px;"><%- config.title %></a>
+      <!--<a href="javascript:;" class="mdui-typo-title"><%- config.subtitle %></a>-->
+      <div class="mdui-toolbar-spacer"></div>
+      <div class="nav-menu">
+        <% for (var i in theme.nav) { %>
+          <a href="<%- theme.nav[i].link %>" class="mdui-btn"><%- i %></a>
         <% } %>
-      </a>
-    </div>
-    <!-- Navigation -->
-    <nav class="navbar">
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse">
-        <ul class="navbar-nav">
-          <% var site_navs = config.nav || theme.nav  %>
-          <% for (var i in site_navs){ %>
-            <li>
-              <a href="<%- site_navs[i].url ? url_for(site_navs[i].url) : url_for(site_navs[i]) %>" style="color: black;font-size: 14px">
-                <% if (site_navs[i].icon) { %>
-                  <i class="fa fa-<%= site_navs[i].icon %> fa-stack-2x"></i>
-                <% } else { %>
-                  <%= i %>
-                <% } %>
-              </a>
-            </li>
-          <% } %>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </nav>
-    <div class="button-wrap">
-      <button class="menu-toggle">Primary Menu</button>
+          </div>
     </div>
   </div>
 </header>
