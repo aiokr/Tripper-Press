@@ -23,6 +23,8 @@ nav:
     link: /archives/
   ABOUT: 
     link: /about/
+  LINKS:
+    link: /links/
   # about: about
   # rss: atom.xml
 
