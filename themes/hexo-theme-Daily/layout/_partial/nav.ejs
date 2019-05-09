@@ -2,15 +2,30 @@
   <div class="mdui-appbar mdui-appbar-fixed mdui-color-white">
     <div class="mdui-toolbar mdui-color-theme">
       <a href="<%= url_for() %>">
-        <img class="mdui-img-fluid mdui-typo-title" src="https://imgur.itypen.com/picgo/144.png" style="max-width: 45px; margin-left:25px;">
+        <img class="mdui-img-fluid mdui-typo-title" src="https://imgur.itypen.com/picgo/144.png"
+          style="max-width: 45px; margin-left:25px;">
       </a>
       <!--<a href="<%= url_for() %>" class="mdui-typo-title" style=""><%- config.title %></a>-->
       <div class="mdui-toolbar-spacer"></div>
       <div class="nav-menu">
-        <% for (var i in theme.nav) { %>
-        <a href="<%- theme.nav[i].link %>" class="mdui-btn"><%- i %></a>
-        <% } %>
+        <div class="mdui-hidden-sm-down">
+          <% for (var i in theme.nav) { %>
+          <a href="<%- theme.nav[i].link %>" class="mdui-btn"><%- i %></a>
+          <% } %>
+        </div>
+        <div class="mdui-hidden-md-up">
+          <div class="mdui-btn mdui-btn-icon" mdui-menu="{target: '#example-attr'}"><i class="mdui-icon material-icons">&#xe5d2;</i></div>
+          <ul class="mdui-menu" id="example-attr">
+            <% for (var i in theme.nav) { %>
+            <li class="mdui-menu-item">
+              <a href="<%- theme.nav[i].link %>" class="mdui-ripple"><%- i %></a>
+            </li>
+            <% } %>
+          </ul>
+        </div>
+
       </div>
+
     </div>
   </div>
 </header>
