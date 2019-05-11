@@ -2,7 +2,6 @@
 title: 2019 柳州市渊文模拟联合国大会 第一轮通告
 date: 2019-04-16 18:16:32
 tags: 
-- 2019
 - 柳州模联
 categories: 2019渊文
 pinned: true
