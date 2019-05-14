@@ -9,6 +9,7 @@ script:
   - npm run generate
   - chmod +x ./deploy.sh
   - \cp -f assets/CNAME public/CNAME
+  - \cp -f assets/analytics.txt public/analytics.txt
   - \cp -f assets/googlef15886275820ed2b.html public/googlef15886275820ed2b.html
   - ./deploy.sh > /dev/null
   - npm run clean
