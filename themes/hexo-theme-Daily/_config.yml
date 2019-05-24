@@ -25,6 +25,8 @@ nav:
     link: /about/
   LINKS:
     link: /links/
+  Photograph:
+    link: /photograph/
   # about: about
   # rss: atom.xml
 
