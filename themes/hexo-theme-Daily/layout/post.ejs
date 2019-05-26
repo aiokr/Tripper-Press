@@ -32,7 +32,9 @@
     </div>
     <!-- Comments -->
     <div class="container">
-      <%- partial('_partial/comment') %>
+      <%- partial('_partial/comment', {
+          shortname: config.disqus_shortname
+        }) %>
     </div>
     <!-- Pre or Next -->
     <div class="nav-links">

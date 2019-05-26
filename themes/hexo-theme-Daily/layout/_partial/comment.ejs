@@ -1,24 +1,22 @@
+<% if (page.comments){ %>
 <section id="comment">
-  <script src="https://unpkg.com/vue/dist/vue.runtime.min.js"></script>
-  <script src="https://unpkg.com/vssue/dist/vssue.github.min.js"></script>
-  <script>
-    new Vue({
-      el: '#vssue',
+  <!-- <h1 class="title"><%= __('comment') %></h1> -->
 
-      render: h => h('Vssue', {
-        props: {
-          // 在这里设置当前页面对应的 Issue 标题
-          title: '<%= page.title %>',
-
-          // 在这里设置你使用的平台的 OAuth App 配置
-          options: {
-            owner: '<%= theme.vuess_owner %>',
-            repo: '<%= theme.vuess_repo %>',
-            clientId: '<%= theme.vuess_clientId %>',
-            clientSecret: '<%= theme.vuess_clientSecret %>', // 只有在使用某些平台时需要
-          },
-        }
-      })
-    })
-  </script>
+  <% if(config.disqus_shortname) { %>
+  <div id="disqus_thread">
+    <script type="text/javascript">
+    var disqus_config = function () {
+          this.page.url = window.location.href;
+          this.page.identifier = '<%= page.layout %>-<%= page.slug %>';
+          this.page.title = '<%= page.title %>';
+      };
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+  <% } else if (config.duoshuo_shortname) { %>
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="<%= page.layout %>-<%= page.slug %>" data-title="<%= page.title %>" data-url="<%= page.permalink %>"></div>
+    <!-- 多说评论框 end -->
+  <% } %>
 </section>
+<% } %>

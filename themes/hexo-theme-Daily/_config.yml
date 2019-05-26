@@ -8,11 +8,8 @@ banner_small: https://imgur.itypen.com/picgo/512.png
 # banner_large: https://imgur.itypen.com/picgo/512.png
 logo: https://imgur.itypen.com/picgo/512.png
 
-# vuess
-vuess_owner: aiokr
-vuess_repo: iTypen-comment
-vuess_clientId: 53d9f4220507e8aa513b
-vuess_clientSecret: 43e42209f73188b31e4ae88a7882b1cbc51fc764
+# disqus
+#disqus_shortname: drakeleung
 
 highlight:
   enable: true
