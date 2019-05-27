@@ -2,7 +2,8 @@
 <div class="padding-25"></div>
 <div class="mdui-container">
     <div class="mdui-row">
-        <div class="mdui-col-xs-2">
+        <div class="mdui-hidden-sm-down
+                    mdui-col-md-2">
             <ul class="mdui-list">
                 <li class="mdui-list-item mdui-ripple">
                     <i class="mdui-list-item-icon mdui-icon material-icons">camera</i>
@@ -22,7 +23,8 @@
                 </li>
             </ul>
         </div>
-        <div class="mdui-col-xs-8">
+        <div class="mdui-col-xs-12
+                    mdui-col-md-8">
             <div class="mdui-card">
                 <div class="mdui-card-media">
                     <img src="<%- page.src %>" />
@@ -43,7 +45,8 @@
                 </div>
             </div>
         </div>
-        <div class="mdui-col-xs-2">
+        <div class="mdui-col-xs-0
+                    mdui-col-md-2">
             <div class="mdui-card-primary">
                 <div class="mdui-card-primary-title"><%- page.title || theme.default_post_title || "Untitled" %></div>
             </div>
