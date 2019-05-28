@@ -9,13 +9,7 @@ banner_small: https://imgur.itypen.com/picgo/512.png
 logo: https://imgur.itypen.com/picgo/512.png
 
 # disqus
-# disqus_shortname: drakeleung
-
-gitalk:
-  gitalk_clientID: 53d9f4220507e8aa513b
-  gitalk_clientSecret: 43e42209f73188b31e4ae88a7882b1cbc51fc764
-  gitalk_repo: iTypen-comment
-  gitalk_owner: aiokr
+#disqus_shortname: drakeleung
 
 highlight:
   enable: true

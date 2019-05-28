@@ -5,36 +5,18 @@
   <% if(config.disqus_shortname) { %>
   <div id="disqus_thread">
     <script type="text/javascript">
-      var disqus_config = function () {
-        this.page.url = window.location.href;
-        this.page.identifier = '<%= page.layout %>-<%= page.slug %>';
-        this.page.title = '<%= page.title %>';
+    var disqus_config = function () {
+          this.page.url = window.location.href;
+          this.page.identifier = '<%= page.layout %>-<%= page.slug %>';
+          this.page.title = '<%= page.title %>';
       };
     </script>
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by
-        Disqus.</a></noscript>
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
-  <% } else if (theme.duoshuo_shortname) { %>
-  <!-- 多说评论框 start -->
-  <div class="ds-thread" data-thread-key="<%= page.layout %>-<%= page.slug %>" data-title="<%= page.title %>"
-    data-url="<%= page.permalink %>"></div>
-  <!-- 多说评论框 end -->
-  <% } else if (theme.gitalk) { %>
-  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-  <div id="gitalk-container"></div>
-  <script>
-    var gitalk = new Gitalk({
-      clientID: '<%= theme.gitalk.gitalk_clientID %>',
-      clientSecret: '<%= theme.gitalk.gitalk_clientSecret %>',
-      repo: '<%= theme.gitalk.gitalk_repo %>',
-      owner: '<%= theme.gitalk.gitalk_owner %>',
-      admin: ['网站管理员'],
-      id: '<%= page.slug %>',      // Ensure uniqueness and length less than 50
-      distractionFreeMode: false  // Facebook-like distraction free mode
-    })
-    gitalk.render('gitalk-container')
-  </script>
+  <% } else if (config.duoshuo_shortname) { %>
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="<%= page.layout %>-<%= page.slug %>" data-title="<%= page.title %>" data-url="<%= page.permalink %>"></div>
+    <!-- 多说评论框 end -->
   <% } %>
 </section>
 <% } %>
