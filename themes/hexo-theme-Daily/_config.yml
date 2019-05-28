@@ -19,13 +19,11 @@ highlight:
 
 # nav #
 nav:
-  ARCH: 
+  归档: 
     link: /archives/
-  ABOUT: 
-    link: /about/
-  LINKS:
+  链接:
     link: /links/
-  Photograph:
+  图库:
     link: /photograph/
   # about: about
   # rss: atom.xml
