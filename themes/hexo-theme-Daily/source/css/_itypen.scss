@@ -103,3 +103,7 @@ em {
         background-image: url(https://imgur.itypen.com/picgo/20190524175214.svg)
     }
 }
+
+@media print {
+ .noprn{ display:none;}
+}
