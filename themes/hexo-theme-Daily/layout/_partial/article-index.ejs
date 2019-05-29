@@ -8,33 +8,29 @@ var isFullUrl = function(str) {
 <div class="padding-15"></div>
 <div class="container">
   <article class="post">
-    <% if (item.cover) { %>
       <a href="<%- config.root %><%- item.path %>">
-          <img src="<%- item.cover %>" alt="<%- item.title %>" class="attachment-post-thumbnail">
+    <div class="mdui-card mdui-shadow-0 mdui-hoverable">
+      <div class="mdui-card-media">
+        <% if (item.cover) { %>
+        <a href="<%- config.root %><%- item.path %>">
+          <img src="<%- item.cover %>" alt="<%- item.title %>" class="attachment-post-thumbnail" style="border-radius: 0px;">
         </a>
-    <% } %>
-    <h1 class="entry-title">
-      <a href="<%- config.root %><%- item.path %>" rel="bookmark">
-        <%- item.title || theme.default_post_title || "Untitled" %>
-      </a>
-    </h1>
-    <% if (item.excerpt){ %>
-    <div class="entry-content">
-      <p>
-        <%- item.excerpt %>
-      </p>
+        <% } %>
+        <div class="mdui-card-primary">
+          <div class="mdui-card-primary-title"><a href="<%- config.root %><%- item.path %>" style="color:black; font-size: 22px"><%- item.title || theme.default_post_title || "Untitled" %></a></div>
+          <div class="mdui-card-primary-subtitle" style="padding-top: 5px; font-size: .75rem !important;"><%= item.date.format(config.date_format) %></div>
+          <div class="mdui-card-primary-subtitle" style="padding-top: 2px; font-size: .75rem !important;">
+            <div class="tags-links">
+              <% item.tags.each(function(tag){ %>
+              <a href="<%= config.root %>tags/<%= tag.name %>/" style="color:#000;" rel="tag">
+                <%- tag.name %>
+              </a>
+              <% }); %>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <% } %>
-
-    <p class="posted-on" style="color: #0000007a;">
-    <%= item.date.format(config.date_format) %>
-    </p>
-    <div class="tags-links" style="color: #0000007a;font-size: .75rem !important">
-      <% item.tags.each(function(tag){ %>
-      <a href="<%= config.root %>tags/<%= tag.name %>/" rel="tag" style="color: #0000007a;font-size: .75rem !important">
-        <%- tag.name %>
-      </a>
-      <% }); %>
-    </div>
+    <div class="padding-25"></div>
   </article>
 </div>

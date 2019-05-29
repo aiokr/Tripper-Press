@@ -196,6 +196,7 @@ Links
 --------------------------------------------------------------*/
 a {
     color: #5588a3;
+    text-decoration: none;
 }
 
 /*--------------------------------------------------------------
@@ -260,7 +261,7 @@ Content
 }
 
 .attachment-post-thumbnail {
-    margin: 0 auto 35px;
+    margin: 0 auto 0px;
     transition: opacity 0.7s;
     display: block;
 
@@ -290,37 +291,6 @@ Content
 
     p {
         text-align: center;
-    }
-}
-
-.posted-on {
-    text-align: left;
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang-SC-Regular", "STHeiti", "Helvetica", "Arial", "Verdana", "sans-serif", "Microsoft YaHei";
-    font-size: .75em !important;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    color: #5588a380;
-    margin-top: 0px !important;
-    margin-bottom: 10px !important;
-    margin-left: 0px !important;
-}
-
-.tags-links {
-    text-align: left;
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang-SC-Regular", "STHeiti", "Helvetica", "Arial", "Verdana", "sans-serif", "Microsoft YaHei";
-    font-size: 0.800em;
-    font-style: normal;
-    margin-bottom: 30px;
-    
-
-    a {
-        margin-left: 0px !important;
-        text-decoration: none;
-        color: #5588a380
-    }
-
-    &:hover {
-        color: #5588a380
     }
 }
 
