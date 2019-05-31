@@ -94,3 +94,10 @@ feed:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+symbols_count_time: 
+  symbols: false
+  time: false
+  total_symbols: true
+  total_time: false
+  exclude_codeblock: false
