@@ -12,6 +12,7 @@
                                 <div class="mdui-card-primary-subtitle"
                                     style="padding-top: 5px; font-size: .75rem !important;">
                                     <%= page.date.format(config.date_format) %></div>
+                                <% if (page.tags) { %>
                                 <div class="mdui-card-primary-subtitle"
                                     style="padding-top: 2px; font-size: .75rem !important;">
                                     <div class="tags-links">
@@ -22,6 +23,7 @@
                                         <% }); %>
                                     </div>
                                 </div>
+                                <% } %>
                             </div>
                         </div>
                         <div class="mdui-card-content post-content">
