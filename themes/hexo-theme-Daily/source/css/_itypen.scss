@@ -1,33 +1,33 @@
 .padding-70 {
-    padding-top: 70px;
+  padding-top: 70px;
 }
 
 .padding-15 {
-    padding-top: 15px;
+  padding-top: 15px;
 }
 
 .padding-25 {
-    padding-top: 25px;
+  padding-top: 25px;
 }
 
 p {
-    margin: 1.5em 5px !important;
-    font-size: 16px !important;
-    color: #222831;
-    line-height: 1.8em;
-    letter-spacing: 0.1em;
+  margin: 1.5em 0px !important;
+  font-size: 16px !important;
+  color: #222831;
+  line-height: 1.8em;
+  letter-spacing: 0.1em;
 }
 
 pre {
-    background: #eee;
-    font-family: "Courier 10 Pitch", Courier, monospace;
-    font-size: 15px;
-    font-size: 1.5rem;
-    line-height: 1.6;
-    margin-bottom: 1.6em;
-    max-width: 100%;
-    overflow: auto;
-    padding: 1.6em;
+  background: #eee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em;
 }
 
 h1,
@@ -36,74 +36,104 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 20px 0 10px;
-    padding: 0;
-    font-style: bold !important;
-    color: #5588a3 !important;
-    margin-top: 1.5em !important;
-    text-align: left !important;
-    font-family: sans-serif;
-    font-weight: bold
+  margin: 20px 0 10px;
+  padding: 0;
+  font-style: bold !important;
+  color: #5588a3 !important;
+  margin-top: 1.5em !important;
+  text-align: left !important;
+  font-family: sans-serif;
+  font-weight: bold
 }
 
 h1 {
-    font-size: 22px !important;
-    text-align: left !important;
+  font-size: 22px !important;
+  text-align: left !important;
 }
 
 h2 {
-    font-size: 22px !important;
+  font-size: 22px !important;
 }
 
 h3 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 h4 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 h5 {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 h6 {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 blockquote,
 q {
-    border-left: 2px solid #5588a3;
-    padding: 0 10px;
-    color: #777;
-    quotes: none;
-    margin-left: 1em;
+  border-left: 2px solid #5588a3;
+  padding: 0 10px;
+  color: #777;
+  quotes: none;
 }
 
 strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 em {
-    font-style: italic;
+  font-style: italic;
 }
 
 .upyun-img {
-    max-height: 40px !important;
+  max-height: 40px !important;
 }
 
 .upyun {
-    margin: 20px auto;
+  margin: 20px auto;
 }
 
 @media (min-width: 48.1875rem) {
-    .photograph-header {
-        max-width: 800px;
-        background-size: cover;
-        background-image: url(https://imgur.itypen.com/picgo/20190524175214.svg)
-    }
+  .photograph-header {
+    max-width: 800px;
+    background-size: cover;
+    background-image: url(https://imgur.itypen.com/picgo/20190524175214.svg)
+  }
 }
 
 @media print {
- .noprn{ display:none;}
+  .noprn {
+    display: none;
+  }
+}
+
+.post-content p img {
+  display: block;
+  margin: 0 auto;
+}
+
+.post-nav {
+  height: 150px;
+
+  a {
+    color: white;
+  }
+
+  img {
+    border-radius: 0px !important;
+  }
+
+  background-size: cover;
+  background-position: 50% 50%;
+
+}
+
+.prev {
+  background-image: url(https://imgur.itypen.com/picgo/20190414005145.jpg);
+}
+
+.next {
+  background-image: url(https://imgur.itypen.com/picgo/2912huichang.jpg);
 }

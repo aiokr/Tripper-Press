@@ -1,20 +1,33 @@
 <% if (page.prev || page.next){ %>
-<div class="container noprn" >
-  <ul class="pager">
-    <% if (page.prev){ %>
-      <li class="previous">
-        <a href="<%- config.root %><%- page.prev_link %>">
-          <%- __('next')%> <span class="meta-arraw meta-arraw-right"></span>
-        </a>
-      </li>
-    <% } %>
-    <% if (page.next){ %>
-      <li class="next">
-        <a href="<%- config.root %><%- page.next_link %>">
-          <span class="meta-arraw meta-arraw-left"> </span><%- __('prev')%>
-        </a>
-      </li>
-    <% } %>
-  </ul>
+<div class="padding-70"></div>
+<div class="container noprn">
+  <a href="<%- config.root %><%- page.prev_link %>">
+    <div class="mdui-card mdui-shadow-0 post-nav prev">
+      <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
+        <div class="mdui-card-primary">
+          <div class="mdui-card-primary-title" style="color: white">
+            <%- __('prev')%>
+          </div>
+        </div>
+      </div>
+    </div>
 </div>
+</a>
 <% } %>
+<% if (page.next){ %>
+<div class="padding-25"></div>
+<div class="container noprn">
+  <a href="<%- config.root %><%- page.next_link %>">
+    <div class="mdui-card mdui-shadow-0 post-nav next">
+      <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
+        <div class="mdui-card-primary">
+          <div class="mdui-card-primary-title" style="color: white">
+            <%- __('next')%>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</a>
+<% } %>
+<div class="padding-70"></div>

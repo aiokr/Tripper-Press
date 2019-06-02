@@ -1,56 +1,73 @@
 <div class="content-area">
-  <div class="post">
-    <!-- Post Content -->
-    <div class="container">
-      <article>
-        <!-- Title date & tags -->
-        <div class="post-header">
-          <h1 class="entry-title">
-            <%- page.title || theme.default_post_title || "Untitled" %>
-            <% if (page.subtitle && page.subtitle.length) { %>
-            <p><%- page.subtitle %></p>
-            <% } %>
-          </h1>
-          <p class="posted-on">
-            <%= page.date.format(config.date_format) %>
-          </p>
-          <div class="tags-links">
-            <% if (page.tags) { %>
-            <% page.tags.each(function(tag){ %>
-            <a href="<%= config.root %>tags/<%= tag.name %>/" rel="tag">
-              <%- tag.name %>
-            </a>
-            <% }); %>
-            <% } %>
-          </div>
+    <div class="post">
+        <div class="padding-25"></div>
+        <div class="mdui-container">
+            <div class="mdui-row">
+                <div class="mdui-col-md-2 mdui-col-xs-down"></div>
+                <div class="mdui-col-md-8 mdui-col-xs-12">
+                    <div class="mdui-card mdui-shadow-0">
+                        <div class="mdui-card-primary">
+                            <div class="mdui-card-primary-title">
+                                <%- page.title %>
+                                <div class="mdui-card-primary-subtitle"
+                                    style="padding-top: 5px; font-size: .75rem !important;">
+                                    <%= page.date.format(config.date_format) %></div>
+                                <div class="mdui-card-primary-subtitle"
+                                    style="padding-top: 2px; font-size: .75rem !important;">
+                                    <div class="tags-links">
+                                        <% page.tags.each(function(tag){ %>
+                                        <a href="<%= config.root %>tags/<%= tag.name %>/" style="color:#000;" rel="tag">
+                                            <%- tag.name %>
+                                        </a>
+                                        <% }); %>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdui-card-content post-content">
+                            <%- page.content %>
+                        </div>
+                        <%- partial('_partial/comment') %>
+                    </div>
+                </div>
+                <div class="mdui-col-md-2 mdui-col-xs-down"></div>
+            </div>
+            <div class="padding-70"></div>
+            <div class="mdui-row">
+                <div class="mdui-col-md-2 mdui-col-xs-down"></div>
+                <div class="mdui-col-md-8 mdui-col-xs-12">
+                    <% if (page.prev) { %>
+                    <a href="<%- config.root %><%- page.prev.path %>" rel="prev">
+                        <div class="mdui-card mdui-shadow-0 post-nav prev">
+                            <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
+                                <div class="mdui-card-primary">
+                                    <div class="mdui-card-primary-title" style="color: white">
+                                        <%- __('prev')%>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <% } %>
+                    <% if (page.next) { %>
+                    <div class="padding-25"></div>
+                    <a href="<%- config.root %><%- page.next.path %>" rel="next">
+                        <div class="mdui-card mdui-shadow-0 post-nav next">
+                            <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
+                                <div class="mdui-card-primary">
+                                    <div class="mdui-card-primary-title" style="color: white">
+                                        <%- __('next')%>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <% } %>
+                </div>
+                <div class="mdui-col-md-2 mdui-col-xs-down"></div>
+            </div>
+            <div class="padding-70"></div>
         </div>
-        <!-- Post Main Content -->
-        <div class="mdui-row">
-          <div class="entry-content <%if(config.highlight.line_number){%>has_line_number<%} %>">
-            <%- page.content %>
-          </div>
-        </div>
-      </article>
     </div>
-    <!-- Comments -->
-    <div class="container">
-      <%- partial('_partial/comment') %>
-    </div>
-    <!-- Pre or Next -->
-    <div class="nav-links noprn">
-      <% if (page.prev) { %>
-      <div class="nav-previous">
-        <a href="<%- config.root %><%- page.prev.path %>" rel="prev"><span class="meta-arraw meta-arraw-left"></span>
-          <%- __('prev')%></a>
-      </div>
-      <% } %>
-      <% if (page.next) { %>
-      <div class="nav-next">
-        <a href="<%- config.root %><%- page.next.path %>" rel="prev"><%- __('next')%> <span
-            class="meta-arraw meta-arraw-right"></span></a>
-      </div>
-      <% } %>
-    </div>
-
-  </div>
+</div>
 </div>
