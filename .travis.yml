@@ -11,6 +11,7 @@ script:
   - \cp -f assets/CNAME public/CNAME
   - \cp -f assets/analytics.txt public/analytics.txt
   - \cp -f assets/googlef15886275820ed2b.html public/googlef15886275820ed2b.html
+  - \cp -f assets/sogousiteverification.txt public/sogousiteverification.txt
   - ./deploy.sh > /dev/null
   - npm run clean
 cache:
