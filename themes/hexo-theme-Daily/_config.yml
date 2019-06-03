@@ -21,11 +21,12 @@ highlight:
 nav:
   归档: 
     link: /archives/
+  关于: 
+    link: /about/
   链接:
     link: /links/
   图库:
     link: /photograph/
-  # about: about
   # rss: atom.xml
 
 # hexo-renderer-sass
