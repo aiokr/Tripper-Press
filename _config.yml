@@ -73,6 +73,8 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
+plugin:
+ - hexo-generator-feed
 theme: hexo-theme-Daily
 
 sitemap:
@@ -82,10 +84,10 @@ sitemap:
 feed:
   type: atom
   path: atom.xml
-  limit: 20
+  limit: 0
   hub:
-  content:
-  content_limit: 140
+  content: true
+  content_limit:
   content_limit_delim: ' '
   order_by: -date
   icon: https://imgur.itypen.com/picgo/144.png
