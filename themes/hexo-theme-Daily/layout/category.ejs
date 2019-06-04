@@ -11,18 +11,12 @@
   <div class="container">
     <h1 class="entry-title"><%- title %></h1>
     <div class="main-container">
-      <div class="timeline">
-        <% var last = 0, year, yearArr = []; %>
-        <% page.posts.sort('date', -1).each(function(post) { %>
-        <% year = post.date.year(); %>
-        <% if (yearArr.length != 0){ %>
+        <% var groupObj = _.groupBy(page.posts.toArray(), function(p){return -p.date.format('YYYY')}) %>
+        <% for (var year in groupObj){ %>
+          <ul class="list">
+            <%- partial('_partial/article-archive', {posts: groupObj[year]}) %>
+          </ul>
         <% } %>
-        <% yearArr.push(year); %>
-        <% last = year; %>
-        <p><span><%= date(post.date, 'MM-DD') %></span>
-          <a href="<%- url_for(post.path) %>"><span class="tile-title"><%- post.title %></span></a></p>
-        <% }) %>
-      </div>
       <%- partial('_partial/pagination') %>
     </div>
   </div>
