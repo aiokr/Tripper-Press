@@ -5,7 +5,7 @@ tags:
     - Chrome
     - 浏览器
 date: 2018-09-27 00:00:00
-category: 软件
+categories: 软件
 ---
 
 ![](https://imgur.itypen.com/picgo/chromepic.png)

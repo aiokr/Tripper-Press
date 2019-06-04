@@ -1,6 +1,6 @@
 ---
 title: 你有多久没有好好读过一本书了
-category: 入出
+categories: 入出
 tag: 入出
 date: 2019-04-28 12:00:00
 cover: https://imgur.itypen.com/picgo/20190425212431.jpg

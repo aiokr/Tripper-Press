@@ -7,6 +7,7 @@ tags:
     - 平板电脑
     - Surface
     - 微软
+categories: 硬件
 ---
 ![](/images/surfacego1.jpg)
 

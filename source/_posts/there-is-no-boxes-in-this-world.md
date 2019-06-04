@@ -4,6 +4,7 @@ tags:
     - LGBT
 category: 随手
 title: 这个世界上本没有柜子
+categories: 随笔
 ---
 这个世界上本没有柜⼦，多管闲事的人多了，自然也就有了柜⼦。
 
