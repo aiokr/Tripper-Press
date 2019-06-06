@@ -1,0 +1,20 @@
+<div class="archive content-area">
+  <div class="container">
+    <h1 class="entry-title">友情链接</h1>
+    <% if (site.data.links) { %>
+    <% for (var i in site.data.links) { %>
+    <a href="<%= site.data.links[i].url %>" title="<%= i %>" target="_blank">
+      <div class="mdui-card mdui-shadow-0">
+        <div class="mdui-card-header">
+          <img class="mdui-card-header-avatar" src="<%= site.data.links[i].img %>" />
+          <div class="mdui-card-header-title"><%= i %></div>
+          <div class="mdui-card-header-subtitle"><%- site.data.links[i].descr %></div>
+        </div>
+      </div>
+    </a>
+    <% } %>
+    <% } %>
+    <div class="padding-70"></div>
+    <%- partial('_partial/comment') %>
+  </div>
+</div>
