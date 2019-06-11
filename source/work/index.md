@@ -1,4 +1,4 @@
 ---
 layout: photograph
-title: 相册
+title: 作品
 ---
