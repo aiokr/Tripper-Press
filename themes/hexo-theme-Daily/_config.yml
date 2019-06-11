@@ -25,8 +25,8 @@ nav:
     link: /about/
   链接:
     link: /links/
- 作品:
-    link: /work/
+  图库:
+    link: /photograph/
   # rss: atom.xml
 
 # hexo-renderer-sass
