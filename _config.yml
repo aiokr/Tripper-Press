@@ -75,11 +75,24 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 plugin:
  - hexo-generator-feed
+ - hexo-generator-search
 theme: hexo-theme-Daily
 
 sitemap:
   path: sitemap.xml
   template: ./sitemap_template.xml
+
+symbols_count_time: 
+  symbols: false
+  time: false
+  total_symbols: true
+  total_time: false
+  exclude_codeblock: false
+
+search:
+  path: search.xml
+  field: post
+  content: true
 
 feed:
   type: atom
@@ -96,10 +109,3 @@ feed:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
-
-symbols_count_time: 
-  symbols: false
-  time: false
-  total_symbols: true
-  total_time: false
-  exclude_codeblock: false
