@@ -1,6 +1,6 @@
 <div class="archive content-area">
   <div class="container">
-    <h1 class="entry-title">友情链接</h1>
+    <h1 class="entry-title"><%= page.title %></h1>
     <% if (site.data.links) { %>
     <% for (var i in site.data.links) { %>
     <a href="<%= site.data.links[i].url %>" title="<%= i %>" target="_blank">

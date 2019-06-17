@@ -19,14 +19,24 @@ highlight:
 
 # nav #
 nav:
+  首页: 
+    link: /
+    icon: home
+  搜索: 
+    link: /search/
+    icon: search
   归档: 
     link: /archives/
+    icon: attachment
   关于: 
     link: /about/
-  链接:
+    icon: person
+  友链:
     link: /links/
+    icon: link
   作品:
     link: /work/
+    icon: insert_photo
   # rss: atom.xml
 
 # hexo-renderer-sass
@@ -50,7 +60,7 @@ social:
 #   content: 内容
 widget:
   title: 关于本站
-  content: <ul><li><a href="https://github.com/GallenHu/hexo-theme-Daily/wiki">如何自定义这里的内容(配置教程)?</a></li></ul>
+  content: 寻找是唯一的解药
 
 footer: Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> with Theme <a href="https://github.com/GallenHu/hexo-theme-Daily" target="_blank">Daily</a>
 

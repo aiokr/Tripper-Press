@@ -118,7 +118,6 @@ img {
     /* Make sure images are scaled correctly. */
     max-width: 100%;
     /* Adhere to container width. */
-    border-radius: 5px;
 }
 
 figure {
@@ -233,11 +232,6 @@ Content
 .error404 .content-area,
 .page .content-area {
     padding-top: 120px;
-}
-
-.even {
-    background: #ffffff;
-    position: relative;
 }
 
 .container {
@@ -359,9 +353,6 @@ Footer
     font-size: 0.750em;
     z-index: 2;
     position: relative;
-    background: #fff;
-    border-top: 1px solid #dcdcdc;
-    border-bottom: 1px solid #dcdcdc;
     padding-top: 50px;
     padding-bottom: 40px;
     text-align: center;
@@ -435,7 +426,6 @@ Footer
     font-size: 0.750em;
     padding-bottom: 16px;
     padding-top: 16px;
-    opacity: 0.4;
 
     .split {
         margin: 0 2px;
@@ -443,6 +433,6 @@ Footer
 
     a {
         text-decoration: none;
-        color: #666666;
+        color: #e5e5e5;
     }
 }

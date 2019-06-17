@@ -1,12 +1,16 @@
-<div class="site-content home">
-  <main class="content-area">
-    <div class="padding-25 noprn"></div>
-    <% page.posts.each(function(item, itemIndex){ %>
-        <div class="even">
-          <%- partial('_partial/article-index', {item: item}) %>
-        </div> 
-    <% }); %>
 
-    <%- partial('_partial/pagination') %>
+  <main class="content-area">
+    <div class="mdui-container">
+      <div class="mdui-row">
+        <div class="mdui-col-md-2 mdui-col-xs-down"></div>
+        <div class="mdui-col-md-8 mdui-col-xs-12">
+          <div class="padding-25 noprn"></div>
+          <% page.posts.each(function(item, itemIndex){ %>
+          <%- partial('_partial/article-index', {item: item}) %>
+          <% }); %>
+          <%- partial('_partial/pagination') %>
+        </div>
+        <div class="mdui-col-md-2 mdui-col-xs-down"></div>
+      </div>
+    </div>
   </main>
-</div>
