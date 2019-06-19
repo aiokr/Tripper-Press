@@ -8,7 +8,7 @@ var isFullUrl = function(str) {
 <div class="padding-15"></div>
 <div class="container">
   <article class="post">
-    <div class="mdui-card mdui-shadow-0 mdui-hoverable">
+    <div class="mdui-card mdui-shadow-1">
       <div class="mdui-card-media">
         <% if (item.cover) { %>
         <a href="<%- config.root %><%- item.path %>">
@@ -16,12 +16,12 @@ var isFullUrl = function(str) {
         </a>
         <% } %>
         <div class="mdui-card-primary">
-          <div class="mdui-card-primary-title"><a href="<%- config.root %><%- item.path %>" style="color:black; font-size: 22px;text-decoration: none;"><%- item.title || theme.default_post_title || "Untitled" %></a></div>
-          <div class="mdui-card-primary-subtitle" style="padding-top: 5px; font-size: .75rem !important;"><%= item.date.format(config.date_format) %></div>
+          <div class="mdui-card-primary-title"><a href="<%- config.root %><%- item.path %>" style="color:#222831; font-size: 22px;text-decoration: none;"><%- item.title || theme.default_post_title || "Untitled" %></a></div>
+          <div class="mdui-card-primary-subtitle" style="padding-top: 5px; font-size: .75rem !important; color:#222831"; ><%= item.date.format(config.date_format) %></div>
           <div class="mdui-card-primary-subtitle" style="padding-top: 2px; font-size: .75rem !important;">
             <div class="tags-links">
               <% item.tags.each(function(tag){ %>
-              <a href="<%= config.root %>tags/<%= tag.name %>/" style="color:#000;" rel="tag">
+              <a href="<%= config.root %>tags/<%= tag.name %>/" style="color:#222831;" rel="tag">
                 <%- tag.name %>
               </a>
               <% }); %>
