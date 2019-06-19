@@ -90,7 +90,14 @@
             s.parentNode.insertBefore(mta, s);
         })();
     </script>
-
+    <% if(theme.comment.use == 'gitment') { %>
+    <link rel="stylesheet" href="/css/gitment.css">
+    <script src="/js/gitment.js"></script>
+    <script src="/js/gitment-theme.js"></script>
+    <% } else if ( theme.comment.use == 'valine') { %>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <% } %>
 
     <!----------------------------
   https://github.com/GallenHu/hexo-theme-Daily

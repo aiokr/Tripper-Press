@@ -72,11 +72,14 @@ widget:
 footer: Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> with Theme <a href="https://github.com/GallenHu/hexo-theme-Daily" target="_blank">Daily</a>
 
 comment:
-  use: gitment
+  use: valine
   gitment:
     owner: aiokr
     repo: iTypen-comment
     client_id: 53d9f4220507e8aa513b
     client_secret: 43e42209f73188b31e4ae88a7882b1cbc51fc764
+  valine:
+    appid: 0kSi0u9r40XN3MswJG34Sj6K-gzGzoHsz
+    appkey: 0etVoCn0nhOS5RSYOenq0sl6
 
 random_pics: 24
