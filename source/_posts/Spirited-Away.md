@@ -1,12 +1,12 @@
----
 title: 千与千寻
-date: 2019-06-23 00:36:40
-tags: 
-- 电影
-- 宫崎骏
-- 观后感
-categories: 随手
-cover: https://imgur.itypen.com/picgo/20190623003809.png
+tags:
+  - 电影
+  - 宫崎骏
+  - 观后感
+categories:
+  - 随手
+cover: 'https://imgur.itypen.com/picgo/20190623003809.png'
+date: 2019-06-23 00:36:00
 ---
 
 > 不要吃太胖、不要忘记自己的名字、不要回头。
@@ -50,3 +50,9 @@ cover: https://imgur.itypen.com/picgo/20190623003809.png
 不回头，不要留恋于过去，勇敢地向前走。
 
 ![海报](https://imgur.itypen.com/picgo/20190623000220.png)
+
+# 千与千寻的人物
+
+## 千寻父母
+
+千寻的父母是日本泡沫经济破裂后社会上大多数人的缩影，
