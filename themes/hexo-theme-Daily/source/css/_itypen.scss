@@ -163,3 +163,9 @@ footer {
   height: 250px;
   width: auto;
 }
+
+.drawer-spacer {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}

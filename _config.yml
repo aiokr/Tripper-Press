@@ -103,8 +103,8 @@ feed:
   content_limit:
   content_limit_delim: ' '
   order_by: -date
-  icon: https://imgur.itypen.com/picgo/144.png
-
+  icon: https://imgur.itypen.com/picgo/20190625163454.jpg
+  
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
