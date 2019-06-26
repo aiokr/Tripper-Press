@@ -17,9 +17,9 @@ cover:
 
 存在即合理本身是一种翻译上的误解。
 
-一般认为的存在即合理的出处是黑格尔的《法哲学原理》一书，当然这本书我没有看过，这条信息是通过 Google 搜索来的。知乎日报上的一篇文章给出的信息是：
+一般认为的存在即合理的出处是黑格尔的《法哲学原理》一书，当然这本书我没有看过，这条信息是通过 Google 搜索来的。[知乎日报上的一篇文章](http://daily.zhihu.com/story/1955197)给出的信息是：
 
-存在即合理这句话对应的那句完整的德语原文是：
+> 存在即合理这句话对应的那句完整的德语原文是：
 > Was vernünftig ist, das ist wirklich; und was wirklich ist, das ist vernünftig.
 (Hegel, Grundlinien der Philosophie des Rechts, Frankfurt am Main 1972, S. 11)
 参见德文维基（我不懂德语）Grundlinien der Philosophie des Rechts Wikipedia
@@ -32,7 +32,9 @@ cover:
 > 凡是合乎理性的东西都是现实的；凡是现实的东西都是合乎理性的。
 （黑格尔《法哲学原理》序）
 
-也就是说通常人们所说的「存在即合理」中的「合理」是指合乎理性、合乎实际、符合客观自然规律.
+
+
+也就是说通常人们所说的「存在即合理」中的「合理」是指合乎理性、合乎实际、符合客观自然规律。
 
 ## 何为「合理」
 
