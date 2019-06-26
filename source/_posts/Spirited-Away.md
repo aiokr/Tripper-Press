@@ -1,3 +1,4 @@
+---
 title: 千与千寻
 tags:
   - 电影
@@ -5,7 +6,7 @@ tags:
   - 观后感
 categories:
   - 随手
-cover: 'https://imgur.itypen.com/picgo/20190623003809.png'
+cover: https://imgur.itypen.com/picgo/20190623003809.png_itp1
 date: 2019-06-23 00:36:00
 ---
 

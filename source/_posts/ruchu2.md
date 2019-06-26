@@ -3,7 +3,7 @@ title: 世界总在不断地新陈代谢
 categories: 入出
 tag: 入出
 date: 2019-05-05 12:00:00
-cover: https://imgur.itypen.com/picgo/20190502204745.jpg
+cover: https://imgur.itypen.com/picgo/20190502204745.jpg_itp1
 ---
 
 ![封面](https://imgur.itypen.com/picgo/20190502204745.jpg)
