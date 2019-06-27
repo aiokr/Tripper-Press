@@ -40,8 +40,8 @@ nav:
     link: /links/
     icon: link
     color: '#2196F3'
-  作品:
-    link: /work/
+  图库:
+    link: /gallery/
     icon: insert_photo
     color: '#2196F3'
   # rss: atom.xml
