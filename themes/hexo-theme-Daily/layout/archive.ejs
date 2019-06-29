@@ -10,14 +10,23 @@
 <div class="archive content-area">
   <div class="container">
     <h1 class="entry-title"><%- title %></h1>
+    <div>
+      <%- list_categories({
+            show_count: false,
+            amount: 5,
+            class: '',
+            style: '',
+            separator: ""
+        }) %>
+      </div>
     <div class="main-container">
-        <% var groupObj = _.groupBy(page.posts.toArray(), function(p){return -p.date.format('YYYY')}) %>
-        <% for (var year in groupObj){ %>
-          <h2 class="year"><%- -year %></h2>
-          <ul class="list">
-            <%- partial('_partial/article-archive', {posts: groupObj[year]}) %>
-          </ul>
-        <% } %>
+      <% var groupObj = _.groupBy(page.posts.toArray(), function(p){return -p.date.format('YYYY')}) %>
+      <% for (var year in groupObj){ %>
+      <h2 class="year"><%- -year %></h2>
+      <ul class="list">
+        <%- partial('_partial/article-archive', {posts: groupObj[year]}) %>
+      </ul>
+      <% } %>
       <%- partial('_partial/pagination') %>
     </div>
   </div>

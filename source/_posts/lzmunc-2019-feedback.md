@@ -5,7 +5,7 @@ tags:
   - 随笔
   - 模联
 categories:
-  - 模联、
+  - 模联
 date: 2019-06-11 12:09:00
 cover:
 ---

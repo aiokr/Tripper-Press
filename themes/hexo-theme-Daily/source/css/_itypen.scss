@@ -177,16 +177,30 @@ footer {
 
 .itp-toc {
   padding: 24px;
+
   span {
     color: #222831;
   }
-  li, ol {
+
+  li,
+  ol {
     list-style-type: none;
   }
+
   li {
     padding: 6px 0 6px 0;
+
     ol {
       padding: 3px 0 3px 0;
     }
   }
+}
+
+.category-link {
+  text-decoration: none;
+  padding: 1px 9px 1px 9px;
+  margin: 9px 1px;
+  line-height: 40px;
+  white-space: nowrap;
+  transition: .6s;
 }
