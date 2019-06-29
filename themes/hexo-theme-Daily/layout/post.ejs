@@ -30,52 +30,70 @@
                             <%- page.content %>
                         </div>
                         <%- partial('_partial/comment') %>
+                        <div>
+                            <%
+                                if (theme.random_pics !== false && theme.random_pics) {
+                                  var randomPicPrev = Math.floor(Math.random() * theme.random_pics + 1);
+                                  var randomPicNext = Math.floor(Math.random() * theme.random_pics + 1);
+                                }
+                              %>
+                            <% if (page.prev) { %>
+                            <a href="<%- config.root %><%- page.prev.path %>" rel="prev">
+                                <div class="mdui-card mdui-shadow-0 post-nav"
+                                    style="background-image: url(<%= 'https://imgur.itypen.com/random_img/picHD_' + randomPicPrev + '.png_itp' %>);">
+                                    <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
+                                        <div class="mdui-card-primary">
+                                            <div class="mdui-card-primary-title" style="color: white">
+                                                <%- __('prev')%>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <% } %>
+                            <% if (page.next) { %>
+                            <div class="padding-25"></div>
+                            <a href="<%- config.root %><%- page.next.path %>" rel="next">
+                                <div class="mdui-card mdui-shadow-0 post-nav"
+                                    style="background-image: url(<%= 'https://imgur.itypen.com/random_img/picHD_' + randomPicNext + '.png_itp' %>);">
+                                    <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
+                                        <div class="mdui-card-primary">
+                                            <div class="mdui-card-primary-title" style="color: white">
+                                                <%- __('next')%>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="mdui-col-md-2 mdui-col-xs-down"></div>
-            </div>
-            <div class="padding-70"></div>
-            <div class="mdui-row">
-                <div class="mdui-col-md-2 mdui-col-xs-down"></div>
-                <div class="mdui-col-md-8 mdui-col-xs-12">
-                    <%
-                        if (theme.random_pics !== false && theme.random_pics) {
-                          var randomPicPrev = Math.floor(Math.random() * theme.random_pics + 1);
-                          var randomPicNext = Math.floor(Math.random() * theme.random_pics + 1);
-                        }
-                      %>
-                    <% if (page.prev) { %>
-                    <a href="<%- config.root %><%- page.prev.path %>" rel="prev">
-                        <div class="mdui-card mdui-shadow-0 post-nav" style="background-image: url(<%= 'https://imgur.itypen.com/random_img/picHD_' + randomPicPrev + '.png_itp' %>);">
-                            <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
-                                <div class="mdui-card-primary">
-                                    <div class="mdui-card-primary-title" style="color: white">
-                                        <%- __('prev')%>
-                                    </div>
-                                </div>
+                <div class="mdui-col-md-2 mdui-hidden-sm-down">
+                    <div style="position: fixed;">
+                        <% var toc = toc(page.content, {
+                            class: 'itp-toc',
+                            list_number: false,
+                        }) %>
+                        <% if(toc.length > 0) { %>
+                        <div class="mdui-card mdui-shadow-0">
+                            <div>
+                                <%-(toc) %>
                             </div>
                         </div>
-                    </a>
-                    <% } %>
-                    <% if (page.next) { %>
-                    <div class="padding-25"></div>
-                    <a href="<%- config.root %><%- page.next.path %>" rel="next">
-                        <div class="mdui-card mdui-shadow-0 post-nav" style="background-image: url(<%= 'https://imgur.itypen.com/random_img/picHD_' + randomPicNext + '.png_itp' %>);">
-                            <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
-                                <div class="mdui-card-primary">
-                                    <div class="mdui-card-primary-title" style="color: white">
-                                        <%- __('next')%>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <% } %>
+                        <% } %>
+                    </div>
                 </div>
-                <div class="mdui-col-md-2 mdui-col-xs-down"></div>
+                <div class="padding-70"></div>
+                <div class="mdui-row">
+                    <div class="mdui-col-md-2 mdui-col-xs-down"></div>
+                    <div class="mdui-col-md-8 mdui-col-xs-12">
+
+                        <% } %>
+                    </div>
+                    <div class="mdui-col-md-2 mdui-col-xs-down"></div>
+                </div>
+                <div class="padding-70"></div>
             </div>
-            <div class="padding-70"></div>
         </div>
     </div>
-</div>
 </div>

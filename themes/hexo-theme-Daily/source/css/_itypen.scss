@@ -20,6 +20,7 @@ p {
   color: #222831;
   line-height: 1.8em;
   letter-spacing: 0.1em;
+
   img {
     border-radius: 5px;
   }
@@ -155,7 +156,7 @@ em {
 footer {
   background-color: #424242;
   width: 100% !important;
-  
+
   h1 {
     color: #eee;
   }
@@ -172,4 +173,20 @@ footer {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+}
+
+.itp-toc {
+  padding: 24px;
+  span {
+    color: #222831;
+  }
+  li, ol {
+    list-style-type: none;
+  }
+  li {
+    padding: 6px 0 6px 0;
+    ol {
+      padding: 3px 0 3px 0;
+    }
+  }
 }
