@@ -69,7 +69,7 @@ widget:
   title: 关于本站
   content: 寻找是唯一的解药
 
-footer: Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> with Theme <a href="https://github.com/GallenHu/hexo-theme-Daily" target="_blank">Daily</a>
+footer: Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
 
 comment:
   use: valine
