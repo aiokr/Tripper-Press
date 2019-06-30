@@ -1,48 +1,57 @@
 <!-- scripts -->
 <%- js('js/app.js') %>
 <%- js('js/mdui.min.js') %>
+<script>(function () {
+    var WebP = new Image(); WebP.onload = WebP.onerror = function () {
+      if (WebP.height != 2) {
+        var sc = document.createElement('script'); sc.type = 'text/javascript'; sc.async = true;
+        var s = document.getElementsByTagName('script')[0]; sc.src = 'js/webpjs-0.0.2.min.js'; s.parentNode.insertBefore(sc, s);
+      }
+    };
+    WebP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+  })();</script>
 <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <%if (config.disqus_shortname){ %>
 <script>
   var disqus_shortname = '<%= config.disqus_shortname %>';
 
-  <% if (page.permalink){ %>
+  <% if (page.permalink) { %>
   var disqus_url = '<%= page.permalink %>';
   <% } %>
 
-  (function(){
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/<% if (page.comments) { %>embed.js<% } else { %>count.js<% } %>';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
+    (function () {
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/<% if (page.comments) { %>embed.js<% } else { %>count.js<% } %>';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
 </script>
 <% } else if (config.duoshuo_shortname) { %>
-  <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-    <script type="text/javascript">
-    var duoshuoQuery = {short_name:'<%= config.duoshuo_shortname %>'};
-      (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0]
-         || document.getElementsByTagName('body')[0]).appendChild(ds);
-      })();
-      </script>
-    <!-- 多说公共JS代码 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+  var duoshuoQuery = { short_name: '<%= config.duoshuo_shortname %>' };
+  (function () {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript'; ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+<!-- 多说公共JS代码 end -->
 <% } %>
 <%if (config.baidu_analytics) { %>
 <!-- baidu_analytics start -->
 <script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?<%= config.baidu_analytics %>";
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(hm, s);
-})();
+  var _hmt = _hmt || [];
+  (function () {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?<%= config.baidu_analytics %>";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
 </script>
 <!-- baidu_analytics end -->
 <% } %>
