@@ -204,3 +204,24 @@ footer {
   white-space: nowrap;
   transition: .6s;
 }
+
+.mdui-textfield {
+  color: #2196f3 !important;
+  border-bottom-color: #2196f3 !important;
+}
+
+.mdui-textfield-focus .mdui-textfield-label {
+  color: #2196f3 !important;
+}
+
+.mdui-textfield-focus .mdui-textfield-input {
+  color: #2196f3 !important;
+  border-bottom-color: #2196f3 !important;
+  box-shadow: 0 1px 0 0 #2196f3 !important;
+}
+
+.mdui-textfield-input:hover {
+  border-bottom-color: #2196f3 !important;
+  box-shadow: 0 1px 0 0 #2196f3 !important;
+  -webkit-box-shadow: 0 1px 0 0 #2196f3 !important;
+}
