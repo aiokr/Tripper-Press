@@ -1,7 +1,7 @@
 ---
 title: 手机拍照与算法介入
 date: 2019-04-24 00:00:00
-cover: https://imgur.itypen.com/picgo/20190425232808.jpg_itp1
+cover: https://imgur.itypen.com/picgo/20190425232808.jpg_itp
 tags:
 - 摄影
 - 人工智能

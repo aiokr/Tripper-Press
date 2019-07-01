@@ -6,7 +6,7 @@ tags:
   - 观后感
 categories:
   - 随笔
-cover: https://imgur.itypen.com/picgo/20190623003809.png_itp1
+cover: https://imgur.itypen.com/picgo/20190623003809.png_itp
 date: 2019-06-23 00:36:00
 ---
 
