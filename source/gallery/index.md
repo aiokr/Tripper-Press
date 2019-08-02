@@ -1,4 +1,4 @@
 ---
-layout: gallery
-title: 图库
+title: Gallery(beta)
+layout: photo_index
 ---
