@@ -1,0 +1,190 @@
+.markdown-here-wrapper {
+  font-size: 16px;
+  line-height: 1.8em;
+  letter-spacing: 0.1em;
+  color: #222831;
+}
+
+/*
+解决Markdown Here 无法在公众号设置全局样式的问题
+aiokr learn from https://www.bpteach.com/knowledge-base/1052536/
+*/
+
+p {
+  margin: 1.5em 5px !important;
+  font-size: 14px !important;
+  color: #222831;
+  line-height: 1.8em;
+  letter-spacing: 0.1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-style: bold !important;
+  color: #222831 !important;
+  text-align: left !important;
+  margin: 20px 5px 20px 5px !important;
+  padding: 0 15px 0 15px !important;
+  border-left: 5px solid #03A9F4;
+}
+
+h1 {
+  font-size: 24px !important;
+}
+
+h2 {
+  font-size: 20px !important;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+pre, code {
+  font-size: 14px;
+  font-family: Roboto, 'Courier New', Consolas, Inconsolata, Courier, monospace;
+  margin: auto 5px;
+}
+
+code {
+  white-space: pre-wrap;
+  border-radius: 2px;
+  display: inline;
+}
+
+pre {
+  font-size: 15px;
+  line-height: 1.4em;
+  display: block !important;
+}
+
+pre code {
+  white-space: pre;
+  overflow: auto;
+  border-radius: 3px;
+  padding: 1px 1px;
+  display: block !important;
+}
+
+strong, b{
+  font-style: bold !important;
+  color: #FF6E40;
+}
+
+em, i {
+  color: #03A9F4;
+}
+
+hr {
+  border: 1px solid #FF6E40;
+  margin: 1.5em auto;
+}
+
+table, pre, dl, blockquote, q, ul, ol {
+  margin: 10px 5px;
+}
+
+ul, ol {
+  padding-left: 15px;
+}
+
+li {
+  margin: 10px;
+}
+
+li p {
+  margin: 10px 0 !important;
+}
+
+ul ul, ul ol, ol ul, ol ol {
+  margin: 0;
+  padding-left: 10px;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 1em;
+  font-weight: bold;
+  font-style: italic;
+}
+
+dl dd {
+  margin: 0 0 10px;
+  padding: 0 10px;
+}
+
+blockquote, q {
+  border-left: 5px solid #FF6E40;
+  padding: 0 10px;
+  quotes: none;
+  margin-left: 1em;
+  background: #f5f5f5;
+}
+
+blockquote::before, blockquote::after, q::before, q::after {
+  content: none;
+}
+
+table {
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 1em;
+  font: inherit;
+  border: 0;
+  margin: 0 auto;
+}
+
+table strong {
+  color: #fff;
+}
+
+tbody {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+table tr {
+  border: 0;
+  border-top: 1px solid #F5F5F5;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+table tr:nth-child(2n) {
+  background-color: #F8F8F8;
+}
+
+table tr th, table tr td {
+  font-size: 16px;
+  border: 1px solid #F5F5F5;
+  margin: 0;
+  padding: 5px 10px;
+}
+
+table tr th {
+  font-weight: bold;
+  color: #fff;
+  border: 0px solid #03A9F4;
+  background-color: #03A9F4;
+}
