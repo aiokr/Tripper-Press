@@ -97,4 +97,4 @@ cover:
 工业是柳州之本，宜居是柳州的未来。柳州既不能抛弃工业，也不能放弃宜居。近年来，柳州先后建设智能交通产业园、智能制造产业园，与此同时，中渡古镇和香桥国家森林公园的建设，环江景观大道的开通，北部生态新区的规划，使得柳州在发展经济的同时，保障了城市的宜居。
 
 ![柳州.jpg](https://cdn.nlark.com/yuque/0/2019/jpeg/244524/1570975753698-90589f9b-92d2-4d56-96f6-0bfbca1b5fc5.jpeg#align=left&display=inline&height=1080&name=%E6%9F%B3%E5%B7%9E.jpg&originHeight=1080&originWidth=1920&search=&size=1553549&status=done&width=1920)
-柳州
+柳州全景
