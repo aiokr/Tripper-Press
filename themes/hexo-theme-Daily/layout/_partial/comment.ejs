@@ -20,7 +20,7 @@
       el: '#vcomments',
       appId: '<%= theme.comment.valine.appid %>',
       appKey: '<%= theme.comment.valine.appkey %>',
-      path: '<%= page.date %>',
+      path: '<%- url_for(path) %>',
       avatar: 'identicon'
     })
   </script>
