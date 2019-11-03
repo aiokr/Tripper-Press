@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
   font-style: bold !important;
   color: #222831 !important;
   text-align: left !important;
-  margin: 20px 5px 20px 5px !important;
+  margin: 20px 0px 20px 0px !important;
   padding: 0 15px 0 15px !important;
   border-left: 5px solid #03A9F4;
 }
@@ -172,7 +172,7 @@ table tr {
 }
 
 table tr:nth-child(2n) {
-  background-color: #F8F8F8;
+  background-color: #F5F5F5;
 }
 
 table tr th, table tr td {
