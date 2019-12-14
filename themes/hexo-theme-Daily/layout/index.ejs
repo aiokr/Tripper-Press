@@ -1,34 +1,58 @@
-<main class="content-area">
+<!-- 首屏 -->
+<div class="main-section mdui-color-theme">
+  <div class="mdui-container main-container">
+    <h2>
+      iTypen <span class="mdui-text-color-theme-accent">C</span>rush <span class="mdui-text-color-theme-accent">P</span>ress
+    </h2>
+
+    <h4>发挥文书工作的力量</h4>
+
+    <div class="main-btn-wrapper">
+      <a class="mdui-btn mdui-ripple mdui-ripple-white mdui-m-r-2">立即了解</a>
+      <a class="mdui-btn mdui-ripple mdui-ripple-white mdui-m-r-2">查看案例</a>
+    </div>
+  </div>
+</div>
+<!-- 第二屏，优势 -->
+<div class="adv-section">
   <div class="mdui-container">
-    <div class="mdui-row">
-      <div class="mdui-col-md-2 mdui-col-xs-down"></div>
-      <div class="mdui-col-md-8 mdui-col-xs-12">
-        <!--index header-->
-        <div class="mdui-row">
-          <div class="mdui-text-center" style="color: #222831; font-size: 28px;">
-            <%= config.title %>
+    <div class="mdui-row-md-3 mdui-row-sm-2 mdui-row-xs-1">
+      <div class="mdui-col">
+        <div class="adv-item">
+          <i class="mdui-icon iconfont icon-color mdui-text-color-theme adv-item-icon"></i>
+          <div class="adv-item-detail">
+            <div class="adv-item-detail-title">杂志化版面</div>
+            <div class="adv-item-detail-desc">封面设计和版面设计向杂志看齐。</div>
           </div>
-          <div class="padding-15"></div>
-          <div class="mdui-text-center" style="color:#222831">
-            <%- config.subtitle %>
+        </div>
+      </div>
+      <div class="mdui-col">
+        <div class="adv-item">
+          <i class="mdui-icon iconfont icon-responsive mdui-text-color-theme adv-item-icon"></i>
+          <div class="adv-item-detail">
+            <div class="adv-item-detail-title">多格式输出</div>
+            <div class="adv-item-detail-desc">同时交付 PDF 和图片格式，方便您在各种社交网络发布。</div>
           </div>
-          <div class="padding-25">
-            <div class="mdui-text-center">
-              <% for (var i in theme.nav) { %>
-              <a href="<%- theme.nav[i].link %>" class="mdui-ripple" style="color:#2196F3; padding: 10px;">
-                <%- i %>
-              </a>
-              <% } %>
+        </div>
+      </div>
+      <div class="mdui-col">
+        <div class="adv-item">
+          <i class="mdui-icon iconfont icon-responsive mdui-text-color-theme adv-item-icon"></i>
+          <div class="adv-item-detail">
+            <div class="adv-item-detail-title">微信公众号推文</div>
+            <div class="adv-item-detail-desc">移动优先，从小屏逐步扩展到大屏，最终实现所有屏幕适配。</div>
+          </div>
+        </div>
+      </div>
+      <div class="mdui-col">
+          <div class="adv-item">
+            <i class="mdui-icon iconfont icon-responsive mdui-text-color-theme adv-item-icon"></i>
+            <div class="adv-item-detail">
+              <div class="adv-item-detail-title">提供发布页面</div>
+              <div class="adv-item-detail-desc">我们根据您的需要，将在文件中心上传您的文稿以供读者浏览。</div>
             </div>
           </div>
         </div>
-        <div class="padding-25 noprn"></div>
-        <% page.posts.each(function(item, itemIndex){ %>
-        <%- partial('_partial/article-index', {item: item}) %>
-        <% }); %>
-        <%- partial('_partial/pagination') %>
-      </div>
-      <div class="mdui-col-md-2 mdui-col-xs-down"></div>
     </div>
   </div>
-</main>
+</div>
