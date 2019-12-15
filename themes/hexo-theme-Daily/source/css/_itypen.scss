@@ -10,8 +10,29 @@
   padding-top: 25px;
 }
 
+@font-face {
+  font-family: 'iconfont';  /* project id 1564088 */
+  src: url('//at.alicdn.com/t/font_1564088_naznbzx1ry.eot');
+  src: url('//at.alicdn.com/t/font_1564088_naznbzx1ry.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1564088_naznbzx1ry.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1564088_naznbzx1ry.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1564088_naznbzx1ry.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1564088_naznbzx1ry.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   font-display: swap;
+  font-family: source-han-serif-sc, serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 p {
@@ -187,7 +208,7 @@ footer {
 
 /* ======================================= 首屏 */
 .main-section {
-  background: url(../images/section-background.svg) 50% 17vh no-repeat;
+  background: url(../images/section-background.svg) 50% 10vh no-repeat;
 }
 .mdui-theme-layout-dark .main-section {
   background-color: #444444 !important;
@@ -197,62 +218,23 @@ footer {
   padding-top: 56px;
 }
 .main-container h2 {
-  color: #fff !important;
-  padding-top: 48px;
+  color: #f1efe0 !important;
+  padding-top: px;
   margin: 0 0 24px 0;
-  font-size: 28px;
-  font-weight: 400;
+  font-size: 32px;
+  font-weight: 600;
   text-align: center !important;
 }
 .main-container h4 {
-  color: #fff !important;
-  font-weight: 400;
-  font-size: 22px;
+  color: #f1efe0 !important;
+  font-weight: 600;
+  font-size: 24px;
 
   text-align: center !important;
 }
 .main-btn-wrapper {
   margin: 60px 0 20px 0;
-}
-.main-btn {
-  border: 1px solid rgba(255, 255, 255, .6);
-  color: rgba(255, 255, 255, .6);
-  border-radius: 500px;
-  height: 36px;
-  line-height: 36px;
-  width: 112px;
-  font-size: 14px;
-}
-.main-btn:hover {
-  border: 1px solid rgba(255, 255, 255, 1);
-  color: rgba(255, 255, 255, .9);
-}
-
-.main-meta-wrapper {
-  line-height: 40px;
-  height: 40px;
-}
-
-.main-meta-item {
-  position: relative;
-  margin: 0 3px;
-  line-height: 36px;
-  display: inline-block;
-}
-
-.main-meta-item i {
-  float: left;
-  margin-right: 4px;
-}
-
-.main-meta-btn {
-  color: inherit;
-  text-decoration: none;
-}
-
-.main-meta-btn:hover {
-  text-decoration: underline;
-}
+} 
 
 /* 响应式 */
 @media (min-width: 600px) {
@@ -322,6 +304,8 @@ footer {
 }
 .adv-item-icon {
   float: left;
+  font-size: 28px;
+  color: #174c81;
 }
 .adv-item-icon:before {
   font-size: 24px;
@@ -383,4 +367,80 @@ footer {
   .adv-item-detail-desc {
     padding-top: 16px;
   }
+}
+
+/* ==================================== 第四屏 */
+.case-section {
+  margin: 60px 0 36px 0;
+}
+.case-header {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: .02em;
+  text-align: center;
+  padding-bottom: 24px;
+}
+.case-item {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 16px 0;
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: background-color .3s cubic-bezier(.4,0,.2,1);
+  transition: background-color .3s cubic-bezier(.4,0,.2,1);
+}
+.case-item:hover {
+  background-color: rgba(0,0,0,.08);
+}
+.case-item-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  float: left;
+}
+.case-item-detail {
+  padding-left: 46px;
+}
+.case-item-detail-title {
+  height: 24px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.case-item-detail-desc {
+  padding-top: 8px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@media (min-width: 600px) {
+  .case-section {
+    margin: 72px 0 44px 0;
+  }
+  .case-header {
+    font-size: 20px;
+  }
+  .case-item {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+@media (min-width: 1024px) {
+  .case-section {
+    margin: 92px 0 60px 0;
+  }
+  .case-item {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+.cp-theme-blue .mdui-color-theme {
+  color: #f1efe0 !important;
+  background-color: #174c81 !important
+}
+
+.cp-theme-accent-red {
+  color: rgba(0, 0, 0, .87) !important;
+  background-color: #ffe57f !important
 }
