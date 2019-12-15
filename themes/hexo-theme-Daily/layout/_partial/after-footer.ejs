@@ -3,7 +3,7 @@
 <%- js('js/app.js') %>
 <%- js('js/mdui.min.js') %>
 <%- js('js/gallery.js') %>
-<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!--<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>-->
 <%if (config.disqus_shortname){ %>
 <script>
   var disqus_shortname = '<%= config.disqus_shortname %>';
@@ -21,19 +21,6 @@
     })();
 </script>
 <% } else if (config.duoshuo_shortname) { %>
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-  var duoshuoQuery = { short_name: '<%= config.duoshuo_shortname %>' };
-  (function () {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript'; ds.async = true;
-    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
-</script>
-<!-- 多说公共JS代码 end -->
 <% } %>
 <%if (config.baidu_analytics) { %>
 <!-- baidu_analytics start -->
