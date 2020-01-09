@@ -51,17 +51,24 @@
 <script src="/disqusjs/disqus.js"></script>
 <div id="disqus_thread"></div>
 <script>
-  var dsqjs = new DisqusJS({
-    shortname: 'itpnblog',
-    siteName: 'aiokrblog',
-    identifier: 'document.location.origin',
-    url: 'document.location.origin',
-    title: 'document.title',
-    api: 'https://blog.itypen.com/',
-    apikey: 'ACUkOYE4R9hPhjn287JNMXWzlvdAGpIKLH4Kn8AITuclBETPKnU2j996mGXXxgnD',
-    admin: 'aiokr',
-    adminLabel: '主理人'
+  document.getElementById('js-disqusjs').addEventListener('load', function () {
+      function loadDisqusJS() {
+          new DisqusJS({
+              shortname: 'itpnblog',
+              siteName: 'aiokrblog',
+              identifier: '<%= page.permalink %>',
+              url: '<%= page.permalink %>',
+              api: 'https://itypen.disqusapi.workers.dev/',
+              apikey: 'ACUkOYE4R9hPhjn287JNMXWzlvdAGpIKLH4Kn8AITuclBETPKnU2j996mGXXxgnD',
+              admin: 'aiokr',
+              adminLabel: '主理人'
+          })
+      }
+      if (document.readyState === 'complete') {
+          loadDisqusJS();
+      } else {
+          window.addEventListener('load', loadDisqusJS);
+      }
   });
-</script>
-
+  </script>
 <% } %>
