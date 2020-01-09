@@ -47,20 +47,20 @@
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
     Disqus.</a></noscript>
 <% } else if ( theme.comment.use == 'disqusjs') { %>
-<link rel="stylesheet" href="/disqusjs/disqusjs.css">
-<script src="/disqusjs/disqus.js"></script>
 <div id="disqus_thread"></div>
 <script>
   var dsqjs = new DisqusJS({
     shortname: 'itpnblog',
-    siteName: 'blog',
+    siteName: 'aiokrblog',
     identifier: 'document.location.origin',
     url: 'document.location.origin',
     title: 'document.title',
-    api: 'https://itypen.disqusapi.workers.dev',
+    api: 'https://disqus.skk.moe/disqus/',
     apikey: 'ACUkOYE4R9hPhjn287JNMXWzlvdAGpIKLH4Kn8AITuclBETPKnU2j996mGXXxgnD',
     admin: 'aiokr',
     adminLabel: '主理人'
   });
 </script>
+<link rel="stylesheet" href="/disqusjs/disqusjs.css">
+<script src="/disqusjs/disqus.js"></script>
 <% } %>
