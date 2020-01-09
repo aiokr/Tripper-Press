@@ -47,6 +47,8 @@
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
     Disqus.</a></noscript>
 <% } else if ( theme.comment.use == 'disqusjs') { %>
+<link rel="stylesheet" href="/disqusjs/disqusjs.css">
+<script src="/disqusjs/disqus.js"></script>
 <div id="disqus_thread"></div>
 <script>
   var dsqjs = new DisqusJS({
@@ -61,6 +63,5 @@
     adminLabel: '主理人'
   });
 </script>
-<link rel="stylesheet" href="/disqusjs/disqusjs.css">
-<script src="/disqusjs/disqus.js"></script>
+
 <% } %>
