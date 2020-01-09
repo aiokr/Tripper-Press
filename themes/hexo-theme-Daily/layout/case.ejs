@@ -1,0 +1,22 @@
+<!-- 首屏 -->
+<div class="main-section mdui-color-theme">
+  <div class="mdui-container main-container">
+    <h2>
+      iTypen <span class="mdui-text-color-theme-accent">C</span>rush <span
+        class="mdui-text-color-theme-accent">P</span>ress 且欢排版
+    </h2>
+    <h4>交付案例</h4>
+  </div>
+</div>
+<!--案例-->
+<div class="mdui-container padding-70">
+  <div class="mdui-row-xs-1 mdui-row-sm-3 mdui-row-md-5 mdui-row-lg-6 mdui-row-xl-6 mdui-grid-list cp-casepage-grid">
+    <% for (var i in site.data.cases) { %>
+    <div class="mdui-col">
+      <div class="mdui-grid-tile cp-casepage-item">
+        <img class="cp-casepage-item-img" src="<%- site.data.cases[i].img %>">
+      </div>
+    </div>
+    <% } %>
+  </div>
+</div>

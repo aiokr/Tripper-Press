@@ -1,6 +1,6 @@
 <%- partial('_partial/drawer') %>
 <header class="noprn">
-  <div class="mdui-appbar mdui-appbar-fixed mdui-shadow-0">
+  <div class="mdui-appbar mdui-appbar-fixed mdui-shadow-0 mdui-color-white">
     <div class="mdui-toolbar mdui-color-theme">
       <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target:'#main-drawer',overlay:true,swipe:true}" id="menu"><i
           class="mdui-icon material-icons">menu</i></button>
@@ -10,6 +10,7 @@
       </a>-->
       <!--<a href="<%= url_for() %>" class="mdui-typo-title" style=""><%- config.title %></a>-->
       <div class="mdui-toolbar-spacer"></div>
+      <a href="/search/" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>
     </div>
   </div>
 </header>

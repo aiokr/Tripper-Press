@@ -21,29 +21,29 @@ highlight:
 nav:
   首页: 
     link: /
-    color: '#2196F3'
+    color: '#174c81'
     icon: home
     
   搜索: 
     link: /search/
     icon: search
-    color: '#2196F3'
+    color: '#174c81'
   归档: 
     link: /archives/
     icon:   move_to_inbox
-    color: '#2196F3'
+    color: '#174c81'
   关于: 
     link: /about/
     icon: person
-    color: '#2196F3'
+    color: '#174c81'
   友链:
     link: /links/
     icon: link
-    color: '#2196F3'
+    color: '#174c81'
   图库:
     link: /gallery/
     icon: insert_photo
-    color: '#2196F3'
+    color: '#174c81'
   # rss: atom.xml
 
 # hexo-renderer-sass
