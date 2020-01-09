@@ -1,27 +1,49 @@
 <% if(theme.comment.use == 'gitment') { %>
-  <div id="container"></div>
-  <script>
-    var gitment = new Gitment({
-      id: '<%- page.comment_id || page.date %>', // 可选。默认为 location.href
-      owner: '<%= theme.comment.gitment.owner %>',
-      repo: '<%= theme.comment.gitment.repo %>',
-      oauth: {
-        client_id: '<%= theme.comment.gitment.client_id %>',
-        client_secret: '<%= theme.comment.gitment.client_secret %>',
-      },
-      theme: myGitmentTheme,
-    })
-    gitment.render('container')
-  </script>
-  <% } else if ( theme.comment.use == 'valine') { %>
-  <div id="vcomments"></div>
-  <script>
-    new Valine({
-      el: '#vcomments',
-      appId: '<%= theme.comment.valine.appid %>',
-      appKey: '<%= theme.comment.valine.appkey %>',
-      path: '<%= page.date %>',
-      avatar: 'identicon'
-    })
-  </script>
-  <% } %>
+<div id="container"></div>
+<script>
+  var gitment = new Gitment({
+    id: '<%- page.comment_id || page.date %>', // 可选。默认为 location.href
+    owner: '<%= theme.comment.gitment.owner %>',
+    repo: '<%= theme.comment.gitment.repo %>',
+    oauth: {
+      client_id: '<%= theme.comment.gitment.client_id %>',
+      client_secret: '<%= theme.comment.gitment.client_secret %>',
+    },
+    theme: myGitmentTheme,
+  })
+  gitment.render('container')
+</script>
+<% } else if ( theme.comment.use == 'valine') { %>
+<div id="vcomments"></div>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: '<%= theme.comment.valine.appid %>',
+    appKey: '<%= theme.comment.valine.appkey %>',
+    path: '<%= page.date %>',
+    avatar: 'identicon'
+  })
+</script>
+<% } else if ( theme.comment.use == 'disqus') { %>
+<div id="disqus_thread"></div>
+<script>
+
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function () { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://itpnblog.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+    Disqus.</a></noscript>
+<% } %>
