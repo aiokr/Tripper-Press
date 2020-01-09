@@ -9,7 +9,6 @@ script:
   - npm run generate
   - chmod +x ./deploy.sh
   - \cp -f assets/CNAME public/CNAME
-  - \cp -f assets/analytics.txt public/analytics.txt
   - ./deploy.sh > /dev/null
   - npm run clean
 cache:
