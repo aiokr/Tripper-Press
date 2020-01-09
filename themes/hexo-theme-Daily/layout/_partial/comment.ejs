@@ -25,7 +25,7 @@
   })
 </script>
 <% } else if ( theme.comment.use == 'disqus') { %>
-<div id="disqus_thread"></div>
+<div id="disqus_thread" class="padding-25"></div>
 <script>
 
     /**
@@ -46,4 +46,21 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
     Disqus.</a></noscript>
+<% } else if ( theme.comment.use == 'disqusjs') { %>
+<link rel="stylesheet" href="/disqusks/disqusjs.css">
+<script src="/disqusjs/disqus.js"></script>
+<div id="disqus_thread"></div>
+<script>
+  var dsqjs = new DisqusJS({
+    shortname: 'itpnblog',
+    siteName: "aiokr's blog",
+    identifier: 'document.location.origin',
+    url: 'document.location.origin',
+    title: 'document.title',
+    api: 'https://disqus.skk.moe/disqus/',
+    apikey: 'ACUkOYE4R9hPhjn287JNMXWzlvdAGpIKLH4Kn8AITuclBETPKnU2j996mGXXxgnD',
+    admin: 'aiokr',
+    adminLabel: '主理人'
+  });
+</script>
 <% } %>

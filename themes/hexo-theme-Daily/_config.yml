@@ -76,7 +76,7 @@ widget:
 footer: Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
 
 comment:
-  use: disqus
+  use: disqusjs
   gitment:
     owner: aiokr
     repo: iTypen-comment
