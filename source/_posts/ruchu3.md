@@ -6,8 +6,6 @@ cover: https://imgur.itypen.com/picgo/20190506125608.jpg_itp
 categories: 入出
 ---
 
-![永远是少年](https://imgur.itypen.com/picgo/20190506125608.jpg)
-
 ## 卷首语 永远是少年
 
 又到了过生日的时候。

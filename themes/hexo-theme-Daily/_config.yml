@@ -23,9 +23,8 @@ nav:
     link: /
     color: '#2196F3'
     icon: home
-    
   搜索: 
-    link: /search/
+    link: /search.html
     icon: search
     color: '#2196F3'
   归档: 
@@ -33,11 +32,11 @@ nav:
     icon:   move_to_inbox
     color: '#2196F3'
   关于: 
-    link: /about/
+    link: /about.html
     icon: person
     color: '#2196F3'
   友链:
-    link: /links/
+    link: /links.html
     icon: link
     color: '#2196F3'
   渊梦:
