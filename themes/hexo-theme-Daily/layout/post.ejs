@@ -4,35 +4,46 @@
         <div class="post-container">
             <div class="mdui-row">
                 <div class="mdui-card">
+                    <!--头图-->
                     <div class="mdui-card-media">
                         <img src="<%- page.cover %>" />
                     </div>
+                    <!--文章信息区-->
                     <div class="mdui-card-primary">
                         <div class="mdui-card-primary-title">
                             <%- page.title %>
-                            <div class="mdui-card-primary-subtitle"
-                                style="padding-top: 5px; font-size: .75rem !important;">
-                                <%= page.date.format(config.date_format) %></div>
-                            <% if (page.tags) { %>
-                            <div class="mdui-card-primary-subtitle"
-                                style="padding-top: 2px; font-size: .75rem !important;">
-                                <div class="tags-links">
-                                    <% page.tags.each(function(tag){ %>
-                                    <a href="<%= config.root %>tags/<%= tag.name %>/" style="color:#000;" rel="tag">
-                                        <%- tag.name %>
-                                    </a>
-                                    <% }); %>
-                                </div>
-                            </div>
+                        </div>
+                        <div class="mdui-card-primary-subtitle" style="padding-top: 5px; font-size: 16px !important;">
+                            <%= page.date.format(config.date_format) %><span> · </span>
+                            <% if (page.categories && page.categories.length) { %>
+                            <%- list_categories(page.categories, {
+                                show_count: false,
+                                separator: '<span class="itp-post-cat"></span>',
+                                style: 'none'
+                            }) %>
                             <% } %>
                         </div>
+                        <% if (page.tags) { %>
+                        <div class="mdui-card-primary-subtitle" style="padding-top: 2px; font-size: .75rem !important;">
+                            <div class="tags-links">
+                                <% page.tags.each(function(tag){ %>
+                                <a href="<%= config.root %>tags/<%= tag.name %>/" style="color:#000;" rel="tag">
+                                    <%- tag.name %>
+                                </a>
+                                <% }); %>
+                            </div>
+                        </div>
+                        <% } %>
                     </div>
+                    <!--正文-->
                     <div class="mdui-card-content post-content article">
                         <%- page.content %>
                     </div>
+                    <!--评论-->
                     <div class="mdui-card-content">
                         <%- partial('_partial/comment') %>
                     </div>
+                    <!--页面选择器-->
                     <div>
                         <%
                                 if (theme.random_pics !== false && theme.random_pics) {
