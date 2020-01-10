@@ -32,9 +32,11 @@ body {
 
 .itp-post-card {
   margin-bottom: 150px;
+
   @media screen and (min-width: 816px) {
-    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12) !important;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12) !important;
   }
+
   @media screen and (max-width: 816px) {
     box-shadow: 0 0px 0px 0px #fff !important;
   }
@@ -148,24 +150,15 @@ footer {
   flex-grow: 1;
 }
 
-.itp-toc {
-  padding: 24px;
+.itp-toc-menu {
+  position: fixed !important;
+  right: 16px;
+}
 
-  span {
-    color: #222831;
-  }
-
-  li,
-  ol {
-    list-style-type: none;
-  }
-
-  li {
-    padding: 6px 0 6px 0;
-
-    ol {
-      padding: 3px 0 3px 0;
-    }
+.itp-post-toc {
+  .mdui-fab-wrapper{
+    right: 16px !important;
+    bottom: 16px !important;
   }
 }
 

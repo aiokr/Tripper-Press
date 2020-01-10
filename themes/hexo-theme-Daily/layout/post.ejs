@@ -84,3 +84,19 @@
         <!--主容器-->
     </div>
 </div>
+
+<% var toc = toc(page.content, {
+    class: 'toc',
+    list_number: false,
+}) %>
+<% if(toc.length > 0) { %>
+<div class="itp-post-toc">
+    <div class="mdui-fab-wrapper" mdui-menu="{target: '#toc'}">
+        <button class="mdui-fab mdui-ripple mdui-fab-fixed" style="background-color: white">
+            <!-- 默认显示的图标 -->
+            <i class="mdui-icon material-icons">format_list_bulleted</i>
+        </button>
+    </div>
+        <%-(toc) %>
+</div>
+<% } %>
