@@ -14,6 +14,22 @@ body {
   font-display: swap;
 }
 
+.post-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.itp-post-top {
+    position: relative;
+    z-index: 0;
+    max-width: 890px;
+    margin-right: auto!important;
+    margin-left: auto!important;
+    text-align: left;
+    line-height: .7rem;
+    font-size: .625rem;
+}
+
 .article {
 
   p {
