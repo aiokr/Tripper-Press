@@ -40,10 +40,6 @@ nav:
     link: /links/
     icon: link
     color: '#2196F3'
-  图库:
-    link: /gallery/
-    icon: insert_photo
-    color: '#2196F3'
   渊梦:
     link: 'https://www.itypen.com'
     icon: insert_photo

@@ -3,7 +3,7 @@
         <div class="padding-25"></div>
         <div class="post-container">
             <div class="mdui-row">
-                <div class="mdui-card">
+                <div class="mdui-card itp-post-card">
                     <!--头图-->
                     <div class="mdui-card-media">
                         <img src="<%- page.cover %>" />
@@ -14,8 +14,9 @@
                             <%- page.title %>
                         </div>
                         <div class="mdui-card-primary-subtitle" style="padding-top: 5px; font-size: 16px !important;">
-                            <%= page.date.format(config.date_format) %><span> · </span>
+                            <%= page.date.format(config.date_format) %>
                             <% if (page.categories && page.categories.length) { %>
+                            <span> · </span>
                             <%- list_categories(page.categories, {
                                 show_count: false,
                                 separator: '<span class="itp-post-cat"></span>',
@@ -23,7 +24,6 @@
                             }) %>
                             <% } %>
                         </div>
-
                     </div>
                     <div class="mdui-divider"></div>
                     <!--正文-->
@@ -31,7 +31,7 @@
                         <%- page.content %>
                     </div>
                     <!--文章底部信息-->
-                    <div class="mdui-card-content article">
+                    <div class="mdui-card-content">
                         <div class="mdui-text-center">本文发布于 <%= page.date.format(config.date_format) %></div>
                         <% if (page.tags) { %>
                         <div class="mdui-card-primary-subtitle" style="padding-top: 2px; font-size: .75rem !important;">
@@ -46,8 +46,8 @@
                                 <% }); %>
                             </div>
                         </div>
+                        <% } %>
                     </div>
-                    <% } %>
                     <!--评论-->
                     <div class="mdui-card-content itp-post-comment">
                         <%- partial('_partial/comment') %>
@@ -75,32 +75,12 @@
                             <% } %>
                         </div>
                     </div>
+                    <!--页面选择器-->
                 </div>
-                <div style="position: fixed;">
-                    <% var toc = toc(page.content, {
-                            class: 'itp-toc',
-                            list_number: false,
-                        }) %>
-                    <% if(toc.length > 0) { %>
-                    <div class="mdui-card mdui-shadow-0">
-                        <div>
-                            <%-(toc) %>
-                        </div>
-                    </div>
-                    <% } %>
-                </div>
+                <!--主卡片-->
             </div>
-            <div class="padding-70"></div>
-            <div class="mdui-row">
-                <div class="mdui-col-md-2 mdui-col-xs-down"></div>
-                <div class="mdui-col-md-8 mdui-col-xs-12">
-
-
-                </div>
-                <div class="mdui-col-md-2 mdui-col-xs-down"></div>
-            </div>
-            <div class="padding-70"></div>
+            <!--主行-->
         </div>
+        <!--主容器-->
     </div>
-</div>
 </div>

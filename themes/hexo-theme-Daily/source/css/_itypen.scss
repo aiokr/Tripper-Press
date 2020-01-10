@@ -30,9 +30,16 @@ body {
     font-size: .625rem;
 }
 
-.itp-post-comment {
+.itp-post-card {
+  margin-bottom: 150px;
+}
+
+.itp-post-comment-area {
   background-color: #eeeeee;
-  padding-bottom: 50px !important;
+}
+
+.itp-post-comment {
+  padding: 20px 20px 20px 20px !important;
 }
 
 .itp-page-select {
@@ -47,82 +54,7 @@ body {
   color: #767676;
 }
 
-.article {
 
-  p {
-    margin: 1.5em 0px !important;
-    font-size: 16px !important;
-    color: #222831;
-    line-height: 1.8em;
-    letter-spacing: 0.1em;
-
-    img {
-      border-radius: 5px;
-    }
-  }
-
-  pre {
-    background: #eee;
-    font-family: "Courier 10 Pitch", Courier, monospace;
-    font-size: 15px;
-    font-size: 1.5rem;
-    line-height: 1.6;
-    margin-bottom: 1.6em;
-    max-width: 100%;
-    overflow: auto;
-    padding: 1.6em;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 20px 0 10px;
-    padding: 0;
-    font-style: bold !important;
-    color: #2196f3 !important;
-    margin-top: 1.5em !important;
-    text-align: left !important;
-    font-family: sans-serif;
-    font-weight: bold
-  }
-
-  h1 {
-    font-size: 22px !important;
-    text-align: left !important;
-  }
-
-  h2 {
-    font-size: 22px !important;
-  }
-
-  h3 {
-    font-size: 20px;
-  }
-
-  h4 {
-    font-size: 18px;
-  }
-
-  h5 {
-    font-size: 16px;
-  }
-
-  h6 {
-    font-size: 16px;
-  }
-
-  blockquote,
-  q {
-    border-left: 2px solid #2196f3;
-    padding: 0 10px;
-    color: #777;
-    quotes: none;
-  }
-
-}
 
 strong {
   font-weight: bold;
