@@ -1,11 +1,10 @@
 <div class="content-area">
     <div class="post">
-        <div class="padding-25"></div>
         <div class="post-container">
             <div class="mdui-row">
                 <div class="mdui-card itp-post-card">
                     <!--头图-->
-                    <div class="mdui-card-media">
+                    <div class="mdui-card-media itp-post-cover">
                         <img src="<%- page.cover %>" />
                     </div>
                     <!--文章信息区-->
@@ -92,7 +91,7 @@
 <% if(toc.length > 0) { %>
 <div class="itp-post-toc">
     <div class="mdui-fab-wrapper" mdui-menu="{target: '#toc'}">
-        <button class="mdui-fab mdui-ripple mdui-fab-fixed" style="background-color: white">
+        <button class="mdui-fab mdui-fab-fixed" style="background-color: white">
             <!-- 默认显示的图标 -->
             <i class="mdui-icon material-icons">format_list_bulleted</i>
         </button>
