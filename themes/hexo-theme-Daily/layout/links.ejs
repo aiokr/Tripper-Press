@@ -1,24 +1,38 @@
-<div class="archive content-area">
-  <div class="container">
-    <h1 class="entry-title"><%= page.title %></h1>
-    <% if (site.data.links) { %>
-    <% for (var i in site.data.links) { %>
-    <a href="<%= site.data.links[i].url %>" title="<%= i %>" target="_blank">
-      <div class="mdui-card mdui-shadow-0">
-        <div class="mdui-card-header">
-          <img class="mdui-card-header-avatar" src="<%= site.data.links[i].img %>" />
-          <div class="mdui-card-header-title"><%= i %></div>
-          <div class="mdui-card-header-subtitle"><%- site.data.links[i].descr %></div>
+<div class="content-area">
+  <div class="post">
+    <div class="post-container">
+      <div class="mdui-row">
+        <div class="mdui-card itp-post-card">
+          <div class="mdui-card-primary">
+            <div class="mdui-card-primary-title">
+              <%- page.title %>
+            </div>
+          </div>
+          <div class="mdui-card-content article">
+            <% if (site.data.links) { %>
+            <% for (var i in site.data.links) { %>
+            <a href="<%= site.data.links[i].url %>" title="<%= i %>" target="_blank">
+              <div class="mdui-card mdui-shadow-0">
+                <div class="mdui-card-header">
+                  <img class="mdui-card-header-avatar" src="<%= site.data.links[i].img %>" />
+                  <div class="mdui-card-header-title"><%= i %></div>
+                  <div class="mdui-card-header-subtitle"><%- site.data.links[i].descr %></div>
+                </div>
+              </div>
+            </a>
+            <% } %>
+            <% } %>
+            <div class="padding-25"></div>
+            <div class="mdui-divider"></div>
+            <div class="mdui-card-content article">
+              <%- page.content %>
+            </div>
+            <div class="padding-70"></div>
+            <%- partial('_partial/comment') %>
+          </div>
         </div>
       </div>
-    </a>
-    <% } %>
-    <% } %>
-    <div class="padding-25"></div>
-    <div class="mdui-card-content article">
-      <%- page.content %>
     </div>
-    <div class="padding-70"></div>
-    <%- partial('_partial/comment') %>
   </div>
+</div>
 </div>

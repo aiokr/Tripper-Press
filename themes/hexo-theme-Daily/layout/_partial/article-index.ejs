@@ -5,29 +5,31 @@ var isFullUrl = function(str) {
 %>
 
 <!-- 首页模板 -->
-<div class="padding-15"></div>
-<div class="container">
-  <article class="post">
-    <div class="mdui-card mdui-shadow-0 mdui-hoverable">
-      <div class="mdui-card-media">
-        <% if (item.cover) { %>
-        <a href="<%- config.root %><%- item.path %>">
-          <img src="<%- item.cover %>" alt="<%- item.title %>" class="attachment-post-thumbnail" style="border-radius: 0px;">
-        </a>
-        <% } %>
-        <div class="mdui-card-primary">
-          <div class="mdui-card-primary-title"><a href="<%- config.root %><%- item.path %>" style="color:#222831; font-size: 22px;text-decoration: none;"><%- item.title || theme.default_post_title || "Untitled" %></a></div>
-          <div class="mdui-card-primary-subtitle" style="padding-top: 5px; color:#222831"; ><%= item.date.format(config.date_format) %><span> · </span>
-            
-              <% item.categories.each(function(categories){ %>
-              <a href="<%= config.root %>categories/<%= categories.name %>/" style="color:#222831;" rel="tag">
-                <%- categories.name %>
-              </a>
-              <% }); %>
-          </div>
+<div class="padding-25"></div>
+<article class="post">
+  <div class="mdui-card mdui-hoverable">
+    <div class="mdui-card-media">
+      <% if (item.cover) { %>
+      <a href="<%- config.root %><%- item.path %>">
+        <img src="<%- item.cover %>" alt="<%- item.title %>" class="attachment-post-thumbnail"
+          style="border-radius: 0px;">
+      </a>
+      <% } %>
+      <div class="mdui-card-primary">
+        <div class="mdui-card-primary-title"><a href="<%- config.root %><%- item.path %>"
+            style="color:#222831; font-size: 22px;text-decoration: none;"><%- item.title || theme.default_post_title || "Untitled" %></a>
+        </div>
+        <div class="mdui-card-primary-subtitle" style="padding-top: 5px; color:#222831" ;>
+          <%= item.date.format(config.date_format) %><span> · </span>
+
+          <% item.categories.each(function(categories){ %>
+          <a href="<%= config.root %>categories/<%= categories.name %>/" style="color:#222831;" rel="tag">
+            <%- categories.name %>
+          </a>
+          <% }); %>
         </div>
       </div>
     </div>
-    <div class="padding-15"></div>
-  </article>
-</div>
+  </div>
+  <div class="padding-25"></div>
+</article>
