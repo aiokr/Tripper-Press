@@ -5,7 +5,8 @@
                 <div class="mdui-card itp-post-card">
                     <!--头图-->
                     <div class="mdui-card-media itp-post-cover">
-                        <img src="<%- page.cover %>" style="border-radius: 0px; max-height: 300px; object-fit: cover;"/>
+                        <img src="<%- page.cover %>"
+                            style="border-radius: 0px; max-height: 300px; object-fit: cover;" />
                     </div>
                     <!--文章信息区-->
                     <div class="mdui-card-primary">
@@ -47,55 +48,15 @@
                         </div>
                         <% } %>
                     </div>
-                    <!--评论-->
                     <div class="mdui-card-content itp-post-comment">
                         <%- partial('_partial/comment') %>
                     </div>
-                    <!--页面选择器-->
                     <div class="mdui-card-content itp-page-select mdui-row">
-                        <div class=" mdui-col-xs-6">
-                            <% if (page.prev) { %>
-                            <div class="itp-page-select-prev">
-                                <a class="mdui-btn mdui-btn-icon" href="<%- config.root %><%- page.prev.path %>"><i
-                                        class="mdui-icon material-icons">arrow_back</i></a>
-                                <a class="mdui-chip-title" rel="prev"
-                                    href="<%- config.root %><%- page.prev.path %>"><%- __('prev')%></a>
-                            </div>
-                            <% } %>
-                        </div>
-                        <div class="mdui-col-xs-6">
-                            <% if (page.next) { %>
-                            <div class="itp-page-select-next  mdui-float-right">
-                                <a class="mdui-chip-title" rel="next"
-                                    href="<%- config.root %><%- page.next.path %>"><%- __('next')%></a>
-                                <a class="mdui-btn mdui-btn-icon" href="<%- config.root %><%- page.next.path %>"><i
-                                        class="mdui-icon material-icons">arrow_forward</i></a>
-                            </div>
-                            <% } %>
-                        </div>
+                        <%- partial('_partial/post-pagination') %>
                     </div>
-                    <!--页面选择器-->
                 </div>
-                <!--主卡片-->
             </div>
-            <!--主行-->
         </div>
-        <!--主容器-->
     </div>
 </div>
-
-<!--内文目录-->
-<% var toc = toc(page.content, {
-    class: 'toc',
-    list_number: false,
-}) %>
-<% if(toc.length > 0) { %>
-<div class="itp-post-toc">
-    <div class="mdui-fab-wrapper" mdui-menu="{target: '#toc'}">
-        <button class="mdui-fab mdui-fab-fixed" style="background-color: white">
-            <i class="mdui-icon material-icons">format_list_bulleted</i>
-        </button>
-    </div>
-        <%-(toc) %>
-</div>
-<% } %>
+<%- partial('_partial/post-toc') %>

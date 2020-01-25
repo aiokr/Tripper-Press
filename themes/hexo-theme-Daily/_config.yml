@@ -2,14 +2,8 @@
 title: iTypen
 subtitle: 
 favicon: https://imgur.itypen.com/picgo/20190626220507.png_avatar
-
 avatar: https://imgur.itypen.com/picgo/20190626220507.png_avatar
-banner_small: https://imgur.itypen.com/picgo/20190626220507.png_avatar
-# banner_large: https://imgur.itypen.com/picgo/20190626220507.png_avatar
-logo: https://imgur.itypen.com/picgo/20190626220507.png_avatar
-
-# disqus
-#disqus_shortname: drakeleung
+drawer_header: https://imgur.itypen.com/picgo/20190529224135.jpg_itp
 
 highlight:
   enable: true
@@ -54,31 +48,27 @@ node_sass:
 # Default post title
 default_post_title: Untitled
 
-# social
-social:
-  github: https://github.com/aiokr
-  # weibo: http://weibo.com/10010800
-  # mail: mailto:gallenhu@foxmail.com
-  # twitter: https://twitter.com/GallenHu
-
-# widget
-#   title: 标题
-#   content: 内容
-widget:
-  title: 关于本站
-  content: 寻找是唯一的解药
-
 footer: Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
 
 comment:
   use: disqusjs
   gitment:
-    owner: aiokr
-    repo: iTypen-comment
-    client_id: 53d9f4220507e8aa513b
-    client_secret: 43e42209f73188b31e4ae88a7882b1cbc51fc764
+    owner:
+    repo:
+    client_id:
+    client_secret:
   valine:
-    appid: 0kSi0u9r40XN3MswJG34Sj6K-gzGzoHsz
-    appkey: 0etVoCn0nhOS5RSYOenq0sl6
+    appid:
+    appkey:
+  disqus:
+    src: 
+    # such as: https://xxx.disqus.com/embed.js
+  disqusjs:
+    shortname: itpnblog
+    siteName: aiokr's blog
+    api: https://disqus-proxy.disqusapi.workers.dev/api/
+    apikey: ACUkOYE4R9hPhjn287JNMXWzlvdAGpIKLH4Kn8AITuclBETPKnU2j996mGXXxgnD
+    admin: aiokr
+    adminLabel: 站长
 
 random_pics: 24

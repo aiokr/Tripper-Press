@@ -1,8 +1,9 @@
+<!--评论-->
 <% if(theme.comment.use == 'gitment') { %>
-<div id="container"></div>
+<!--gitment-->
 <script>
   var gitment = new Gitment({
-    id: '<%- page.comment_id || page.date %>', // 可选。默认为 location.href
+    id: '<%- page.comment_id || page.date %>', 
     owner: '<%= theme.comment.gitment.owner %>',
     repo: '<%= theme.comment.gitment.repo %>',
     oauth: {
@@ -14,6 +15,7 @@
   gitment.render('container')
 </script>
 <% } else if ( theme.comment.use == 'valine') { %>
+<!--valine-->
 <div id="vcomments"></div>
 <script>
   new Valine({
@@ -25,21 +27,12 @@
   })
 </script>
 <% } else if ( theme.comment.use == 'disqus') { %>
+<!--disqus-->
 <div id="disqus_thread" class="padding-25"></div>
 <script>
-
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function () { // DON'T EDIT BELOW THIS LINE
+    (function () {
       var d = document, s = d.createElement('script');
-      s.src = 'https://itpnblog.disqus.com/embed.js';
+      s.src = '<%= theme.comment.disqus.src %>';
       s.setAttribute('data-timestamp', +new Date());
       (d.head || d.body).appendChild(s);
     })();
@@ -47,19 +40,20 @@
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
     Disqus.</a></noscript>
 <% } else if ( theme.comment.use == 'disqusjs') { %>
+<!--disqusjs-->
 <link rel="stylesheet" href="/disqusjs/disqusjs.css">
 <script src="/disqusjs/disqus.js"></script>
 <div id="disqus_thread"></div>
 <script>
   var dsqjs = new DisqusJS({
-    shortname: 'itpnblog',
-    siteName: "aiokr's blog",
-    identifier: '<%= page.permalink %>',
-    url: '<%= page.permalink %>',
-    api: 'https://disqus-proxy.disqusapi.workers.dev/api/',
-    apikey: 'ACUkOYE4R9hPhjn287JNMXWzlvdAGpIKLH4Kn8AITuclBETPKnU2j996mGXXxgnD',
-    admin: 'aiokr',
-    adminLabel: '主理人'
+    shortname: "<%= theme.comment.disqusjs.shortname %>",
+    siteName: "<%= theme.comment.disqusjs.siteName %>",
+    identifier: "<%= page.permalink %>",
+    url: "<%= page.permalink %>",
+    api: "<%= theme.comment.disqusjs.api %>",
+    apikey: "<%= theme.comment.disqusjs.apikey %>",
+    admin: "<%= theme.comment.disqusjs.admin %>",
+    adminLabel: "<%= theme.comment.disqusjs.adminLabel %>"
   });
 </script>
 <% } %>
