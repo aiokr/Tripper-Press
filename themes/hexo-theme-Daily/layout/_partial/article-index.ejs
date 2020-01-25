@@ -12,7 +12,7 @@ var isFullUrl = function(str) {
       <% if (item.cover) { %>
       <a href="<%- config.root %><%- item.path %>">
         <img src="<%- item.cover %>" alt="<%- item.title %>" class="attachment-post-thumbnail"
-          style="border-radius: 0px;">
+          style="border-radius: 0px; max-height: 300px; object-fit: cover;">
       </a>
       <% } %>
       <div class="mdui-card-primary">
