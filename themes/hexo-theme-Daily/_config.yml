@@ -2,7 +2,7 @@
 title: iTypen
 subtitle: 
 favicon: https://imgur.itypen.com/picgo/20190626220507.png_avatar
-avatar: https://imgur.itypen.com/picgo/20190626220507.png_avatar
+avatar: https://imgur.itypen.com/picgo/gff.jpg
 drawer_header: https://imgur.itypen.com/picgo/20190529224135.jpg_itp
 
 highlight:
@@ -47,6 +47,9 @@ node_sass:
 
 # Default post title
 default_post_title: Untitled
+
+auto_excerpt:
+  length: 120
 
 footer: Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
 

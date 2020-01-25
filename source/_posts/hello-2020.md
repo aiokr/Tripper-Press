@@ -5,6 +5,7 @@ tags:
 categories: 日常
 cover: 'https://imgur.itypen.com/picgo/20200125133656.jpg'
 date: 2020-01-25 13:28:50
+style: smart
 ---
 
 永远相信美好的事情即将发生。

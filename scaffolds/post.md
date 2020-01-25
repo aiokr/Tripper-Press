@@ -4,4 +4,6 @@ date: {{ date }}
 tags:
 categories: 
 cover: 
+style: 
+summary: 
 ---

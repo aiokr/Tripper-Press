@@ -14,7 +14,7 @@
   })
   gitment.render('container')
 </script>
-<% } else if ( theme.comment.use == 'valine') { %>
+<% } else if (theme.comment.use == 'valine') { %>
 <!--valine-->
 <div id="vcomments"></div>
 <script>
@@ -26,7 +26,7 @@
     avatar: 'identicon'
   })
 </script>
-<% } else if ( theme.comment.use == 'disqus') { %>
+<% } else if (theme.comment.use == 'disqus') { %>
 <!--disqus-->
 <div id="disqus_thread" class="padding-25"></div>
 <script>
@@ -39,7 +39,7 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
     Disqus.</a></noscript>
-<% } else if ( theme.comment.use == 'disqusjs') { %>
+<% } else if (theme.comment.use == 'disqusjs') { %>
 <!--disqusjs-->
 <link rel="stylesheet" href="/disqusjs/disqusjs.css">
 <script src="/disqusjs/disqus.js"></script>

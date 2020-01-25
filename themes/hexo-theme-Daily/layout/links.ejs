@@ -1,5 +1,3 @@
-
-
 <div class="content-area">
     <div class="post">
         <div class="post-container">
@@ -7,7 +5,8 @@
                 <div class="mdui-card itp-post-card">
                     <!--头图-->
                     <div class="mdui-card-media itp-post-cover">
-                        <img src="<%- page.cover %>" style="border-radius: 0px; max-height: 300px; object-fit: cover;"/>
+                        <img src="<%- page.cover %>"
+                            style="border-radius: 0px; max-height: 300px; object-fit: cover;" />
                     </div>
                     <!--文章信息区-->
                     <div class="mdui-card-primary">
@@ -17,18 +16,18 @@
                     </div>
                     <!--链接-->
                     <% if (site.data.links) { %>
-                      <% for (var i in site.data.links) { %>
-                      <a href="<%= site.data.links[i].url %>" title="<%= i %>" target="_blank">
+                    <% for (var i in site.data.links) { %>
+                    <a href="<%= site.data.links[i].url %>" title="<%= i %>" target="_blank">
                         <div class="mdui-card mdui-shadow-0">
-                          <div class="mdui-card-header">
-                            <img class="mdui-card-header-avatar" src="<%= site.data.links[i].img %>" />
-                            <div class="mdui-card-header-title"><%= i %></div>
-                            <div class="mdui-card-header-subtitle"><%- site.data.links[i].descr %></div>
-                          </div>
+                            <div class="mdui-card-header">
+                                <img class="mdui-card-header-avatar" src="<%= site.data.links[i].img %>" />
+                                <div class="mdui-card-header-title"><%= i %></div>
+                                <div class="mdui-card-header-subtitle"><%- site.data.links[i].descr %></div>
+                            </div>
                         </div>
-                      </a>
-                      <% } %>
-                      <% } %>
+                    </a>
+                    <% } %>
+                    <% } %>
                     <!--正文-->
                     <div class="mdui-card-content mdui-typo article">
                         <%- page.content %>
@@ -58,6 +57,6 @@
             <i class="mdui-icon material-icons">format_list_bulleted</i>
         </button>
     </div>
-        <%-(toc) %>
+    <%-(toc) %>
 </div>
 <% } %>
