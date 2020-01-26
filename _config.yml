@@ -4,8 +4,8 @@
 
 # Site
 title: aiokr's daily
-subtitle: 永远相信美好的事情即将发生
-description:
+subtitle: 
+description: 永远相信美好的事情即将发生
 keywords:
 author: aiokr
 language: zh-CN
@@ -88,6 +88,11 @@ symbols_count_time:
   total_symbols: true
   total_time: false
   exclude_codeblock: false
+
+node_sass:
+  outputStyle: nested
+  precision: 5
+  sourceComments: false
 
 search:
   path: search.xml
