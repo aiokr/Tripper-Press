@@ -5,6 +5,7 @@
   .site-content {
     min-height: auto;
     .content-area {
+
     }
   }
   .site-header {
@@ -82,11 +83,6 @@
 
 @media (max-width: 768px) {
   .content-area {
-      padding-top: 70px;
+      padding-top: 0px;
   }
-}
-
-.content-area {
-  padding-left: 10px;
-  padding-right: 10px;
 }

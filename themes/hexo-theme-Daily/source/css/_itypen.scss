@@ -1,3 +1,7 @@
+body {
+  background-color: #f8f9fa !important;
+}
+
 .padding-70 {
   padding-top: 70px;
 }
@@ -83,7 +87,7 @@ em {
   font-style: italic;
 }
 
-.upyun-img {
+.cdn-img {
   max-height: 40px !important;
 }
 
@@ -103,6 +107,11 @@ em {
   .noprn {
     display: none;
   }
+}
+
+.article {
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .post-content p img {

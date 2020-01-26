@@ -4,7 +4,7 @@ tag: 入出
 date: 2019-05-11 12:00:00
 cover: https://imgur.itypen.com/picgo/20190506125608.jpg_itp
 categories: 入出
-style: hero
+style: cover
 ---
 
 ## 卷首语 永远是少年

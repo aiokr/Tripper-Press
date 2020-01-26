@@ -3,7 +3,7 @@ layout: post
 title: 价值观手册
 date: 2020-01-10 20:13:00
 cover: https://qiehuan-img.itypen.com/2019/12/20191231_渊梦文化手册.jpg
-categories: 日常
+categories: 随笔
 tag: 价值观
 style: smart
 ---

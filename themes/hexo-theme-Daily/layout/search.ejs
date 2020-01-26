@@ -1,40 +1,46 @@
-<div class="padding-70"></div>
-<div class="mdui-container">
-  <div class="mdui-row">
-    <div class="mdui-col-md-2 mdui-col-xs-down"></div>
-    <div class="mdui-col-md-8 mdui-col-xs-12">
-      <div class="padding-25 noprn"></div>
-      <div class="mdui-card mdui-shadow-0">
-        <div class="mdui-card-primary">
-          <div class="mdui-card-primary-title"><%- page.title %></div>
-        </div>
-        <div class="mdui-card-content">
-          <!-- Local -->
-          <form autocomplete="off" id="search-form" method="post" action="">
-            <div class="mdui-textfield mdui-textfield-floating-label">
-              <label class="mdui-textfield-label">Search</label>
-              <input class="mdui-textfield-input" id="search" />
+<div class="content-area">
+  <div class="post">
+    <div class="post-container">
+      <div class="mdui-row">
+        <div class="mdui-card itp-post-card">
+          <!--头图-->
+          <div class="mdui-card-media itp-post-cover">
+            <img src="<%- page.cover %>" style="border-radius: 0px; max-height: 300px; object-fit: cover;" />
+          </div>
+          <!--文章信息区-->
+          <div class="mdui-card-primary">
+            <div class="mdui-card-primary-title">
+              <%- page.title %>
             </div>
-          </form>
-          <ul class="mdui-list mdui-list-dense">
-            <div id="local-search-result" class="mdui-text-truncate"></div>
-            <% if (site.data.search) { %>
-            <% for (var i in site.data.search) { %>
-            <a href="<%- site.data.search[i].url %>">
-              <li class="mdui-list-item mdui-ripple mdui-hoverable">
-                <div class="mdui-list-item-content">
-                  <div class="mdui-list-item-title"><%= i %></div>
-                  <div class="mdui-list-item-text mdui-list-item-one-line"><%- site.data.search[i].descr %></div>
+          </div>
+          <!--内容-->
+          <div class="mdui-card-content">
+              <!--搜索框-->
+              <form autocomplete="off" id="search-form" method="post" action="">
+                <div class="mdui-textfield mdui-textfield-floating-label">
+                  <label class="mdui-textfield-label">Search</label>
+                  <input class="mdui-textfield-input" id="search" />
                 </div>
-              </li>
-            </a>
-            <% } %>
-            <% } %>
-            <div class="padding-70"></div>
-          </ul>
-        </div>
-        <div class="mdui-col-md-2 mdui-col-xs-down">
-        </div>
+              </form>
+              <!--搜索推荐-->
+              <ul class="mdui-list mdui-list-dense">
+                <div id="local-search-result" class="mdui-text-truncate"></div>
+                <% if (site.data.search) { %>
+                <% for (var i in site.data.search) { %>
+                <a href="<%- site.data.search[i].url %>">
+                  <li class="mdui-list-item">
+                    <div class="mdui-list-item-content">
+                      <div class="mdui-list-item-title"><%= i %></div>
+                      <div class="mdui-list-item-text mdui-list-item-one-line"><%- site.data.search[i].descr %></div>
+                    </div>
+                  </li>
+                </a>
+                <% } %>
+                <% } %>
+                <div class="padding-70"></div>
+              </ul>
+            </div>
+          </div>
       </div>
     </div>
   </div>

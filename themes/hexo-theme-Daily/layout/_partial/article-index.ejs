@@ -4,7 +4,7 @@ var isFullUrl = function(str) {
 };
 %>
 <div class="padding-25"></div>
-<% if(item.style == 'hero') { %>
+<% if(item.style == 'cover') { %>
 <!--仅封面文章入口-->
 <div class="mdui-card mdui-hoverable itp-post-index-hero">
   <% if (item.cover) { %>
@@ -18,7 +18,7 @@ var isFullUrl = function(str) {
   <%- partial('_partial/article-index-standard') %>
   <% } %>
 </div>
-<% } else if (item.style == 'cover') { %>
+<% } else if (item.style == 'hero') { %>
 <!--标题覆盖封面文章入口-->
 <% if (item.cover) { %>
 <div class="mdui-card mdui-hoverable itp-post-index-hero">

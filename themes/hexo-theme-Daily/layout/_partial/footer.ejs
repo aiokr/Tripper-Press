@@ -10,59 +10,68 @@
         </div>
         <div class="padding-15"></div>
         <div class="mdui-typo-body-1">
-          <%- config.title %> &copy; 2016 - <%= (new Date()).getFullYear() %>
+          <%- config.title %> &copy; <%- theme.start_time %> - <%= (new Date()).getFullYear() %>
         </div>
         <% if(config.footer !== null) { %>
         <div class="mdui-typo-body-1">
           <div class="padding-15"></div>
           <%- config.footer || theme.footer %>
+          <div class="padding-15"></div>
+          <p>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></p>
+          <div class="padding-15"></div>
+          <p>Theme by <a href="https://blog.itypen.com/" target="_blank">aiokr</a></p>
         </div>
         <% } %>
         <div class="padding-15"></div>
-        <a href="https://travis-ci.org/aiokr/iTypen-Hexo" target="_blank">渲染状态</a>&nbsp;&nbsp;<a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fblog.itypen.com%2F&tab=desktop" target="_blank">速度测试</a>
+
       </div>
       <div class="mdui-col-md-3 mdui-col-xs-12" style="padding-bottom: 20px;">
         <div class="mdui-typo-title-opacity">
           信息
         </div>
+        <% if (theme.count == true){ %>
         <div class="padding-15"></div>
         <div class="mdui-typo-body-1">
           总字数
           <%- symbolsCountTotal(site) %>
         </div>
+        <% } %>
+        <% if (theme.busuanzi == true){ %>
         <div class="mdui-typo-body-1">
           <br />
-          总人数 <span id="busuanzi_container_site_uv"><span id="busuanzi_value_site_uv"></span></span>
+          UV <span id="busuanzi_container_site_uv"><span id="busuanzi_value_site_uv"></span></span>
         </div>
         <div class="mdui-typo-body-1">
           <br />
-          总次数 <span id="busuanzi_container_site_pv"><span id="busuanzi_value_site_pv"></span></span>
+          PV <span id="busuanzi_container_site_pv"><span id="busuanzi_value_site_pv"></span></span>
         </div>
+        <% } %>
       </div>
       <div class="mdui-col-md-3 mdui-col-xs-12" style="padding-bottom: 20px;">
+        <% if (theme.icp){ %>
         <div class="mdui-typo-title-opacity">
-          备案信息
+          备案
         </div>
         <div class="mdui-typo-body-1">
           <br />
-          <a href="http://www.beian.miit.gov.cn">桂ICP备17001361号</a>
+          <a href="http://www.beian.miit.gov.cn"><%- theme.icp %></a>
         </div>
+        <% } %>
       </div>
       <div class="mdui-col-md-3 mdui-col-xs-12" style="padding-bottom: 20px;">
+        <% if (theme.cdn.use == 'upyun'){ %>
         <div class="mdui-typo-title-opacity">
           CDN
         </div>
         <div class="padding-15"></div>
-        <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank"><img class="upyun-img"
-            src="https://imgur.itypen.com/picgo/20190506220004.png_itp"></a>
+        <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank"><img class="cdn-img"
+            src="<%= theme.cdn.upyun.src %>"></a>
+        <% } %>
       </div>
     </div>
     <div class="mdui-row">
       <div class="upyun">
-
       </div>
-
     </div>
-    <div class="padding-15"></div>
   </div>
 </footer>

@@ -5,20 +5,16 @@
     <meta name="renderer" content="webkit">
     <!--百度禁止转码-->
     <meta http-equiv="Cache-Control" content="no-siteapp">
-
-
     <!--Description-->
     <% if (page.description){ %>
     <meta name="description" content="<%= page.description %>">
     <% } else if (config.description){ %>
     <meta name="description" content="<%= config.description %>">
     <% } %>
-
     <!--Author-->
     <% if (config.author){ %>
     <meta name="author" content="<%= config.author %>">
     <% } %>
-
     <!--Open Graph Title-->
     <% if (page.title){ %>
     <meta property="og:title" content="<%= page.title %>" />
@@ -40,15 +36,12 @@
     <meta property="og:type" content="website" />
     <% } %>
     <!--Page Cover-->
-    <% if (page.share_cover) { %>
+    <% if (page.cover) { %>
     <meta property="og:image" content="<%= config.url %><%= page.share_cover %>" />
     <% } else if (config.cover) { %>
     <meta property="og:image" content="<%= config.url %><%= config.cover %>" />
     <% } %>
-
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-
     <!-- Title -->
     <%
   var title = [];
@@ -63,19 +56,13 @@
   if (is_home() && config.subtitle) title.push(config.subtitle);
   %>
     <title><%= title.join(' - ') %></title>
-
     <!-- 添加到主屏后的标题（iOS 6 新增） -->
     <meta name="apple-mobile-web-app-title" content="<%= config.title %>">
-
     <!-- 是否启用 WebApp 全屏模式 -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
-
     <!-- 禁止数字识自动别为电话号码 -->
     <meta name="format-detection" content="telephone=no" />
-
-
     <link rel="shortcut icon" href="<%- url_for(config.favicon || theme.favicon) %>">
-
     <!-- Retina iPhone 和 Retina iTouch，114x114 像素 -->
     <link rel="apple-touch-icon-precomposed" sizes="114x114"
         href="https://imgur.itypen.com/picgo/20190625163454.jpg_RetinaiPhone">
@@ -88,10 +75,8 @@
     <!-- iPhone6 -->
     <link rel="apple-touch-icon-precomposed" sizes="120x120"
         href="https://imgur.itypen.com/picgo/20190625163454.jpg_iPhone">
-
     <!-- 添加 RSS 订阅 -->
-    <link rel="alternate" type="application/rss+xml" title="陈王王的自留地" href="/atom.xml" />
-
+    <link rel="alternate" type="application/rss+xml" title="<%= config.title %>" href="/atom.xml" />
     <!-- uc强制竖屏 -->
     <meta name="screen-orientation" content="portrait">
     <!-- QQ强制竖屏 -->
@@ -104,11 +89,10 @@
     <meta name="browsermode" content="application">
     <!-- QQ应用模式 -->
     <meta name="x5-page-mode" content="app">
-
     <!-- Custom CSS/Sass -->
-    <%- css('css/style') %>
     <%- css('css/mdui.min') %>
-
+    <%- css('css/style') %>
+    <% if(theme.google_analytics) { %>
     <!-- Google Analytics -->
     <script>
         (function (i, s, o, g, r, a, m) {
@@ -118,13 +102,12 @@
                 m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-141010711-2', 'auto', { 'siteSpeedSampleRate': 100 }, { 'alwaysSendReferrer': true });
+        ga('create', '<%= theme.google_analytics %>', 'auto', { 'siteSpeedSampleRate': 100 }, { 'alwaysSendReferrer': true });
         ga('send', 'pageview');
         ga('set', 'forceSSL', true);
     </script>
     <!-- End Google Analytics -->
-
-    <!-- Tencent Analytics -->
+    <% } %>
     <% if(theme.comment.use == 'gitment') { %>
     <link rel="stylesheet" href="/css/gitment.css">
     <script src="/js/gitment.js"></script>
@@ -133,19 +116,4 @@
     <script src="/js/av-min.js"></script>
     <script src='/js/Valine.min.js'></script>
     <% } %>
-
-    <!----------------------------
-  https://github.com/GallenHu/hexo-theme-Daily
-
- _____            _   _
-|  __ \          (_) | |
-| |  | |   __ _   _  | |  _   _
-| |  | |  / _` | | | | | | | | |
-| |__| | | (_| | | | | | | |_| |
-|_____/   \__,_| |_| |_|  \__, |
-                          __/ |
-                         |___/
-
-    --------------------------->
-
 </head>
