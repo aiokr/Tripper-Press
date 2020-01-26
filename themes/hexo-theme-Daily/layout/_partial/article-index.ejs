@@ -49,10 +49,10 @@ var isFullUrl = function(str) {
 <% } %>
 <% } else if (item.style == 'smart') { %>
 <!--小图样式文章入口-->
-<div class="mdui-card mdui-hoverable" style="max-height: 250px;">
+<div class="mdui-card mdui-hoverable">
   <% if (item.cover) { %>
   <div class="mdui-row">
-    <div class="mdui-col-md-5 mdui-col-xs-12">
+    <div class="mdui-col-md-5 mdui-col-xs-12"  style="max-height: 250px;">
       <div class="mdui-card-media">
         <a href="<%- config.root %><%- item.path %>">
           <img src="<%- item.cover %>" alt="<%- item.title %>" class="attachment-post-thumbnail"
