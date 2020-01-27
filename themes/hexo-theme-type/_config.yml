@@ -46,16 +46,16 @@ cdn:
   upyun: 
     src: https://imgur.itypen.com/picgo/20190506220004.png_itp
 
-# hexo-renderer-sass
-node_sass:
-  outputStyle: nested
-  precision: 5
-  sourceComments: false
-
 # Post
 default_post_title: Untitled
 auto_excerpt:
   length: 120
+
+# highlight.js
+# style default | github | rainbow | tomorrow | tnightblue
+highlight:
+  use: true
+  style: github
 
 
 # Comment
