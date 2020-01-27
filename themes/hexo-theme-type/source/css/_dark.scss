@@ -76,6 +76,7 @@ img {
   .mdui-card-primary-subtitle {
     color: $subtitle-color;
     opacity: .87;
+
     a {
       color: $subtitle-color;
       opacity: .87;
@@ -122,6 +123,32 @@ img {
   }
 
   .mdui-card-header-subtitle {
+    color: $subtitle-color;
+  }
+}
+
+.itp-search {
+  .mdui-textfield-label {
+    color: $subtitle-color;
+  }
+
+  .mdui-textfield-input {
+    color: $title-color;
+
+    border-bottom: 1px solid $subtitle-color;
+  }
+
+  .mdui-list-item {
+    a {
+      color: $title-color;
+    }
+  }
+
+  .mdui-list-item-title {
+    color: $title-color;
+  }
+
+  .mdui-list-item-text {
     color: $subtitle-color;
   }
 }
