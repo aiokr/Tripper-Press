@@ -37,15 +37,15 @@ body {
 .itp-post-index-hero {
   .mdui-card-primary-title {
     a {
-      color: #fff;
-      opacity: .87;
+      color: #fff !important;
+      opacity: .87 !important;
     }
   }
 
   .mdui-card-primary-subtitle {
     a {
-      color: #fff;
-      opacity: .87
+      color: #fff !important;
+      opacity: .87 !important;
     }
   }
 }

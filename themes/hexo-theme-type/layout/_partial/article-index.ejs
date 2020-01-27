@@ -20,7 +20,7 @@ var isFullUrl = function(str) {
 <% } else if (item.style == 'hero') { %>
 <!--标题覆盖封面文章入口-->
 <% if (item.cover) { %>
-<div class="mdui-card mdui-hoverable itp-post-index-hero">
+<div class="mdui-card mdui-hoverable itp-post-index itp-post-index-hero">
   <div class="mdui-card-media">
     <a href="<%- config.root %><%- item.path %>">
       <img src="<%- item.cover %>" alt="<%- item.title %>" class="attachment-post-thumbnail"
