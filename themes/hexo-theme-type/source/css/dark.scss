@@ -12,7 +12,7 @@ body {
 }
 
 img {
-  opacity: 0.7;
+  filter: brightness(.8);
 }
 
 .itp-drawer-btn {
@@ -92,12 +92,7 @@ img {
   h4,
   h5,
   h6 {
-    color: $blue !important;
-  }
-
-  blockquote,
-  q {
-    border-left: 2px solid $blue;
+    filter: invert(1) hue-rotate(180deg);
   }
 }
 
