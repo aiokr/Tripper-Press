@@ -10,10 +10,10 @@
                     </section>
                     <!--文章信息区-->
                     <section class="mdui-card-primary">
-                        <div class="mdui-card-primary-title">
+                        <div class="mdui-card-primary-title itp-post-title">
                             <%- page.title %>
                         </div>
-                        <div class="mdui-card-primary-subtitle" style="padding-top: 5px; font-size: 16px !important;">
+                        <div class="mdui-card-primary-subtitle itp-post-subtitle" style="padding-top: 5px; font-size: 16px !important;">
                             <%= page.date.format(config.date_format) %>
                             <% if (page.categories && page.categories.length) { %>
                             <span> · </span>
