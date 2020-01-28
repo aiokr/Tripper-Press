@@ -147,7 +147,6 @@ body {
 }
 
 .itp-page-select {
-  background-color: #eeeeee;
   padding: 20px 20px 20px 20px;
 
   a {
@@ -285,4 +284,11 @@ footer {
   border-bottom-color: #2196f3 !important;
   box-shadow: 0 1px 0 0 #2196f3 !important;
   -webkit-box-shadow: 0 1px 0 0 #2196f3 !important;
+}
+
+.mdui-chip {
+  margin-right: 5px;
+  a {
+    color: #000;
+  }
 }
