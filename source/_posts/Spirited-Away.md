@@ -8,6 +8,7 @@ categories:
   - 随笔
 cover: https://imgur.itypen.com/picgo/20190623003809.png_itp
 date: 2019-06-23 00:36:00
+style: smart
 ---
 
 > 不要吃太胖、不要忘记自己的名字、不要回头。
