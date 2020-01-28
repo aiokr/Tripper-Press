@@ -34,6 +34,22 @@ body {
   }
 }
 
+.itp-index-header-card_style {
+  @media screen and (max-width: 816px) {
+    padding-top: 60px;
+  }
+
+  @media screen and (min-width: 816px) {
+    padding-top: 70px;
+  }
+
+  .itp-header-img {
+    height: 336px;
+    border-radius: 0px;
+    object-fit: cover;
+  }
+}
+
 .itp-post-index-hero {
   .mdui-card-primary-title {
     a {

@@ -1,18 +1,41 @@
 # basic
-favicon: https://imgur.itypen.com/picgo/20190626220507.png_avatar
+favicon: https://imgur.itypen.com/picgo/typelogo.png_avatar
 avatar: https://imgur.itypen.com/picgo/gff.jpg
 drawer_header: https://imgur.itypen.com/picgo/20190529224135.jpg_itp
 
-# Nav link
+  
+# ---------------------------------------------------------------
+# Style Setting
+# ---------------------------------------------------------------
+
+# Header Style
+# style deafult | card
+header: 
+  style: card
+  img: https://imgur.itypen.com/picgo/20200111230740.jpg_itp
+
+
+# Schemes
+schemes: column
+#schemes: docs
+
+# Header link
 nav:
-  首页: 
-    link: /
-    color: '#2196F3'
-    icon: home
   搜索: 
     link: /search.html
     icon: search
     color: '#2196F3'
+  友链:
+    link: /links.html
+    icon: link
+    color: '#2196F3'
+
+# aside link
+aside:
+  首页: 
+    link: /
+    color: '#2196F3'
+    icon: home
   归档: 
     link: /archives/
     icon:   move_to_inbox
@@ -20,10 +43,6 @@ nav:
   关于: 
     link: /about.html
     icon: person
-    color: '#2196F3'
-  友链:
-    link: /links.html
-    icon: link
     color: '#2196F3'
   渊梦:
     link: 'https://www.itypen.com'
