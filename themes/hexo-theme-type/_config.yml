@@ -26,7 +26,7 @@ schemes: column
 # ---------------------------------------------------------------
 
 # Header
-# style deafult | card
+# style default | card
 header: 
   style: card
   img: https://imgur.itypen.com/picgo/20200111230740.jpg_itp
