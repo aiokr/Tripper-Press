@@ -1,23 +1,35 @@
-# basic
+# ---------------------------------------------------------------
+# ICON Settings
+# ---------------------------------------------------------------
+
 favicon: https://imgur.itypen.com/picgo/typelogo.png_avatar
 avatar: https://imgur.itypen.com/picgo/gff.jpg
-drawer_header: https://imgur.itypen.com/picgo/20190529224135.jpg_itp
-
+apple_icon:
+  # iPhone 57x57 
+  iphone: https://imgur.itypen.com/picgo/20190625163454.jpg_iPhone
+  # iPad 72x72
+  ipad: https://imgur.itypen.com/picgo/20190625163454.jpg_RetinaiPad
+  # Retina iPhone 114x114
+  iphone_hd: https://imgur.itypen.com/picgo/20190625163454.jpg_iPhoneHD
+  # Retina iPad 144x144
+  ipad_hd: https://imgur.itypen.com/picgo/20190625163454.jpg_RetinaiPad
   
 # ---------------------------------------------------------------
-# Style Setting
+# Style Settings
 # ---------------------------------------------------------------
 
-# Header Style
+# Schemes
+schemes: column
+
+# ---------------------------------------------------------------
+# Header Settings
+# ---------------------------------------------------------------
+
+# Header
 # style deafult | card
 header: 
   style: card
   img: https://imgur.itypen.com/picgo/20200111230740.jpg_itp
-
-
-# Schemes
-schemes: column
-#schemes: docs
 
 # Header link
 nav:
@@ -29,6 +41,12 @@ nav:
     link: /links.html
     icon: link
     color: '#2196F3'
+
+# ---------------------------------------------------------------
+# Aside Settings
+# ---------------------------------------------------------------
+
+drawer_header: https://imgur.itypen.com/picgo/20190529224135.jpg_itp
 
 # aside link
 aside:
@@ -49,7 +67,10 @@ aside:
     icon: insert_photo
     color: '#2196F3'
 
-# footer
+# ---------------------------------------------------------------
+# Footer Settings
+# ---------------------------------------------------------------
+
 # about
 start_time: 2016
 footer: 永远相信美好的事情即将发生<br><div class="padding-15"></div><a href="https://travis-ci.org/aiokr/iTypen-Hexo" target="_blank">渲染状态</a>&nbsp;&nbsp;<a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fblog.itypen.com%2F&tab=desktop" target="_blank">速度测试</a>
@@ -65,6 +86,10 @@ cdn:
   upyun: 
     src: https://imgur.itypen.com/picgo/20190506220004.png_itp
 
+# ---------------------------------------------------------------
+# Posts Settings
+# ---------------------------------------------------------------
+
 # Post
 default_post_title: Untitled
 auto_excerpt:
@@ -75,7 +100,6 @@ auto_excerpt:
 highlight:
   use: true
   style: night
-
 
 # Comment
 # Use gitment | valine | disqus | disqusjs
@@ -102,6 +126,10 @@ comment:
 
 # Random Pictures
 random_pics: 24
+
+# ---------------------------------------------------------------
+# Third Party Services Settings
+# ---------------------------------------------------------------
 
 # Google Analytics
 google_analytics: UA-141010711-2
