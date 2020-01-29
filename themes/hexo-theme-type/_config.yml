@@ -104,15 +104,15 @@ highlight:
 # Comment
 # Use gitment | valine | disqus | disqusjs
 comment:
-  use: disqusjs
+  use: valine
   gitment:
     owner:
     repo:
     client_id:
     client_secret:
   valine:
-    appid:
-    appkey:
+    appid: 0kSi0u9r40XN3MswJG34Sj6K-gzGzoHsz
+    appkey: 0etVoCn0nhOS5RSYOenq0sl6
   disqus:
     src: 
     # such as: https://xxx.disqus.com/embed.js
