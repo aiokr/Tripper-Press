@@ -39,7 +39,7 @@ nav:
     color: '#2196F3'
   关于:
     link: /about.html
-    icon: perm_contact_calendar
+    icon: person
   搜索: 
     link: /search.html
     icon: search
@@ -60,14 +60,6 @@ aside:
   归档: 
     link: /archives/
     icon:   move_to_inbox
-    color: '#2196F3'
-  关于: 
-    link: /about.html
-    icon: person
-    color: '#2196F3'
-  渊梦:
-    link: 'https://www.itypen.com'
-    icon: insert_photo
     color: '#2196F3'
 
 # ---------------------------------------------------------------
