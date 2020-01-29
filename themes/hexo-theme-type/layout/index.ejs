@@ -26,10 +26,17 @@
             </div>
           </div>
           <% } else if (theme.header.style == 'card') { %>
+          <!--index header card-->
           <div class="itp-index-header-card_style">
             <div class="mdui-card">
               <div class="mdui-card-media">
                 <img class="itp-header-img" src="<%- theme.header.img %>" />
+                <div class="mdui-card-menu">
+                  <% for (var i in theme.nav) { %>
+                  <a mdui-tooltip="{content: '<%- i %>'}" href="<%- theme.nav[i].link %>" class="mdui-btn mdui-btn-icon mdui-text-color-white"><i
+                      class="mdui-icon material-icons"><%- theme.nav[i].icon %></i></a>
+                  <% } %>
+                </div>
                 <div class="mdui-card-media-covered mdui-card-media-covered-transparent">
                   <div class="mdui-card-primary">
                     <div class="mdui-card-primary-title"><%- config.description %></div>
@@ -37,6 +44,7 @@
                 </div>
               </div>
             </div>
+            <!--
             <% if(theme.nav) { %>
             <div class="mdui-card-actions itp-header-actions">
               <% for (var l in theme.nav) { %>
@@ -44,6 +52,7 @@
               <% } %>
             </div>
             <% } %>
+            -->
           </div>
           <% } %>
         </header>

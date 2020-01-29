@@ -18,16 +18,9 @@ a,abbr,acronym,address,applet,big,blockquote,body,caption,cite,code,dd,del,dfn,d
 Typography
 --------------------------------------------------------------*/
 
-button,input,select,textarea {    color: $color-text;
-    font-family: 'Open sans', sans-serif;
-    font-size: 100%;
-    line-height: 1.5;
-}
-
 address {
     margin: 0 0 1.5em;
 }
-
 
 code,
 kbd,
@@ -40,12 +33,6 @@ abbr,
 acronym {
     border-bottom: 1px dotted #666;
     cursor: help;
-}
-
-ins,
-mark {
-    background: #f6e79c;
-    text-decoration: none;
 }
 
 sub,
@@ -124,39 +111,6 @@ table {
     font: inherit;
     border: 0;
     margin: 0 auto;
-}
-
-tbody {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-table tr {
-    border: 0;
-    border-top: 1px solid #CCC;
-    background-color: white;
-    margin: 0;
-    padding: 0;
-}
-
-table tr:nth-child(2n) {
-    background-color: #F8F8F8;
-}
-
-table tr th,
-table tr td {
-    font-size: 16px;
-    border: 1px solid #CCC;
-    margin: 0;
-    padding: 5px 10px;
-}
-
-table tr th {
-    font-weight: bold;
-    color: #f5f5f5;
-    border: 1px solid #2196f3;
-    background-color: #2196f3;
 }
 
 strong,
@@ -267,45 +221,6 @@ Content
     }
 }
 
-.pager {
-    padding: 1.5em 0;
-
-    &:after {
-        visibility: hidden;
-        display: block;
-        font-size: 0;
-        content: " ";
-        clear: both;
-        height: 0;
-    }
-
-    &:hover {
-        .meta-arraw {
-            opacity: 0.8;
-        }
-    }
-
-    .previous {
-        float: right;
-        text-align: right;
-        width: 50%;
-    }
-
-    .next {
-        float: left;
-        width: 50%;
-    }
-
-    a {
-        text-decoration: none;
-        color: #3a3a3a;
-        text-transform: uppercase;
-        letter-spacing: 0.2em;
-        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang-SC-Regular", "STHeiti", "Helvetica", "Arial", "Verdana", "sans-serif", "Microsoft YaHei";
-        font-size: 0.750em;
-    }
-}
-
 .meta-arraw {
     width: 10px;
     height: 17px;
@@ -326,86 +241,8 @@ Content
 }
 
 /*--------------------------------------------------------------
-Comment
---------------------------------------------------------------*/
-#comment {
-    margin-top: 70px;
-}
-
-/*--------------------------------------------------------------
 Footer
 --------------------------------------------------------------*/
-.footer-widgets {
-    font-size: 0.750em;
-    z-index: 2;
-    position: relative;
-    padding-top: 50px;
-    padding-bottom: 40px;
-    text-align: center;
-}
-
-.widget-title {
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    margin: 0 0 20px;
-    text-align: center !important;
-}
-
-.widget-text {
-    input[type="text"] {
-        width: 200px;
-        color: #111;
-        border: 1px solid #E6E6E6;
-        border-radius: 3px;
-        padding: 3px;
-    }
-
-    input[type="submit"] {
-        border: 1px solid;
-        border-color: #ccc #ccc #bbb;
-        border-radius: 3px;
-        background: #e6e6e6;
-        color: rgba(0, 0, 0, 0.8);
-        cursor: pointer;
-        -webkit-appearance: button;
-        font-size: 0.8rem;
-        line-height: 1;
-        padding: 0.6em 1em 0.4em;
-    }
-}
-
-.custom-widget-content {
-    p {
-        text-align: left;
-    }
-
-    ul {
-        list-style: disc;
-        display: inline-block;
-    }
-}
-
-.icon {
-    display: inline-block;
-    width: $icon-size;
-    height: $icon-size;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    text-indent: -999em;
-
-    @each $social in github,
-    weibo,
-    mail,
-    twitter {
-        &.icon-#{$social} {
-            background-image: url('../images/#{$social}.svg');
-        }
-    }
-
-    &:hover {
-        opacity: 0.7;
-    }
-}
 
 .site-info {
     text-align: center;
