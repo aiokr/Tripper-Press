@@ -29,8 +29,8 @@ var isFullUrl = function(str) {
   </div>
   <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
     <div class="mdui-card-primary">
-      <div class="mdui-card-primary-title"><a href="<%- config.root %><%- item.path %>"
-          ><%- item.title || theme.default_post_title || "Untitled" %></a>
+      <div class="mdui-card-primary-title"><a
+          href="<%- config.root %><%- item.path %>"><%- item.title || theme.default_post_title || "Untitled" %></a>
       </div>
       <div class="mdui-card-primary-subtitle" style="padding-top: 5px;">
         <%= item.date.format(config.date_format) %><span> · </span>
@@ -46,6 +46,17 @@ var isFullUrl = function(str) {
 <% } else { %>
 <%- partial('_partial/article-index-standard') %>
 <% } %>
+<% } else if (item.style == 'moment') { %>
+<!--状态-->
+<div class="mdui-card mdui-shadow-0 itp-post-index itp-post-index-moment">
+  <div class="mdui-card-primary" style="padding: 48px;">
+    <div class="mdui-card-primary-title itp-post-index-title">
+      <%- item.content || item.title || theme.default_post_title || "Untitled" %>
+    </div>
+    <div class="mdui-card-primary-subtitle itp-post-index-subtitle">
+      <%= item.date.format(config.date_format) %><span> · </span><%- __('moment')%></div>
+  </div>
+</div>
 <% } else if (item.style == 'smart') { %>
 <!--小图样式文章入口-->
 <% if (item.cover) { %>

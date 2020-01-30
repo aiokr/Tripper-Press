@@ -42,13 +42,9 @@ img {
 }
 
 .itp-index-header-card_style {
-  .itp-header-actions{
+  .itp-header-actions {
     color: $dark-subtitle-color;
   }
-}
-
-.mdui-card-actions {
-
 }
 
 .itp-post-index {
@@ -56,6 +52,9 @@ img {
 }
 
 .itp-post-index-title {
+
+  color: $dark-title-color !important;
+
   a {
     color: $dark-title-color !important;
   }
@@ -165,6 +164,7 @@ img {
 
 .mdui-chip {
   background-color: $dark-bg-color;
+
   a {
     color: $dark-subtitle-color !important;
   }
