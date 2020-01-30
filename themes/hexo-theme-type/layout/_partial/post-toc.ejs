@@ -1,16 +1,13 @@
-<!--文章内页目录-->
 <% var toc = toc(page.content, {
-  class: 'toc',
+  class: 'itp-toc',
   list_number: false,
-  max_depth: 2,
 }) %>
 <% if(toc.length > 0) { %>
-<nav class="itp-post-toc noprn">
-  <div class="mdui-fab-wrapper" mdui-menu="{target: '#toc'}">
-      <button class="mdui-fab mdui-fab-fixed" style="background-color: white">
-          <i class="mdui-icon material-icons">format_list_bulleted</i>
-      </button>
+<div style="position: fixed;">
+  <div class="">
+    <div>
+      <%-(toc) %>
+    </div>
   </div>
-  <%-(toc) %>
-</nav>
+</div>
 <% } %>
