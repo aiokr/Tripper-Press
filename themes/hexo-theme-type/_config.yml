@@ -128,3 +128,12 @@ random_pics: 24
 
 # Google Analytics
 google_analytics: UA-141010711-2
+
+# ---------------------------------------------------------------
+# Gallery Page Settings
+# ---------------------------------------------------------------
+
+gallery:
+  title: Gallery by aiokr
+  descr_title: 寻找是唯一的解药
+  descr: 我们常常在繁杂和污浊中寻找光明，企图用光明照亮黑暗。殊不知光明的力量弱小，而黑暗则会吸收光芒。

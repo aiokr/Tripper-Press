@@ -7,10 +7,10 @@
 <html>
 
 <head>
-	<title>Gallery by iTypen</title>
+	<title><%= theme.gallery.title %></title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<%- css('css/gallery') %>
+	<%- css('gallery/assets/css/main') %>
 	<noscript>
 		<link rel="stylesheet" href="/gallery/assets/css/noscript.css" /></noscript>
 </head>
@@ -22,7 +22,7 @@
 
 		<!-- Header -->
 		<header id="header">
-			<h1><a href="index.html"><strong>Gallery</strong> by iTypen</a></h1>
+			<h1><a href="index.html"><%= theme.gallery.title %></a></h1>
 			<nav>
 				<ul>
 					<li><a href="#footer" class="icon solid fa-info-circle">About</a></li>
@@ -32,11 +32,12 @@
 
 		<!-- Main -->
 		<div id="main">
-			<% for (var p in site.data.image) { %>
+			<% for (var i in site.data.image) { %>
 			<article class="thumb">
-				<a href="<%- site.data.image[p].src %>" class="image"><img src="<%- site.data.image[p].thumb || site.data.image[p].src %>" alt="" /></a>
-				<h2><%- p %></h2>
-				<p><%- site.data.image[p].descr %></p>
+				<a href="<%- site.data.image[i].src %>" class="image"><img
+						src="<%- site.data.image[i].thumb || site.data.image[i].src %>" alt="" /></a>
+				<h2><%- site.data.image[i].title || i %></h2>
+				<p><%- site.data.image[i].descr %></p>
 			</article>
 			<% } %>
 		</div>
@@ -46,28 +47,14 @@
 			<div class="inner split">
 				<div>
 					<section>
-						<h2>Magna feugiat sed adipiscing</h2>
-						<p>Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum eget quis
-							orci mattis aliquet. Maecenas fringilla et ante at lorem et ipsum. Dolor nulla eu bibendum sapien. Donec
-							non pharetra dui. Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis
-							ipsum.</p>
-					</section>
-					<section>
-						<h2>Follow me on ...</h2>
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						</ul>
+						<h2><%= theme.gallery.descr_title %></h2>
+						<p><%= theme.gallery.descr %></p>
 					</section>
 					<p class="copyright">
-						&copy; Unttled. Design: <a href="http://html5up.net">HTML5 UP</a>.
+						&copy; <%= config.title %>. Design by <a href="http://html5up.net">HTML5 UP</a>.
 					</p>
 				</div>
-				<div>
+				<div><!--
 					<section>
 						<h2>Get in touch</h2>
 						<form method="post" action="#">
@@ -87,7 +74,7 @@
 								<li><input type="reset" value="Reset" /></li>
 							</ul>
 						</form>
-					</section>
+					</section>-->
 				</div>
 			</div>
 		</footer>
@@ -95,7 +82,7 @@
 	</div>
 
 	<!-- Scripts -->
-	<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 	<script src="/gallery/assets/js/jquery.poptrox.min.js"></script>
 	<script src="/gallery/assets/js/browser.min.js"></script>
 	<script src="/gallery/assets/js/breakpoints.min.js"></script>
