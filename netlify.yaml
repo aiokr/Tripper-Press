@@ -14,11 +14,14 @@ collections:
     label: "Post" # Used in the UI
     folder: "source/_posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{title}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    field: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden"}
+    field:
       - {label: "Title", name: "title", widget: "string"}
+    field:
       - {label: "Date", name: "date", widget: "datetime"}
+    field:
       - {label: "Image", name: "cover", widget: "string"}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Style", name: "style", widget: "string" , default: "smart"}
