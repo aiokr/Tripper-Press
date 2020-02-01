@@ -103,7 +103,7 @@ highlight:
 # Comment
 # Use gitment | valine | disqus | disqusjs
 comment:
-  use: valine
+  use: disqusjs
   gitment:
     owner:
     repo:
