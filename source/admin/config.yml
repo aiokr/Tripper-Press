@@ -22,10 +22,9 @@ collections:
       - {label: "Image", name: "cover", widget: "string"}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Style", name: "style", widget: "string" , default: "smart"}
+      - {label: "Categories", name: "categories", widget: "string"}
       - {label: "Summary", name: "summary", widget: "string"}
       - label: "Tags"
         name: "tags"
         widget: "list"
-      - label: "Categories"
-        name: "categories"
-        widget: "list"
+        field: {label: "Tag", name: "tags", widget: "string"}
