@@ -133,11 +133,14 @@ random_pics: 24
 # Google Analytics
 google_analytics: UA-141010711-2
 
+# Netlify CMS
+netlify_cms: true
+
 # ---------------------------------------------------------------
 # Gallery Page Settings
 # ---------------------------------------------------------------
 
 gallery:
-  title: 用镜头记录光明
-  descr_title: 用镜头记录光明
+  title: 镜头记录下的是光明
+  descr_title: 镜头记录下的是光明
   descr: 我们常常在繁杂和污浊中寻找光明，企图用光明照亮黑暗。殊不知光明的力量弱小，而黑暗则会吸收光芒。

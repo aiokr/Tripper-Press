@@ -114,6 +114,9 @@
         ga('set', 'forceSSL', true);
     </script>
     <!-- End Google Analytics -->
+    <% if(theme.netlify_cms == 'true') { %>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <% } %>
     <% } %>
     <% if(theme.comment.use == 'gitment') { %>
     <link rel="stylesheet" href="/css/gitment.css">
