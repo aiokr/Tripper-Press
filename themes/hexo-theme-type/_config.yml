@@ -133,9 +133,6 @@ random_pics: 24
 # Google Analytics
 google_analytics: UA-141010711-2
 
-# Netlify CMS
-netlify_cms: true
-
 # ---------------------------------------------------------------
 # Gallery Page Settings
 # ---------------------------------------------------------------

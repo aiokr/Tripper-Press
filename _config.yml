@@ -79,12 +79,6 @@ plugin:
  - hexo-generator-search
 theme: hexo-theme-type
 
-netlify_cms:
-  backend:
-    name: git-gateway
-    branch: master
-  config_file: netlify.yaml
-
 sitemap:
   path: sitemap.xml
   template: ./sitemap_template.xml
