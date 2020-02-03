@@ -32,7 +32,7 @@ h6 {
   margin: 20px 0 10px;
   padding: 0;
   font-style: bold !important;
-  color: #2196f3 !important;
+  color: #222831 !important;
   margin-top: 1.5em;
   margin-bottom: .5em;
   text-align: left !important;
@@ -67,7 +67,7 @@ h6 {
 
 blockquote,
 q {
-  border-left: 2px solid #2196f3;
+  border-left: 5px solid #2196f3;
   padding: 0 10px;
   color: #777;
   quotes: none;
@@ -78,4 +78,32 @@ mark {
   padding: 2px 4px;
   border-bottom: 1px solid #ffedce;
   background: #fffdd1;
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.right {
+  @media screen and (max-width: 768px) {
+    vertical-align: middle;
+    text-align:center 
+  }
+
+  @media screen and (min-width: 768px) {
+    float: right;
+    padding: 15px;
+  }
+}
+
+.left {
+  @media screen and (max-width: 768px) {
+    vertical-align: middle;
+    text-align:center 
+  }
+
+  @media screen and (min-width: 768px) {
+    float: left;
+    padding: 15px;
+  }
 }

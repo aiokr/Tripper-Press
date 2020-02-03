@@ -85,10 +85,10 @@ sitemap:
 
 symbols_count_time: 
   symbols: true
-  time: false
+  time: true
   total_symbols: true
-  total_time: false
-  exclude_codeblock: false
+  total_time: true
+  exclude_codeblock: true
 
 node_sass:
   outputStyle: nested

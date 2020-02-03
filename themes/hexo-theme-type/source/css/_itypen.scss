@@ -152,6 +152,9 @@ body {
 .itp-post-comment {
   background-color: #eeeeee;
   padding: 20px 20px 20px 20px !important;
+  @media screen and (min-width: 816px) {
+    padding: 20px 10% 20px 10% !important;
+  }
 }
 
 .itp-page-select {
@@ -197,9 +200,19 @@ em {
   }
 }
 
+.article-info {
+  @media (min-width: 816px) {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+}
+
 .article {
-  padding-right: 20px;
-  padding-left: 20px;
+  @media (min-width: 816px) {
+    padding-top: 4%;
+    padding-right: 12%;
+    padding-left: 12%;
+  }
 }
 
 .post-content p img {
@@ -216,6 +229,7 @@ em {
 
   img {
     border-radius: 0px !important;
+
   }
 
   background-size: cover;
@@ -309,7 +323,7 @@ footer {
 }
 
 .itp-toc {
-  padding: 10vh 24px 24px 24px;
+  padding: 10vh 8px 24px 8px;
 
   position: fixed !important;
 

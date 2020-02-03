@@ -1,9 +1,10 @@
 ---
 title: {{ title }}
 date: {{ date }}
-tags:
+tags: 
 categories: 
 cover: 
 style: 
 summary: 
+permalink: 
 ---

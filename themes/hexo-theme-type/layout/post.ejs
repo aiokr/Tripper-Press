@@ -1,15 +1,15 @@
 <div class="content-area">
   <div class="mdui-container">
     <div class="mdui-row">
-      <div class="mdui-col-md-2 mdui-col-xs-down"></div>
-      <div class="mdui-col-md-8 mdui-col-xs-12 mdui-center">
+      <div class="mdui-col-md-1 mdui-col-xs-down"></div>
+      <div class="mdui-col-md-10 mdui-col-xs-12 mdui-center">
         <div class="mdui-card itp-post-card">
           <!--头图-->
           <section class="mdui-card-media itp-post-cover">
             <img src="<%- page.cover %>" style="border-radius: 0px; max-height: 300px; object-fit: cover;" />
           </section>
           <!--文章信息区-->
-          <section class="mdui-card-primary">
+          <section class="mdui-card-primary article-info">
             <div class="mdui-card-primary-title itp-post-title">
               <%- page.title %>
             </div>
@@ -57,7 +57,7 @@
           </section>
         </div>
       </div>
-      <div class="mdui-col-md-2 mdui-col-xs-down">
+      <div class="mdui-col-md-1 mdui-col-xs-down">
         <%- partial('_partial/post-toc') %>
       </div>
     </div>

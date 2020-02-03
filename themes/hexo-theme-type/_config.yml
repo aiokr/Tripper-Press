@@ -22,14 +22,16 @@ apple_icon:
 schemes: column
 
 # ---------------------------------------------------------------
-# Header Settings
+# Header and Aside Settings
 # ---------------------------------------------------------------
 
 # Header
 # style default | card
 header: 
   style: card
-  img: https://imgur.itypen.com/picgo/20200111230740.jpg_itp
+  img: https://imgur.itypen.com/picgo/20200201164712.jpg_itp
+
+drawer_header: https://imgur.itypen.com/picgo/20190529224135.jpg_itp
 
 # Materiac ICON from https://www.mdui.org/docs/material_icon
 
@@ -46,13 +48,7 @@ nav:
     icon: search
     color: '#2196F3'
 
-# ---------------------------------------------------------------
-# Aside Settings
-# ---------------------------------------------------------------
-
-drawer_header: https://imgur.itypen.com/picgo/20190529224135.jpg_itp
-
-# aside link
+# Aside link
 aside:
   首页: 
     link: /
@@ -66,6 +62,7 @@ aside:
     link: /links.html
     icon: link
     color: '#2196F3'
+
 # ---------------------------------------------------------------
 # Footer Settings
 # ---------------------------------------------------------------
