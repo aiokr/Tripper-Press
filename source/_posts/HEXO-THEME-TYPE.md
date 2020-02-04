@@ -8,7 +8,6 @@ tags:
   - hexo主题
 style: smart
 categories: 项目
-summary: null
 ---
 在使用 Daily 主题一段时间后，终于把主题改造成了自己想要的亚子，趁着 2020 年春节假期哪也去不了的这段时间，下定决心把主题一些地方完善，发布出来。
 

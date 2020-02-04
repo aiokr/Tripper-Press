@@ -8,7 +8,6 @@ tags:
 categories: 摄影
 cover: https://imgur.itypen.com/picgo/20200125225359.jpg
 style: hero
-summary: 
 ---
 ## 红卫建材市场货场
 

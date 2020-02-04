@@ -7,7 +7,7 @@ categories:
 - 项目
 cover: https://imgur.itypen.com/picgo/20200126001748.jpg
 style: smart
-summary: 城市的记忆是市政府做出宣传的响亮口号，是游客对他的第一印象，更是市民对他的归属感，是乡愁。
+excerpt: 城市的记忆是市政府做出宣传的响亮口号，是游客对他的第一印象，更是市民对他的归属感，是乡愁。
 ---
 
 我们在寻找城市的记忆。

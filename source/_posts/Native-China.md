@@ -8,7 +8,6 @@ tags:
 categories: 笔记
 cover: https://imgur.itypen.com/picgo/20200129205822.jpg
 style: smart
-summary:
 ---
 
 在 Google 翻译上翻译「乡土中国」的时候，得到的结果是 Native China。我想，Native China 这个翻译本身可能比「乡土中国」这四个字来得更为直观一些。

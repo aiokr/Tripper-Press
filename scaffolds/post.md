@@ -5,6 +5,6 @@ tags:
 categories: 
 cover: 
 style: 
-summary: 
+excerpt: 
 permalink: 
 ---
