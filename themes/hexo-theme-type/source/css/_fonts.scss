@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Josefin Sans Regular'), local('JosefinSans-Regular'),
+    url('/fonts/josefin-sans-v14-latin-regular.woff') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('/fonts/josefin-sans-v14-latin-regular.woff2') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
+}
+
+
+.itp-post-title {
+  font-family: 'Josefin Sans', 'Roboto', -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif
+}
+
+.itp-post-subtitle {
+  font-family: 'Josefin Sans', 'Roboto', -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif
+}
+
+article {
+  font-family: 'SF UI Display', '.PingFang SC', 'PingFang SC', 'Neue Haas Grotesk Text Pro', 'Arial Nova', 'Segoe UI', 'Microsoft YaHei', 'Microsoft JhengHei', 'Helvetica Neue', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'Helvetica', 'Hiragino Sans GB', sans-serif;
+}

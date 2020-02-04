@@ -1,5 +1,6 @@
 body {
   background-color: #f8f9fa !important;
+  font-family: "SF UI Display", ".PingFang SC", "PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Helvetica", "Hiragino Sans GB", sans-serif;
 }
 
 .padding-70 {
@@ -104,6 +105,47 @@ body {
   }
 }
 
+.itp-post-title {
+  color: #222831;
+}
+
+.itp-post-title_has_cover {
+  @media (min-width: 816px) {
+    padding: 6% 12% 4px 12%;
+    font-size: 2.6rem;
+  }
+
+  @media (max-width: 816px) {
+    padding: 20px 16px 4px 16px;
+    font-size: 1.8rem;
+  }
+
+}
+
+.itp-post-title_no_cover {
+  @media (min-width: 816px) {
+    padding: 12% 12% 4px 12%;
+    font-size: 2.6rem;
+  }
+
+  @media (max-width: 816px) {
+    padding: 20px 16px 4px 16px;
+    font-size: 1.8rem;
+  }
+}
+
+.itp-post-subtitle {
+  @media (min-width: 816px) {
+    padding: 16px 12% 0 12%;
+  }
+
+  @media (max-width: 816px) {
+    padding: 6px 16px;
+  }
+
+  color: #767676;
+}
+
 .itp-post-top {
   position: relative;
   z-index: 0;
@@ -145,13 +187,14 @@ body {
 @media screen and (min-width: 816px) {
   .itp-post-card {
     margin-bottom: 140px;
-    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12) !important;
+    box-shadow: 0 30px 50px 0 rgba(1,1,1,.15) !important;
   }
 }
 
 .itp-post-comment {
   background-color: #eeeeee;
   padding: 20px 20px 20px 20px !important;
+
   @media screen and (min-width: 816px) {
     padding: 20px 10% 20px 10% !important;
   }
@@ -209,7 +252,6 @@ em {
 
 .article {
   @media (min-width: 816px) {
-    padding-top: 4%;
     padding-right: 12%;
     padding-left: 12%;
   }

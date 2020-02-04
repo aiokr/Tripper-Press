@@ -9,34 +9,51 @@
             <img src="<%- page.cover %>" style="border-radius: 0px; max-height: 300px; object-fit: cover;" />
           </section>
           <!--文章信息区-->
-          <section class="mdui-card-primary article-info">
-            <div class="mdui-card-primary-title itp-post-title">
-              <%- page.title %>
-            </div>
-            <div class="mdui-card-primary-subtitle itp-post-subtitle"
-              style="padding-top: 5px; font-size: 16px !important;">
-              <%= page.date.format(config.date_format) %>
-              <% if (page.categories && page.categories.length) { %>
-              <span> · </span>
-              <%- list_categories(page.categories, {
+          <% if (page.cover) { %>
+          <div class="itp-post-title itp-post-title_has_cover title">
+            <%- page.title %>
+          </div>
+          <% } else { %>
+          <div class="itp-post-title itp-post-title_no_cover title">
+            <%- page.title %>
+          </div>
+          <% } %>
+          <div class="itp-post-subtitle">
+            <%= page.date.format(config.date_format) %>
+            <% if (page.categories && page.categories.length) { %>
+            <span> / </span>
+            <%- list_categories(page.categories, {
                 show_count: false,
                 separator: '<span class="itp-post-cat"></span>',
                 style: 'none'
               }) %>
-              <% } %>
-            </div>
-          </section>
-          <div class="mdui-divider"></div>
+            <% } %>
+            <span> / </span>
+            <%- symbolsCount(page) %>
+          </div>
           <!--正文-->
           <section class="mdui-card-content article" role="article">
             <%- page.content %>
           </section>
           <!--文章底部信息-->
           <section class="mdui-card-content">
-            <div class="mdui-text-center noprn"><%= __('post.post_on') %>
-              <%= page.date.format(config.date_format) %></div>
+            <div class="mdui-text-center">
+              <div class="itp-post-subtitle">
+                <%= page.date.format(config.date_format) %>
+                <% if (page.categories && page.categories.length) { %>
+                <span> / </span>
+                <%- list_categories(page.categories, {
+                  show_count: false,
+                  separator: '<span class="itp-post-cat"></span>',
+                  style: 'none'
+                }) %>
+                <% } %>
+                <span> / </span>
+                <%- symbolsCount(page) %>
+              </div>
+            </div>
             <% if (page.tags) { %>
-            <div class="mdui-card-primary-subtitle" style="padding-top: 2px; font-size: .75rem !important;">
+            <div class="mdui-text-center" style="padding-top: 2px; font-size: .75rem !important;">
               <div class="tags-links">
                 <% page.tags.each(function(tag){ %>
                 <div class="mdui-chip">
@@ -63,3 +80,6 @@
     </div>
   </div>
 </div>
+<script>
+  var firstChar = page.title.substr(0, 1)
+</script>

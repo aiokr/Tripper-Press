@@ -87,10 +87,15 @@ footer {
 .right {
   @media screen and (max-width: 768px) {
     vertical-align: middle;
-    text-align:center 
+    text-align: center
   }
 
   @media screen and (min-width: 768px) {
+    float: right;
+    padding: 15px;
+  }
+
+  @media print {
     float: right;
     padding: 15px;
   }
@@ -99,10 +104,15 @@ footer {
 .left {
   @media screen and (max-width: 768px) {
     vertical-align: middle;
-    text-align:center 
+    text-align: center
   }
 
   @media screen and (min-width: 768px) {
+    float: left;
+    padding: 15px;
+  }
+
+  @media print {
     float: left;
     padding: 15px;
   }
