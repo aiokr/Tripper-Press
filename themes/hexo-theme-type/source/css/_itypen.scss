@@ -18,7 +18,6 @@ body ::-webkit-selection {
   color: #fff;
 }
 
-
 .itp-appbar-color {
   background-color: $main-color;
 }
@@ -263,7 +262,11 @@ body ::-webkit-selection {
   min-height: 50vh;
 }
 
-
+.itp-category-list {
+  font-size: 16px;
+  line-height: 1.8em;
+  list-style-type: none;
+}
 
 @media print {
   .itp-post-card {
@@ -299,6 +302,12 @@ body ::-webkit-selection {
 
 .category-link {
   color: #767676;
+}
+
+.categories a {
+  padding: 0 5px 0 0;
+  font-size: 16px;
+  line-height: 1.8em;
 }
 
 strong,
