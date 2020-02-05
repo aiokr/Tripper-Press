@@ -2,7 +2,7 @@
 title: 暑假的一期更新
 date: 2019-08-10 21:18:06
 tags:
-categories:
+categories: 随笔
 cover:
 ---
 

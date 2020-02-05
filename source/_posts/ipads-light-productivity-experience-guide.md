@@ -5,7 +5,7 @@ tags:
     - iOS
     - 生产力
     - 笔记
-categories: 硬件
+categories: 随笔
 title: iPad 轻度生产力体验指北
 ---
 
