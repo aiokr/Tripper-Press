@@ -1,4 +1,4 @@
-$main-color: #2196f3;
+$main-color: #0078d7;
 $black: #222831;
 $grey: #767676;
 $deep-grey: #333333;
@@ -6,6 +6,23 @@ $deep-grey: #333333;
 body {
   background-color: #f8f9fa !important;
   font-family: "SF UI Display", ".PingFang SC", "PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Helvetica", "Hiragino Sans GB", sans-serif;
+}
+
+p::selection {
+  background:$main-color;
+  color:#222831;;
+}
+p::-moz-selection {
+  background:$main-color;
+  color:#222831;;
+}
+p::-webkit-selection {
+  background:$main-color;
+  color:#222831;
+}
+
+.itp-appbar-color {
+  background-color: $main-color;
 }
 
 .mdui-toolbar {
