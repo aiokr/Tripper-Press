@@ -7,169 +7,73 @@ $dark-green: #1db954;
 $dark-lightgreen: #49b683;
 $dark-yellow: #feda7a;
 
-body {
+body,
+.itp-drawer,
+.mdui-chip {
   background-color: $dark-bg-color !important;
+}
+
+.itp-index-title,
+.itp-index-header,
+.itp-index-header-title,
+.itp-post-title,
+.itp-post-index-title,
+.itp-post-index-title a .itp-link .mdui-card-header-title,
+.itp-search .mdui-textfield-input,
+.itp-search .mdui-list-item a,
+.mdui-list-item-title {
+  color: $dark-title-color !important;
+}
+
+.article p,
+.itp-toc span,
+.mdui-chip a,
+.itp-header-actions,
+.itp-drawer-title,
+.itp-index-subtitle,
+.itp-post-subtitle,
+.itp-post-index-categories,
+.itp-post-index-subtitle,
+.itp-post-index-excerpt,
+.itp-post-index-excerpt a,
+.itp-link .mdui-card-header-subtitle,
+.itp-search .mdui-textfield-label,
+.mdui-list-item-text,
+.itp-page-select-prev a,
+.itp-page-select-next a {
+  color: $dark-subtitle-color !important;
+}
+
+.itp-post-card,
+.itp-index-card {
+  background-color: $dark-card-color;
 }
 
 img {
   filter: brightness(.8);
 }
 
-.itp-drawer-btn {
-  color: #fff;
-}
 
-.itp-drawer {
-  background-color: $dark-bg-color !important;
-
-  .itp-drawer-title {
-    color: $dark-title-color;
-  }
-
-  .itp-drawer-description {
-    color: #e3e3e3;
-  }
-}
-
-.itp-index-header {
-  .itp-index-header-title {
-    color: $dark-title-color;
-  }
-
-  .itp-index-header-description {
-    color: #e3e3e3;
-  }
-}
-
-.itp-index-header-card_style {
-  .itp-header-actions {
-    color: $dark-subtitle-color;
-  }
+.itp-drawer-description,
+.itp-index-header-description {
+  color: #e3e3e3;
 }
 
 .itp-post-index {
   background-color: $dark-card-color;
 }
 
-.itp-post-index-title {
-
-  color: $dark-title-color !important;
-
-  a {
-    color: $dark-title-color !important;
-  }
-}
-
-.itp-post-index-subtitle {
-  color: $dark-subtitle-color !important;
-}
-
-.itp-post-index-categories {
-  color: $dark-subtitle-color !important;
-}
-
-.itp-post-index-excerpt {
-  a {
-    color: $dark-subtitle-color;
-  }
-}
-
-.itp-post-index-hero {
-  .mdui-card-primary-title {
-    a {
-      color: $dark-title-color;
-      opacity: .87;
-    }
-  }
-
-  .mdui-card-primary-subtitle {
-    color: $dark-subtitle-color;
-    opacity: .87;
-
-    a {
-      color: $dark-subtitle-color;
-      opacity: .87;
-    }
-  }
-}
-
-.itp-post-card {
-  background-color: $dark-card-color;
-}
-
-.itp-post-title {
-  color: $dark-title-color;
-}
-
-.itp-post-subtitle {
-  color: $dark-subtitle-color;
-
-  a {
-    color: $dark-subtitle-color;
-  }
-}
-
-.article {
-  p {
-    color: $dark-subtitle-color;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    filter: invert(1) hue-rotate(180deg);
-  }
-}
-
-.itp-link {
-  background-color: $dark-card-color;
-
-  .mdui-card-header-title {
-    color: $dark-title-color;
-  }
-
-  .mdui-card-header-subtitle {
-    color: $dark-subtitle-color;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  filter: invert(1) hue-rotate(180deg);
 }
 
 .itp-search {
-  .mdui-textfield-label {
-    color: $dark-subtitle-color;
-  }
-
   .mdui-textfield-input {
-    color: $dark-title-color;
-
     border-bottom: 1px solid $dark-subtitle-color;
   }
-
-  .mdui-list-item {
-    a {
-      color: $dark-title-color;
-    }
-  }
-
-  .mdui-list-item-title {
-    color: $dark-title-color;
-  }
-
-  .mdui-list-item-text {
-    color: $dark-subtitle-color;
-  }
-}
-
-.mdui-chip {
-  background-color: $dark-bg-color;
-
-  a {
-    color: $dark-subtitle-color !important;
-  }
-}
-
-.itp-toc span {
-    color: $dark-subtitle-color !important;
 }
