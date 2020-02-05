@@ -1,68 +1,35 @@
-<main class="content-area">
-  <div class="mdui-container">
-    <div class="mdui-row">
-      <div class="mdui-col-md-2 mdui-col-xs-down"></div>
-      <div class="mdui-col-md-8 mdui-col-xs-12">
-        <header>
-          <!--index header-->
-          <% if(theme.header.style == 'default') { %>
-          <!--index header default-->
-          <div class="mdui-row itp-index-header">
-            <div class="mdui-text-center itp-index-header-title">
-              <%= config.title %>
-            </div>
-            <div class="padding-15"></div>
-            <div class="mdui-text-center itp-index-header-description">
-              <%- config.description %>
-            </div>
-            <div class="padding-25">
-              <div class="mdui-text-center">
-                <% for (var i in theme.nav) { %>
-                <a href="<%- theme.nav[i].link %>" class="mdui-ripple" style="color:#2196F3; padding: 10px;">
-                  <%- i %>
-                </a>
-                <% } %>
-              </div>
-            </div>
-          </div>
-          <% } else if (theme.header.style == 'card') { %>
-          <!--index header card-->
-          <div class="itp-index-header-card_style">
-            <div class="mdui-card">
-              <div class="mdui-card-media">
-                <img class="itp-header-img" src="<%- theme.header.img %>" />
-                <div class="mdui-card-menu">
-                  <% for (var i in theme.nav) { %>
-                  <a mdui-tooltip="{content: '<%- i %>'}" href="<%- theme.nav[i].link %>" class="mdui-btn mdui-btn-icon mdui-text-color-white"><i
-                      class="mdui-icon material-icons"><%- theme.nav[i].icon %></i></a>
-                  <% } %>
-                </div>
-                <div class="mdui-card-media-covered mdui-card-media-covered-transparent">
-                  <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title"><%- config.description %></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--
-            <% if(theme.nav) { %>
-            <div class="mdui-card-actions itp-header-actions">
-              <% for (var l in theme.nav) { %>
-              <a href="<%- theme.nav[l].link %>" class="mdui-btn mdui-ripple"><%- l %></a>
-              <% } %>
-            </div>
+<div class="mdui-container">
+  <div class="mdui-row">
+    <div class="mdui-col-md-1 mdui-col-xs-down"></div>
+    <div class="mdui-col-md-10 mdui-col-xs-12">
+      <div class="mdui-card mdui-shadow-0 itp-index-card">
+        <div class="mdui-card-primary itp-index-header">
+          <div class="mdui-card-primary-title itp-index-title"><%= config.title %></div>
+          <div class="mdui-card-primary-subtitle itp-index-subtitle"><%- config.description %></div>
+          <div class="mdui-card-content itp-index-header-action">
+            <% for (var i in theme.nav) { %>
+            <a href="<%- theme.nav[i].link %>" padding: 10px;">
+              <%- i %>
+            </a>
             <% } %>
-            -->
           </div>
-          <% } %>
-        </header>
-        <div class="padding-15 noprn"></div>
-        <% page.posts.each(function(item, itemIndex){ %>
-        <%- partial('_partial/article-index', {item: item}) %>
-        <% }); %>
-        <%- partial('_partial/index-pagination') %>
+        </div>
+        <div class="mduimdui-card-primary itp-index-content">
+          <% page.posts.each(function(item, itemIndex){ %>
+          <%- partial('_partial/post-index', {item: item}) %>
+          <% }); %>
+          <div class="index-pagination">
+            <% if (page.prev){ %>
+            <a href="<%- config.root %><%- page.prev_link %>" class="index-pagination-btn"><%- __('prev')%></a>
+            <% } %>
+            <% if (page.next){ %>
+            <a href="<%- config.root %><%- page.next_link %>" class="index-pagination-btn"><%- __('next')%></a>
+            <% } %>
+          </div>
+        </div>
       </div>
-      <div class="mdui-col-md-2 mdui-col-xs-down"></div>
+
     </div>
+    <div class="mdui-col-md-1 mdui-col-xs-down"></div>
   </div>
-</main>
+</div>

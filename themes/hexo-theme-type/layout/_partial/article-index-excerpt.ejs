@@ -1,9 +1,0 @@
-<% if (item.excerpt) { %>
-<div class="mdui-card-content itp-post-index-excerpt"><a
-  href="<%- config.root %><%- item.path %>"><%- item.excerpt %></a>
-</div>
-<% } else { %>
-<div class="mdui-card-content itp-post-index-excerpt"><a
-  href="<%- config.root %><%- item.path %>"><%- strip_html(truncate(item.content, { length: theme.auto_excerpt.length })) %></a>
-</div>
-<% } %>

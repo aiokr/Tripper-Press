@@ -1,0 +1,25 @@
+<div class="mdui-card mdui-shadow-0 itp-post-index">
+  <div class="mdui-card-primary">
+    <div class="mdui-card-primary-title itp-post-index-title "><a
+        href="<%- config.root %><%- item.path %>"><%- item.title || theme.default_post_title || "Untitled" %></a>
+    </div>
+    <div class="itp-post-index-subtitle">
+      <%= item.date.format(config.date_format) %><span> / </span>
+      <% item.categories.each(function(categories){ %>
+      <a class="itp-post-index-categories" href="<%= config.root %>categories/<%= categories.name %>/" rel="tag">
+        <%- categories.name %>
+      </a>
+      <span> / </span>
+      <% }); %>
+      <%- symbolsCount(item) %>
+    </div>
+    <div class="itp-post-index-excerpt">
+      <a href="<%- config.root %><%- item.path %>">
+        <% if (item.excerpt) { %><%- item.excerpt %>
+        <% } else { %><%- strip_html(truncate(item.content, { length: theme.auto_excerpt.length })) %>
+        <% } %>
+      </a>
+    </div>
+  </div>
+
+</div>

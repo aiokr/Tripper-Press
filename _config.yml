@@ -4,8 +4,8 @@
 
 # Site
 title: aiokr's daily
-subtitle: 
-description: 永远相信美好的事情即将发生
+subtitle: note & photography
+description: 镜头记录下的是光明
 keywords:
 author: aiokr
 language: zh-CN
@@ -82,6 +82,7 @@ theme: hexo-theme-type
 sitemap:
   path: sitemap.xml
   template: ./sitemap_template.xml
+  rel: false
 
 symbols_count_time: 
   symbols: true

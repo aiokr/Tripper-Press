@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 关于
+title: about
 date: 2019-07-02 00:00:00
 ---
 
