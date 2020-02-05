@@ -24,7 +24,6 @@ var appDaily = {
   },
 };
 
-
 var whetherChange = 0;
 var whetherChangeToTop = 0;
 var ticking = false;
@@ -49,6 +48,10 @@ window.onscroll = function () {
     whetherChange = 0;
   }
 };
+
+headerTitle2.onclick = function(){
+  document.body.scrollTop = document.documentElement.scrollTop = 0;
+}
   
 /*
 

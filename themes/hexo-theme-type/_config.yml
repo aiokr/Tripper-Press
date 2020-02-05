@@ -72,7 +72,6 @@ start_time: 2016
 footer: 永远相信美好的事情即将发生<br><div class="padding-15"></div><a href="https://travis-ci.org/aiokr/iTypen-Hexo" target="_blank">渲染状态</a>&nbsp;&nbsp;<a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fblog.itypen.com%2F&tab=desktop" target="_blank">速度测试</a>
 # info
 count: true
-busuanzi: true
 # ICP
 icp: 
 # CDN
@@ -129,6 +128,9 @@ random_pics: 24
 
 # Google Analytics
 google_analytics: UA-141010711-2
+
+# Busuanzi Count
+busuanzi: false
 
 # ---------------------------------------------------------------
 # Gallery Page Settings

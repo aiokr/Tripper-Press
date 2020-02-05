@@ -1,8 +1,9 @@
 <!-- scripts -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 <%- js('js/mdui.min.js') %>
-<%- js('js/gallery.js') %>
+<% if (theme.busuanzi == true){ %>
 <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<% } %>
 <% if(theme.highlight.use == true) { %>
 <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
 <script>
