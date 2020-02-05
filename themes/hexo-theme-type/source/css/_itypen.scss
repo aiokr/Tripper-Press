@@ -1,4 +1,4 @@
-$main-color: #0078d7;
+$main-color: #60a9a6;
 $black: #222831;
 $grey: #767676;
 $deep-grey: #333333;
@@ -8,18 +8,16 @@ body {
   font-family: "SF UI Display", ".PingFang SC", "PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Helvetica", "Hiragino Sans GB", sans-serif;
 }
 
-p::selection {
-  background:$main-color;
-  color:#222831;;
+body ::selection {
+  background: $main-color;
+  color: #fff;}
+
+body ::-moz-selection,
+body ::-webkit-selection {
+  background: $main-color;
+  color: #fff;
 }
-p::-moz-selection {
-  background:$main-color;
-  color:#222831;;
-}
-p::-webkit-selection {
-  background:$main-color;
-  color:#222831;
-}
+
 
 .itp-appbar-color {
   background-color: $main-color;
@@ -38,8 +36,9 @@ p::-webkit-selection {
 .display {
   display: inline;
 }
+
 .toc-display {
- display: block;
+  display: block;
 }
 
 .padding-70 {
