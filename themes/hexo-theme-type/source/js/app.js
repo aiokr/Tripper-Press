@@ -20,22 +20,48 @@ var appDaily = {
       this.googleSearch($ipt.value.trim());
     }
 
-    return false;
+    return false; header
   },
 };
 
+
+var whetherChange = 0;
+var whetherChangeToTop = 0;
+var ticking = false;
+cover = 400
+
+window.onscroll = function () {
+  var howFar = document.documentElement.scrollTop || document.body.scrollTop;
+  if (howFar > cover & whetherChange == 0) {
+    $("#appbar").toggleClass("mdui-shadow-0");
+    $("#toolbar").toggleClass("mdui-color-blue");
+    $("#headerTitle1").toggleClass("nodisplay");
+    $("#headerTitle2").toggleClass("display");
+    $("#toc").toggleClass("toc-display");
+    whetherChange = 1;
+  };
+  if (howFar <= cover & whetherChange == 1) {
+    $("#appbar").toggleClass("mdui-shadow-0");
+    $("#toolbar").toggleClass("mdui-color-blue");
+    $("#headerTitle1").toggleClass("nodisplay");
+    $("#headerTitle2").toggleClass("display");
+    $("#toc").toggleClass("toc-display");
+    whetherChange = 0;
+  }
+};
+  
 /*
 
-$(".toc li").replaceWith(function () { 
-  return "<li class='mdui-menu-item'>" + this.innerHTML + "</li>"; 
+$(".toc li").replaceWith(function () {
+  return "<li class='mdui-menu-item'>" + this.innerHTML + "</li>";
 });
 
-$(".toc-child li").replaceWith(function () { 
-  return "<li class='mdui-menu-item'>" + this.innerHTML + "</li>"; 
+$(".toc-child li").replaceWith(function () {
+  return "<li class='mdui-menu-item'>" + this.innerHTML + "</li>";
 });
 
-$(".itp-post-toc ol").replaceWith(function () { 
-  return "<ul class='mdui-menu mdui-menu-cascade itp-toc-menu' id='toc'>" + this.innerHTML + "</ul>"; 
+$(".itp-post-toc ol").replaceWith(function () {
+  return "<ul class='mdui-menu mdui-menu-cascade itp-toc-menu' id='toc'>" + this.innerHTML + "</ul>";
 });
 
 */

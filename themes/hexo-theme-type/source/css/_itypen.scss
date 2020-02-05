@@ -8,6 +8,23 @@ body {
   font-family: "SF UI Display", ".PingFang SC", "PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Helvetica", "Hiragino Sans GB", sans-serif;
 }
 
+.mdui-toolbar {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  top: 0;
+}
+
+.nodisplay {
+  display: none;
+}
+
+.display {
+  display: inline;
+}
+.toc-display {
+ display: block;
+}
+
 .padding-70 {
   padding-top: 70px;
 }
@@ -20,12 +37,8 @@ body {
   padding-top: 25px;
 }
 
-.itp-appbar {
-  background-color: $main-color;
-}
-
 .itp-index-card {
-  top: -20vh;
+  top: -40vh;
 
   @media (min-width: 816px) {
     margin: 70px 0 0 0;
@@ -100,12 +113,12 @@ body {
   a {
     color: $black;
     text-decoration: none;
-    transition-duration: .2s, ;
+    transition: .2s, ;
   }
 
   a:hover {
     color: $main-color;
-    transition-duration: .2s, ;
+    transition: .2s, ;
   }
 
   @media (min-width: 816px) {
@@ -206,13 +219,13 @@ body {
   .index-pagination-btn {
     max-width: 168px;
     background-color: $deep-grey;
-    transition-duration: .15s;
+    transition: .15s;
     color: #fff;
     padding: 10px 60px;
   }
 
   .index-pagination-btn:hover {
-    transition-duration: .15s;
+    transition: .15s;
     -webkit-box-shadow: 0 15px 25px 0 rgba(131, 131, 131, 0.35);
     box-shadow: 0 15px 25px 0 rgba(131, 131, 131, 0.35);
   }
@@ -223,12 +236,15 @@ body {
 }
 
 .itp-top-cover {
-  background: $main-color;
+
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
 }
 
 .itp-top-cover {
-  height: 30vh;
-  min-height: 30vh;
+  height: 50vh;
+  min-height: 50vh;
 }
 
 
@@ -326,8 +342,7 @@ a {
 .itp-footer {
 
   position: relative;
-  bottom: 80px;
-  margin: 0 0 60px 0;
+  bottom: 180px;
 
   .footer-info,
   a {

@@ -5,19 +5,13 @@
       <div class="mdui-col-md-10 mdui-col-xs-12">
         <div class="mdui-card itp-post-card">
           <!--头图-->
-          <section class="mdui-card-media itp-post-cover">
+          <!--<section class="mdui-card-media itp-post-cover">
             <img src="<%- page.cover %>" style="border-radius: 0px; max-height: 300px; object-fit: cover;" />
-          </section>
+          </section>-->
           <!--文章信息区-->
-          <% if (page.cover) { %>
-          <div class="itp-post-title itp-post-title_has_cover title">
-            <%- page.title %>
-          </div>
-          <% } else { %>
           <div class="itp-post-title itp-post-title_no_cover title">
             <%- page.title %>
           </div>
-          <% } %>
           <div class="itp-post-subtitle">
             <%= page.date.format(config.date_format) %>
             <% if (page.categories && page.categories.length) { %>
@@ -80,6 +74,3 @@
     </div>
   </div>
 </div>
-<script>
-  var firstChar = page.title.substr(0, 1)
-</script>

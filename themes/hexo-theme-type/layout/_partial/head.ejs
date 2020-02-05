@@ -120,7 +120,7 @@
     <script src="/js/gitment.js"></script>
     <script src="/js/gitment-theme.js"></script>
     <% } else if ( theme.comment.use == 'valine') { %>
-    <script src="/js/av-min.js"></script>
-    <script src='/js/Valine.min.js'></script>
+    <%- js('js/av-min.js') %>
+    <%- js('js/Valine.min.js') %>
     <% } %>
 </head>
