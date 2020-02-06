@@ -99,7 +99,15 @@
     <%- css('css/highlight/tomorrow-night-eighties') %>
     <% } %>
     <% } %>
-    <% if(theme.google_analytics) { %>
+    <% if(theme.comment.use == 'gitment') { %>
+    <link rel="stylesheet" href="/css/gitment.css">
+    <script src="/js/gitment.js"></script>
+    <script src="/js/gitment-theme.js"></script>
+    <% } else if ( theme.comment.use == 'valine') { %>
+    <%- js('js/av-min.js') %>
+    <%- js('js/Valine.min.js') %>
+    <% } %>
+    <% if(theme.google_analytics.use == 'default') { %>
     <!-- Google Analytics -->
     <script>
         (function (i, s, o, g, r, a, m) {
@@ -109,18 +117,16 @@
                 m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', '<%= theme.google_analytics %>', 'auto', { 'siteSpeedSampleRate': 100 }, { 'alwaysSendReferrer': true });
+        ga('create', '<%= theme.google_analytics.ga_id %>', 'auto', { 'siteSpeedSampleRate': 100 }, { 'alwaysSendReferrer': true });
         ga('send', 'pageview');
         ga('set', 'forceSSL', true);
     </script>
-    <!-- End Google Analytics -->
-    <% } %>
-    <% if(theme.comment.use == 'gitment') { %>
-    <link rel="stylesheet" href="/css/gitment.css">
-    <script src="/js/gitment.js"></script>
-    <script src="/js/gitment-theme.js"></script>
-    <% } else if ( theme.comment.use == 'valine') { %>
-    <%- js('js/av-min.js') %>
-    <%- js('js/Valine.min.js') %>
+    <% } else if (theme.google_analytics.use == 'cf_async') { %>
+    <!-- Google Analytics with Cloudflare Async -->
+    <script>
+        window.ga_tid = "<%= theme.cf_async.ga_id %>"; // {String} The trackerID of your site.
+        window.ga_api = "<%= theme.cf_async.ga_api %>"; // {String} The route of your cloudflare workers you just registered before.
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/cfga@1.0.1" async></script>
     <% } %>
 </head>

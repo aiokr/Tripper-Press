@@ -126,11 +126,19 @@ random_pics: 24
 # Third Party Services Settings
 # ---------------------------------------------------------------
 
-# Google Analytics
-google_analytics: UA-141010711-2
-
 # Busuanzi Count
 busuanzi: false
+
+# Google Analytics
+# cloudflare-workers-async-google-analytics
+# if use is default, it will use analytics.js
+# if use is cf_async, look at the https://github.com/SukkaW/cloudflare-workers-async-google-analytics to learn more
+
+google_analytics:
+  # use: default
+  use: cf_async
+  ga_id: UA-141010711-2
+  ga_api: https://async-google-analytics.disqusapi.workers.dev/
 
 # ---------------------------------------------------------------
 # Gallery Page Settings
