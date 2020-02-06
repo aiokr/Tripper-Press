@@ -237,7 +237,14 @@ body ::-webkit-selection {
     background-color: $deep-grey;
     transition: .15s;
     color: #fff;
-    padding: 10px 60px;
+    padding: 10px 60px 10px 60px;
+    margin:0 auto;
+    @media screen and (max-width: 480px) {
+    padding: 10px 40px 10px 40px;
+    }
+    @media screen and (max-width: 320px) {
+      padding: 10px 20px 10px 20px;
+      }
   }
 
   .index-pagination-btn:hover {
