@@ -124,8 +124,8 @@
     <% } else if (theme.google_analytics.use == 'cf_async') { %>
     <!-- Google Analytics with Cloudflare Async -->
     <script>
-        window.ga_tid = "<%= theme.cf_async.ga_id %>"; // {String} The trackerID of your site.
-        window.ga_api = "<%= theme.cf_async.ga_api %>"; // {String} The route of your cloudflare workers you just registered before.
+        window.ga_tid = "<%= theme.google_analytics.ga_id %>"; // {String} The trackerID of your site.
+        window.ga_api = "<%= theme.google_analytics.ga_api %>"; // {String} The route of your cloudflare workers you just registered before.
     </script>
     <script src="https://cdn.jsdelivr.net/npm/cfga@1.0.1" async></script>
     <% } %>
