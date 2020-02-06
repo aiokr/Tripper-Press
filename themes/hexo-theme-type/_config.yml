@@ -114,7 +114,7 @@ comment:
   disqusjs:
     shortname: itpnblog
     siteName: aiokr's blog
-    api: https://disqus.crush.press/api/
+    api: https://disqus.itypen.app/api/
     apikey: ACUkOYE4R9hPhjn287JNMXWzlvdAGpIKLH4Kn8AITuclBETPKnU2j996mGXXxgnD
     admin: aiokr
     adminLabel: 站长
