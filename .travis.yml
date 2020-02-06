@@ -18,3 +18,12 @@ script:
 cache:
   directories:
     - node_modules
+notifications:
+  webhooks:
+    urls:
+      - https://open.feishu.cn/officialapp/notify/7981457d0f1711ee9149ab8157c3ed923fe18c886f9d16af1166aa713c70d287
+    on_success: always # default: always
+    on_failure: always # default: always
+    on_start: never # default: never
+    on_cancel: always # default: always
+    on_error: always # default: always
