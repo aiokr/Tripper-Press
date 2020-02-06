@@ -1,7 +1,7 @@
 <aside class="mdui-drawer mdui-color-white mdui-drawer-close noprn itp-drawer" id="main-drawer">
   <div class="mdui-card mdui-shadow-0">
     <div class="mdui-card-media">
-      <img src="<%= theme.drawer_header %>" />
+      <img src="<%= theme.drawer_header %>" class="drawer-img"/>
       <div class="mdui-card-menu">
         <button class="mdui-btn mdui-btn-icon mdui-text-color-white"
           mdui-drawer-close="{target: '#main-drawer', swipe: true}"><i
@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="mdui-card-header itp-drawer">
-      <img class="mdui-card-header-avatar" src="<%= theme.avatar %>" />
+      <img class="mdui-card-header-avatar" src="<%= theme.avatar %>"/>
       <div class="mdui-card-header-title itp-drawer-title"><%- config.author %></div>
       <div class="mdui-card-header-subtitle itp-drawer-description"><%- config.description %></div>
     </div>
