@@ -47,6 +47,14 @@ nav:
     link: /search.html
     icon: search
     color: '#2196F3'
+  归档: 
+    link: /archives/
+    icon:   move_to_inbox
+    color: '#2196F3'
+  友链:
+    link: /links.html
+    icon: link
+    color: '#2196F3'
 
 # Aside link
 aside:
@@ -54,6 +62,9 @@ aside:
     link: /
     color: '#2196F3'
     icon: home
+  相册:
+    link: /gallery/
+    icon: photo
   归档: 
     link: /archives/
     icon:   move_to_inbox
