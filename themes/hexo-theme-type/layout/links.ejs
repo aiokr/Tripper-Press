@@ -1,45 +1,43 @@
-<div class="content-area">
-  <div class="post">
-    <div class="mdui-container">
-      <div class="mdui-row">
-        <div class="mdui-col-md-1 mdui-col-xs-down"></div>
-        <div class="mdui-col-md-10 mdui-col-xs-12">
-          <div class="mdui-card itp-post-card">
-            <!--文章信息区-->
-            <div class="itp-post-title itp-post-title_no_cover title">
-              <%- page.title %>
-            </div>
-            <!--链接-->
-            <section class="mdui-card-content article" role="article">
-              <% if (site.data.links) { %>
-              <div class="mdui-row-xs-1 mdui-row-md-2 mdui-row-lg-3">
-                <% for (var i in site.data.links) { %>
-                <a class="mdui-col" href="<%= site.data.links[i].url %>" title="<%= i %>" target="_blank">
-                  <div class="mdui-card mdui-shadow-0 itp-link">
-                    <div class="mdui-card-header">
-                      <img class="mdui-card-header-avatar" src="<%= site.data.links[i].img %>" />
-                      <div class="mdui-card-header-title"><%= i %></div>
-                      <div class="mdui-card-header-subtitle"><%- site.data.links[i].descr %></div>
-                    </div>
+<div class="mdui-container">
+  <div class="content-area">
+    <div class="mdui-row">
+      <div class="mdui-col-md-1 mdui-col-xs-down"></div>
+      <div class="mdui-col-md-10 mdui-col-xs-12">
+        <div class="mdui-card itp-post-card">
+          <!--文章信息区-->
+          <div class="itp-post-title itp-post-title_no_cover title">
+            <%- page.title %>
+          </div>
+          <!--链接-->
+          <section class="mdui-card-content article" role="article">
+            <% if (site.data.links) { %>
+            <div class="mdui-row-xs-1 mdui-row-md-2 mdui-row-lg-3">
+              <% for (var i in site.data.links) { %>
+              <a class="mdui-col" href="<%= site.data.links[i].url %>" title="<%= i %>" target="_blank">
+                <div class="mdui-card mdui-shadow-0 itp-link">
+                  <div class="mdui-card-header">
+                    <img class="mdui-card-header-avatar" src="<%= site.data.links[i].img %>" />
+                    <div class="mdui-card-header-title"><%= i %></div>
+                    <div class="mdui-card-header-subtitle"><%- site.data.links[i].descr %></div>
                   </div>
-                </a>
-                <% } %>
-              </div>
+                </div>
+              </a>
               <% } %>
-            </section>
-            <!--正文-->
-            <section class="mdui-card-content article" role="article">
-              <%- page.content %>
-            </section>
-            <div class="padding-70"></div>
-            <!--评论-->
-            <div class="mdui-card-content itp-post-comment">
-              <%- partial('_partial/comment') %>
             </div>
+            <% } %>
+          </section>
+          <!--正文-->
+          <section class="mdui-card-content article" role="article">
+            <%- page.content %>
+          </section>
+          <div class="padding-70"></div>
+          <!--评论-->
+          <div class="mdui-card-content itp-post-comment">
+            <%- partial('_partial/comment') %>
           </div>
         </div>
-        <div class="mdui-col-md-1 mdui-col-xs-down">
-        </div>
+      </div>
+      <div class="mdui-col-md-1 mdui-col-xs-down">
       </div>
     </div>
   </div>
