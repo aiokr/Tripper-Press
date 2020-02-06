@@ -12,23 +12,23 @@
 %>
 
 <!-- Main Content -->
-<div class="content-area">
-  <div class="mdui-container">
+<div class="mdui-container">
+  <div class="content-area">
     <div class="mdui-row">
       <div class="mdui-col-md-1 mdui-col-xs-down"></div>
       <div class="mdui-col-md-10 mdui-col-xs-12">
         <div class="mdui-card itp-post-card">
           <div class="mdui-card-primary">
             <div class="itp-post-title itp-post-title_no_cover title"><%- title %></div>
-            <section class="mdui-card-content article categories" >
-            <!-- Use lodash to classify posts. See https://lodash.com/docs#groupBy -->
-            <% var groupObj = _.groupBy(page.posts.toArray(), function(p){return -p.date.format('YYYY')}) %>
-            <% for (var year in groupObj){ %>
-            <h2 class="year"><%- -year %></h2>
-            <ul class="itp-category-list" style="list-style-type: none;">
-              <%- partial('_partial/article-archive', {posts: groupObj[year]}) %>
-            </ul>
-            <% } %>
+            <section class="mdui-card-content article categories">
+              <!-- Use lodash to classify posts. See https://lodash.com/docs#groupBy -->
+              <% var groupObj = _.groupBy(page.posts.toArray(), function(p){return -p.date.format('YYYY')}) %>
+              <% for (var year in groupObj){ %>
+              <h2 class="year"><%- -year %></h2>
+              <ul class="itp-category-list" style="list-style-type: none;">
+                <%- partial('_partial/article-archive', {posts: groupObj[year]}) %>
+              </ul>
+              <% } %>
             </section>
           </div>
         </div>

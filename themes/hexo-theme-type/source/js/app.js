@@ -47,16 +47,11 @@ window.onscroll = function () {
   }
 };
 
-headerTitle2.onclick = function(){
+headerTitle2.onclick = function () {
   document.body.scrollTop = document.documentElement.scrollTop = 0;
 }
 
-$(document).pjax('a', '#pjax-container', {
-  fragment: '#pjax-container',
-  timeout: 5000,
-  cache: false
-});
-  
+
 /*
 
 $(".toc li").replaceWith(function () {
