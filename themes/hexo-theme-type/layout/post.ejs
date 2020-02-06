@@ -14,11 +14,11 @@
           </div>
           <div class="itp-post-subtitle">
             <%= page.date.format(config.date_format) %>
-            <% if (page.categories && page.categories.length) { %>
             <span> / </span>
+            <% if (page.categories && page.categories.length) { %>
             <%- list_categories(page.categories, {
                 show_count: false,
-                separator: '<span class="itp-post-cat"></span>',
+                separator: '<span class="itp-post-cat"></span><span> / </span>',
                 style: 'none'
               }) %>
             <% } %>
