@@ -12,6 +12,6 @@ categories:
 cover: https://imgur.itypen.com/picgo/20190611000730.jpg_itp
 ---
 
-<div class="aspect-ratio">
-  <iframe src="//player.bilibili.com/player.html?aid=55111783&cid=96535132&page=2" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-</div>
+{% bili %}
+ <iframe src="//player.bilibili.com/player.html?aid=55111783&cid=96535132&page=2" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+{% endbili %}

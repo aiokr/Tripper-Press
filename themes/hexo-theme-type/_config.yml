@@ -91,10 +91,10 @@ auto_excerpt:
   length: 120
 
 # highlight.js
-# style github | tomorrow | night | night-blue | night-bright | night-eighties
+# style github | tomorrow  | night-blue | night-bright | night-eighties
 highlight:
   use: true
-  style: night
+  style: github
 
 # Comment
 # Use gitment | valine | disqus | disqusjs
@@ -139,6 +139,19 @@ google_analytics:
   use: cf_async
   ga_id: UA-141010711-2
   ga_api: https://async-google-analytics.disqusapi.workers.dev/
+
+# chart.js
+# https://www.chartjs.org/
+chart_js:
+  use: false
+
+# AntV
+# https://antv.vision/
+antv:
+  g2:
+    use: true
+    version: 3.5.11
+
 
 # ---------------------------------------------------------------
 # Gallery Page Settings

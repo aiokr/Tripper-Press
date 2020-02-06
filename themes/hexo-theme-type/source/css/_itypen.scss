@@ -10,7 +10,8 @@ body {
 
 body ::selection {
   background: $main-color;
-  color: #fff;}
+  color: #fff;
+}
 
 body ::-moz-selection,
 body ::-webkit-selection {
@@ -416,5 +417,14 @@ a {
 
   a {
     color: $black;
+  }
+}
+
+.itpAntv {
+  text-align: center;
+
+  canvas {
+    max-width: 100%;
+    height: auto;
   }
 }
