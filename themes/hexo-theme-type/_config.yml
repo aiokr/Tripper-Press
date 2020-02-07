@@ -29,50 +29,32 @@ schemes: column
 # style default | card
 header: 
   style: card
-  img: https://imgur.itypen.com/picgo/20200129205822.jpg
+  img: https://imgur.itypen.com/picgo/20200207210638.jpg
 
 drawer_header: https://imgur.itypen.com/picgo/20190529224135.jpg_itp
 
 # Materiac ICON from https://www.mdui.org/docs/material_icon
 
 # Header link
+
+search_btn: true
+
 nav:
-  关于:
+  index:
+    link: /index.html
+    icon: home
+  about:
     link: /about.html
     icon: person
-  相册:
-    link: /gallery/
-    icon: photo
-  搜索: 
-    link: /search.html
-    icon: search
-    color: '#2196F3'
-  归档: 
+  archives: 
     link: /archives/
     icon:   move_to_inbox
-    color: '#2196F3'
-  友链:
+  links:
     link: /links.html
     icon: link
-    color: '#2196F3'
-
-# Aside link
-aside:
-  首页: 
-    link: /
-    color: '#2196F3'
-    icon: home
-  相册:
+  gallery:
     link: /gallery/
     icon: photo
-  归档: 
-    link: /archives/
-    icon:   move_to_inbox
-    color: '#2196F3'
-  友链:
-    link: /links.html
-    icon: link
-    color: '#2196F3'
 
 # ---------------------------------------------------------------
 # Footer Settings

@@ -1,7 +1,14 @@
-$main-color: #60a9a6;
+$main-color: #53bbf4;
 $black: #222831;
 $grey: #767676;
 $deep-grey: #333333;
+
+/* 网站全灰
+html {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+*/
 
 body {
   background-color: #f8f9fa !important;
@@ -22,6 +29,78 @@ body ::-webkit-selection {
 .itp-appbar-color {
   background-color: $main-color;
 }
+
+.itp-drawer-icon {
+  color: $main-color !important;
+}
+
+.itp-header-actions {
+  @media (max-width: 816px) {
+    display: none;
+  }
+
+  @media (min-width: 816px) {
+
+    position: relative;
+    display: inline-block;
+    min-width: 60px;
+    height: 36px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 12px;
+    margin: 0;
+    overflow: hidden;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 36px;
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: 0 0;
+    border: none;
+    border-radius: 2px;
+    outline: 0;
+    -webkit-transition: all .2s cubic-bezier(.4, 0, .2, 1),
+      -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+    transition: all .2s cubic-bezier(.4, 0, .2, 1),
+      -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+    transition: all .2s cubic-bezier(.4, 0, .2, 1),
+      box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+    transition: all .2s cubic-bezier(.4, 0, .2, 1),
+      box-shadow .2s cubic-bezier(.4, 0, 1, 1),
+      -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+    will-change: box-shadow;
+    -webkit-user-drag: none;
+  }
+}
+
+.itp-header-actions_menu {
+  @media (min-width: 816px) {
+    display: none;
+  }
+
+  @media (max-width: 816px) {
+    display: inline;
+  }
+}
+
+.itp-header-actions:hover {
+  transition: .15s;
+  -webkit-box-shadow: 0 5px 5px 0 rgba(131, 131, 131, 0.35);
+  box-shadow: 0 5px 5px 0 rgba(131, 131, 131, 0.35);
+}
+
 
 .mdui-toolbar {
   -webkit-transition: all .3s;
@@ -139,7 +218,7 @@ body ::-webkit-selection {
 
   @media (min-width: 816px) {
     font-size: 32px;
-    line-height: 36px;
+    line-height: 2.5rem;
   }
 
   @media (max-width: 816px) {
@@ -376,7 +455,7 @@ a {
 .itp-footer {
 
   position: relative;
-  bottom: 180px;
+  bottom: 200px;
 
   .footer-info,
   a {

@@ -6,13 +6,6 @@
         <div class="mdui-card-primary itp-index-header">
           <div class="mdui-card-primary-title itp-index-title"><%= config.title %></div>
           <div class="mdui-card-primary-subtitle itp-index-subtitle"><%- config.description %></div>
-          <div class="mdui-card-content itp-index-header-action">
-            <% for (var i in theme.nav) { %>
-            <a href="<%- theme.nav[i].link %>" padding: 10px;">
-              <%- i %>
-            </a>
-            <% } %>
-          </div>
         </div>
         <div class="mduimdui-card-primary itp-index-content">
           <% page.posts.each(function(item, itemIndex){ %>
