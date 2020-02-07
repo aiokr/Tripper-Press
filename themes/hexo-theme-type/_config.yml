@@ -41,7 +41,7 @@ search_btn: true
 
 nav:
   index:
-    link: /index.html
+    link: /
     icon: home
   about:
     link: /about.html
