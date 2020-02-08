@@ -43,8 +43,6 @@ function postNote(args, content) {
             ${hexo.render.renderSync({ text: content, engine: 'markdown' }).split('\n').join('')}
           </div>`;
 }
-
 hexo.extend.tag.register('note', postNote, { ends: true });
-hexo.extend.tag.register('subnote', postNote, { ends: true });
 
 
