@@ -30,6 +30,14 @@ date: 2019-07-02 00:00:00
 
 现在这个博客由 Hexo 驱动，使用 Github 托管，由 Travis CI 自动构建并上传到 Github Pages，CDN 和域名 DNS 由 Cloudflare 完成。
 
+## 在其他地方找到我
+
+**ShutterStock:** [https://www.shutterstock.com/zh/g/aiokr](https://www.shutterstock.com/zh/g/aiokr)
+
+**500px:** [https://500px.me/aiokr](https://500px.me/aiokr)
+
+**Email:** aiokr@outlook.com
+
 ## 字数统计
 
 {% antvG2 c1 %}
@@ -70,12 +78,9 @@ chart.line().position('date*value').size(2);
 chart.render();
 {% endantvG2 %}
 
-## 与我联系
-
-**Email:** aiokr@outlook.com
-
 ## Events
 
+**2020 年 2 月：** 启用 iTypen.**app** 域名
 **2020 年 1 月：** TYPE 主题正式发布
 **2019 年 2 月：** 修改并启用 Daily 主题
 **2018 年 8 月：** 启用 iTypen.com 域名
