@@ -1,3 +1,24 @@
+<% if (page.style == 'mag') { %>
+<progress id="content_progress" value="0"></progress>
+<div id="itp-top-cover" class="itp-top-cover-mag" style="background-image: url(<%- page.cover || theme.header.img %>);">
+  <div class="itp-mag-logo">
+    iTypen.MAG
+  </div>
+</div>
+<div id="itp-top-title" class="itp-mag-title" style="background-color: <%- page.color %>;">
+  <div class="itp-mag-logo">
+    iTypen.MAG
+  </div>
+  <h1><%- page.title %></h1>
+  <h2><%- page.subtitle %></h2>
+  <div class="itp-mag-excerpt mdui-center">
+    <%- page.excerpt %>
+  </div>
+</div>
+<div class="mdui-container-fluid itp-mag-content mdui-center">
+  <%- page.content %>
+</div>
+<% } else { %>
 <%- partial('_partial/page-cover') %>
 <!--<progress id="content_progress" value="0"></progress>-->
 <div class="mdui-container">
@@ -76,3 +97,4 @@
     </div>
   </div>
 </div>
+<% } %>

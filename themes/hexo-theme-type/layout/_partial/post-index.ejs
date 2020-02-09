@@ -1,4 +1,18 @@
-<div class="mdui-card mdui-shadow-0 itp-post-index">
+<div class="itp-post-index">
+  <% if(item.style== 'moment') { %>
+  <div class="mdui-card-primary">
+    <div class="itp-post-index-subtitle">
+      <%= item.date.format(config.date_format) %><span> / </span>
+      <% item.categories.each(function(categories){ %>
+      <a class="itp-post-index-categories" href="<%= config.root %>categories/<%= categories.name %>/" rel="tag">
+        <%- categories.name %>
+      </a>
+      <% }); %>
+    </div>
+    <div class="mdui-card-primary-title itp-post-index-moment"><%- item.title || theme.default_post_title || "Untitled" %>
+    </div>
+  </div>
+  <% } else { %>
   <div class="mdui-card-primary">
     <div class="mdui-card-primary-title itp-post-index-title "><a
         href="<%- config.root %><%- item.path %>"><%- item.title || theme.default_post_title || "Untitled" %></a>
@@ -21,5 +35,5 @@
       </a>
     </div>
   </div>
-
+  <% } %>
 </div>

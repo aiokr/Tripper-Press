@@ -2,7 +2,7 @@ $main-color: #53bbf4;
 $black: #222831;
 $grey: #767676;
 $deep-grey: #333333;
-$progress-color: #f8f9fa;
+$progress-color: #cccfd7;
 
 /*
 网站全灰
@@ -186,6 +186,12 @@ body ::-webkit-selection {
   }
 }
 
+.itp-post-index-moment {
+  color: $black;
+  font-size: 26px;
+  line-height: 2rem;
+}
+
 .itp-index-header_default {
   .itp-index-header-title {
     color: $black;
@@ -291,9 +297,6 @@ body ::-webkit-selection {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-.itp-top-cover {
   height: 50vh;
   min-height: 50vh;
 }

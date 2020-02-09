@@ -10,7 +10,13 @@ p {
 文字避头尾法则
 aiokr learn from https://blog.csdn.net/qq_23375733/article/details/99975659
 */
-p {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   table-layout: fixed !important;
   /*文字避首尾 -- 防止撑开*/
   word-wrap: break-word !important;
