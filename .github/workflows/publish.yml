@@ -25,6 +25,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 10.x
+      - run: ls
       - run: npm run clean
       - run: npm run generate
   hexo_publish:
