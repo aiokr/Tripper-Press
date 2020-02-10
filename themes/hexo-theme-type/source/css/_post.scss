@@ -79,7 +79,7 @@ img {
   }
 }
 
-.article {
+.itp-post-content {
   @media (min-width: 816px) {
     padding-right: 12%;
     padding-left: 12%;
@@ -113,6 +113,21 @@ img {
       padding: 3px 0 3px 0;
     }
   }
+}
+
+.aspect-ratio {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%;
+}
+
+.aspect-ratio iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 
 .itp-toc-menu {

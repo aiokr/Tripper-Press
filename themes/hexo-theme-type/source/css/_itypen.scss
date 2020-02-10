@@ -19,7 +19,7 @@ html {
   top: 0;
   z-index: 1000;
   width: 100%;
-  height: 2px;
+  height: 3px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -78,219 +78,6 @@ body ::-webkit-selection {
 
 .padding-25 {
   padding-top: 25px;
-}
-
-.itp-index-card {
-  top: -40vh;
-
-  @media (min-width: 816px) {
-    margin: 70px 0 0 0;
-    -webkit-box-shadow: 0 30px 50px 0 rgba(1, 1, 1, .15);
-    box-shadow: 0 30px 50px 0 rgba(1, 1, 1, .15);
-  }
-
-  @media (max-width: 816px) {
-    margin: 70px 0 0 0;
-    -webkit-box-shadow: 0 0 0 0 rgb(255, 255, 255);
-    box-shadow: 0 0px 0px 0px #fff !important;
-  }
-}
-
-.itp-index-title {
-  font-size: 2.6rem;
-
-  @media (min-width: 816px) {
-    padding: 70px 12% 16px 12%;
-
-  }
-
-  @media (max-width: 816px) {
-    padding: 25px 16px 4px 16px;
-  }
-}
-
-.itp-index-subtitle {
-
-
-  @media (min-width: 816px) {
-    padding: 0 12% 8px 12%;
-    font-size: 1.6rem;
-    line-height: 1.8rem;
-  }
-
-  @media (max-width: 816px) {
-    padding: 16px 16px 8px 16px;
-    font-size: 1.2rem;
-    line-height: 1.4rem;
-  }
-}
-
-.itp-index-header-action {
-  font-size: 1.4rem;
-  line-height: 1.6rem;
-
-  @media (min-width: 816px) {
-    padding: 8px 12% 16px 12%;
-  }
-
-  @media (max-width: 816px) {
-    padding: 4px 16px 4px 16px;
-  }
-}
-
-.itp-index-content {
-  @media (min-width: 816px) {
-    padding: 0 12% 0 12%;
-
-  }
-
-  @media (max-width: 816px) {
-    padding: 0 16px 0 16px;
-  }
-}
-
-.itp-post-index-title {
-  color: $black;
-  font-weight: Medium;
-
-  a {
-    color: $black;
-    text-decoration: none;
-    transition: .2s, ;
-  }
-
-  a:hover {
-    color: $main-color;
-    transition: .2s, ;
-  }
-
-  @media (min-width: 816px) {
-    font-size: 32px;
-    line-height: 2.5rem;
-  }
-
-  @media (max-width: 816px) {
-    font-size: 28px;
-    line-height: 32px;
-  }
-}
-
-.itp-post-index-subtitle {
-  color: $grey !important;
-  font-size: 16px;
-  padding: 16px 0;
-
-  a {
-    color: $grey;
-    text-decoration: none;
-  }
-}
-
-.itp-post-index-moment {
-  color: $black;
-  font-size: 26px;
-  line-height: 2rem;
-}
-
-.itp-index-header_default {
-  .itp-index-header-title {
-    color: $black;
-    font-size: 28px;
-  }
-
-  .itp-index-header-description {
-    color: $black;
-  }
-}
-
-.itp-index-header-card_style {
-  @media screen and (max-width: 816px) {
-    padding-top: 60px;
-  }
-
-  @media screen and (min-width: 816px) {
-    padding-top: 70px;
-  }
-
-  .itp-header-img {
-    height: 336px;
-    border-radius: 0px;
-    object-fit: cover;
-  }
-}
-
-.itp-post-index-hero {
-  .mdui-card-primary-title {
-    a {
-      color: #fff !important;
-      opacity: .87 !important;
-    }
-  }
-
-  .mdui-card-primary-subtitle {
-    a {
-      color: #fff !important;
-      opacity: .87 !important;
-    }
-  }
-}
-
-.itp-post-index {
-  margin-top: 30px;
-}
-
-.itp-post-index-categories {
-  color: $grey !important;
-}
-
-.itp-post-index-excerpt {
-  a {
-    color: $black;
-    text-decoration: none;
-    letter-spacing: .4px;
-  }
-
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.itp-index-header_material {
-  @media screen and (max-width: 768px) {
-    padding-top: 65px;
-  }
-}
-
-.index-pagination {
-
-  padding: 100px 0 70px 0;
-  text-align: center;
-
-  .index-pagination-btn {
-    max-width: 168px;
-    background-color: $deep-grey;
-    transition: .15s;
-    color: #fff;
-    padding: 10px 60px 10px 60px;
-    margin: 0 auto;
-
-    @media screen and (max-width: 480px) {
-      padding: 10px 40px 10px 40px;
-    }
-
-    @media screen and (max-width: 320px) {
-      padding: 10px 20px 10px 20px;
-    }
-  }
-
-  .index-pagination-btn:hover {
-    transition: .15s;
-    -webkit-box-shadow: 0 15px 25px 0 rgba(131, 131, 131, 0.35);
-    box-shadow: 0 15px 25px 0 rgba(131, 131, 131, 0.35);
-  }
-
-  .index-pagination-btn:active {
-    background-color: $deep-grey;
-  }
 }
 
 .itp-top-cover {
@@ -388,21 +175,6 @@ a {
   }
 }
 
-.aspect-ratio {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 75%;
-}
-
-.aspect-ratio iframe {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-}
-
 .itp-footer {
 
   position: relative;
@@ -418,15 +190,10 @@ a {
   }
 }
 
-
 .drawer-spacer {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-}
-
-.itp-index-notice {
-  background-color: #ede59a !important;
 }
 
 .mdui-textfield {
