@@ -15,14 +15,12 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 10.x
-      - uses: actions/checkout@v2
-      # This step checks out a copy of your repository.
       - run: npm install
   hexo_generate:
     needs: install_env
     runs-on: ubuntu-latest
     steps:
-      - run: ls
+      - run: cd ./
       - run: npm run clean
       - run: npm run generate
   hexo_publish:
