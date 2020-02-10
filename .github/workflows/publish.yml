@@ -24,12 +24,12 @@ jobs:
       - name: install_env
         run: npm install
       - name: hexo_generate
-        run: 
+        run: |
           ls
           npm run clean
           npm run generate
       - name: hexo_publish
-        run: 
+        run: |
           cd ./public
           git init
           git config --global push.default matching
