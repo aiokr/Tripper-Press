@@ -18,14 +18,15 @@ jobs:
       - uses: actions/checkout@v2
       # This step checks out a copy of your repository.
       - run: npm install
-      - run: npm audit fix
   hexo_generate:
+    needs: install_env
     runs-on: ubuntu-latest
     steps:
       - run: ls
       - run: npm run clean
       - run: npm run generate
   hexo_publish:
+    needs: hexo_generate
     runs-on: ubuntu-latest
     steps:
       - run: cd ./public
