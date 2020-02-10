@@ -18,7 +18,7 @@
             <div class="mdui-card-primary">
               <div class="itp-post-title itp-post-title_no_cover title"><%- title %></div>
             </div>
-            <section class="mdui-card-content article categories" style="list-style-type: none;">
+            <section class="mdui-card-content article categories itp-page-content" style="list-style-type: none;">
               <%- list_categories({
             show_count: false,
             amount: 5,
@@ -27,7 +27,7 @@
             separator: ''
             }) %>
             </section>
-            <div class="mdui-card-content article">
+            <div class="mdui-card-content article itp-page-content">
               <% var groupObj = _.groupBy(page.posts.toArray(), function(p){return -p.date.format('YYYY')}) %>
               <% for (var year in groupObj){ %>
               <div class="mdui-card-primary-title"><%- -year %></div>

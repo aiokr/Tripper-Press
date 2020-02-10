@@ -17,7 +17,7 @@
           <div class="itp-post-title itp-post-title_no_cover title">
             <%- title %>
           </div>
-          <section class="mdui-card-content article" role="article">
+          <section class="mdui-card-content article itp-page-content" role="article">
             <% var groupObj = _.groupBy(page.posts.toArray(), function(p){return -p.date.format('YYYY')}) %>
             <% for (var year in groupObj){ %>
             <ul class="itp-category-list">

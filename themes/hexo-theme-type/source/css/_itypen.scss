@@ -175,10 +175,17 @@ a {
   }
 }
 
+.itp-page-content {
+  @media (min-width: 816px) {
+    padding-right: 12%;
+    padding-left: 12%;
+  }
+}
+
 .itp-footer {
 
   position: relative;
-  bottom: 200px;
+  bottom: 60vh;
 
   .footer-info,
   a {
