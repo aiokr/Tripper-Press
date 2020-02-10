@@ -24,7 +24,7 @@ jobs:
     needs: install_env
     runs-on: ubuntu-latest
     steps:
-      - run: cd ./
+      - run: cd ../
       - run: npm run clean
       - run: npm run generate
   hexo_publish:
