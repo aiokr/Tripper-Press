@@ -11,8 +11,6 @@ on:
 jobs:
   publish_ITPN:
     runs-on: ubuntu-latest
-    env:
-      GitHubEMail: hiaiokr@gmail.com
     steps:
       - name: Checkout
         uses: actions/checkout@v1
@@ -34,8 +32,8 @@ jobs:
           git init
           git config --global push.default matching
           git_email
-          git config --global user.email "$GitHubEMail"
+          git config --global user.email "hiaiokr@gmail.com"
           git config --global user.name "aiokr"
           git add --all .
           git commit -m "Auto Builder of aiokr's blog"
-          git push --force "https://$action_key@github.com/aiokr/iTypen-Pages.git" master
+          git push --force "https://${{secrets.action_key}}@github.com/aiokr/iTypen-Pages.git" master
