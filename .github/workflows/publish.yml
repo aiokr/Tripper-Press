@@ -31,7 +31,6 @@ jobs:
           cd ./public
           git init
           git config --global push.default matching
-          git_email
           git config --global user.email "hiaiokr@gmail.com"
           git config --global user.name "aiokr"
           git add --all .
