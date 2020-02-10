@@ -3,25 +3,45 @@ name: iTypen.APP auto publish
 on:
   push:
     branches:
-    - master
+      - master
   pull_request:
     branches:
-    - master
+      - master
 
 jobs:
-  - name: install
+  install_env:
     runs-on: ubuntu-latest
     steps:
-    - npm install
-    - npm audit fix
-  - name: hexo generate
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 10.x
+      - uses: actions/checkout@v2
+      # This step checks out a copy of your repository.
+      - run: npm install
+      - run: npm audit fix
+  hexo_generate:
     runs-on: ubuntu-latest
     steps:
-    - npm run clean
-    - npm run generate
-  - name: publish
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 10.x
+      - run: npm run clean
+      - run: npm run generate
+  hexo_publish:
     runs-on: ubuntu-latest
     steps:
-     - chmod +x ./deploy.sh
-     - \cp -f assets/CNAME public/CNAME
-     - ./deploy.sh > /dev/null
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 10.x
+      - run: cd ./public
+      - run: git init
+      - run: git config --global push.default matching
+      - name: git_email
+        env:
+          GitHubEMail: hiaiokr@gmail.com
+        run: git config --global user.email "$GitHubEMail"
+      - run: git config --global user.name "aiokr"
+      - run: git add --all .
+      - run: git commit -m "Auto Builder of aiokr's blog"
+      - name: publish
+        run: git push --force "https://$action_key@github.com/aiokr/iTypen-Pages.git" master
