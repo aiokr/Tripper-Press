@@ -29,6 +29,7 @@ jobs:
       - name: hexo_publish
         run: |
           cd ./public
+          \cp -f assets/CNAME public/CNAME
           git init
           git config --global push.default matching
           git config --global user.email "hiaiokr@gmail.com"
