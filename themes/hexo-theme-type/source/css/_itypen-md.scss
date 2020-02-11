@@ -23,7 +23,7 @@ h6 {
   /*英文单字因自动换行*/
   word-break: normal !important;
   /*正常避头尾 */
-  text-align: justify !important;
+  /*text-align: justify !important;*/
   /*文字左右对齐*/
   text-justify: inter-ideograph !important;
   /*用表意文本来排齐内容*/
@@ -71,12 +71,26 @@ h6 {
   font-size: 20px;
 }
 
-blockquote,
-q {
-  border-left: 5px solid $main-color;
-  padding: 0 10px;
-  color: #777;
+blockquote {
+  padding: 0 48px 0 60px;
+  margin: 1.5em 0px !important;
   quotes: none;
+  p {
+    color: $grey;
+  }
+}
+
+blockquote::before, .stressed-quote::before {
+  content: "\201C";
+  display: block;
+  font-family: times;
+  font-style: normal;
+  font-size: 48px;
+  color: $grey;
+  font-weight: bold;
+  line-height: 30px;
+  margin-left: -50px;
+  position: absolute;
 }
 
 mark {

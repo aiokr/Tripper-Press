@@ -65,4 +65,4 @@ jobs:
 
 这是自动化构建的结果 ![iTypen.APP auto publish](https://github.com/aiokr/iTypen-Hexo/workflows/iTypen.APP%20auto%20publish/badge.svg)
 
-其中有一个小问题就是需要事先在博客的仓库里设置 Git 用到的 sshkey，在[https://github.com/settings/tokens](https://github.com/settings/tokens)申请，然后到仓库设置页面的 secrets 选项卡中设置，我设置的名称是 action_key，如果你设置了其他的名称，记得在脚本里作出相应的修改。
+其中有一个小问题就是需要事先在博客的仓库里设置 Git 用到的 sshkey，在 [https://github.com/settings/tokens](https://github.com/settings/tokens) 申请，然后到仓库设置页面的 secrets 选项卡中设置，我设置的名称是 action_key，如果你设置了其他的名称，记得在脚本里作出相应的修改。
