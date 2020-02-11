@@ -186,6 +186,9 @@ a {
 
   position: relative;
   bottom: 60vh;
+  background-color: rgba(255, 255, 255, 0);
+  margin-top: 40vh;
+  margin-bottom: 15vh;
 
   .footer-info,
   a {
@@ -195,6 +198,7 @@ a {
   .footer-logo {
     padding: 10px 0 0 0;
   }
+
 }
 
 .drawer-spacer {
