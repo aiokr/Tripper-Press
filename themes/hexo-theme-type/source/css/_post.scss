@@ -144,3 +144,37 @@
 .article {
   @import './itypen-md';
 }
+
+/* Post Author Area */
+.itp-post-author {
+  .itp-post-author-avatar {
+    text-align: center;
+    padding: 60px 0 20px 0;
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    img {
+      width: 80px;
+      height: auto;
+    }
+  }
+
+  .itp-post-author-title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .itp-post-author-descr {
+    padding: 0 40px;
+  }
+}

@@ -6,9 +6,8 @@ date: 2019-07-02 00:00:00
 
 ## 关于我
 
-你好。
-
-我是陈王，来自柳州，现在南宁不知名师范大学学习文化产业管理。
+🏳‍🌈 GAY, 📷 Photographer, 🍕 fear kitchen.
+Always believe that something wonderful is about to happen.
 
 ## 关于本博客
 

@@ -8,6 +8,7 @@ tags:
 - 技术
 categories: 笔记
 permalink: move-to-github-actions
+author: aiokr
 ---
 
 今天突发奇想地把博客的自动构建从 Travis CI 迁移到了 Github Actions，感觉构建的速度快了不少，而且提交 commit 到开始构建的反应时间也缩短了。

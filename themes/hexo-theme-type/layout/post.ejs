@@ -45,12 +45,17 @@
                 style: 'none'
               }) %>
             <% } %>
+            <% if(page.author) { %>
+            <span> / </span>
+            <%= page.author %>
+            <% } %>
             <span> / </span>
             <%- symbolsCount(page) %>
           </div>
           <!--正文-->
           <section class="mdui-card-content itp-post-content article" role="article">
             <%- page.content %>
+            <%- partial('_partial/author/author') %>
           </section>
           <!--文章底部信息-->
           <section class="mdui-card-content">
