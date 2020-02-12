@@ -29,13 +29,19 @@ Always believe that something wonderful is about to happen.
 
 现在这个博客由 Hexo 驱动，使用 Github 托管，由 Travis CI 自动构建并上传到 Github Pages，CDN 和域名 DNS 由 Cloudflare 完成。
 
+### 本博客的评论功能
+
+本博客使用 DisqusJS 接入 Disqus 评论，你可能需要「那个」才能发布评论，或者使用 DisqusJS 提供的「评论基础模式」来浏览评论。
+
 ## 在其他地方找到我
+
+**微博:** @按快门的陈王
 
 **ShutterStock:** [https://www.shutterstock.com/zh/g/aiokr](https://www.shutterstock.com/zh/g/aiokr)
 
 **500px:** [https://500px.me/aiokr](https://500px.me/aiokr)
 
-**Email:** aiokr@outlook.com
+**Email:** aiokr#outlook.com
 
 ## 字数统计
 
