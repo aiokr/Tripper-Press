@@ -90,9 +90,9 @@ highlight:
   style: night-eighties
 
 # Comment
-# Use gitment | valine | disqus | disqusjs
+# Use gitment | valine | disqus | disqusjs | gitalk
 comment:
-  use: disqusjs
+  use: gitalk
   gitment:
     owner:
     repo:
@@ -111,6 +111,14 @@ comment:
     apikey: ACUkOYE4R9hPhjn287JNMXWzlvdAGpIKLH4Kn8AITuclBETPKnU2j996mGXXxgnD
     admin: aiokr
     adminLabel: 站长
+  gitalk:
+    clientID: fef941f702374d130089
+    clientSecret: 1bcf67d361ea873929e7e7ef6f75a4f510640425
+    repo: iTypen-comment
+    owner: aiokr
+    admin: aiokr
+    distractionFreeMode: false
+
 
 # Random Pictures
 random_pics: 24

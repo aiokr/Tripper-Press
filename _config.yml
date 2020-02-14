@@ -9,7 +9,7 @@ description: 镜头记录下的是光明
 keywords:
 author: aiokr
 language: zh-CN
-timezone: 
+timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -26,7 +26,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :languages
-skip_render: 
+skip_render:
   - admin/*
 
 # Writing
@@ -44,16 +44,16 @@ highlight:
   line_number: false
   auto_detect: false
   tab_replace:
-  
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 15
   order_by: -date
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -75,8 +75,8 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 plugin:
- - hexo-generator-feed
- - hexo-generator-search
+  - hexo-generator-feed
+  - hexo-generator-search
 theme: hexo-theme-type
 
 sitemap:
@@ -84,7 +84,7 @@ sitemap:
   template: ./sitemap_template.xml
   rel: false
 
-symbols_count_time: 
+symbols_count_time:
   symbols: true
   time: true
   total_symbols: true
@@ -92,9 +92,12 @@ symbols_count_time:
   exclude_codeblock: true
 
 node_sass:
-  outputStyle: nested
-  precision: 5
   sourceComments: false
+  precision: 5
+  includePaths:
+    - "node_modules"
+  outputStyle:
+    - compressed
 
 search:
   path: search.xml
@@ -108,10 +111,10 @@ feed:
   hub:
   content: true
   content_limit:
-  content_limit_delim: ' '
+  content_limit_delim: " "
   order_by: -date
   icon: https://imgur.itypen.com/picgo/20190625163454.jpg
-  
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
