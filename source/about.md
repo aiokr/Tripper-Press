@@ -35,7 +35,9 @@ Always believe that something wonderful is about to happen.
 
 ## 在其他地方找到我
 
-**微博:** @按快门的陈王
+**微博:** [@按快门的陈王](https://weibo.com/5645101000/)
+
+**豆瓣:** [https://www.douban.com/people/132240589/](https://www.douban.com/people/132240589/)
 
 **ShutterStock:** [https://www.shutterstock.com/zh/g/aiokr](https://www.shutterstock.com/zh/g/aiokr)
 
@@ -49,7 +51,8 @@ Always believe that something wonderful is about to happen.
 const data = [
   { date: '2020-01-25', value: 37 },
   { date: '2020-02-01', value: 38 },
-  { date: '2020-02-08', value: 51 }
+  { date: '2020-02-08', value: 51 },
+  { date: '2020-02-15', value: 55 }
 ];
 const chart = new G2.Chart({
   container: 'c1',
