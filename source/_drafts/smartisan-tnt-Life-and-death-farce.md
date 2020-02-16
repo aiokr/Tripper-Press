@@ -16,11 +16,11 @@ categories: 硬件
 
 然而经过我的测试，用 TNT 为关键词，在微博是能搜索出信息的，甚至还能搜到 IT 之家发布的那条【罗永浩微博删除近期* TNT *相关内容】 的微博。
 
-![](https://imgur.itypen.com/picgo/20190507004554.png)
+![](https://imgur.lzmun.com/picgo/20190507004554.png)
 
 但是在罗永浩的微博中，用 TNT 作为关键词，结果是：
 
-![](https://imgur.itypen.com/picgo/20190507004615.png)
+![](https://imgur.lzmun.com/picgo/20190507004615.png)
 
 呵呵。
 

@@ -6,7 +6,7 @@ tags:
   - 观后感
 categories:
   - 随笔
-cover: https://imgur.itypen.com/picgo/20190623003809.png_itp
+cover: https://imgur.lzmun.com/picgo/20190623003809.png_itp
 date: 2019-06-23 00:36:00
 style: smart
 ---
@@ -15,7 +15,7 @@ style: smart
 
 千与千寻是一个童年时期就上映的电影，童年时错过了，却在今天重新获得。
 
-![千与千寻](https://imgur.itypen.com/picgo/20190622225227.png)
+![千与千寻](https://imgur.lzmun.com/picgo/20190622225227.png)
 
 千与千寻这部电影，可以说是一个大型的寓言故事。通过千寻的记忆，对现实世界进行了及其抽象的复刻。
 
@@ -23,7 +23,7 @@ style: smart
 
 千与千寻第一个寓言，是千寻的父母吃太多小镇的事物而变成猪。
 
-![不要吃太胖](https://imgur.itypen.com/picgo/20190622235730.png)
+![不要吃太胖](https://imgur.lzmun.com/picgo/20190622235730.png)
 
 电影的背景是日本泡沫经济破裂后，各地曾经繁荣的商业建筑变得萧条，信用卡是最基本的支付手段，习惯于先使用而后付费。
 
@@ -37,11 +37,11 @@ style: smart
 
 名字是自己的一个缩影，忘记了名字，就会忘记自己的存在，沦落为受人控制的傀儡。但如果记住了名字，一切都能恢复如初。能找到丢失的自我，能摆脱他人的摆布，能回忆起自己的过去，更能创造出自己的未来。
 
-![千寻](https://imgur.itypen.com/picgo/20190623000255.png)
+![千寻](https://imgur.lzmun.com/picgo/20190623000255.png)
 
 千寻在朋友送给自己的卡片中找到了自己本来的名字，从而没有被汤婆婆控制，在澡堂里依然保持着自己的人格和心理，而白龙在没有找回自己的名字时，只能受汤婆婆的指使做事情的，在澡堂里也落下了很不好的名声。但白龙在没有被汤婆婆控制之前，是一个心地善良的少年，曾经救回不慎落入河流中的千寻。而在千寻帮助下重新记忆起自己名字之后，白龙也敢于遵从内心，与汤婆婆对抗。
 
-![琥珀川](https://imgur.itypen.com/picgo/20190623000714.png)
+![琥珀川](https://imgur.lzmun.com/picgo/20190623000714.png)
 
 ## 不要回头
 
@@ -51,4 +51,4 @@ style: smart
 
 不回头，不要留恋于过去，勇敢地向前走。
 
-![海报](https://imgur.itypen.com/picgo/20190623000220.png)
+![海报](https://imgur.lzmun.com/picgo/20190623000220.png)

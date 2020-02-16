@@ -23,7 +23,7 @@ iPad Pro 产品线的发布，使得 iPad 系列产品开始在生产力上有�
 
 官方对 iPad 的定义，便是「便携式电脑」。自然 iPad 在便携性上，非常明显地，iPad 的便携性远远高于笔记本电脑，即使是最为轻薄的 new Macbook，也无法拥有像 iPad 一样「从包中拿出即可使用」的方便。
 
-![](https://imgur.itypen.com/picgo/iPad-back.png)
+![](https://imgur.lzmun.com/picgo/iPad-back.png)
 
 如果说要通过一个数据来衡量便携性，那重量将是最好的一个选择。根据官网的信息，2018 款的 iPad 重量为 469 克，作为对比，Macbook 的重量为 0.92 千克，13 英寸版本的 Macbook Pro 为 1.97 千克，15 英寸版本的 Macbook Pro 为 1.83 千克（好奇怪居然还轻一点），13 英寸版本的小米笔记本 air 为 1.3 千克。
 
@@ -43,13 +43,13 @@ Apple Pencil 作为苹果推出的第一款触控笔，在与 Surface Pen 的对
 
 使用 Apple Pencil 与 iPad 做笔记，我选择了「Notability」作为我的笔记软件。这款软件从 Apple Pencil 发布之前，就为传统的电容触控比制作了防误触的功能，因此也获得了一定的知名度。在 Apple Pencil 发布之后，获得了系统级防误触功能的 Notability 在使用体验上更上一层楼，可以媲美纸笔的书写体验。
 
-![](https://imgur.itypen.com/picgo/ipad-notability-flash.png)
+![](https://imgur.lzmun.com/picgo/ipad-notability-flash.png)
 
-![](https://imgur.itypen.com/picgo/ipad-notability.png)
+![](https://imgur.lzmun.com/picgo/ipad-notability.png)
 
 Notability 可以将笔记归类到不同的文件夹，而文件夹又可以归类到不同的项目之中。所有的笔记都可以按文件夹的形式进行索引。并且，在最近的更新中，notability 还增加了对手写内容搜索的支持。这样一来，查找笔记的内容变得更加方便了，「电子化笔记」更能凸显出其独特而不可替代的优势。
 
-![](https://imgur.itypen.com/picgo/ipad-notability-search.jpg)
+![](https://imgur.lzmun.com/picgo/ipad-notability-search.jpg)
 
 ## 阅读 | 方便而独特的阅读体验
 
@@ -57,7 +57,7 @@ Notability 可以将笔记归类到不同的文件夹，而文件夹又可以归
 
 一个月以前，尝试使用 PDFelement 阅读法学教材的我，在下定决心购买纸质教材的时候，发出了「真香」的感叹。一度感到电子阅读并不能媲美纸质阅读的效率。
 
-![](https://imgur.itypen.com/picgo/iPad-paperbook-weibo.jpg)
+![](https://imgur.lzmun.com/picgo/iPad-paperbook-weibo.jpg)
 
 在使用 PDFelement 后，感觉电子阅读相比起纸质阅读，并不能很好地体现出电子阅读的方便、快捷、灵活的特点。并且，PDFelement 也不能很好地对全书的笔记进行整理和归纳，更缺少纸质书翻页的那种「手感」。
 
@@ -71,7 +71,7 @@ Notability 可以将笔记归类到不同的文件夹，而文件夹又可以归
 
 MarginNote 号称「一款会重塑学习方式的阅读笔记工具」，事实证明，MarginNote 确实做的不错。可以将 PDF 等格式的书籍导入到 MarginNote 中，并且对 PDF 的每一个标注都会自动生成一张卡片，随后便可在大纲和导图视图中进行整理和归纳，将书中的内容组织成为一张思维导图。
 
-![](https://imgur.itypen.com/picgo/iPad-marginnote-2-pro-mindmap.png)
+![](https://imgur.lzmun.com/picgo/iPad-marginnote-2-pro-mindmap.png)
 
 由于使用的不是最新的 MarginNote 3，所以就不将详细的使用体验写上来了。
 
@@ -83,15 +83,15 @@ MarginNote 号称「一款会重塑学习方式的阅读笔记工具」，事实
 
 在可以与 Windows 设备互传文件的所有软件中，使用最多的一定是 QQ。自从 QQ 加入了「面对面快传」和「传文件」功能后，便一举成为文件传输应用的「榜首」。不过很遗憾的是，iPad 上的 QQ 并没有加入面对面快传的功能，但是传输文件到电脑和传输文件到手机的功能还是得到了保留。
 
-![](https://imgur.itypen.com/picgo/ipad-qqhd-file-drop.png)
+![](https://imgur.lzmun.com/picgo/ipad-qqhd-file-drop.png)
 
 除了 QQ 之外，一些原来 Android 平台上的老牌文件传输应用，在 iOS 平台上也能获得不错的体验，例如 Airdroid，快牙，以及茄子快传等。而在 iOS12 中新增的「捷径」功能，也使得 iOS 向 Windows 传输文件变得更为便捷。
 
 为了方便地从 iPad 向我的 Windows 笔记本传输图片，我制作了两个简单的「捷径」，一个在组件列表中显示，用于选择图片并发送到指定的邮箱，一个在「共享列表」中显示，用于发送特定的内容到邮箱。
 
-![](https://imgur.itypen.com/picgo/iPad-Shorcuts-from-widget-mask.jpg)
+![](https://imgur.lzmun.com/picgo/iPad-Shorcuts-from-widget-mask.jpg)
 
-![](https://imgur.itypen.com/picgo/iPad-Shorcuts-from-list-mask.jpg)
+![](https://imgur.lzmun.com/picgo/iPad-Shorcuts-from-list-mask.jpg)
 
 ## 捷径 / 工作流 | 让 iPad 如有神助
 
@@ -99,7 +99,7 @@ MarginNote 号称「一款会重塑学习方式的阅读笔记工具」，事实
 
 随后，Apple 将 Workflow 收购，并且更名为「捷径」，整合在 iOS12 中作为系统功能的一部分推出。更名后的捷径 APP 功能与 Workflow 并没有太大的出入，但是新增了很多原本不具备的 API，并且也支持通过 Siri 操作捷径。
 
-![](https://imgur.itypen.com/picgo/iPad-Shorcuts-list.jpg)
+![](https://imgur.lzmun.com/picgo/iPad-Shorcuts-list.jpg)
 
 ## 尾声 | 一个工具的属性，在于用户对他的态度
 

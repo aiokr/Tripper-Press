@@ -5,9 +5,9 @@ tags:
 - 随笔
 - 入出
 categories: 入出
-cover: https://imgur.itypen.com/picgo/20190701105533.jpg_itp
+cover: https://imgur.lzmun.com/picgo/20190701105533.jpg_itp
 ---
-![Cover](https://imgur.itypen.com/picgo/20190701105533.jpg_itp)
+![Cover](https://imgur.lzmun.com/picgo/20190701105533.jpg_itp)
 
 ## 专业分流
 
@@ -19,7 +19,7 @@ cover: https://imgur.itypen.com/picgo/20190701105533.jpg_itp
 
 分流结果出来后，马上面临的是新的班级和新的同学。不过文管系的很多同学都是工作室的，相互之间都认识，在面对新班级时也没有这么麻烦。不然对于我这种略微有点社交恐惧的性格，怕是三年下来都认识不完全班同学。
 
-![文化产业管理](https://imgur.itypen.com/picgo/20190630234220.jpg_itp)
+![文化产业管理](https://imgur.lzmun.com/picgo/20190630234220.jpg_itp)
 
 ### 文化产业管理
 
@@ -27,7 +27,7 @@ cover: https://imgur.itypen.com/picgo/20190701105533.jpg_itp
 
 但是来到森林工作室之后就不一样了。应该说森林工作室是属于文化产业管理系的一个实验室，但也正是森林工作室给了很多像我这样对文管并不了解的小萌新一个走近和接触文管的机会。相比起其他专业只能通过查阅资料以及老师和学长学姐们的口耳相传，文管给了新生一个亲身体验这个专业的机会。
 
-![森林工作室](https://imgur.itypen.com/picgo/20190701012557.jpg_itp)
+![森林工作室](https://imgur.lzmun.com/picgo/20190701012557.jpg_itp)
 
 ## 怀念青协的日子
 
@@ -55,9 +55,9 @@ cover: https://imgur.itypen.com/picgo/20190701105533.jpg_itp
 
 比如bilibili十周年的MV。
 
-![干杯十周年截图](https://imgur.itypen.com/picgo/20190701004250.png_itp)
+![干杯十周年截图](https://imgur.lzmun.com/picgo/20190701004250.png_itp)
 
-![干杯十周年截图](https://imgur.itypen.com/picgo/20190701004403.png_itp)
+![干杯十周年截图](https://imgur.lzmun.com/picgo/20190701004403.png_itp)
 
 然后就是脚本，脚本就是对镜头的描述，可以理解为用文字描述分镜的内容。但是拍摄前也不知道现场的环境会是怎样的，对镜头的取景也不了解，只能在脑海中有个大概的样子，但最终拍出来的效果离想象中的还是差的太远了。
 
@@ -79,7 +79,7 @@ cover: https://imgur.itypen.com/picgo/20190701105533.jpg_itp
 
 [干杯十周年](https://www.bilibili.com/video/av56315372/)
 
-![干杯十周年](https://imgur.itypen.com/picgo/20190701004403.png_itp)
+![干杯十周年](https://imgur.lzmun.com/picgo/20190701004403.png_itp)
 
 > 再干一杯永远
 > 喝了就能万岁

@@ -1,7 +1,7 @@
 ---
 title: 手机拍照与算法介入
 date: 2019-04-24 00:00:00
-cover: https://imgur.itypen.com/picgo/20190425232808.jpg_itp
+cover: https://imgur.lzmun.com/picgo/20190425232808.jpg_itp
 tags:
 - 摄影
 - 人工智能
@@ -73,7 +73,7 @@ categories: 随笔
 
 一般而言，拜尔滤镜采用的是 RGGB 排列，即一个像素上有一个红色、一个蓝色以及两个绿色的滤色器。
 
-![](https://imgur.itypen.com/picgo/20190424121104.png)
+![](https://imgur.lzmun.com/picgo/20190424121104.png)
 
 而除了 RGGB 滤色片之外，有部分厂商也开发出了一些其他的滤镜，如华为 P30 系列的 RYYB 滤镜，RGBW 的全色滤镜，以及富士相机的 EXR 滤色阵列以及 X-Trans 滤色器。
 

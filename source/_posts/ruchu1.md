@@ -3,7 +3,7 @@ title: 你有多久没有好好读过一本书了
 categories: 入出
 tag: 入出
 date: 2019-04-28 12:00:00
-cover: https://imgur.itypen.com/picgo/20190425212431.jpg_itp
+cover: https://imgur.lzmun.com/picgo/20190425212431.jpg_itp
 style: cover
 ---
 
@@ -27,7 +27,7 @@ style: cover
 
 ## 为什么是杂志
 
-![为什么是杂志](https://imgur.itypen.com/picgo/20190425175043.jpg)
+![为什么是杂志](https://imgur.lzmun.com/picgo/20190425175043.jpg)
 
 ### 改变的契机
 
@@ -59,7 +59,7 @@ style: cover
 
 南宁的盛夏，大概没人愿意站在空调的外机前，吹着醉人的暖风，所以，如果我愿意，在这里呆上三天三夜也不会有人打扰。站在这里，面前是城市不断推进的边界，远眺则是尚未开发的城郊，身后是坚硬的白墙。站在这里，背抵坚实的墙壁，看着城市的不断蔓延，会有感到一种站在历史车轮之上的悲壮。
 
-![你最爱躲藏的地方](https://imgur.itypen.com/picgo/20190425211127.jpg)
+![你最爱躲藏的地方](https://imgur.lzmun.com/picgo/20190425211127.jpg)
 
 其实，城市一直在不断地蚕食着周边的土地，充实着自己的身躯，我能看到城市的边界，只是因为城市恰好蔓延到这里，而我又恰好是最早的几批匆匆而过的路人，恰好站在历史车轮刚刚碾过的地方，仅此而已。
 
@@ -75,7 +75,7 @@ style: cover
 
 💬[手机拍照与算法介入](https://mp.weixin.qq.com/s?__biz=MzU4NDU5MzcyMw==&mid=2247484117&idx=1&sn=3388956b05a7cf7d774d263fa480a01f&chksm=fd963a81cae1b3977e486718add758389538a4d5cff83b9cf583885bc6d2735e794a5d8656da&token=360160523&lang=zh_CN#rd)
 
-![当算法介入手机摄影](https://imgur.itypen.com/picgo/20190425232808.jpg)
+![当算法介入手机摄影](https://imgur.lzmun.com/picgo/20190425232808.jpg)
 
 > 算法应止步于优化画质，而不越修改画面的雷池。
 
@@ -97,7 +97,7 @@ style: cover
 
 ## 卷尾语 - 第一次说你好
 
-![第一次说你好](https://imgur.itypen.com/picgo/20190425184045.jpg)
+![第一次说你好](https://imgur.lzmun.com/picgo/20190425184045.jpg)
 
 这是渊梦的第一期周刊，周刊的标题暂且定为 “入出”，至于以后会不会改名字，至于以后会不会断更或者拖更，也只能说希望不会吧。
 

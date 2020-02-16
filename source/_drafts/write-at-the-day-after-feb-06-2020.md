@@ -9,7 +9,7 @@ categories: moment
 
 我想说一下对某个公众人物的看法。
 
-<img src="https://imgur.itypen.com/picgo/20200207212937.jpg_itp" width="300" class="right"/>
+<img src="https://imgur.lzmun.com/picgo/20200207212937.jpg_itp" width="300" class="right"/>
 
 我一直以来给**胡总编**这个人的定义，就是一条走狗。但是今天我在网络上看到一个非常有新意的表达：叼飞盘的。
 

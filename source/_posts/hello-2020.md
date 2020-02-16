@@ -4,7 +4,7 @@ tags:
 - 新年快乐
 - 2020寒假
 categories: 随笔
-cover: 'https://imgur.itypen.com/picgo/20200125133656.jpg'
+cover: 'https://imgur.lzmun.com/picgo/20200125133656.jpg'
 date: 2020-01-25 13:28:50
 style: smart
 ---

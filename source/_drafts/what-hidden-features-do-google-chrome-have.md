@@ -8,29 +8,29 @@ date: 2018-09-27 00:00:00
 categories: 软件
 ---
 
-![](https://imgur.itypen.com/picgo/chromepic.png)
+![](https://imgur.lzmun.com/picgo/chromepic.png)
 
 本周，是 Chrome 浏览器的十岁的生日，从 2008 年发布至今，Chrome 从昔日不被看好的局面，一跃成为当今浏览器市场上当之无愧的霸主。
 
-![数据来自 NetMarketShare](https://imgur.itypen.com/picgo/浏览器份额 18-9-9.png)
+![数据来自 NetMarketShare](https://imgur.lzmun.com/picgo/浏览器份额 18-9-9.png)
 
 在这一篇文章中，我将会把 Chrome 浏览器中一些不常见但非常实用的功能做一个简单地汇总，进一步发掘 Chrome 浏览器的潜力。
 
 ## 简易计算器
 
-![](https://imgur.itypen.com/picgo/Omnibox-cal.png)
+![](https://imgur.lzmun.com/picgo/Omnibox-cal.png)
 
 Chrome 可以作为一个简易的计算器。在 Omnibox 中，输入一些简单的计算式，Chrome 会在 Omnibox 的搜索建议中给出计算的答案。除了常见的加减乘除以外，阶乘，圆周率也是可以用于计算的
 
-![阶乘](https://imgur.itypen.com/picgo/Omnibox-cal2.png)
+![阶乘](https://imgur.lzmun.com/picgo/Omnibox-cal2.png)
 
-![圆周率](https://imgur.itypen.com/picgo/Omnibox-cal3.png)
+![圆周率](https://imgur.lzmun.com/picgo/Omnibox-cal3.png)
 
 倘若进行一些复杂的计算，输入算式之后可以直接回车调用搜索，Google 可以将三角函数，指数函数，对数函数以及三维坐标转换为图形，WolframAlpha 则可以给出方程的解析过程。
 
-![](https://imgur.itypen.com/picgo/Omnibox-cal-search-by-google.png)
+![](https://imgur.lzmun.com/picgo/Omnibox-cal-search-by-google.png)
 
-![](https://imgur.itypen.com/picgo/Omnibox-cal-search-by-wolframalpha.png)
+![](https://imgur.lzmun.com/picgo/Omnibox-cal-search-by-wolframalpha.png)
 
 ## 查询天气
 
@@ -38,7 +38,7 @@ Chrome 可以作为一个简易的计算器。在 Omnibox 中，输入一些简�
 
 在 Omnibox 中输入「天气」，「tianqi」或是「weather」，在搜索建议中当即会显示出你所在位置的天气情况。
 
-![](https://imgur.itypen.com/picgo/Omnibox-weather.png)
+![](https://imgur.lzmun.com/picgo/Omnibox-weather.png)
 
 ## 预览文件
 
@@ -46,11 +46,11 @@ Chrome 可以作为一个简易的计算器。在 Omnibox 中，输入一些简�
 
 将文件从资源管理器中拖动到 Chrome 的网页区域，如果 Chrome 能够解析此媒体文件，那么他将会给出媒体文件的预览，如果是 PDF 文件，还可以直接通过 Chrome 进行打印。
 
-![](https://imgur.itypen.com/picgo/openfile-img.png)
+![](https://imgur.lzmun.com/picgo/openfile-img.png)
 
 并且，还可以通过 Chrome 作为资源管理器，在 Omnibox 中输入「file://文件夹路径」，直接对浏览硬盘中的文件，并且方便地打开。
 
-![](https://imgur.itypen.com/picgo/Chrome-fileexp.png)
+![](https://imgur.lzmun.com/picgo/Chrome-fileexp.png)
 
 ## 保存网页为 PDF
 
@@ -58,7 +58,7 @@ Chrome 可以作为一个简易的计算器。在 Omnibox 中，输入一些简�
 
 并且，通过虚拟打印机生成的 PDF 文件，依然可以对文字进行编辑，而不会变为一张图片。
 
-![](https://imgur.itypen.com/picgo/Chrome-Print.png)
+![](https://imgur.lzmun.com/picgo/Chrome-Print.png)
 
 ## 快速调用网站内建的浏览器
 
@@ -68,4 +68,4 @@ Chrome 可以作为一个简易的计算器。在 Omnibox 中，输入一些简�
 
 倘若你先前使用过该网站的内嵌搜索，那么便可以直接在 Chrome 的 Omnibox 中方便地调用出来。在 Omnibox 中输入该网站的地址，然后按下 Tab 按钮，即可调用该网站内嵌的搜索引擎。
 
-![](https://imgur.itypen.com/picgo/search-by-zhihu.png)
+![](https://imgur.lzmun.com/picgo/search-by-zhihu.png)

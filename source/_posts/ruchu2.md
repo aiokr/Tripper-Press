@@ -3,7 +3,7 @@ title: 世界总在不断地新陈代谢
 categories: 入出
 tag: 入出
 date: 2019-05-05 12:00:00
-cover: https://imgur.itypen.com/picgo/20190502204745.jpg_itp
+cover: https://imgur.lzmun.com/picgo/20190502204745.jpg_itp
 style: cover
 ---
 
@@ -15,7 +15,7 @@ style: cover
 
 世界在不断地新陈代谢，所以，我们要敬畏一切的未知，谁也不知道下一个新出现的事物，是否会把自己取而代之，是否会革了自己的命。就像共享单车的出现不过短短两年，从万众瞩目的 “共享经济新模范”，到被万人唾弃的 “骗押金”，“伪共享”，弹指一挥间，便从神坛跌落至地狱。
 
-![被遗弃的共享单车](https://imgur.itypen.com/picgo/20190502205200.jpg)
+![被遗弃的共享单车](https://imgur.lzmun.com/picgo/20190502205200.jpg)
 
 风口站对了，猪都能飞起来，然而风停后，摔得最惨的也是猪。
 
@@ -33,7 +33,7 @@ style: cover
 
 📌[Camera Above the Classroom 教室上方的摄像头 - SIXTH TONE](http://www.sixthtone.com/news/1003759/camera-above-the-classroom#)
 
-![](https://imgur.itypen.com/picgo/20190426221317.jpg)
+![](https://imgur.lzmun.com/picgo/20190426221317.jpg)
 
 > Hu refers to the panopticon, a circular prison discussed by French philosopher Michel Foucault in his book “Discipline and Punish,” in which inmates are observed by a single watchman but cannot tell if and when they are being watched, forcing them to act as if they are always being watched. To Hu, using systems like CCS will have the same impact, encouraging students to simply act like they’re behaving.
 

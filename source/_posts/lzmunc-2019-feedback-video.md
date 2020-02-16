@@ -9,7 +9,7 @@ tags:
 categories: 
 - [模联]
 - [摄影]
-cover: https://imgur.itypen.com/picgo/20190611000730.jpg_itp
+cover: https://imgur.lzmun.com/picgo/20190611000730.jpg_itp
 ---
 
 {% bili %}

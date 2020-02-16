@@ -16,4 +16,4 @@ categories: [城市记忆,杂志,项目]
 
 南宁的城市边界已经从五合跨越至石埠。我们从城市的最东边来到城市的最西边，看一看在策划案上躺了两个月的地名。
 
-<img src="https://imgur.itypen.com/picgo/20200201164827.jpg"/>
+<img src="https://imgur.lzmun.com/picgo/20200201164827.jpg"/>
