@@ -23,15 +23,17 @@ Always believe that something wonderful is about to happen.
 
 对我个人而言，没有记录下的事情会慢慢地在记忆中被遗忘，进而找不到他存在的任何证据。我在这里写下的文字，是我存在的最好的证明。
 
-本博客采用 [Hexo](https://hexo.io/zh-cn/)，主题是自己写的 [Type](https://itypen.app/2020/HEXO-THEME-TYPE/)。可能你看到 Github 上的截图和博客的不太一样，那是因为很多修改都没有更新到主题的那个仓库上，等我写好文档了一定上传（咕咕咕）
+本博客采用 [Hexo](https://hexo.io/zh-cn/)，主题是自己写的 [Type](https://itypen.app/2020/HEXO-THEME-TYPE/)。可能你看到 Github 上的截图和博客的不太一样，那是因为很多修改都没有更新到主题的那个仓库上，等我写好文档了一定上传（咕咕咕）。
 
-有一段时间切换到了 Wordpress，但是为了用阿里云的学生机把域名换到阿里云之后 ~因为太懒~ 备案被取消了，于是乎买了 **itypen.app** 这个域名，继续用 Hexo 来写博客。
+有一段时间切换到了 Wordpress，但是为了用阿里云的学生机把域名换到阿里云之后 ~因为太懒~ 备案被取消了，于是乎买了 **itypen.app** 这个域名，继续用 Hexo 来写博客。在备案被取消到重新备案成功的这段时间里，频道的一些内容将在个人博客发布。
 
 现在这个博客由 Hexo 驱动，使用 Github 托管，由 Travis CI 自动构建并上传到 Github Pages，CDN 和域名 DNS 由 Cloudflare 完成。
 
 ### 本博客的评论功能
 
-本博客使用 DisqusJS 接入 Disqus 评论，你可能需要「那个」才能发布评论，或者使用 DisqusJS 提供的「评论基础模式」来浏览评论。
+本博客使用 Gitalk 接入 Github Issues 进行评论。在评论框中使用 Github 账号登录就可以发布评论。
+
+~~本博客使用 DisqusJS 接入 Disqus 评论，你可能需要「那个」才能发布评论，或者使用 DisqusJS 提供的「评论基础模式」来浏览评论。~~
 
 ## 在其他地方找到我
 
@@ -52,7 +54,8 @@ const data = [
   { date: '2020-01-25', value: 37 },
   { date: '2020-02-01', value: 38 },
   { date: '2020-02-08', value: 51 },
-  { date: '2020-02-15', value: 55 }
+  { date: '2020-02-15', value: 55 },
+  { date: '2020-02-22', value: 56 }
 ];
 const chart = new G2.Chart({
   container: 'c1',
