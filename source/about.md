@@ -9,13 +9,21 @@ date: 2019-07-02 00:00:00
 🏳‍🌈 GAY, 📷 Photographer, 🍕 fear kitchen.
 Always believe that something wonderful is about to happen.
 
+陈王，2000 年，出生于广西柳州。目前在 [南宁师范大学](https://www.nnnu.edu.cn) 就读于文化产业管理专业。
+
+小时候的理想是成为一名程序员，用技术改变世界。直到上高中我选择了文科。
+
+现在我的理想是成为一名摄影师，用镜头去记录和讲述故事。
+
+![](https://imgur.lzmun.com/picgo/20200228232723.jpg_/fw/1280)
+
+本网站所用到的一些作品在 [壹图网](https://www.1tu.com/homepage-aiokr-1.html) 出售。
+
 ## 关于本博客
 
 很荣幸你能找到这里，并且浏览这里的任何一篇文章。
 
 其实这是一个摄影博客。
-
-~不管你信不信，反正我是信了。~
 
 一款名为「一字千钧」的游戏有这样的标语：
 
@@ -29,65 +37,17 @@ Always believe that something wonderful is about to happen.
 
 现在这个博客由 Hexo 驱动，使用 Github 托管，由 Travis CI 自动构建并上传到 Github Pages，CDN 和域名 DNS 由 Cloudflare 完成。
 
-### 本博客的评论功能
-
-本博客使用 Gitalk 接入 Github Issues 进行评论。在评论框中使用 Github 账号登录就可以发布评论。
-
-~~本博客使用 DisqusJS 接入 Disqus 评论，你可能需要「那个」才能发布评论，或者使用 DisqusJS 提供的「评论基础模式」来浏览评论。~~
-
 ## 在其他地方找到我
 
-**微博:** [@按快门的陈王](https://weibo.com/5645101000/)
+**微博：** [@按快门的陈王](https://weibo.com/5645101000/)
 
-**豆瓣:** [https://www.douban.com/people/132240589/](https://www.douban.com/people/132240589/)
+**豆瓣：** [https://www.douban.com/people/132240589/](https://www.douban.com/people/132240589/)
 
 **ShutterStock:** [https://www.shutterstock.com/zh/g/aiokr](https://www.shutterstock.com/zh/g/aiokr)
 
 **500px:** [https://500px.me/aiokr](https://500px.me/aiokr)
 
 **Email:** aiokr#outlook.com
-
-## 字数统计
-
-{% antvG2 c1 %}
-const data = [
-  { date: '2020-01-25', value: 37 },
-  { date: '2020-02-01', value: 38 },
-  { date: '2020-02-08', value: 51 },
-  { date: '2020-02-15', value: 55 },
-  { date: '2020-02-22', value: 56 }
-];
-const chart = new G2.Chart({
-  container: 'c1',
-  forceFit: true,
-  height: 300,
-  padding: [ 20, 40, 50, 50 ]
-});
-chart.source(data);
-chart.scale({
-  value: {
-    min: 1
-  },
-  date: {
-    range: [ 0, 1 ]
-  }
-});
-chart.axis('value', {
-  label: {
-    formatter: val => {
-      return (val / 1 ).toFixed(1) + 'k';
-    }
-  }
-});
-chart.tooltip({
-  crosshairs: {
-    type: 'line'
-  }
-});
-chart.area().position('date*value');
-chart.line().position('date*value').size(2);
-chart.render();
-{% endantvG2 %}
 
 ## Events
 
