@@ -92,7 +92,7 @@ highlight:
 # Comment
 # Use gitment | valine | disqus | disqusjs | gitalk
 comment:
-  use: gitalk
+  use: valine
   gitment:
     owner:
     repo:

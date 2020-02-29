@@ -1,17 +1,7 @@
 .itp-index-card {
-  top: -40vh;
 
-  @media (min-width: 816px) {
-    margin: 70px 0 0 0;
-    -webkit-box-shadow: 0 30px 50px 0 rgba(1, 1, 1, .15);
-    box-shadow: 0 30px 50px 0 rgba(1, 1, 1, .15);
-  }
+  padding-top: 75px;
 
-  @media (max-width: 816px) {
-    margin: 70px 0 0 0;
-    -webkit-box-shadow: 0 0 0 0 rgb(255, 255, 255);
-    box-shadow: 0 0px 0px 0px #fff !important;
-  }
 }
 
 .itp-index-title {

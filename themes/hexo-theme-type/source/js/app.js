@@ -32,14 +32,12 @@ cover = 400
 window.onscroll = function () {
   var howFar = document.documentElement.scrollTop || document.body.scrollTop;
   if (howFar > cover & whetherChange == 0) {
-    $("#toolbar").toggleClass("itp-appbar-color");
     $("#headerTitle1").toggleClass("nodisplay");
     $("#headerTitle2").toggleClass("display");
     $("#toc").toggleClass("toc-display");
     whetherChange = 1;
   };
   if (howFar <= cover & whetherChange == 1) {
-    $("#toolbar").toggleClass("itp-appbar-color");
     $("#headerTitle1").toggleClass("nodisplay");
     $("#headerTitle2").toggleClass("display");
     $("#toc").toggleClass("toc-display");

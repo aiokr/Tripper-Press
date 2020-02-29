@@ -35,7 +35,7 @@ html {
 }
 
 body {
-  background-color: #f8f9fa !important;
+  background-color: $bg-color !important;
   font-family: "SF UI Display", ".PingFang SC", "PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Helvetica", "Hiragino Sans GB", sans-serif;
 }
 
@@ -107,8 +107,8 @@ body ::-webkit-selection {
 
 @media screen and (min-width: 816px) {
   .itp-post-card {
-    -webkit-box-shadow: 0 30px 50px 0 rgba(1, 1, 1, .15);
-    box-shadow: 0 30px 50px 0 rgba(1, 1, 1, .15);
+    -webkit-box-shadow: 0 0px 0px 0 rgba(1, 1, 1, .15);
+    box-shadow: 0 0px 0px 0 rgba(1, 1, 1, .15);
   }
 }
 
@@ -178,11 +178,9 @@ a {
 
 .itp-footer {
 
-  position: relative;
-  bottom: 60vh;
   background-color: rgba(255, 255, 255, 0);
-  margin-top: 40vh;
-  margin-bottom: 15vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 
   .footer-info,
   a {
