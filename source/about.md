@@ -49,6 +49,53 @@ Always believe that something wonderful is about to happen.
 
 **Email:** aiokr#outlook.com
 
+## 字数统计
+
+{% antvG2 c1 %}
+const data = [
+  { date: '2020-01-25', value: 37, plus: 0 }, 
+  { date: '2020-02-01', value: 38, plus: 1 }, 
+  { date: '2020-02-08', value: 51, plus: 23 }, 
+  { date: '2020-02-15', value: 55, plus: 4 }, 
+  { date: '2020-02-22', value: 56, plus: 2 }, 
+  { date: '2020-02-29', value: 57, plus: 1 }, 
+  { date: '2020-03-07', value: 57, plus: 0 }
+]; 
+const chart = new G2. Chart({
+  container: 'c1', 
+  forceFit: true, 
+  height: 300, 
+  width: 800, 
+  padding: [ 20, 40, 50, 50 ]
+}); 
+chart.data(data); 
+chart.scale({
+  value: {
+    min: 1,
+    alias: '字数',
+  }, 
+  date: {
+    range: [ 0, 1 ]
+  }
+}); 
+chart.axis('value', {
+  label: {
+    formatter: val => {
+      return (val / 1 ).toFixed(1) + 'k';
+    }
+  }
+}); 
+chart.tooltip({
+  crosshairs: {
+    type: 'line'
+  }
+}); 
+chart.area().position('date*value'); 
+chart.line().position('date*value').size(2); 
+chart.render(); 
+const theme = chart.getTheme(); 
+{% endantvG2 %}
+
 ## Events
 
 **2020 年 2 月：** 启用 iTypen.**app** 域名
@@ -57,3 +104,4 @@ Always believe that something wonderful is about to happen.
 **2018 年 8 月：** 启用 iTypen.com 域名
 **2018 年 5 月：** 开设同名微信公众号
 **2016 年 11 月：** 发起博客
+

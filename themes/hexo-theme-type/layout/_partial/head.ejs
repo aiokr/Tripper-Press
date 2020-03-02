@@ -129,10 +129,12 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/cfga@1.0.1" async></script>
     <% } %>
+    <% if(page.layout == 'post') { %>
     <% if (theme.chart_js.use == true){ %>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <% } %>
     <% if (theme.antv.g2.use == true){ %>
     <script src="https://gw.alipayobjects.com/os/lib/antv/g2/<%= theme.antv.g2.version %>/dist/g2.min.js"></script>
+    <% } %>
     <% } %>
 </head>
