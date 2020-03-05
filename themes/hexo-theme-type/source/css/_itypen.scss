@@ -236,3 +236,38 @@ a {
     height: auto;
   }
 }
+
+.v {
+  .vnick {
+    color: $main-color !important;
+
+  }
+
+  a:hover {
+    color: $main-color !important;
+  }
+
+  .vwrap {
+    border: 0 !important;
+  }
+
+  .vbtn {
+    border: 0 !important;
+  }
+
+  a {
+    color: $main-color;
+  }
+  a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: $main-color !important;
+    -webkit-transition: width .3s ease;
+    transition: width .3s ease
+  }
+
+}

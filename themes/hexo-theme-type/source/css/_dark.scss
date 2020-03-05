@@ -9,7 +9,8 @@ $dark-yellow: #feda7a;
 
 body,
 .itp-drawer,
-.mdui-chip {
+.mdui-chip,
+.mdui-toolbar {
   background-color: $dark-bg-color !important;
 }
 
@@ -23,7 +24,9 @@ body,
 .itp-link .mdui-card-header-title,
 .itp-search .mdui-textfield-input,
 .itp-search .mdui-list-item a,
-.mdui-list-item-title {
+.mdui-list-item-title,
+.itp-header-title,
+.mdui-btn {
   color: $dark-title-color !important;
 }
 
@@ -46,9 +49,43 @@ body,
   color: $dark-subtitle-color !important;
 }
 
+.v {
+
+  .vcontent p a,
+  .power a {
+    color: $dark-title-color !important;
+  }
+
+  .veditor,
+  .vemoji-btn,
+  .vpreview-btn,
+  .markdown,
+  .vcontent p,
+  .vmeta .vat,
+  .vcount,
+  .vcount span {
+    color: $dark-subtitle-color !important;
+  }
+
+  .vbtn {
+    background: $dark-bg-color !important;
+    color: $dark-title-color !important;
+  }
+
+  .vsys {
+    background: $dark-bg-color !important;
+  }
+}
+
 .itp-post-card,
 .itp-index-card {
   background-color: $dark-card-color;
+}
+
+.itp-header-actions:hover {
+  transition: .15s;
+  -webkit-box-shadow: 0 !important;
+  box-shadow: 0 !important;
 }
 
 img {

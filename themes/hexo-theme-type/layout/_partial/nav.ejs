@@ -7,7 +7,7 @@
           class="mdui-icon material-icons">menu</i></button>
       <a href="<%= url_for() %>" id="headerTitle1" class="itp-header-title mdui-typo-title"
         style="color: #000"><%- config.title %></a>
-      <a href="#" id="headerTitle2" class="itp-header-title mdui-typo-title nodisplay"
+      <a href="#" mdui-tooltip="{content: '返回顶部'}" id="headerTitle2" class="itp-header-title mdui-typo-title nodisplay"
         style="color: #000"><%- page.title || config.title %></a>
       <div class="mdui-toolbar-spacer"></div>
       <div class="itp-nav-action">
