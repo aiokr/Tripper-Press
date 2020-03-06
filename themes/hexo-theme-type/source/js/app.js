@@ -27,7 +27,7 @@ var appDaily = {
 var whetherChange = 0;
 var whetherChangeToTop = 0;
 var ticking = false;
-cover = 400
+cover = 160
 
 window.onscroll = function () {
   var howFar = document.documentElement.scrollTop || document.body.scrollTop;
@@ -97,16 +97,3 @@ $('[data-fancybox="gallery"]').fancybox({
     '</div>' +
     '</div>',
 }); 
-
-document.addEventListener('DOMContentLoaded', function () {
-  var winHeight = window.innerHeight,
-        docHeight = document.documentElement.scrollHeight,
-        progressBar = document.querySelector('#content_progress');
-  progressBar.max = docHeight - winHeight;
-  progressBar.value = window.scrollY;
-
-  document.addEventListener('scroll', function () {
-        progressBar.max = document.documentElement.scrollHeight - window.innerHeight;
-        progressBar.value = window.scrollY;
-  });
-});

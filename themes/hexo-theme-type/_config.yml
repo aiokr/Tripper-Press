@@ -70,7 +70,7 @@ icp:
 # CDN
 # Use upyun
 cdn: 
-  use: upyun
+  use: 
   upyun: 
     src: https://imgur.lzmun.com/picgo/20190506220004.png_itp
 
