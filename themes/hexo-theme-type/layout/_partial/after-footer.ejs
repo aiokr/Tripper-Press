@@ -16,7 +16,7 @@
   });
 </script>
 <% } %>
-<% if(page.layout == 'post') { %>
-<script src="//cdn.jsdelivr.net/npm/macy@2"></script>
+<% if(page.style == 'photos') { %>
+<%- js('js/gallery-page.js') %>
 <% } %>
 <%- js('js/app.js') %>
