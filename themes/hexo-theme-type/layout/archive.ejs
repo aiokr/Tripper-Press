@@ -12,32 +12,36 @@
     <div class="mdui-row">
       <div class="mdui-col-md-1 mdui-col-xs-down"></div>
       <div class="mdui-col-md-10 mdui-col-xs-12">
-        <div class="mdui-row">
-          <div class="mdui-card itp-post-card">
-            <div class="itp-post-title itp-post-title_no_cover title"><%- title %></div>
-            <section class="mdui-card-content article categories itp-page-content" style="list-style-type: none;">
-              <%- list_categories({
+        <div class="itp-index-header">
+          <div class="itp-index-header-cover" style="background-image: url(<%- page.cover || theme.header.img %>);">
+            <div class="mdui-card-primary-title itp-index-title mdui-text-center" style="color: #fff; opacity: 1;">
+              文章</div>
+            <div class="mdui-card-primary-subtitle itp-index-subtitle mdui-text-center"
+              style="color: #fff; opacity: 0.8;">
+              <%- config.title %></div>
+          </div>
+        </div>
+        <div class="mdui-card mdui-shadow-0">
+          <div class="mdui-card-primary-title mdui-text-center" style="padding: 20px 0"> - 分类 - </div>
+          <section class="article categories mdui-text-center" style="list-style-type: none;">
+            <%- list_categories({
             show_count: false,
             amount: 5,
             class: 'archive',
             style: '',
             separator: ''
             }) %>
-            </section>
-            <div class="mdui-card-content article itp-page-content">
-              <% var groupObj = _.groupBy(page.posts.toArray(), function(p){return -p.date.format('YYYY')}) %>
-              <% for (var year in groupObj){ %>
-              <div class="mdui-card-primary-title"><%- -year %></div>
-              <ul class="itp-category-list" style="list-style-type: none;">
-                <%- partial('_partial/article-archive', {posts: groupObj[year]}) %>
-              </ul>
-              <% } %>
-              <%- partial('_partial/index-pagination') %>
-            </div>
-          </div>
+          </section>
+          <% var groupObj = _.groupBy(page.posts.toArray(), function(p){return -p.date.format('YYYY')}) %>
+          <% for (var year in groupObj){ %>
+          <div class="mdui-card-primary-title mdui-text-center" style="padding: 20px 0"> - <%- -year %> - </div>
+          <%- partial('_partial/article-archive', {posts: groupObj[year]}) %>
+          <% } %>
+          <%- partial('_partial/index-pagination') %>
         </div>
       </div>
-      <div class="mdui-col-md-1 mdui-col-xs-down"></div>
     </div>
+    <div class="mdui-col-md-1 mdui-col-xs-down"></div>
   </div>
+</div>
 </div>

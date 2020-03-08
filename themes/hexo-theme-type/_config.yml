@@ -29,7 +29,7 @@ schemes: column
 # style default | card
 header: 
   style: card
-  img: https://imgur.lzmun.com/picgo/20200207210638.jpg
+  img: https://imgur.lzmun.com/picgo/20200228232723.jpg_itp
 
 drawer_header: https://imgur.lzmun.com/picgo/20190529224135.jpg_itp
 
@@ -43,18 +43,15 @@ nav:
   index:
     link: /
     icon: home
+  blog: 
+    link: /archives/
+    icon:   move_to_inbox
   about:
     link: /about.html
     icon: person
-  archives: 
-    link: /archives/
-    icon:   move_to_inbox
   links:
     link: /links.html
     icon: link
-  gallery:
-    link: /gallery/
-    icon: photo
 
 # ---------------------------------------------------------------
 # Footer Settings
@@ -158,6 +155,6 @@ antv:
 # ---------------------------------------------------------------
 
 gallery:
-  title: 镜头记录下的是光明
-  descr_title: 镜头记录下的是光明
+  title: 从镜头里看世界
+  descr_title: 从镜头里看世界
   descr: 我们常常在繁杂和污浊中寻找光明，企图用光明照亮黑暗。殊不知光明的力量弱小，而黑暗则会吸收光芒。

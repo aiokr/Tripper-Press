@@ -1,14 +1,36 @@
-.itp-index-card {
+.mdui-card {
+  background-color: #ffffff00 !important;
+}
 
-  padding-top: 75px;
+.itp-index {
+  padding-top: 120px;
+}
 
+.itp-index-header-cover {
+  background-position: center;
+  background-size: cover;
+  opacity: 1;
+}
+
+.itp-index-photo-card {
+  padding: 8px 8px;
+
+  .bg {
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.itp-index-header {
+  margin: 20px 0;
 }
 
 .itp-index-title {
   font-size: 2.6rem;
 
   @media (min-width: 816px) {
-    padding: 70px 12% 16px 12%;
+    padding: 80px 20px 16px 20px;
 
   }
 
@@ -19,7 +41,7 @@
 
 .itp-index-subtitle {
   @media (min-width: 816px) {
-    padding: 0 12% 8px 12%;
+    padding: 0 20px 65px 20px;
     font-size: 1.6rem;
     line-height: 1.8rem;
   }
@@ -56,11 +78,6 @@
     transition: .2s, ;
   }
 
-  a:hover {
-    color: $main-color;
-    transition: .2s, ;
-  }
-
   @media (min-width: 816px) {
     font-size: 32px;
     line-height: 2.5rem;
@@ -89,33 +106,6 @@
   line-height: 2rem;
 }
 
-.itp-index-header_default {
-  .itp-index-header-title {
-    color: $black;
-    font-size: 28px;
-  }
-
-  .itp-index-header-description {
-    color: $black;
-  }
-}
-
-.itp-index-header-card_style {
-  @media screen and (max-width: 816px) {
-    padding-top: 60px;
-  }
-
-  @media screen and (min-width: 816px) {
-    padding-top: 70px;
-  }
-
-  .itp-header-img {
-    height: 336px;
-    border-radius: 0px;
-    object-fit: cover;
-  }
-}
-
 .itp-post-index {
   margin-top: 30px;
 }
@@ -133,12 +123,6 @@
 
   font-size: 16px;
   line-height: 22px;
-}
-
-.itp-index-header_material {
-  @media screen and (max-width: 768px) {
-    padding-top: 65px;
-  }
 }
 
 .index-pagination {

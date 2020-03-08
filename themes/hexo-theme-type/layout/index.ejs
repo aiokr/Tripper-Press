@@ -2,26 +2,54 @@
   <div class="mdui-row">
     <div class="mdui-col-md-1 mdui-col-xs-down"></div>
     <div class="mdui-col-md-10 mdui-col-xs-12">
-      <div class="mdui-card mdui-shadow-0 itp-index-card">
-        <div class="mdui-card-primary itp-index-header">
-          <div class="mdui-card-primary-title itp-index-title"><%= config.title %></div>
-          <div class="mdui-card-primary-subtitle itp-index-subtitle"><%- config.description %></div>
-        </div>
-        <div class="mduimdui-card-primary itp-index-content">
-          <% page.posts.each(function(item, itemIndex){ %>
-          <%- partial('_partial/post-index', {item: item}) %>
-          <% }); %>
-          <div class="index-pagination">
-            <% if (page.prev){ %>
-            <a href="<%- config.root %><%- page.prev_link %>" class="index-pagination-btn"><%- __('prev')%></a>
-            <% } %>
-            <% if (page.next){ %>
-            <a href="<%- config.root %><%- page.next_link %>" class="index-pagination-btn"><%- __('next')%></a>
-            <% } %>
+      <div class="itp-index">
+        <div class="itp-index-header">
+          <div class="itp-index-header-cover" style="background-image: url(<%- page.cover || theme.header.img %>);">
+            <div class="mdui-card-primary-title itp-index-title mdui-text-center" style="color: #fff; opacity: 1;">
+              <%= config.description %></div>
+            <div class="mdui-card-primary-subtitle itp-index-subtitle mdui-text-center"
+              style="color: #fff; opacity: 0.8;">
+              <%- config.title %></div>
           </div>
         </div>
+        <div class="mdui-row-xs-1 mdui-row-sm-2 mdui-row-lg-3">
+          <% for (var i in site.data.index.gallery) { %>
+          <div class="itp-index-photo-card mdui-col mdui-shadow-0">
+            <a href="<%- site.data.index.gallery[i].link %>">
+              <div class="bg" style="background-image: url(<%- site.data.index.gallery[i].cover %>);">
+                <div class="mdui-card-media-covered mdui-card-media-covered-transparent">
+                  <div class="mdui-card-primary">
+                    <div class="mdui-card-primary-title"><%- site.data.index.gallery[i].title %></div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <% } %>
+          <div class="itp-index-photo-card mdui-col mdui-shadow-0">
+            <a href="/gallery/" target="_blank">
+              <div class="bg" style="background-color: cadetblue;">
+                <div class="mdui-card-media-covered mdui-card-media-covered-transparent">
+                  <div class="mdui-card-primary">
+                    <div class="mdui-card-primary-title">查看更多作品</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a href="/archives/">
+          <div class="itp-index-header">
+            <div class="itp-index-header-cover" style="background-image: url(https://imgur.lzmun.com/picgo/20200308193653.jpg);">
+              <div class="mdui-card-primary-title itp-index-title mdui-text-center" style="color: #fff; opacity: 1;">
+                文章</div>
+              <div class="mdui-card-primary-subtitle itp-index-subtitle mdui-text-center"
+                style="color: #fff; opacity: 0.8;">
+                <%- config.title %></div>
+            </div>
+          </div>
+        </a>
       </div>
-
     </div>
     <div class="mdui-col-md-1 mdui-col-xs-down"></div>
   </div>

@@ -18,6 +18,8 @@
 <div class="mdui-container-fluid itp-mag-content mdui-center article">
   <%- page.content %>
 </div>
+<% } else if (page.style === 'photos') { %>
+<%- partial('_partial/gallery-page') %>
 <% } else { %>
 <!--<progress id="content_progress" value="0"></progress>-->
 <div class="mdui-container">
@@ -31,7 +33,7 @@
             <img src="<%- page.cover %>" style="border-radius: 0px; max-height: 300px; object-fit: cover;" />
           </section>-->
           <!--文章信息区-->
-          <div class="itp-post-title itp-post-title_no_cover title">
+          <div class="itp-post-title itp-post-title title">
             <%- page.title %>
           </div>
           <div class="itp-post-subtitle">

@@ -65,7 +65,30 @@ $(".itp-post-toc ol").replaceWith(function () {
 
 */
 
-$("img").not('footer img,.drawer-img, .mdui-card-header-avatar,.itp-mag-content img,.itp-post-author-avatar img').each(function () {
+function getImageWidth(url, callback) {
+  var img = new Image();
+  img.src = url;
+  if (img.complete) {
+    callback(img.width, img.height);
+  } else {
+    img.onload = function() {
+      callback(img.width, img.height);
+    };
+  }
+}
+function imgbox(obj, i) {
+  var img_src = $(obj).find("img").attr('src');
+  getImageWidth(img_src,function(w,h){
+    $(obj).find("i").css({"padding-bottom":h / w * 100 + '%'})
+    $(obj).css({ flexGrow: (w * 100) / h, flexBasis: (w * 240) / h + "px" });
+  })
+}
+var imgs = document.getElementById("img_wrap").getElementsByClassName("img_x");
+for (let i = 0; i < imgs.length; i++) {
+  imgbox(imgs[i]);
+}
+
+$("img").not('footer img,.drawer-img, .mdui-card-header-avatar,.itp-mag-content img,.itp-post-author-avatar img,.itp-post-gallery img').each(function () {
   // $(this).attr("data-fancybox", "gallery"); 直接给img添加data-fancybox会导致点击图片后图片消失
   var element = document.createElement("a");
   $(element).attr("data-fancybox", "gallery");

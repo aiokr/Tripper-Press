@@ -5,7 +5,7 @@
 # Site
 title: aiokr's daily
 subtitle: note & photography
-description: 镜头记录下的是光明
+description: 从镜头里看世界
 keywords:
 author: aiokr
 language: zh-CN
@@ -51,7 +51,7 @@ highlight:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ""
-  per_page: 15
+  per_page: 3
   order_by: -date
 
 # Category & Tag

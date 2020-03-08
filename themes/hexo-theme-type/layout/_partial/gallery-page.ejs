@@ -1,0 +1,28 @@
+<div class="mdui-container">
+  <div class="mdui-row">
+    <div class="mdui-col-md-0 mdui-col-xs-down"></div>
+    <div class="mdui-col-md-12 mdui-col-xs-12">
+      <div class="mdui-card mdui-shadow-0 itp-index">
+        <div class="itp-index-header">
+          <div class="mdui-card-primary-title itp-gallery-title" style="opacity: 1;">
+            <%= page.title %></div>
+          <div class="mdui-card-primary-subtitle itp-index-subtitle" style="opacity: 0.8;">
+            <%- page.subtitle %></div>
+        </div>
+        <div class="itp-post-gallery" id="img_wrap">
+          <% for (var i in page.gallery) { %>
+          <a class="img_x" data-fancybox="gallery" href="<%- page.gallery[i].src %>">
+            <i></i>
+            <img src="<%- page.gallery[i].src %>">
+          </a>
+          <% } %>
+          <div class="mdui-row-xs-1 mdui-row-sm-2 mdui-row-lg-3">
+          </div>
+        </div>
+        <section class="mdui-card-content itp-post-content article" role="article">
+          <%- page.content %>
+        </section>
+      </div>
+      <div class="mdui-col-md-0 mdui-col-xs-down"></div>
+    </div>
+  </div>
