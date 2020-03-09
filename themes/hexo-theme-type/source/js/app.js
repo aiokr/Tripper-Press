@@ -28,7 +28,7 @@ var whetherChange = 0;
 var whetherChangeToTop = 0;
 var ticking = false;
 cover = 160
-
+/*
 window.onscroll = function () {
   var howFar = document.documentElement.scrollTop || document.body.scrollTop;
   if (howFar > cover & whetherChange == 0) {
@@ -48,7 +48,7 @@ window.onscroll = function () {
 headerTitle2.onclick = function () {
   document.body.scrollTop = document.documentElement.scrollTop = 0;
 }
-
+*/
 /*
 
 $(".toc li").replaceWith(function () {
@@ -97,13 +97,3 @@ $('[data-fancybox="gallery"]').fancybox({
     '</div>' +
     '</div>',
 });
-
-var pjax = new Pjax({
-  selectors: [
-    "title",
-    "meta[name=description]",
-    "#headerTitle1",
-    "#headerTitle2"
-    ".pjax"
-  ]
-})
