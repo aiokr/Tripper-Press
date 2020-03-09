@@ -10,19 +10,40 @@
   font-display: swap;
 }
 
-.footer-info,
-.itp-mag-logo,
+@font-face {
+  font-family: 'Source Han Sans';
+  font-display: swap;
+  src: url('//at.alicdn.com/t/webfont_hm0yzfeejrp.eot');
+  /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_hm0yzfeejrp.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('//at.alicdn.com/t/webfont_hm0yzfeejrp.woff2') format('woff2'),
+    url('//at.alicdn.com/t/webfont_hm0yzfeejrp.woff') format('woff'),
+    /* chrome、firefox */
+    url('//at.alicdn.com/t/webfont_hm0yzfeejrp.ttf') format('truetype'),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('//at.alicdn.com/t/webfont_hm0yzfeejrp.svg#NotoSansHans-DemiLight') format('svg');
+  /* iOS 4.1- */
+}
+
+.itp-gallery-title,
+.itp-gallery-subtitle,
 .itp-post-title,
+.itp-post-index-title,
+.itp-post-index-subtitle,
+.itp-mag-logo,
 .itp-index-title,
+.itp-post-index-moment,
+.itp-header-actions-menu {
+  font-family: 'Source Han Sans', -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif;
+}
+
 .itp-header-title,
-.itp-post-subtitle,
 .itp-header-actions,
 .itp-index-subtitle,
-.itp-post-index-title,
-.itp-post-index-moment,
-.itp-post-index-subtitle,
-.itp-header-actions-menu {
-  font-family: 'Josefin Sans', 'Roboto', -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif
+.itp-post-subtitle,
+.footer-info {
+  font-family: 'Josefin Sans', -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif
 }
 
 article,
