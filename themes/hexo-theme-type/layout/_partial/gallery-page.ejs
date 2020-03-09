@@ -4,10 +4,11 @@
     <div class="mdui-col-md-12 mdui-col-xs-12">
       <div class="mdui-card mdui-shadow-0 itp-index">
         <div class="itp-index-header">
-          <div class="mdui-card-primary-title itp-gallery-title" style="opacity: 1;">
+          <div class="itp-gallery-title" style="opacity: 1;">
             <%= page.title %></div>
-          <div class="mdui-card-primary-subtitle itp-index-subtitle" style="opacity: 0.8;">
-            <%- page.subtitle %></div>
+          <div class="itp-gallery-subtitle" style="opacity: 0.8;">
+            <%= page.date.format(config.date_format) %>
+          </div>
         </div>
         <div class="itp-post-gallery" id="img_wrap">
           <% for (var i in page.gallery) { %>

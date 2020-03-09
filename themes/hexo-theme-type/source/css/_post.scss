@@ -34,14 +34,29 @@
 
 .itp-gallery-title {
   font-size: 2.6rem;
+  line-height: 1.2em;
 
   @media (min-width: 816px) {
-    padding: 20px 20px 16px 20px;
+    padding: 20px 20px 16px 7px;
 
   }
 
   @media (max-width: 816px) {
-    padding: 16px 16px 4px 16px;
+    padding: 16px 16px 4px 7px;
+  }
+}
+
+.itp-gallery-subtitle {
+  @media (min-width: 816px) {
+    padding: 0 20px 65px 7px;
+    font-size: 1.2rem;
+    line-height: 1.2em;
+  }
+
+  @media (max-width: 816px) {
+    padding: 16px 16px 8px 7px;
+    font-size: 1.2rem;
+    line-height: 1.2em;
   }
 }
 
