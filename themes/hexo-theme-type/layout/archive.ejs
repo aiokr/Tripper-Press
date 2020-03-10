@@ -37,7 +37,14 @@
           <div class="mdui-card-primary-title mdui-text-center" style="padding: 20px 0"> - <%- -year %> - </div>
           <%- partial('_partial/article-archive', {posts: groupObj[year]}) %>
           <% } %>
-          <%- partial('_partial/index-pagination') %>
+          <div class="index-pagination">
+            <% if (page.prev){ %>
+            <a href="<%- config.root %><%- page.prev_link %>" class="index-pagination-btn"><%- __('prev')%></a>
+            <% } %>
+            <% if (page.next){ %>
+            <a href="<%- config.root %><%- page.next_link %>" class="index-pagination-btn"><%- __('next')%></a>
+            <% } %>
+          </div>
         </div>
       </div>
     </div>

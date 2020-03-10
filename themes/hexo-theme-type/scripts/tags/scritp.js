@@ -44,5 +44,3 @@ function postNote(args, content) {
           </div>`;
 }
 hexo.extend.tag.register('note', postNote, { ends: true });
-
-
