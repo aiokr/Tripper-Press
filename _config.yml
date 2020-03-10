@@ -79,6 +79,11 @@ plugin:
   - hexo-generator-search
 theme: hexo-theme-type
 
+lazyload:
+  enable: true 
+  onlypost: false
+  loadingImg: /images/lazyload.jpg
+
 sitemap:
   path: sitemap.xml
   template: ./sitemap_template.xml

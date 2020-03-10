@@ -1,4 +1,4 @@
-function getImageWidth(url, callback) {
+/*function getImageWidth(url, callback) {
   var img = new Image();
   img.src = url;
   if (img.complete) {
@@ -19,4 +19,4 @@ function imgbox(obj, i) {
 var imgs = document.getElementById("img_wrap").getElementsByClassName("img_x");
 for (let i = 0; i < imgs.length; i++) {
   imgbox(imgs[i]);
-}
+}*/

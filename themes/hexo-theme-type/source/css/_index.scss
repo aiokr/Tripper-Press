@@ -3,7 +3,14 @@
 }
 
 .itp-index {
-  padding-top: 120px;
+  @media (min-width: 816px) {
+    padding-top: 120px;
+
+  }
+
+  @media (max-width: 816px) {
+    padding-top: 80px;
+  }
 }
 
 .itp-index-header-cover {
@@ -35,7 +42,7 @@
   }
 
   @media (max-width: 816px) {
-    padding: 25px 16px 4px 16px;
+    padding: 80px 16px 4px 16px;
   }
 }
 
@@ -47,7 +54,7 @@
   }
 
   @media (max-width: 816px) {
-    padding: 16px 16px 8px 16px;
+    padding: 16px 16px 75px 16px;
     font-size: 1.2rem;
     line-height: 1.4rem;
   }
