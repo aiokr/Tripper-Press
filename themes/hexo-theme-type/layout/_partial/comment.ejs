@@ -2,8 +2,8 @@
 <% if(theme.comment.use == 'gitment') { %>
 <!--gitment-->
 <link rel="stylesheet" href="/css/gitment.css">
-<script src="/js/gitment.js"></script>
-<script src="/js/gitment-theme.js"></script>
+<%- js('js/js/gitment.js') %>
+<%- js('js/gitment-theme.js') %>
 <script>
   var gitment = new Gitment({
     id: '<%- page.comment_id || page.date %>',
@@ -19,7 +19,7 @@
 </script>
 <% } else if (theme.comment.use == 'valine') { %>
 <!--valine-->
-<%- js('js/av-min.js') %>
+<script src="//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
 <%- js('js/Valine.min.js') %>
 <div id="vcomments"></div>
 <script>
