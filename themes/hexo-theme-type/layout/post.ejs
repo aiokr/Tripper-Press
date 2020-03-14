@@ -54,7 +54,7 @@
             <%- page.content %>
           </section>
           <!--文章底部信息-->
-          <section class="mdui-card-content">
+          <section class="mdui-card-content itp-post-content">
             <div class="mdui-text-center">
               <div class="itp-post-subtitle">
                 <%= page.date.format(config.date_format) %>
@@ -84,10 +84,10 @@
             </div>
             <% } %>
           </section>
-          <section class="mdui-card-content itp-post-comment noprn">
+          <section class="itp-post-comment noprn">
             <%- partial('_partial/comment') %>
           </section>
-          <section class="mdui-card-content itp-page-select mdui-row">
+          <section class="mdui-card-content itp-page-select">
             <%- partial('_partial/post-pagination') %>
           </section>
         </div>

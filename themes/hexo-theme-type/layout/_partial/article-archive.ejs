@@ -1,9 +1,9 @@
 <% posts.forEach(function(item) { %>
 <% if (item.style == 'photos') { %>
 <% } else { %>
-<div class="mdui-card itp-post-index mdui-shadow-0">
+<div class="mdui-card itp-post-index">
   <div class="mdui-row">
-    <div class="mdui-col-md-5 mdui-col-xs-12" style="max-height: 250px;">
+    <div class="mdui-col-md-4 mdui-col-xs-12" style="max-height: 250px;">
       <div class="mdui-card-media">
         <a href="<%- config.root %><%- item.path %>">
           <img src="<%- item.cover || theme.header.img %>" alt="<%- item.title %>" class="attachment-post-thumbnail nofancy"
@@ -11,7 +11,7 @@
         </a>
       </div>
     </div>
-    <div class="mdui-col-md-7 mdui-col-xs-12">
+    <div class="mdui-col-md-8 mdui-col-xs-12">
       <div class="mdui-card-primary" style="padding: 24px 16px 0px 16px;">
         <div class="mdui-card-primary-title itp-post-index-title"><a
             href="<%- config.root %><%- item.path %>"><%- item.title || theme.default_post_title || "Untitled" %></a>

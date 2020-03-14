@@ -3,13 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: aiokr's photography
-subtitle: note & photography
+title: iTypen.APP
+subtitle: aio's Photography & Note
 description: 从镜头里看世界
-keywords:
+keywords: 
+  - photography
+  - photo
+  - video
+  - blog
 author: aiokr
 language: zh-CN
-timezone:
+timezone: 
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'

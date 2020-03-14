@@ -1,17 +1,20 @@
 gallery:
+  - title: 2020 春 柳州
+    cover: https://imgur.lzmun.com/picgo/20200314202646.jpg_/fw/600
+    link: /liuzhou2020spring.html
   - title: 柳北铁路专用线巡礼
     date: 2020-01-19
     location: liuzhou
     cover: https://imgur.lzmun.com/picgo/20200125234220.jpg_/fw/600
     link: /tour-rails-of-liubei.html
-  - title: 柳州 2019 秋
+  - title: 2019 秋 柳州
     cover: https://imgur.lzmun.com/picgo/20200203214653.jpg_/fw/600
     link: /liuzhou2019.html
-  - title: 南宁 2019 秋
+  - title: 2019 秋 南宁
     date: 2020-02-01
     cover: https://imgur.lzmun.com/picgo/20200228232723.jpg_/fw/600
     link: /nanning2019.html
-  - title: 百益上河城 2019 秋
+  - title: 百益上河城
     date: 2020-01-14
     location: nanning
     cover: https://imgur.lzmun.com/picgo/20200202164838.jpg_/fw/600

@@ -21,7 +21,7 @@
               <%- config.title %></div>
           </div>
         </div>
-        <div class="mdui-card mdui-shadow-0">
+        <section class="itp-blog-list">
           <div class="mdui-card-primary-title mdui-text-center" style="padding: 20px 0"> - 分类 - </div>
           <section class="article categories mdui-text-center" style="list-style-type: none;">
             <%- list_categories({
@@ -45,7 +45,7 @@
             <a href="<%- config.root %><%- page.next_link %>" class="index-pagination-btn"><%- __('next')%></a>
             <% } %>
           </div>
-        </div>
+        </section>
       </div>
     </div>
     <div class="mdui-col-md-1 mdui-col-xs-down"></div>
