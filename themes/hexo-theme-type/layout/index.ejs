@@ -12,15 +12,16 @@
               <%- config.title %></div>
           </div>
         </div>
+        <% if( (page.current === 1) && (is_home()) ) { %>
         <div class="mdui-row-xs-1 mdui-row-sm-2 mdui-row-lg-3">
-          <% for (var i in site.data.index.gallery) { %>
-          <% if(site.data.index.gallery[i].cover) { %>
+          <% for (var i in site.data.index.pin) { %>
+          <% if(site.data.index.pin[i].cover) { %>
           <div class="itp-index-photo-card mdui-col mdui-shadow-0">
-            <a href="<%- site.data.index.gallery[i].link %>">
-              <div class="bg" style="background-image: url(<%- site.data.index.gallery[i].cover %>);">
+            <a href="<%- site.data.index.pin[i].link %>">
+              <div class="bg" style="background-image: url(<%- site.data.index.pin[i].cover %>);">
                 <div class="mdui-card-media-covered mdui-card-media-covered-transparent">
                   <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title"><%- site.data.index.gallery[i].title %></div>
+                    <div class="mdui-card-primary-title"><%- site.data.index.pin[i].title %></div>
                   </div>
                 </div>
               </div>
@@ -28,11 +29,11 @@
           </div>
           <% } else { %>
           <div class="itp-index-photo-card mdui-col mdui-shadow-0">
-            <a href="<%- site.data.index.gallery[i].link %>" target="_blank">
-              <div class="bg" style="background-color: <%- site.data.index.gallery[i].color %>;">
+            <a href="<%- site.data.index.pin[i].link %>" target="_blank">
+              <div class="bg" style="background-color: <%- site.data.index.pin[i].color %>;">
                 <div class="mdui-card-media-covered mdui-card-media-covered-transparent">
                   <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title"><%- site.data.index.gallery[i].title %></div>
+                    <div class="mdui-card-primary-title"><%- site.data.index.pin[i].title %></div>
                   </div>
                 </div>
               </div>
@@ -41,7 +42,6 @@
           <% } %>
           <% } %>
         </div>
-        <a href="/archives/">
           <div class="itp-index-header">
             <div class="itp-index-header-cover"
               style="background-image: url(https://imgur.lzmun.com/picgo/20200308193653.jpg);">
@@ -52,9 +52,21 @@
                 <%- config.title %></div>
             </div>
           </div>
-        </a>
+        <% } %>
+        <div class="mduimdui-card-primary itp-index-content">
+          <% page.posts.each(function(item, itemIndex){ %>
+          <%- partial('_partial/post-index', {item: item}) %>
+          <% }); %>
+          <div class="index-pagination">
+            <% if (page.prev){ %>
+            <a href="<%- config.root %><%- page.prev_link %>" class="index-pagination-btn"><%- __('prev')%></a>
+            <% } %>
+            <% if (page.next){ %>
+            <a href="<%- config.root %><%- page.next_link %>" class="index-pagination-btn"><%- __('next')%></a>
+            <% } %>
+          </div>
+        </div>
       </div>
+      <div class="mdui-col-md-1 mdui-col-xs-down"></div>
     </div>
-    <div class="mdui-col-md-1 mdui-col-xs-down"></div>
   </div>
-</div>

@@ -40,16 +40,16 @@ drawer_header: https://imgur.lzmun.com/picgo/20190529224135.jpg_itp
 search_btn: true
 
 nav:
-  index:
+  INDEX:
     link: /
     icon: home
-  blog: 
+  ARCHIEVES: 
     link: /archives/
     icon:   move_to_inbox
-  about:
+  ABOUT:
     link: /about.html
     icon: person
-  links:
+  LINKS:
     link: /links.html
     icon: link
 

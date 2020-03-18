@@ -6,7 +6,7 @@ date: 2019-07-02 00:00:00
 
 ## 关于我
 
-🏳‍🌈 GAY, 📷 Photographer, always as a stydent.
+🏳‍🌈 GAY, 📷 Photographer, always as a student.
 
 > Always believe that something wonderful is about to happen.
 
