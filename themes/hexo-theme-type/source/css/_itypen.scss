@@ -74,14 +74,6 @@ body ::-webkit-selection {
   padding-top: 25px;
 }
 
-.itp-top-cover {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 50vh;
-  min-height: 50vh;
-}
-
 .itp-category-list {
   font-size: 16px;
   line-height: 1.8em;
@@ -266,4 +258,16 @@ a {
     transition: width .3s ease
   }
 
+}
+
+@media (min-width: 768px) {
+  .content-area {
+      padding-top: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-area {
+      padding-top: 70px;
+  }
 }

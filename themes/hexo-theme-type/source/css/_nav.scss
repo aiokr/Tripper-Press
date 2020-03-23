@@ -1,5 +1,17 @@
+.itp-appbar {
+  
+  -webkit-backdrop-filter: blur(15px); 
+  backdrop-filter: blur(15px); 
+}
+
+.itp-appbar_index {
+}
+
+
 .itp-appbar-color {
-  background-color: #ffffff;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(15px); 
+  backdrop-filter: blur(15px); 
 }
 
 .itp-drawer-icon {
@@ -17,40 +29,8 @@
     display: inline-block;
     min-width: 60px;
     height: 36px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     padding: 0 12px;
     margin: 0;
-    overflow: hidden;
-    color: inherit;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: .04em;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background: 0 0;
-    border: none;
-    border-radius: 2px;
-    outline: 0;
-    -webkit-transition: all .2s cubic-bezier(.4, 0, .2, 1),
-      -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
-    transition: all .2s cubic-bezier(.4, 0, .2, 1),
-      -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
-    transition: all .2s cubic-bezier(.4, 0, .2, 1),
-      box-shadow .2s cubic-bezier(.4, 0, 1, 1);
-    transition: all .2s cubic-bezier(.4, 0, .2, 1),
-      box-shadow .2s cubic-bezier(.4, 0, 1, 1),
-      -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
-    will-change: box-shadow;
-    -webkit-user-drag: none;
   }
 }
 

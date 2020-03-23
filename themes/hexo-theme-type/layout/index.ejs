@@ -1,72 +1,69 @@
-<div class="mdui-container">
+<section class="itp-index-header">
+  <div class="itp-index-header-cover" style="background-image: url(<%- page.cover || theme.header.img %>);">
+    <div class="itp-index-title mdui-text-center" style="color: #fff; opacity: 1;">
+      <%= config.description %></div>
+    <div class="itp-index-subtitle mdui-text-center" style="color: #fff; opacity: 0.8;">
+      <%- config.title %></div>
+  </div>
+</section>
+<div class="mdui-container-fluid">
   <div class="mdui-row">
-    <div class="mdui-col-md-1 mdui-col-xs-down"></div>
-    <div class="mdui-col-md-10 mdui-col-xs-12">
+    <div class="mdui-col-lg-3 mdui-col-md-2 mdui-col-sm-1 mdui-col-xs-down"></div>
+    <div class="mdui-col-lg-6 mdui-col-md-8 mdui-col-sm-10 mdui-col-xs-12">
       <div class="itp-index">
-        <div class="itp-index-header">
-          <div class="itp-index-header-cover" style="background-image: url(<%- page.cover || theme.header.img %>);">
-            <div class="mdui-card-primary-title itp-index-title mdui-text-center" style="color: #fff; opacity: 1;">
-              <%= config.description %></div>
-            <div class="mdui-card-primary-subtitle itp-index-subtitle mdui-text-center"
-              style="color: #fff; opacity: 0.8;">
-              <%- config.title %></div>
-          </div>
-        </div>
         <% if( (page.current === 1) && (is_home()) ) { %>
-        <div class="mdui-row-xs-1 mdui-row-sm-2 mdui-row-lg-3">
-          <% for (var i in site.data.index.pin) { %>
-          <% if(site.data.index.pin[i].cover) { %>
-          <div class="itp-index-photo-card mdui-col mdui-shadow-0">
-            <a href="<%- site.data.index.pin[i].link %>">
-              <div class="bg" style="background-image: url(<%- site.data.index.pin[i].cover %>);">
-                <div class="mdui-card-media-covered mdui-card-media-covered-transparent">
-                  <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title"><%- site.data.index.pin[i].title %></div>
-                  </div>
+        <section id="index-links">
+          <div class="mdui-row-lg-3 mdui-row-md-3 mdui-row-sm-3 mdui-row-xs-1 " style="padding-bottom: 10px;">
+            <% for (var a in site.data.index.links) { %>
+            <a class="mdui-col" href="<%= site.data.index.links[a].link %>"
+              title="<%= site.data.index.links[a].title %>" target="_blank">
+              <div class="mdui-card mdui-shadow-0 mdui-hoverable itp-link">
+                <div class="mdui-card-header">
+                  <img class="mdui-card-header-avatar" src="<%= site.data.index.links[a].avatar %>" />
+                  <div class="mdui-card-header-title"><%= site.data.index.links[a].title %></div>
+                  <div class="mdui-card-header-subtitle"><%- site.data.index.links[a].descr %></div>
+                </div>
+              </div>
+            </a>
+            <% } %>
+            <a class="mdui-col" mdui-dialog="{target: '#wechat_qrcode'}"
+              title="<%= site.data.index.links[a].title %>" target="_blank">
+              <div class="mdui-card mdui-shadow-0 mdui-hoverable itp-link">
+                <div class="mdui-card-header">
+                  <img class="mdui-card-header-avatar" src="//imgur.lzmun.com/picgo/20200323120414.jpg" />
+                  <div class="mdui-card-header-title">Wechat</div>
+                  <div class="mdui-card-header-subtitle">iTypen</div>
                 </div>
               </div>
             </a>
           </div>
-          <% } else { %>
-          <div class="itp-index-photo-card mdui-col mdui-shadow-0">
-            <a href="<%- site.data.index.pin[i].link %>" target="_blank">
-              <div class="bg" style="background-color: <%- site.data.index.pin[i].color %>;">
-                <div class="mdui-card-media-covered mdui-card-media-covered-transparent">
-                  <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title"><%- site.data.index.pin[i].title %></div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <% } %>
-          <% } %>
-        </div>
-          <div class="itp-index-header">
-            <div class="itp-index-header-cover"
-              style="background-image: url(https://imgur.lzmun.com/picgo/20200308193653.jpg);">
-              <div class="mdui-card-primary-title itp-index-title mdui-text-center" style="color: #fff; opacity: 1;">
-                文章</div>
-              <div class="mdui-card-primary-subtitle itp-index-subtitle mdui-text-center"
-                style="color: #fff; opacity: 0.8;">
-                <%- config.title %></div>
+        </section>
+        <% } %>
+        <section id="index-post-entry">
+          <div class="mduimdui-card-primary itp-index-content">
+            <% page.posts.each(function(item, itemIndex){ %>
+            <%- partial('_partial/post-entry', {item: item}) %>
+            <% }); %>
+            <div class="index-pagination">
+              <% if (page.prev){ %>
+              <a href="<%- config.root %><%- page.prev_link %>" class="index-pagination-btn"><%- __('prev')%></a>
+              <% } %>
+              <% if (page.next){ %>
+              <a href="<%- config.root %><%- page.next_link %>" class="index-pagination-btn"><%- __('next')%></a>
+              <% } %>
             </div>
           </div>
-        <% } %>
-        <div class="mduimdui-card-primary itp-index-content">
-          <% page.posts.each(function(item, itemIndex){ %>
-          <%- partial('_partial/post-index', {item: item}) %>
-          <% }); %>
-          <div class="index-pagination">
-            <% if (page.prev){ %>
-            <a href="<%- config.root %><%- page.prev_link %>" class="index-pagination-btn"><%- __('prev')%></a>
-            <% } %>
-            <% if (page.next){ %>
-            <a href="<%- config.root %><%- page.next_link %>" class="index-pagination-btn"><%- __('next')%></a>
-            <% } %>
-          </div>
-        </div>
+        </section>
       </div>
-      <div class="mdui-col-md-1 mdui-col-xs-down"></div>
     </div>
+    <div class="mdui-col-lg-3 mdui-col-md-2 mdui-col-sm-1 mdui-col-xs-down"></div>
   </div>
+</div>
+<!-- Wechat QRCode -->
+<div id="wechat_qrcode" class="mdui-dialog">
+  <div class="mdui-dialog-title">Wechat Public Platform</div>
+  <img src="https://open.weixin.qq.com/qr/code?username=itypen" width="300px" class="mdui-center nofancy">
+  <div class="mdui-dialog-actions">
+    <button class="mdui-btn mdui-ripple" mdui-dialog-close>ok</button>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+<div class="itp-post-entry mdui-card">
+  <% if(item.style== 'moment') { %>
+  <div class="mdui-card-primary">
+    <div class="itp-post-entry-subtitle">
+      <%= item.date.format(config.date_format) %><span> / </span>moment
+    </div>
+    <div class="mdui-card-primary-title itp-post-entry-moment">
+      <%- item.content || item.title || theme.default_post_title || "Untitled" %>
+    </div>
+  </div>
+  <% } else { %>
+  <div class="mdui-card-media itp-post-entry-cover"
+    style="background-image: url('<%- item.cover || theme.header.img %>');">
+    <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
+      <div class="mdui-card-primary">
+        <div class="mdui-card-primary-title itp-post-entry-title "><a
+            href="<%- config.root %><%- item.path %>"><%- item.title || theme.default_post_title || "Untitled" %></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mdui-card-primary">
+    <div class="itp-post-entry-subtitle">
+      <%= item.date.format(config.date_format) %><span> / </span>
+      <% item.categories.each(function(categories){ %>
+      <a class="itp-post-entry-categories" href="<%= config.root %>categories/<%= categories.name %>/" rel="tag">
+        <%- categories.name %>
+      </a>
+      <span> / </span>
+      <% }); %>
+      <%- symbolsCount(item) %>
+    </div>
+    <div class="itp-post-entry-excerpt">
+      <a href="<%- config.root %><%- item.path %>">
+        <% if (item.excerpt) { %><%- item.excerpt %>
+        <% } else { %><%- strip_html(truncate(item.content, { length: theme.auto_excerpt.length })) %>
+        <% } %>
+      </a>
+    </div>
+  </div>
+  <% } %>
+</div>

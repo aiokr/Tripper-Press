@@ -4,19 +4,19 @@
 
 .itp-index {
   @media (min-width: 816px) {
-    padding-top: 120px;
+    padding-top: 30px;
 
   }
 
   @media (max-width: 816px) {
-    padding-top: 80px;
+    padding-top: 20px;
   }
 }
 
 .itp-index-header-cover {
   background-position: center;
   background-size: cover;
-  opacity: 1;
+  height: 55vh;
 }
 
 .itp-index-photo-card {
@@ -30,23 +30,26 @@
 }
 
 .itp-index-header {
-  margin: 20px 0 15px 0;
+  margin: 0px 0 0px 0;
 }
 
 .itp-index-title {
   font-size: 2.6rem;
+  text-shadow: $grey 0.1em 0.1em 0.2em;
 
   @media (min-width: 816px) {
-    padding: 80px 20px 16px 20px;
+    padding: 200px 20px 16px 20px;
 
   }
 
   @media (max-width: 816px) {
-    padding: 80px 16px 4px 16px;
+    padding: 160px 16px 4px 16px;
   }
 }
 
 .itp-index-subtitle {
+  
+  text-shadow: $grey 0.1em 0.1em 0.2em;
   @media (min-width: 816px) {
     padding: 0 20px 65px 20px;
     font-size: 1.6rem;
@@ -66,7 +69,7 @@
 
 .itp-index-content {
   @media (min-width: 816px) {
-    padding: 0 12% 0 12%;
+    padding: 0 0 0 0;
 
   }
 
@@ -75,12 +78,12 @@
   }
 }
 
-.itp-post-index-title {
-  color: $black;
+.itp-post-entry-title {
+  color: #fff;
   font-weight: Medium;
 
   a {
-    color: $black;
+    color: #fff;
     text-decoration: none;
     transition: .2s, ;
   }
@@ -96,32 +99,39 @@
   }
 }
 
-.itp-post-index-subtitle {
+.itp-post-entry-subtitle {
   color: $grey !important;
   font-size: 16px;
-  padding: 16px 0;
+  padding: 0 0 16px 0;
 
   a {
-    color: $grey;
+    color: #fff;
+    opacity: 0.8;
     text-decoration: none;
   }
 }
 
-.itp-post-index-moment {
-  color: $deep-grey;
+.itp-post-entry-moment {
+  color: $black;
   font-size: 26px;
   line-height: 2rem;
 }
 
-.itp-post-index {
-  margin-top: 30px;
+.itp-post-entry {
+  margin: 20px 0 50px 0;
 }
 
-.itp-post-index-categories {
+.itp-post-entry-cover {
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+}
+
+.itp-post-entry-categories {
   color: $grey !important;
 }
 
-.itp-post-index-excerpt {
+.itp-post-entry-excerpt {
   a {
     color: $black;
     text-decoration: none;
@@ -163,4 +173,28 @@
   .index-pagination-btn:active {
     background-color: $deep-grey;
   }
+}
+
+.index-achieve-title {
+  color: $black;
+
+  @media (min-width: 816px) {
+    padding: 6% 0% 4px 0%;
+    font-size: 2.6rem;
+  }
+
+  @media (max-width: 816px) {
+    padding: 20px 0px 4px 0px;
+    font-size: 1.8rem;
+  }
+}
+
+.itp-achieve-title {
+  color: $black;
+}
+
+.itp-achieve-subtitle,
+.itp-achieve-subtitle a {
+  color: $black;
+  opacity: 0.8;
 }

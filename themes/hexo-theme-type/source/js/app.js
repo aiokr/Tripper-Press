@@ -27,28 +27,20 @@ var appDaily = {
 var whetherChange = 0;
 var whetherChangeToTop = 0;
 var ticking = false;
-cover = 160
-/*
+cover = 400
+
 window.onscroll = function () {
   var howFar = document.documentElement.scrollTop || document.body.scrollTop;
   if (howFar > cover & whetherChange == 0) {
-    $("#headerTitle1").toggleClass("nodisplay");
-    $("#headerTitle2").toggleClass("display");
-    $("#toc").toggleClass("toc-display");
+    $("#appbar-index").toggleClass("itp-appbar-color");
     whetherChange = 1;
   };
   if (howFar <= cover & whetherChange == 1) {
-    $("#headerTitle1").toggleClass("nodisplay");
-    $("#headerTitle2").toggleClass("display");
-    $("#toc").toggleClass("toc-display");
+    $("#appbar-index").toggleClass("itp-appbar-color");
     whetherChange = 0;
   }
 };
 
-headerTitle2.onclick = function () {
-  document.body.scrollTop = document.documentElement.scrollTop = 0;
-}
-*/
 /*
 
 $(".toc li").replaceWith(function () {

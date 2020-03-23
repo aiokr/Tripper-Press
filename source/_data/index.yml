@@ -9,7 +9,7 @@ pin:
     date: 2020-01-19
     location: liuzhou
     cover: https://imgur.lzmun.com/picgo/20200125234220.jpg_/fw/600
-    link: /tour-rails-of-liubei.html
+    link: /2020/tour-rails-of-liubei/
   - title: 2019 秋 柳州
     cover: https://imgur.lzmun.com/picgo/20200203214653.jpg_/fw/600
     link: /liuzhou2019.html
@@ -23,3 +23,25 @@ pin:
     cover: https://imgur.lzmun.com/picgo/20200202164838.jpg_/fw/600
     link: /uptown2020.html
 gallery:
+links:
+  - title: Unsplash
+    link: https://unsplash.com/@aiokr
+    avatar: https://imgur.lzmun.com/picgo/20200323114326.jpg
+    descr: '@aiokr'
+  - title: 500px China
+    link: https://500px.me/aiokr
+    avatar: https://imgur.lzmun.com/picgo/20200323114235.jpg
+    descr: 'aiokr'
+  - title: Weibo
+    link: https://weibo.com/stark2chen
+    avatar: https://imgur.lzmun.com/picgo/20200323114500.jpg
+    descr: '按快门的陈王'
+  - title: Instagram
+    link: https://www.instagram.com/aio.kr/
+    avatar: https://imgur.lzmun.com/picgo/20200323114755.jpg
+    descr: 'aiokr.chen'
+  - title: Mail
+    link: /about.html#%E5%9C%A8%E5%85%B6%E4%BB%96%E5%9C%B0%E6%96%B9%E6%89%BE%E5%88%B0%E6%88%91
+    avatar: https://imgur.lzmun.com/picgo/20200323115209.jpg
+    descr: 'aiokr#outlook.com'
+

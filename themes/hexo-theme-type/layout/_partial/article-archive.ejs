@@ -1,37 +1,21 @@
 <% posts.forEach(function(item) { %>
-<% if (item.style == 'photos') { %>
-<% } else { %>
-<div class="mdui-card itp-post-index">
-  <div class="mdui-row">
-    <div class="mdui-col-md-4 mdui-col-xs-12" style="max-height: 250px;">
-      <div class="mdui-card-media">
-        <a href="<%- config.root %><%- item.path %>">
-          <img src="<%- item.cover || theme.header.img %>" alt="<%- item.title %>" class="attachment-post-thumbnail nofancy"
-            style="border-radius: 0px; height: 250px; object-fit: cover;">
+<% if (item.style !== 'moment') { %>
+<li class="mdui-list-item mdui-ripple mdui-col mdui-hoverable">
+  <i class="mdui-list-item-icon mdui-icon material-icons"><%- item.icon || "bookmark" %></i>
+  <a href="<%- config.root %><%- item.path %>">
+    <div class="mdui-list-item-content">
+      <div class="mdui-list-item-one-line itp-achieve-title"><%- item.title || theme.default_post_title || "Untitled" %>
+      </div>
+      <div class="mdui-list-item-text mdui-list-item-one-line itp-achieve-subtitle">
+        <%= item.date.format(config.date_format) %><span> · </span>
+        <% item.categories.each(function(categories){ %>
+        <a class="itp-post-entry-categories" href="<%= config.root %>categories/<%= categories.name %>/" rel="tag">
+          <%- categories.name %>
         </a>
+        <% }); %>
       </div>
     </div>
-    <div class="mdui-col-md-8 mdui-col-xs-12">
-      <div class="mdui-card-primary" style="padding: 24px 16px 0px 16px;">
-        <div class="mdui-card-primary-title itp-post-index-title"><a
-            href="<%- config.root %><%- item.path %>"><%- item.title || theme.default_post_title || "Untitled" %></a>
-        </div>
-        <div class="mdui-card-primary-subtitle itp-post-index-subtitle">
-          <%= item.date.format(config.date_format) %><span> · </span>
-          <% item.categories.each(function(categories){ %>
-          <a class="itp-post-index-categories" href="<%= config.root %>categories/<%= categories.name %>/" rel="tag">
-            <%- categories.name %>
-          </a>
-          <% }); %>
-        </div>
-      </div>
-      <div class="mdui-card-primary">
-        <% if (item.excerpt) { %><%- item.excerpt %>
-        <% } else { %><%- strip_html(truncate(item.content, { length: theme.auto_excerpt.length })) %>
-        <% } %>
-      </div>
-    </div>
-  </div>
-</div>
+  </a>
+</li>
 <% } %>
 <% }); %>

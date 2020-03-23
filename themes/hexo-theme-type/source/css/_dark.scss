@@ -17,10 +17,10 @@ body,
 .itp-index-title,
 .itp-index-header,
 .itp-index-header-title,
-.itp-post-index-moment,
+.itp-post-entry-moment,
 .itp-post-title,
-.itp-post-index-title,
-.itp-post-index-title a,
+.itp-post-entry-title,
+.itp-post-entry-title a,
 .itp-header-actions,
 .itp-link .mdui-card-header-title,
 .itp-search .mdui-textfield-input,
@@ -39,10 +39,10 @@ body,
 .itp-index-subtitle,
 .itp-post-subtitle,
 .category-link,
-.itp-post-index-categories,
-.itp-post-index-subtitle,
-.itp-post-index-excerpt,
-.itp-post-index-excerpt a,
+.itp-post-entry-categories,
+.itp-post-entry-subtitle,
+.itp-post-entry-excerpt,
+.itp-post-entry-excerpt a,
 .itp-link .mdui-card-header-subtitle,
 .itp-search .mdui-textfield-label,
 .mdui-list-item-text,
@@ -61,7 +61,7 @@ img {
   color: #e3e3e3;
 }
 
-.itp-post-index {
+.itp-post-entry {
   background-color: $dark-card-color;
 }
 
