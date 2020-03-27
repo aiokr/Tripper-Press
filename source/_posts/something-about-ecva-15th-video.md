@@ -5,9 +5,7 @@ tags:
 - 摄影
 - 青协
 - 视频
-categories: 
-- [摄影]
-- [随笔]
+categories: 摄影笔记
 cover:
 ---
 
