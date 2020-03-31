@@ -2,12 +2,10 @@
 title: 2019 柳州市渊文模拟联合国大会 快剪视频
 date: 2019-06-11 00:06:15
 tags:
-- 柳州模联
 - 模联
 - 视频
 - 摄影
 categories: 
-- [模联]
 - [摄影]
 cover: https://imgur.lzmun.com/picgo/20190611000730.jpg_itp
 ---

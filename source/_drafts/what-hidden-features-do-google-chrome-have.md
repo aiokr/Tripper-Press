@@ -5,7 +5,7 @@ tags:
     - Chrome
     - 浏览器
 date: 2018-09-27 00:00:00
-categories: 软件
+categories: 随笔
 ---
 
 ![](https://imgur.lzmun.com/picgo/chromepic.png)

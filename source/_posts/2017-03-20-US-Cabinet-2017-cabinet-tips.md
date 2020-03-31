@@ -1,7 +1,8 @@
 ---
 title: 危机联动内阁注意事项
 date: 2017-03-20 23:58:23
-categories: 模联
+categories: 笔记
+tags: 模联
 layout: post
 img: https://repo.lzmun.com/image/17/08/26/post-bg-miui6.jpg-imagezip
 copyright: true

@@ -57,6 +57,11 @@ $(".itp-post-toc ol").replaceWith(function () {
 
 */
 
+$(".categories .archive-link23").replaceWith(function () {
+  return "<div class='mdui-chip'><span class='mdui-chip-title'>" + this.innerHTML + "</span></div>";
+});
+
+
 $("img").not('footer img,.drawer-img, .mdui-card-header-avatar,.itp-mag-content img,.itp-post-author-avatar img,.itp-post-gallery img,.nofancy').each(function () {
   // $(this).attr("data-fancybox", "gallery"); 直接给img添加data-fancybox会导致点击图片后图片消失
   var element = document.createElement("a");

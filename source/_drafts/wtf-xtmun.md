@@ -1,8 +1,8 @@
 ---
 title: 杏坛乱象
 date: 2019-06-20 12:20:00
-tags:
-categories: 模联
+tags: 模联
+categories: 随笔
 cover: 
 ---
 

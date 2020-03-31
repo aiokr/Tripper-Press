@@ -11,6 +11,6 @@ categories: 摄影
 cover: https://imgur.lzmun.com/picgo/20190623215638.jpg_itp
 ---
 
-<div class="aspect-ratio">
+{% bili %}
   <iframe src="//player.bilibili.com/player.html?aid=56764936&cid=56764936" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-</div>
+{% endbili %}
