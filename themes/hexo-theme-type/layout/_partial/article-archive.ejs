@@ -1,21 +1,21 @@
 <% posts.forEach(function(item) { %>
 <% if (item.style !== 'moment') { %>
-<li class="mdui-list-item mdui-ripple mdui-col mdui-hoverable">
-  <i class="mdui-list-item-icon mdui-icon material-icons"><%- item.icon || "bookmark" %></i>
-  <a href="<%- config.root %><%- item.path %>">
-    <div class="mdui-list-item-content">
+<a href="<%- config.root %><%- item.path %>">
+  <li class="mdui-list-item mdui-ripple mdui-col mdui-hoverable">
+    <i class="mdui-list-item-icon mdui-icon material-icons"><%- item.icon || "bookmark" %></i>
+    <div class="mdui-list-item-content" style="margin-left: 32px;">
       <div class="mdui-list-item-one-line itp-achieve-title"><%- item.title || theme.default_post_title || "Untitled" %>
       </div>
       <div class="mdui-list-item-text mdui-list-item-one-line itp-achieve-subtitle">
         <%= item.date.format(config.date_format) %><span> · </span>
         <% item.categories.each(function(categories){ %>
-        <a class="itp-post-entry-categories" href="<%= config.root %>categories/<%= categories.name %>/" rel="tag">
+        <span class="itp-post-entry-categories" rel="tag">
           <%- categories.name %>
-        </a>
+        </span>
         <% }); %>
       </div>
     </div>
-  </a>
-</li>
+  </li>
+</a>
 <% } %>
 <% }); %>
