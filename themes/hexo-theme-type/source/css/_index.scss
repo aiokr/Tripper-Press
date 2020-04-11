@@ -81,11 +81,11 @@
 }
 
 .itp-post-entry-title {
-  color: #fff;
+  color: $black;
   font-weight: Medium;
 
   a {
-    color: #fff;
+    color: $black;
     text-decoration: none;
     transition: .2s, ;
   }
@@ -104,7 +104,7 @@
 .itp-post-entry-subtitle {
   color: $grey !important;
   font-size: 16px;
-  padding: 0 0 16px 0;
+  padding: 16px 0 16px 0;
 
   a {
     color: #fff;
