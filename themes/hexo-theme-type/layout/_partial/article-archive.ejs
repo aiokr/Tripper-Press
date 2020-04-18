@@ -1,8 +1,18 @@
 <% posts.forEach(function(item) { %>
-<% if (item.style !== 'moment') { %>
+<% if (item.style == 'moment') { %>
+<% } else if (item.noachieve == true) { %>
+<% } else { %>
 <a href="<%- config.root %><%- item.path %>">
   <li class="mdui-list-item mdui-ripple mdui-col mdui-hoverable">
-    <i class="mdui-list-item-icon mdui-icon material-icons"><%- item.icon || "bookmark" %></i>
+    <i class="mdui-list-item-icon mdui-icon material-icons">
+      <% if (item.password) { %>
+      <%- item.icon || "https" %>
+      <% } else if (item.style == 'photos') { %>
+      <%- item.icon || "photo" %>
+      <% } else { %>
+      <%- item.icon || "bookmarks" %>
+      <% } %>
+    </i>
     <div class="mdui-list-item-content" style="margin-left: 32px;">
       <div class="mdui-list-item-one-line itp-achieve-title"><%- item.title || theme.default_post_title || "Untitled" %>
       </div>
