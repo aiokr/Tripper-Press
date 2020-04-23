@@ -1,12 +1,14 @@
 ---
 layout: post
-title: about
+title: 关于
 date: 2019-07-02 00:00:00
 ---
 
 ## 关于我
 
 🏳‍🌈 GAY, 📷 Photographer, always as a student.
+
+器材党/摄影师/写手/永远是学生。
 
 > Always believe that something wonderful is about to happen.
 
@@ -18,7 +20,7 @@ date: 2019-07-02 00:00:00
 
 ![](https://imgur.lzmun.com/picgo/20200228232723.jpg_/fw/1280)
 
-本网站所用到的一些作品在 [壹图网](https://www.1tu.com/homepage-aiokr-1.html) 出售。
+本网站所用到的一些作品在 [壹图网](https://www.1tu.com/homepage-aiokr-1.html) 出售，或在 [Unsplash](https://unsplash.com/@aiokr) 提供免费下载。
 
 ## 关于本博客
 
