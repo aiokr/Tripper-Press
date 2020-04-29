@@ -25,30 +25,9 @@
 <div class="mdui-container">
   <div class="content-area">
     <div class="mdui-row">
-      <div class="mdui-col-md-1 mdui-col-xs-down"></div>
-      <div class="mdui-col-md-10 mdui-col-xs-12">
+      <div class="mdui-col-md-2 mdui-col-xs-down"></div>
+      <div class="mdui-col-md-8 mdui-col-xs-12">
         <div class="mdui-card itp-post-card">
-          <!--文章信息区-->
-          <div class="itp-post-title title">
-            <%- page.title %>
-          </div>
-          <div class="itp-post-subtitle">
-            <%= page.date.format(config.date_format) %>
-            <span> / </span>
-            <% if (page.categories && page.categories.length) { %>
-            <%- list_categories(page.categories, {
-                show_count: false,
-                separator: '<span class="itp-post-cat"></span><span> / </span>',
-                style: 'none'
-              }) %>
-            <% } %>
-            <% if(page.author) { %>
-            <span> / </span>
-            <%= page.author %>
-            <% } %>
-            <span> / </span>
-            <%- symbolsCount(page) %>
-          </div>
           <!--正文-->
           <section class="mdui-card-content itp-post-content article" role="article">
             <%- page.content %>
@@ -92,7 +71,7 @@
           </section>
         </div>
       </div>
-      <div class="mdui-col-md-1 mdui-col-xs-down">
+      <div class="mdui-col-md-2 mdui-col-xs-down">
         <!--<%- partial('_partial/post-toc') %>-->
       </div>
     </div>

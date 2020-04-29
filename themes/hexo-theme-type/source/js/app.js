@@ -27,16 +27,16 @@ var appDaily = {
 var whetherChange = 0;
 var whetherChangeToTop = 0;
 var ticking = false;
-cover = 400
+cover = 240
 
 window.onscroll = function () {
   var howFar = document.documentElement.scrollTop || document.body.scrollTop;
   if (howFar > cover & whetherChange == 0) {
-    $("#appbar-index").toggleClass("itp-appbar-color");
+    $("#appbar-index").addClass("itp-appbar-color-pull-up");
     whetherChange = 1;
   };
   if (howFar <= cover & whetherChange == 1) {
-    $("#appbar-index").toggleClass("itp-appbar-color");
+    $("#appbar-index").removeClass("itp-appbar-color-pull-up");
     whetherChange = 0;
   }
 };

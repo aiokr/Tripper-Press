@@ -1,49 +1,22 @@
-<% if( (is_home()) ) { %>
 <%- partial('_partial/drawer') %>
 <header id="header" class="itp-header noprn">
   <div id="appbar-index" class="mdui-appbar mdui-appbar-fixed itp-appbar_index mdui-shadow-0">
-    <div id="toolbar-index" class="mdui-toolbar mdui-shadow-0">
+    <div id="toolbar-index" class="mdui-toolbar mdui-shadow-0" style="justify-content: center;">
       <button class="mdui-btn mdui-btn-icon itp-drawer-btn itp-header-actions_menu" style="color: #fff"
         mdui-drawer="{target:'#main-drawer',overlay:true,swipe:true}" id="menu"><i
           class="mdui-icon material-icons">menu</i></button>
-      <a href="<%= url_for() %>" id="headerTitle1" class="itp-header-title mdui-typo-title"
-        style="color: #fff"><%- config.title %></a>
-      <div class="mdui-toolbar-spacer"></div>
+      <a href="<%= url_for() %>" class="itp-header-title mdui-typo-title"><%- config.title %></a>
       <div class="itp-nav-action">
         <% for (var i in theme.nav) { %>
         <a href="<%- theme.nav[i].link %>" class="mdui-btn itp-header-actions" style="color: #fff"><%- i %></a>
         <% } %>
-        <% if (theme.search_btn == true){ %>
-        <a href="/search.html" class="mdui-btn mdui-btn-icon" style="color: #fff"><i
-            class="mdui-icon material-icons">search</i></a>
-        <% } %>
       </div>
-    </div>
-  </div>
-</header>
-<% } else { %>
-<%- partial('_partial/drawer') %>
-<header id="header" class="itp-header noprn">
-  <div id="appbar" class="mdui-appbar mdui-appbar-fixed itp-appbar mdui-shadow-0 style="background: rgba(255, 255, 255, 0.6);"">
-    <div id="toolbar" class="mdui-toolbar mdui-shadow-0">
-      <button class="mdui-btn mdui-btn-icon itp-drawer-btn itp-header-actions_menu" style="color: #000"
-        mdui-drawer="{target:'#main-drawer',overlay:true,swipe:true}" id="menu"><i
-          class="mdui-icon material-icons">menu</i></button>
-      <a href="<%= url_for() %>" id="headerTitle1" class="itp-header-title mdui-typo-title"
-        style="color: #000"><%- config.title %></a>
-      <a href="<%= url_for() %>" id="headerTitle2" class="itp-header-title mdui-typo-title nodisplay"
-        style="color: #000"><%- page.title || config.title %></a>
-      <div class="mdui-toolbar-spacer"></div>
       <div class="itp-nav-action">
-        <% for (var i in theme.nav) { %>
-        <a href="<%- theme.nav[i].link %>" class="mdui-btn itp-header-actions" style="color: #000"><%- i %></a>
-        <% } %>
         <% if (theme.search_btn == true){ %>
-        <a href="/search.html" class="mdui-btn mdui-btn-icon" style="color: #000"><i
-            class="mdui-icon material-icons">search</i></a>
+        <a href="/search.html" class="mdui-btn mdui-btn-icon itp-header-search-btn"><i class="mdui-icon material-icons"
+            style="line-height: 20px;">search</i></a>
         <% } %>
       </div>
     </div>
   </div>
 </header>
-<% } %>

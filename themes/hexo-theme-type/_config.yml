@@ -36,7 +36,8 @@ thumbnail:
 # style default | card
 header: 
   style: card
-  img: //imgur.lzmun.com/picgo/20200405182517.jpg
+  img: https://imgur.lzmun.com/picgo/20200203214653.jpg
+  title_color: '#fff'
 
 drawer_header: //imgur.lzmun.com/picgo/20200405182517.jpg
 

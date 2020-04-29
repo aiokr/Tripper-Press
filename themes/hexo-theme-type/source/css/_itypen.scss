@@ -161,13 +161,6 @@ a {
   }
 }
 
-.itp-page-content {
-  @media (min-width: 816px) {
-    padding-right: 12%;
-    padding-left: 12%;
-  }
-}
-
 .itp-footer {
 
   background-color: rgba(255, 255, 255, 0);
@@ -262,16 +255,4 @@ a {
     transition: width .3s ease
   }
 
-}
-
-@media (min-width: 768px) {
-  .content-area {
-      padding-top: 70px;
-  }
-}
-
-@media (max-width: 768px) {
-  .content-area {
-      padding-top: 70px;
-  }
 }

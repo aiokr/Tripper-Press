@@ -2,6 +2,10 @@
   background-color: #ffffff00 !important;
 }
 
+.mdui-card-primary {
+  padding: 24px !important;
+}
+
 .itp-index {
   @media (min-width: 816px) {
     padding-top: 30px;
@@ -13,10 +17,38 @@
   }
 }
 
-.itp-index-header-cover {
-  background-position: center;
-  background-size: cover;
-  height: 55vh;
+.itp-cover {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.itp-cover-text {
+  position: relative;
+}
+
+.itp-cover-img {
+  height: 300px;
+  -webkit-filter: brightness(.9);
+  filter: brightness(.9) blur(0px);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.blur {
+  transform: scale(1.5) !important;
+  filter: brightness(.8) blur(20px);
 }
 
 .itp-index-photo-card {
@@ -33,33 +65,33 @@
   margin: 0px 0 0px 0;
 }
 
-.itp-index-title {
-  font-size: 2.6rem;
+.itp-cover-title {
+  font-size: 2.2rem;
   /*text-shadow: $grey 0.1em 0.1em 0.2em;*/
 
   @media (min-width: 816px) {
-    padding: 200px 20px 16px 20px;
+    padding: 130px 20px 16px 20px;
 
   }
 
   @media (max-width: 816px) {
-    padding: 160px 16px 4px 16px;
+    padding: 130px 16px 4px 16px;
   }
 }
 
-.itp-index-subtitle {
-  
+.itp-cover-subtitle {
+
   /*text-shadow: $grey 0.1em 0.1em 0.2em;*/
   @media (min-width: 816px) {
     padding: 0 20px 65px 20px;
-    font-size: 1.6rem;
-    line-height: 1.8rem;
+    font-size: 1rem;
+    line-height: 1rem;
   }
 
   @media (max-width: 816px) {
     padding: 16px 16px 75px 16px;
-    font-size: 1.2rem;
-    line-height: 1.4rem;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
   }
 }
 
@@ -92,7 +124,6 @@
 
   @media (min-width: 816px) {
     font-size: 32px;
-    line-height: 2.5rem;
   }
 
   @media (max-width: 816px) {
@@ -105,7 +136,6 @@
   color: $grey !important;
   font-size: 16px;
   padding: 16px 0 16px 0;
-
   a {
     color: #fff;
     opacity: 0.8;
@@ -121,6 +151,7 @@
 
 .itp-post-entry {
   margin: 20px 0 50px 0;
+  border: solid 2px rgba(0,0,0,.86);
 }
 
 .itp-post-entry-cover {

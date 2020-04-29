@@ -81,7 +81,7 @@ padding: 4px !important;
 
 .itp-post-title_has_cover {
   @media (min-width: 816px) {
-    padding: 6% 12% 4px 12%;
+    padding: 6% 0% 4px 0%;
     font-size: 2.6rem;
   }
 
@@ -94,7 +94,7 @@ padding: 4px !important;
 
 .itp-post-title {
   @media (min-width: 816px) {
-    padding: 12% 12% 4px 12%;
+    padding: 12% 0% 4px 0%;
     font-size: 2.6rem;
   }
 
@@ -106,7 +106,7 @@ padding: 4px !important;
 
 .itp-post-subtitle {
   @media (min-width: 816px) {
-    padding: 16px 12% 0 12%;
+    padding: 16px 0% 0 0%;
   }
 
   @media (max-width: 816px) {
@@ -136,7 +136,7 @@ padding: 4px !important;
   padding: 20px 20px 20px 20px !important;
 
   @media screen and (min-width: 816px) {
-    padding: 20px 10% 20px 10% !important;
+    padding: 20px 0 20px 0 !important;
   }
 }
 
@@ -153,9 +153,13 @@ padding: 4px !important;
 
 .itp-post-content {
   @media (min-width: 816px) {
-    padding-right: 12%;
-    padding-left: 12%;
+    padding-right: 0%;
+    padding-left: 0%;
   }
+}
+
+ img.mdui-col {
+  padding: 10px;
 }
 
 .post-content p img {
