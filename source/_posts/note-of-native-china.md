@@ -5,7 +5,7 @@ tags:
 - 乡土中国
 - 费孝通
 - 读书笔记
-categories: 笔记
+categories: 读立写生
 cover: https://imgur.lzmun.com/picgo/20200129205822.jpg
 style: smart
 permalink: native-china

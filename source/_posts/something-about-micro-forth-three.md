@@ -4,7 +4,9 @@ date: 2019-04-02 20:44:09
 tags:
 - 摄影
 - 随笔
-categories: 摄影笔记
+- 摄影笔记
+categories: 
+- [随笔]
 cover:
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 你有多久没有好好读过一本书了
-categories: 入出
-tag: 入出
+categories: 读立写生
+tag: 随笔
 date: 2019-04-28 12:00:00
 cover: https://imgur.lzmun.com/picgo/20190425212431.jpg_itp
 style: cover

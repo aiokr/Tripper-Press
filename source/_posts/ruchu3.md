@@ -1,9 +1,9 @@
 ---
 title: 永远是少年
-tag: 入出
+tag: 
 date: 2019-05-11 12:00:00
 cover: https://imgur.lzmun.com/picgo/20190506125608.jpg_itp
-categories: 入出
+categories: 读立写生
 style: cover
 ---
 
