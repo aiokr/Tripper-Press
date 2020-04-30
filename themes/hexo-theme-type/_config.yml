@@ -1,85 +1,90 @@
 # ---------------------------------------------------------------
-# ICON Settings
+# ICON Settings 图标设置
 # ---------------------------------------------------------------
 
 favicon: https://imgur.lzmun.com/picgo/typelogo.png_avatar
 avatar: https://imgur.lzmun.com/picgo/gff.jpg
 apple_icon:
   # iPhone 57x57 
-  iphone: https://imgur.lzmun.com/picgo/20190625163454.jpg_iPhone
+  iphone: https://imgur.lzmun.com/picgo/typelogo.png_iPhone
   # iPad 72x72
-  ipad: https://imgur.lzmun.com/picgo/20190625163454.jpg_RetinaiPad
+  ipad: https://imgur.lzmun.com/picgo/typelogo.png_RetinaiPad
   # Retina iPhone 114x114
-  iphone_hd: https://imgur.lzmun.com/picgo/20190625163454.jpg_iPhoneHD
+  iphone_hd: https://imgur.lzmun.com/picgo/typelogo.png_iPhoneHD
   # Retina iPad 144x144
-  ipad_hd: https://imgur.lzmun.com/picgo/20190625163454.jpg_RetinaiPad
+  ipad_hd: https://imgur.lzmun.com/picgo/typelogo.png_RetinaiPad
   
 # ---------------------------------------------------------------
-# Style Settings
+# Style Settings 样式设置 （暂时没有作用）
 # ---------------------------------------------------------------
 
 # Schemes
 schemes: column
 
+# Random Pictures
+random_pics: 24
 random_thumbnail: "/img/rondom/material-"
 
-# Thumbnail Settings
-thumbnail:
-    purecolor:
-    random_amount: 19
-
 # ---------------------------------------------------------------
-# Header and Aside Settings
+# Header and Nav Settings 页眉、导航和封面设置
 # ---------------------------------------------------------------
 
-# Header
-# style default | card
+# Header Cover
 header: 
-  style: card
   img: https://imgur.lzmun.com/picgo/20200203214653.jpg
   title_color: '#fff'
 
 drawer_header: //imgur.lzmun.com/picgo/20200405182517.jpg
 
-# Materiac ICON from https://www.mdui.org/docs/material_icon
-
-# Header link
-
+# Header Links
 search_btn: true
-
 nav:
-  INDEX:
+  首页:
     link: /
     icon: home
-  ARCHIEVES: 
+  归档: 
     link: /archives/
     icon:   move_to_inbox
-  ABOUT:
+  关于:
     link: /about.html
     icon: person
-  LINKS:
+  友链:
     link: /links.html
     icon: link
 
+# Materiac ICON from https://www.mdui.org/docs/material_icon
+
 # ---------------------------------------------------------------
-# Footer Settings
+# Footer Settings 页脚设置
 # ---------------------------------------------------------------
 
-# about
 start_time: 2016
-# info
 count: true
-# ICP
 icp: 
-# CDN
+
+# CDN LOGO
 # Use upyun
 cdn: 
   use: 
   upyun: 
-    src: https://imgur.lzmun.com/picgo/20190506220004.png_itp
+    src: ./images/upyun.png
 
 # ---------------------------------------------------------------
-# Posts Settings
+# Index Settings 首页设置
+# ---------------------------------------------------------------
+
+# Social link 社交链接
+social_link:
+  use: true
+  wechat_personal: 
+    switch: true
+    src: https://imgur.lzmun.com/picgo/20200324090429.jpg
+  wechat_public: 
+    switch: true
+    src: https://open.weixin.qq.com/qr/code?username=itypen
+
+# ---------------------------------------------------------------
+# Posts Settings 文章设置
 # ---------------------------------------------------------------
 
 # Post
@@ -87,13 +92,17 @@ default_post_title: Untitled
 auto_excerpt:
   length: 120
 
-# highlight.js
+# highlight.js 代码高亮
 # style github | tomorrow  | night-blue | night-bright | night-eighties
 highlight:
   use: true
   style: night-eighties
 
-# Comment
+# ---------------------------------------------------------------
+# Third Party Services Settings 第三方服务设置
+# ---------------------------------------------------------------
+
+# Comment 评论
 # Use gitment | valine | disqus | disqusjs | gitalk
 comment:
   use: valine
@@ -109,35 +118,29 @@ comment:
     src: 
     # such as: https://xxx.disqus.com/embed.js
   disqusjs:
-    shortname: itpnblog
-    siteName: aiokr's blog
-    api: https://disqus.itypen.app/api/
-    apikey: ACUkOYE4R9hPhjn287JNMXWzlvdAGpIKLH4Kn8AITuclBETPKnU2j996mGXXxgnD
-    admin: aiokr
-    adminLabel: 站长
+    shortname: 
+    siteName: 
+    api: 
+    apikey: 
+    admin: 
+    adminLabel: 
   gitalk:
-    clientID: fef941f702374d130089
-    clientSecret: 1bcf67d361ea873929e7e7ef6f75a4f510640425
-    repo: iTypen-comment
-    owner: aiokr
-    admin: aiokr
-    distractionFreeMode: false
+    clientID: 
+    clientSecret: 
+    repo: 
+    owner: 
+    admin: 
+    distractionFreeMode: 
 
-
-# Random Pictures
-random_pics: 24
-
-# ---------------------------------------------------------------
-# Third Party Services Settings
-# ---------------------------------------------------------------
-
-# Busuanzi Count
+# Busuanzi Count 不蒜子计数
 busuanzi: false
 
-# Google Analytics
+# Google Analytics 谷歌分析
 # cloudflare-workers-async-google-analytics
 # if use is default, it will use analytics.js
 # if use is cf_async, look at the https://github.com/SukkaW/cloudflare-workers-async-google-analytics to learn more
+# 如果 use 项选择 default，将使用 analytics.js 文件接入谷歌分析
+# 如果 use 项目选择 cf_async，请浏览 https://github.com/SukkaW/cloudflare-workers-async-google-analytics 进行配置
 
 google_analytics:
   # use: default
@@ -149,19 +152,3 @@ google_analytics:
 # https://www.chartjs.org/
 chart_js:
   use: false
-
-# AntV
-# https://antv.vision/
-antv:
-  g2:
-    use: true
-    version: 4.0.0
-
-# ---------------------------------------------------------------
-# Gallery Page Settings
-# ---------------------------------------------------------------
-
-gallery:
-  title: 从镜头里看世界
-  descr_title: 从镜头里看世界
-  descr: 我们常常在繁杂和污浊中寻找光明，企图用光明照亮黑暗。殊不知光明的力量弱小，而黑暗则会吸收光芒。

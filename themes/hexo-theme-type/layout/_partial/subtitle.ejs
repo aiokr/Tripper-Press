@@ -17,8 +17,16 @@
 <span> / </span>
 <%- symbolsCount(page) %>
 <style>
-  .itp-cover-subtitle a {
-    color: <%- page.title_color || theme.header.title_color || '#fff'%> !important;
+  @media print {
+    .itp-cover-subtitle a {
+      color: #000 !important;
+    }
+  }
+
+  @media screen {
+    .itp-cover-subtitle a {
+      color: <%- page.title_color || theme.header.title_color || '#fff'%> !important;
+    }
   }
 </style>
 <% } else { %>

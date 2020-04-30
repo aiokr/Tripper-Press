@@ -6,7 +6,7 @@
         向那些永远停留在这个冬天里的人致哀
       </div>-->
       <div class="itp-index">
-        <% if( (page.current === 1) && (is_home()) ) { %>
+        <% if( (theme.social_link.use === true) && (page.current === 1) && (is_home()) ) { %>
         <section id="index-links">
           <div class="mdui-row-lg-3 mdui-row-md-3 mdui-row-sm-3 mdui-row-xs-1 " style="padding-bottom: 10px;">
             <% for (var a in site.data.index.links) { %>
@@ -21,6 +21,7 @@
               </div>
             </a>
             <% } %>
+            <% if (theme.social_link.wechat_public.switch == true) { %>
             <a class="mdui-col" mdui-dialog="{target: '#mp_wechat_qrcode'}"
               title="<%= site.data.index.links[a].title %>" target="_blank">
               <div class="mdui-card mdui-shadow-0 mdui-hoverable itp-link">
@@ -31,6 +32,8 @@
                 </div>
               </div>
             </a>
+            <% } %>
+            <% if (theme.social_link.wechat_personal.switch == true) { %>
             <a class="mdui-col" mdui-dialog="{target: '#personal_wechat_qrcode'}"
               title="<%= site.data.index.links[a].title %>" target="_blank">
               <div class="mdui-card mdui-shadow-0 mdui-hoverable itp-link">
@@ -42,6 +45,7 @@
               </div>
             </a>
           </div>
+          <% } %>
         </section>
         <% } %>
         <section id="index-post-entry">
@@ -66,19 +70,23 @@
     <div class="mdui-col-lg-3 mdui-col-md-2 mdui-col-sm-1 mdui-col-xs-down"></div>
   </div>
 </div>
+<% if (theme.social_link.wechat_public.switch == true) { %>
 <!-- Wechat MP QRCode -->
 <div id="mp_wechat_qrcode" class="mdui-dialog">
   <div class="mdui-dialog-title">Wechat Public Platform</div>
-  <img src="https://open.weixin.qq.com/qr/code?username=itypen" width="300px" class="mdui-center nofancy">
+  <img src="<%= theme.social_link.wechat_public.src %>" width="300px" class="mdui-center nofancy">
   <div class="mdui-dialog-actions">
     <button class="mdui-btn mdui-ripple" mdui-dialog-close>ok</button>
   </div>
 </div>
+<% } %>
+<% if (theme.social_link.wechat_personal.switch == true) { %>
 <!-- Wechat Personal QRCode -->
 <div id="personal_wechat_qrcode" class="mdui-dialog">
   <div class="mdui-dialog-title">Personal Wechat</div>
-  <img src="//imgur.lzmun.com/picgo/20200324090429.jpg" width="300px" class="mdui-center nofancy">
+  <img src="<%= theme.social_link.wechat_personal.src %>" width="300px" class="mdui-center nofancy">
   <div class="mdui-dialog-actions">
     <button class="mdui-btn mdui-ripple" mdui-dialog-close>ok</button>
   </div>
 </div>
+<% } %>

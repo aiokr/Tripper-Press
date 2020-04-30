@@ -30,14 +30,6 @@ function chartJs(args, content) {
 };
 hexo.extend.tag.register('chartJs', chartJs, { ends: true });
 
-function antvG2(args, content) {
-  return `<div id="${args.join(' ')}" class="itpAntv"></div>
-          <script>
-            ${ hexo.render.renderSync({ text: content, engine: 'html' })}
-          </script>`;
-};
-hexo.extend.tag.register('antvG2', antvG2, { ends: true });
-
 function postNote(args, content) {
   return `<div class="note ${args.join(' ')}">
             ${hexo.render.renderSync({ text: content, engine: 'markdown' }).split('\n').join('')}

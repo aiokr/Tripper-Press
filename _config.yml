@@ -128,13 +128,14 @@ search:
 feed:
   type: atom
   path: atom.xml
-  limit: 0
+  limit: false
   hub:
-  content: true
-  content_limit:
+  content: false
+  content_limit: 140
   content_limit_delim: " "
   order_by: -date
   icon: https://imgur.lzmun.com/picgo/20190625163454.jpg
+  template: ./source/atom.xml
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

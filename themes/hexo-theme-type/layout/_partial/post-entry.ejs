@@ -9,10 +9,11 @@
     </div>
   </div>
   <% } else { %>
-  <div class="mdui-card-media itp-post-entry-cover"
-    style="background-image: url('<%- item.cover || theme.header.img %>');">
-
-  </div>
+    <a href="<%- config.root %><%- item.path %>">
+    <div class="mdui-card-media itp-post-entry-cover"
+      style="background-image: url('<%- item.cover || theme.header.img %>');">
+    </div>
+  </a>
   <div class="mdui-card-primary">
     <div class="mdui-card-primary-title itp-post-entry-title"><a
         href="<%- config.root %><%- item.path %>"><%- item.title || theme.default_post_title || "Untitled" %></a>

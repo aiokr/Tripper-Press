@@ -10,6 +10,10 @@
     <span> / </span>
     <a href="http://www.beian.miit.gov.cn"><%- theme.icp %></a>
     <% } %>
+    <% if (theme.busuanzi == true){ %>
+      <span> / </span>
+      <span id="busuanzi_container_site_pv">PV <span id="busuanzi_value_site_pv"></span></span>
+    <% } %>
   </section>
   <% if (theme.cdn.use == 'upyun'){ %>
   <section class="footer-logo">

@@ -135,3 +135,16 @@ mark {
     padding: 15px;
   }
 }
+
+ol li {
+  margin: 1.5em 0px !important;
+  font-size: 16px;
+  line-height: 1.8em;
+  letter-spacing: 0;
+}
+
+.footnotelist ol li {
+  span {
+    display: contents !important;
+  }
+}
