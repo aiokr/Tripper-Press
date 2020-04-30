@@ -70,6 +70,7 @@
     <div class="mdui-col-lg-3 mdui-col-md-2 mdui-col-sm-1 mdui-col-xs-down"></div>
   </div>
 </div>
+<% if( (theme.social_link.use === true) && (page.current === 1) && (is_home()) ) { %>
 <% if (theme.social_link.wechat_public.switch == true) { %>
 <!-- Wechat MP QRCode -->
 <div id="mp_wechat_qrcode" class="mdui-dialog">
@@ -89,4 +90,5 @@
     <button class="mdui-btn mdui-ripple" mdui-dialog-close>ok</button>
   </div>
 </div>
+<% } %>
 <% } %>

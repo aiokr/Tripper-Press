@@ -15,15 +15,15 @@ apple_icon:
   ipad_hd: https://imgur.lzmun.com/picgo/typelogo.png_RetinaiPad
   
 # ---------------------------------------------------------------
-# Style Settings 样式设置 （暂时没有作用）
+# Style Settings 样式设置
 # ---------------------------------------------------------------
 
 # Schemes
 schemes: column
 
 # Random Pictures
-random_pics: 24
-random_thumbnail: "/img/rondom/material-"
+random_pic_switch: true
+random_pics: 19
 
 # ---------------------------------------------------------------
 # Header and Nav Settings 页眉、导航和封面设置

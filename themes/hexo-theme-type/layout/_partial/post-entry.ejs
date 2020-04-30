@@ -1,3 +1,8 @@
+<%
+  if (theme.random_pics !== false && theme.random_pics) {
+    var randomPicPost = Math.floor(Math.random() * theme.random_pics + 1);
+  }
+%>
 <div class="itp-post-entry mdui-card mdui-shadow-0">
   <% if(item.style== 'moment') { %>
   <div class="mdui-card-primary">
@@ -9,10 +14,21 @@
     </div>
   </div>
   <% } else { %>
-    <a href="<%- config.root %><%- item.path %>">
-    <div class="mdui-card-media itp-post-entry-cover"
-      style="background-image: url('<%- item.cover || theme.header.img %>');">
+  <a href="<%- config.root %><%- item.path %>">
+    <% if(theme.random_pic_switch == true && item.cover ) { %>
+    <div class="mdui-card-media itp-post-entry-cover" style="background-image: url('<%- item.cover %>');">
     </div>
+    <% } else if (theme.random_pic_switch == true) { %>
+    <div class="mdui-card-media itp-post-entry-cover"
+      style="background-image: url('<%= './img/random/randompic-' + randomPicPost + '.png' %>');">
+    </div>
+    <% } else if (theme.random_pic_switch == false && item.cover ) { %>
+    <div class="mdui-card-media itp-post-entry-cover" style="background-image: url('<%- item.cover %>');">
+    </div>
+    <% } else if (theme.random_pic_switch == false ) { %>
+    <div class="mdui-card-media itp-post-entry-cover" style="background-image: url('<%- theme.header.img %>');">
+    </div>
+    <% } %>
   </a>
   <div class="mdui-card-primary">
     <div class="mdui-card-primary-title itp-post-entry-title"><a

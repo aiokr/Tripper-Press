@@ -4,13 +4,6 @@
       <div class="mdui-col-md-0 mdui-col-xs-down"></div>
       <div class="mdui-col-md-12 mdui-col-xs-12">
         <div class="mdui-card mdui-shadow-0 itp-index">
-          <div class="itp-index-header">
-            <div class="itp-gallery-title" style="opacity: 1;">
-              <%= page.title %></div>
-            <div class="itp-gallery-subtitle" style="opacity: 0.8;">
-              <%= page.date.format(config.date_format) %>
-            </div>
-          </div>
           <div class="mdui-row-xs-1 mdui-row-sm-3 mdui-row-lg-3 mdui-grid-list">
             <% for (var i in page.gallery) { %>
             <div class="mdui-col itp-post-gallery mdui-grid-tile">
@@ -20,14 +13,23 @@
             </div>
             <% } %>
           </div>
-          <section class="mdui-card-content itp-post-content article" role="article">
-            <%- page.content %>
-          </section>
-          <section class="mdui-card-content itp-post-comment noprn">
-            <%- partial('_partial/comment') %>
-          </section>
         </div>
         <div class="mdui-col-md-0 mdui-col-xs-down"></div>
+        <div class="mdui-row">
+          <div class="mdui-col-md-2 mdui-col-xs-down"></div>
+          <div class="mdui-col-md-8 mdui-col-xs-12">
+            <section class="mdui-card-content itp-post-content article" role="article">
+              <%- page.content %>
+            </section>
+            <section class="mdui-card-content itp-page-select">
+              <%- partial('_partial/post-pagination') %>
+            </section>
+            <section class="mdui-card-content itp-post-comment noprn">
+              <%- partial('_partial/comment') %>
+            </section>
+          </div>
+          <div class="mdui-col-md-2 mdui-col-xs-down"></div>
+        </div>
       </div>
     </div>
   </div>
