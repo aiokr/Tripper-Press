@@ -20,7 +20,7 @@
     </div>
     <% } else if (theme.random_pic_switch == true) { %>
     <div class="mdui-card-media itp-post-entry-cover"
-      style="background-image: url('<%= './img/random/randompic-' + randomPicPost + '.png' %>');">
+      style="background-image: url('<%= url_for(theme.random_thumbnail) + randomPicPost + '.png' %>');">
     </div>
     <% } else if (theme.random_pic_switch == false && item.cover ) { %>
     <div class="mdui-card-media itp-post-entry-cover" style="background-image: url('<%- item.cover %>');">

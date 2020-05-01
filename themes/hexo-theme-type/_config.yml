@@ -2,17 +2,17 @@
 # ICON Settings 图标设置
 # ---------------------------------------------------------------
 
-favicon: https://imgur.lzmun.com/picgo/typelogo.png_avatar
+favicon: https://imgur.lzmun.com/picgo/20200430223748.jpg_avatar
 avatar: https://imgur.lzmun.com/picgo/gff.jpg
 apple_icon:
   # iPhone 57x57 
-  iphone: https://imgur.lzmun.com/picgo/typelogo.png_iPhone
+  iphone: https://imgur.lzmun.com/picgo/20200430223748.jpg_iPhone
   # iPad 72x72
-  ipad: https://imgur.lzmun.com/picgo/typelogo.png_RetinaiPad
+  ipad: https://imgur.lzmun.com/picgo/20200430223748.jpg_RetinaiPad
   # Retina iPhone 114x114
-  iphone_hd: https://imgur.lzmun.com/picgo/typelogo.png_iPhoneHD
+  iphone_hd: https://imgur.lzmun.com/picgo/20200430223748.jpg_iPhoneHD
   # Retina iPad 144x144
-  ipad_hd: https://imgur.lzmun.com/picgo/typelogo.png_RetinaiPad
+  ipad_hd: https://imgur.lzmun.com/picgo/20200430223748.jpg_RetinaiPad
   
 # ---------------------------------------------------------------
 # Style Settings 样式设置
@@ -24,6 +24,7 @@ schemes: column
 # Random Pictures
 random_pic_switch: true
 random_pics: 19
+random_thumbnail: ../img/random/randompic-
 
 # ---------------------------------------------------------------
 # Header and Nav Settings 页眉、导航和封面设置
@@ -51,6 +52,12 @@ nav:
   友链:
     link: /links.html
     icon: link
+  工具:
+    link: /tools/
+    icon: bookmark
+  频道:
+    link: https://t.me/itypen
+    icon: track_changes
 
 # Materiac ICON from https://www.mdui.org/docs/material_icon
 

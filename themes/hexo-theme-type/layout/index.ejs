@@ -8,11 +8,11 @@
       <div class="itp-index">
         <% if( (theme.social_link.use === true) && (page.current === 1) && (is_home()) ) { %>
         <section id="index-links">
-          <div class="mdui-row-lg-3 mdui-row-md-3 mdui-row-sm-3 mdui-row-xs-1 " style="padding-bottom: 10px;">
+          <div class="mdui-row-lg-3 mdui-row-md-3 mdui-row-sm-3 mdui-row-xs-1" style="padding-bottom: 10px;">
             <% for (var a in site.data.index.links) { %>
             <a class="mdui-col" href="<%= site.data.index.links[a].link %>"
               title="<%= site.data.index.links[a].title %>" target="_blank">
-              <div class="mdui-card mdui-shadow-0 mdui-hoverable itp-link">
+              <div class="mdui-card mdui-shadow-0 itp-index-link">
                 <div class="mdui-card-header">
                   <img class="mdui-card-header-avatar" src="<%= site.data.index.links[a].avatar %>" />
                   <div class="mdui-card-header-title"><%= site.data.index.links[a].title %></div>
@@ -22,9 +22,9 @@
             </a>
             <% } %>
             <% if (theme.social_link.wechat_public.switch == true) { %>
-            <a class="mdui-col" mdui-dialog="{target: '#mp_wechat_qrcode'}"
-              title="<%= site.data.index.links[a].title %>" target="_blank">
-              <div class="mdui-card mdui-shadow-0 mdui-hoverable itp-link">
+            <a class="mdui-col itp-link-item" mdui-dialog="{target: '#mp_wechat_qrcode'}"
+              title="Wechat Public Account" target="_blank">
+              <div class="mdui-card mdui-shadow-0 itp-index-link">
                 <div class="mdui-card-header">
                   <img class="mdui-card-header-avatar" src="//imgur.lzmun.com/picgo/20200324092946.jpg" />
                   <div class="mdui-card-header-title">Wechat Public Account</div>
@@ -34,9 +34,9 @@
             </a>
             <% } %>
             <% if (theme.social_link.wechat_personal.switch == true) { %>
-            <a class="mdui-col" mdui-dialog="{target: '#personal_wechat_qrcode'}"
-              title="<%= site.data.index.links[a].title %>" target="_blank">
-              <div class="mdui-card mdui-shadow-0 mdui-hoverable itp-link">
+            <a class="mdui-col itp-link-item" mdui-dialog="{target: '#personal_wechat_qrcode'}"
+              title="Wechat Personal Account" target="_blank">
+              <div class="mdui-card mdui-shadow-0 itp-index-link">
                 <div class="mdui-card-header">
                   <img class="mdui-card-header-avatar" src="//imgur.lzmun.com/picgo/20200323120414.jpg" />
                   <div class="mdui-card-header-title">Personal Wechat Account</div>

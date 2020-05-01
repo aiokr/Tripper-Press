@@ -136,6 +136,7 @@
   color: $grey !important;
   font-size: 16px;
   padding: 16px 0 16px 0;
+
   a {
     color: #fff;
     opacity: 0.8;
@@ -151,7 +152,7 @@
 
 .itp-post-entry {
   margin: 20px 0 50px 0;
-  border: solid 2px rgba(0,0,0,.86);
+  border: solid 2px rgba(0, 0, 0, .86);
 }
 
 .itp-post-entry-cover {
@@ -230,4 +231,19 @@
 .itp-achieve-subtitle a {
   color: $black;
   opacity: 0.8;
+}
+
+.itp-index-link {
+  border: solid 2px rgba(0, 0, 0, .06);
+  -webkit-transition: .2s cubic-bezier(.25, .46, .45, .94) all;
+  transition: .2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+}
+
+.itp-index-link:hover {
+  border: solid 2px rgba(0, 0, 0, .86);
+  -webkit-transition: .2s cubic-bezier(.25, .46, .45, .94) all;
+  transition: .2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }

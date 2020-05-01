@@ -3,25 +3,23 @@
     <div class="mdui-row">
       <div class="mdui-col-md-2 mdui-col-xs-down"></div>
       <div class="mdui-col-md-8 mdui-col-xs-12">
-        <div class="mdui-card itp-post-card">
+        <div class="itp-index">
           <!--链接-->
-          <section class="mdui-card-content itp-page-content article" role="article">
-            <% if (site.data.links) { %>
-            <div class="mdui-row-xs-1 mdui-row-sm-2 mdui-row-lg-3">
-              <% for (var i in site.data.links) { %>
-              <a class="mdui-col" href="<%= site.data.links[i].url %>" title="<%= i %>" target="_blank">
-                <div class="mdui-card mdui-shadow-0 itp-link">
-                  <div class="mdui-card-header">
-                    <img class="mdui-card-header-avatar" src="<%= site.data.links[i].img %>" />
-                    <div class="mdui-card-header-title"><%= i %></div>
-                    <div class="mdui-card-header-subtitle"><%- site.data.links[i].descr %></div>
-                  </div>
+          <% if (site.data.links) { %>
+            <div class="mdui-row-lg-3 mdui-row-md-3 mdui-row-sm-3 mdui-row-xs-1 " style="padding-bottom: 10px;">
+            <% for (var i in site.data.links) { %>
+            <a class="mdui-col" href="<%= site.data.links[i].url %>" title="<%= i %>" target="_blank">
+              <div class="mdui-card mdui-shadow-0 itp-index-link">
+                <div class="mdui-card-header itp-link-bg">
+                  <img class="mdui-card-header-avatar" src="<%= site.data.links[i].img %>" />
+                  <div class="mdui-card-header-title"><%= i %></div>
+                  <div class="mdui-card-header-subtitle"><%- site.data.links[i].descr %></div>
                 </div>
-              </a>
-              <% } %>
-            </div>
+              </div>
+            </a>
             <% } %>
-          </section>
+          </div>
+          <% } %>
           <!--正文-->
           <section class="mdui-card-content itp-page-content article" role="article">
             <%- page.content %>

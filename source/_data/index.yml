@@ -15,3 +15,20 @@ links:
     link: https://www.instagram.com/aio.kr/
     avatar: https://imgur.lzmun.com/picgo/20200323114755.jpg
     descr: 'aio.kr'
+tools:
+  - title: DeepL Translator
+    link: https://www.deepl.com/translator
+    descr: '人工智能翻译工具'
+    avatar: https://imgur.lzmun.com/picgo/20200430204143.svg
+  - title: docsmall
+    link: https://docsmall.com/
+    descr: '图片和文件压缩'
+    avatar: https://imgur.lzmun.com/picgo/20200430232916.svg
+  - title: Adobe Color
+    link: https://color.adobe.com
+    descr: 色轮与调色板生成器
+    avatar: https://imgur.lzmun.com/picgo/20200430232746.svg
+  - title: 狗屁不通文章生成器
+    link: https://suulnnka.github.io/BullshitGenerator/
+    descr: 学生会6000字退会申请利器
+    avatar: https://imgur.lzmun.com/picgo/20200430210726.svg
