@@ -22,7 +22,7 @@
             </a>
             <% } %>
             <% if (theme.social_link.wechat_public.switch == true) { %>
-            <a class="mdui-col itp-link-item" mdui-dialog="{target: '#mp_wechat_qrcode'}"
+            <a class="mdui-col itp-link-item" data-fancybox data-src="#mp-wechat" href="javascript:;"
               title="Wechat Public Account" target="_blank">
               <div class="mdui-card mdui-shadow-0 itp-index-link">
                 <div class="mdui-card-header">
@@ -34,7 +34,7 @@
             </a>
             <% } %>
             <% if (theme.social_link.wechat_personal.switch == true) { %>
-            <a class="mdui-col itp-link-item" mdui-dialog="{target: '#personal_wechat_qrcode'}"
+            <a class="mdui-col itp-link-item" data-fancybox data-src="#personal-wechat" href="javascript:;"
               title="Wechat Personal Account" target="_blank">
               <div class="mdui-card mdui-shadow-0 itp-index-link">
                 <div class="mdui-card-header">
@@ -73,22 +73,16 @@
 <% if( (theme.social_link.use === true) && (page.current === 1) && (is_home()) ) { %>
 <% if (theme.social_link.wechat_public.switch == true) { %>
 <!-- Wechat MP QRCode -->
-<div id="mp_wechat_qrcode" class="mdui-dialog">
+<div style="display: none;" id="mp-wechat">
   <div class="mdui-dialog-title">Wechat Public Platform</div>
   <img src="<%= theme.social_link.wechat_public.src %>" width="300px" class="mdui-center nofancy">
-  <div class="mdui-dialog-actions">
-    <button class="mdui-btn mdui-ripple" mdui-dialog-close>ok</button>
-  </div>
 </div>
 <% } %>
 <% if (theme.social_link.wechat_personal.switch == true) { %>
 <!-- Wechat Personal QRCode -->
-<div id="personal_wechat_qrcode" class="mdui-dialog">
+<div style="display: none;" id="personal-wechat">
   <div class="mdui-dialog-title">Personal Wechat</div>
   <img src="<%= theme.social_link.wechat_personal.src %>" width="300px" class="mdui-center nofancy">
-  <div class="mdui-dialog-actions">
-    <button class="mdui-btn mdui-ripple" mdui-dialog-close>ok</button>
-  </div>
 </div>
 <% } %>
 <% } %>
