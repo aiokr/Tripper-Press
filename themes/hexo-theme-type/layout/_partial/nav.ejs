@@ -2,9 +2,8 @@
 <header id="header" class="itp-header noprn">
   <div id="appbar-index" class="mdui-appbar mdui-appbar-fixed itp-appbar_index mdui-shadow-0">
     <div id="toolbar-index" class="mdui-toolbar mdui-shadow-0" style="justify-content: center;">
-      <button class="mdui-btn mdui-btn-icon itp-drawer-btn itp-header-actions_menu" style="color: #fff"
-        mdui-drawer="{target:'#main-drawer',overlay:true,swipe:true}" id="menu"><i
-          class="mdui-icon material-icons">menu</i></button>
+      <a class="mdui-btn mdui-btn-icon itp-drawer-btn itp-header-actions_menu" style="color: #fff" data-fancybox data-src="#nav_menu" href="javascript:;"><i
+          class="mdui-icon material-icons">menu</i></a>
       <a href="<%= url_for() %>" class="itp-header-title mdui-typo-title"><%- config.title %></a>
       <div class="itp-nav-action">
         <% for (var i in theme.nav) { %>

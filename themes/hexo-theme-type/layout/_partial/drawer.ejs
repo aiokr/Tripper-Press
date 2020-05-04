@@ -1,30 +1,12 @@
-<aside class="mdui-drawer mdui-color-white mdui-drawer-close noprn itp-drawer" id="main-drawer">
-  <div class="mdui-card mdui-shadow-0">
-    <div class="mdui-card-media">
-      <img src="<%= theme.drawer_header %>" class="drawer-img"/>
-      <div class="mdui-card-menu">
-        <button class="mdui-btn mdui-btn-icon mdui-text-color-white"
-          mdui-drawer-close="{target: '#main-drawer', swipe: true}"><i
-            class="mdui-icon material-icons">arrow_back</i></button>
-      </div>
-      <div class="mdui-card-media-covered mdui-card-media-covered-transparent">
-        <div class="mdui-card-primary">
-          <div class="mdui-card-primary-title"><%- config.title %></div>
-        </div>
-      </div>
-    </div>
-    <div class="mdui-card-header itp-drawer">
-      <img class="mdui-card-header-avatar" src="<%= theme.avatar %>"/>
-      <div class="mdui-card-header-title itp-drawer-title"><%- config.author %></div>
-      <div class="mdui-card-header-subtitle itp-drawer-description"><%- config.description %></div>
-    </div>
-  </div>
-  <ul class="mdui-list">
+<div style="display: none;" id="nav_menu" class="itp-nav-menu">
+  <div class="mdui-dialog-title">导航</div>
+  <div class="mdui-row-xs-2 mdui-nav-list" style="padding-bottom: 10px;">
     <% for (var i in theme.nav) { %>
-    <a class="mdui-list-item mdui-ripple" href="<%- theme.nav[i].link %>">
+    <a class="mdui-list-item mdui-ripple mdui-col" href="<%- theme.nav[i].link %>">
       <i class="mdui-list-item-icon mdui-icon material-icons itp-drawer-icon"><%- theme.nav[i].icon %></i>
-      <div class="mdui-list-item-content itp-header-actions-menu" style="font-size: 14px; color: #757575;"><%- i %></div>
+      <div class="mdui-list-item-content itp-header-actions-menu" style="font-size: 14px; color: #757575;"><%- i %>
+      </div>
     </a>
     <% } %>
-  </ul>
-</aside>
+  </div>
+</div>
