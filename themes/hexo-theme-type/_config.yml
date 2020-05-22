@@ -55,8 +55,8 @@ nav:
   工具:
     link: /tools/
     icon: bookmark
-  频道:
-    link: https://t.me/itypen
+  工作室:
+    link: https://notion.itypen.app
     icon: track_changes
 
 # Materiac ICON from https://www.mdui.org/docs/material_icon
