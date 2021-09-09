@@ -108,8 +108,9 @@ highlight:
 
 # Comment 评论
 # Use gitment | valine | disqus | disqusjs | gitalk
+# disqusjs 参考 https://github.com/SukkaW/DisqusJS 进行部署
 comment:
-  use: valine
+  use: disqusjs
   gitment:
     owner:
     repo:
@@ -122,12 +123,12 @@ comment:
     src: 
     # such as: https://xxx.disqus.com/embed.js
   disqusjs:
-    shortname: 
-    siteName: 
-    api: 
-    apikey: 
-    admin: 
-    adminLabel: 
+    shortname: itpnblog
+    siteName: aiokr's blog
+    api: https://disqus.skk.moe/disqus/
+    apikey: ACUkOYE4R9hPhjn287JNMXWzlvdAGpIKLH4Kn8AITuclBETPKnU2j996mGXXxgnD
+    title: :title
+    admin: aiokr
   gitalk:
     clientID: 
     clientSecret: 
