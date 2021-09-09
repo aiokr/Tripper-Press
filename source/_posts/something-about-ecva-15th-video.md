@@ -1,12 +1,13 @@
 ---
 title: 关于 怀念青协的日子
-date: 2019-06-24 22:07:14
 tags:
-- 摄影
-- 青协
-- 视频
-categories: 
-- [随笔]
+  - 摄影
+  - 青协
+  - 视频
+categories:
+  - - 随笔
+abbrlink: 4c38
+date: 2019-06-24 22:07:14
 cover:
 ---
 

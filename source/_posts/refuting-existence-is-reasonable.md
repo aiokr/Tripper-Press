@@ -4,9 +4,10 @@ tags:
   - 辩论
   - 观点
   - 逻辑
-date: 2019-06-25 18:12:47
 categories: 读立写生
-cover: 
+abbrlink: 1b89
+date: 2019-06-25 18:12:47
+cover:
 ---
 
 ## 引言

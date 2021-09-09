@@ -5,6 +5,7 @@ tags:
   - 笔记
 categories: 笔记
 translate_title: review-notes-of-western-economics
+abbrlink: f1b9
 date: 2019-06-12 20:55:22
 cover:
 ---

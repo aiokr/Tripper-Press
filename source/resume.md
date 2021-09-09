@@ -2,6 +2,7 @@
 title: 简历
 layout: post
 tag: 简历
+abbrlink: 3a22
 ---
 <p style="text-align: center"> 陈王健平 </p>
 

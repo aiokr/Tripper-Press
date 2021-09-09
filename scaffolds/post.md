@@ -8,4 +8,5 @@ style:
 excerpt: 
 permalink: 
 author: aiokr
+abbrlink: 
 ---

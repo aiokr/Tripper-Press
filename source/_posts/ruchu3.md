@@ -1,10 +1,11 @@
 ---
 title: 永远是少年
-tag: 
-date: 2019-05-11 12:00:00
-cover: https://imgur.lzmun.com/picgo/20190506125608.jpg_itp
+cover: 'https://imgur.lzmun.com/picgo/20190506125608.jpg_itp'
 categories: 读立写生
 style: cover
+abbrlink: '5119'
+date: 2019-05-11 12:00:00
+tag:
 ---
 
 ## 卷首语 永远是少年

@@ -1,12 +1,13 @@
 ---
 title: 巡礼 柳州
-date: 2019-10-13 23:26:00
-tags: 
-- 巡礼
-- 柳州
+tags:
+  - 巡礼
+  - 柳州
 categories: 随笔
-cover: https://imgur.lzmun.com/picgo/20191015130824.jpg
+cover: 'https://imgur.lzmun.com/picgo/20191015130824.jpg'
 style: cover
+abbrlink: f6d5
+date: 2019-10-13 23:26:00
 ---
 
 这篇文章是我的中国文化史的作业。作业的内容是，用思维导图描述你家乡的城市，讲述你与他的记忆。

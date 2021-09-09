@@ -6,9 +6,10 @@ tags:
   - 观后感
 categories:
   - 随笔
-cover: https://imgur.lzmun.com/picgo/20190623003809.png_itp
-date: 2019-06-23 00:36:00
+cover: 'https://imgur.lzmun.com/picgo/20190623003809.png_itp'
 style: smart
+abbrlink: 7f4b
+date: 2019-06-23 00:36:00
 ---
 
 > 不要吃太胖、不要忘记自己的名字、不要回头。

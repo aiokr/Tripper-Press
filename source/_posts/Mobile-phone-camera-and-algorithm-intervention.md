@@ -1,13 +1,14 @@
 ---
 title: 手机拍照与算法介入
-date: 2019-04-24 00:00:00
-cover: https://imgur.lzmun.com/picgo/20190425232808.jpg_itp
+cover: 'https://imgur.lzmun.com/picgo/20190425232808.jpg_itp'
 tags:
-- 摄影
-- 人工智能
-- 随笔
-- 摄影笔记
+  - 摄影
+  - 人工智能
+  - 随笔
+  - 摄影笔记
 categories: 读立写生
+abbrlink: 345f
+date: 2019-04-24 00:00:00
 ---
 
 各位好，欢迎来到本期的渊梦。在这一期中，我想和大家谈谈关于手机摄影，以及手机的成像算法相关一些东西。

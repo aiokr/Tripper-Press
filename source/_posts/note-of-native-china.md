@@ -1,13 +1,14 @@
 ---
 title: 乡土中国读书笔记
-date: 2020-01-29 20:31:11
 tags:
-- 乡土中国
-- 费孝通
-- 读书笔记
+  - 乡土中国
+  - 费孝通
+  - 读书笔记
 categories: 读立写生
-cover: https://imgur.lzmun.com/picgo/20200129205822.jpg
+cover: 'https://imgur.lzmun.com/picgo/20200129205822.jpg'
 style: smart
+abbrlink: 6a28
+date: 2020-01-29 20:31:11
 ---
 
 在 Google 翻译上翻译「乡土中国」的时候，得到的结果是 Native China。我想，Native China 这个翻译本身可能比「乡土中国」这四个字来得更为直观一些。

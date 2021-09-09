@@ -1,10 +1,11 @@
 ---
 title: 衬线字体与非衬线字体
-date: 2017-08-20 00:00:05
 categories: 笔记
-cover: https://ooo.0o0.ooo/2017/06/06/593697b7b77d8.jpg
+cover: 'https://ooo.0o0.ooo/2017/06/06/593697b7b77d8.jpg'
 layout: post
 copyright: true
+abbrlink: 4b02
+date: 2017-08-20 00:00:05
 ---
 我们将字体分为衬线字体和非衬线字体两大类。衬线字体以 宋体 和 Times New Roman 为代表 ，非衬线字体以微软雅黑为代表。
 
