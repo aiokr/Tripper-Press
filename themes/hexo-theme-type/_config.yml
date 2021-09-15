@@ -110,7 +110,7 @@ highlight:
 # Use gitment | valine | disqus | disqusjs | gitalk
 # disqusjs 参考 https://github.com/SukkaW/DisqusJS 进行部署
 comment:
-  use: disqusjs
+  use: valine
   gitment:
     owner:
     repo:
