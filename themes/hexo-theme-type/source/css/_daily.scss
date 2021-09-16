@@ -1,3 +1,5 @@
+@use "sass:math";
+
 body,
 html {
     height: 100%;
@@ -41,7 +43,7 @@ ol {
 li>ol,
 li>ul {
     margin-bottom: 0;
-    margin-left: 1.5em;
+    margin-left: -1em;
 }
 
 dt {
@@ -83,7 +85,7 @@ Grad
 
 @for $i from 1 through 10 {
     .col-1-#{$i} {
-        width: 100% / $i;
+        width: math.div(100%, $i);
         float: left;
         padding: 0 15px;
         box-sizing: border-box;

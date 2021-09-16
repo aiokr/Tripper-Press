@@ -6,7 +6,9 @@
 
 /* Main */
 
-	#main {
+	@use "sass:math";
+
+#main {
 		@include vendor('transition', (
 			'-moz-filter #{_duration(panel)} ease',
 			'-webkit-filter #{_duration(panel)} ease',
@@ -55,9 +57,9 @@
 
 			> h2 {
 				@include vendor('pointer-events', 'none');
-				bottom: (1.5em / 0.8);
+				bottom: math.div(1.5em, 0.8);
 				font-size: 0.8em;
-				left: (1.75em / 0.8);
+				left: math.div(1.75em, 0.8);
 				margin: 0;
 				position: absolute;
 				z-index: 1;
@@ -114,9 +116,9 @@
 
 			.thumb {
 				@include vendor('transition-delay', '#{$defaultDelay}');
-				height: calc(#{100vh / ($rows + $pad)} - #{_size(header) / $rows});
+				height: calc(#{math.div(100vh, $rows + $pad)} - #{math.div(_size(header), $rows)});
 				min-height: $minHeight;
-				width: (100% / $columns);
+				width: math.div(100%, $columns);
 
 				@for $i from 1 through (($rows * $columns) * 1.5) {
 					&:nth-child(#{$i}) {

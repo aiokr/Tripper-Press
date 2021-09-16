@@ -6,7 +6,9 @@
 
 /* Button */
 
-	input[type="submit"],
+	@use "sass:math";
+
+input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
 	button,
@@ -26,9 +28,9 @@
 		display: inline-block;
 		font-size: 0.9em;
 		font-weight: _font(weight-bold);
-		height: _size(element-height) * (1 / 0.9);
+		height: _size(element-height) * math.div(1, 0.9);
 		letter-spacing: _font(kerning-alt);
-		line-height: _size(element-height) * (1 / 0.9);
+		line-height: _size(element-height) * math.div(1, 0.9);
 		padding: 0 2.5em;
 		text-align: center;
 		text-decoration: none;

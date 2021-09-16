@@ -2,7 +2,7 @@
   <% if (item.style == 'moment') { %>
   <% } else if (item.noachieve == true) { %>
   <% } else { %>
-    <a href="<%- config.root %><%- item.path %>">
+    <a href="<%- url_for(item.path) %>">
       <li class="mdui-list-item mdui-ripple mdui-col">
         <i class="mdui-list-item-icon mdui-icon material-icons">
           <% if (item.password) { %>
