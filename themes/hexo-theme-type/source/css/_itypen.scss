@@ -7,6 +7,12 @@ html {
 }
 */
 
+html,
+body {
+    scroll-behavior: smooth;
+    scroll-padding-top: 65px;
+}
+
 #content_progress {
     position: fixed;
     left: 0;

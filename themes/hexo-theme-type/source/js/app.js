@@ -33,10 +33,12 @@ window.onscroll = function () {
   var howFar = document.documentElement.scrollTop || document.body.scrollTop;
   if (howFar > cover & whetherChange == 0) {
     $("#appbar-index").addClass("itp-appbar-color-pull-up");
+    $("#post-toc").addClass("itp-toc-pull-up");
     whetherChange = 1;
   };
   if (howFar <= cover & whetherChange == 1) {
     $("#appbar-index").removeClass("itp-appbar-color-pull-up");
+    $("#post-toc").removeClass("itp-toc-pull-up");
     whetherChange = 0;
   }
 };
