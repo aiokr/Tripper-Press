@@ -8,8 +8,6 @@ abbrlink: mi-flipbuds-pro
 date: 2021-09-09 18:38:32
 ---
 
-# 新玩意：小米 FlipBuds Pro 降噪耳机
-
 购入渠道：小米京东自营旗舰店
 购入价格：789 元
 

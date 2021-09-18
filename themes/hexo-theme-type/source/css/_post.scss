@@ -183,6 +183,7 @@ img.mdui-col {
     display: block;
     max-height: 80vh;
     overflow: scroll;
+    overflow-x: hidden;
     li,
     ol {
         list-style-type: none;
@@ -225,10 +226,6 @@ img.mdui-col {
     .itp-toc-level-6 {
         padding-left: 0.4em;
     }
-}
-
-.itp-toc.itp-appbar-color-pull-up {
-    padding: 0vh 8px 24px 8px !important;
 }
 
 .aspect-ratio {

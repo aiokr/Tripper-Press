@@ -11,10 +11,10 @@ links:
     link: https://weibo.com/stark2chen
     avatar: https://imgur.lzmun.com/picgo/20200323114500.jpg
     descr: '按快门的陈王'
-  - title: Instagram
-    link: https://www.instagram.com/aio.kr/
-    avatar: https://imgur.lzmun.com/picgo/20200323114755.jpg
-    descr: 'aio.kr'
+  #- title: Instagram
+    #link: https://www.instagram.com/aio.kr/
+    #avatar: https://imgur.lzmun.com/picgo/20200323114755.jpg
+    #descr: 'aio.kr'
 tools:
   - title: DeepL Translator
     link: https://www.deepl.com/translator
