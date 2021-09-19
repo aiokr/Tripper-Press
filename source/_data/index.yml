@@ -7,10 +7,10 @@ links:
     link: https://500px.com/vcg-aiokr
     avatar: https://imgur.lzmun.com/picgo/20200323114235.jpg
     descr: 'aiokr'
-  - title: Weibo
-    link: https://weibo.com/stark2chen
-    avatar: https://imgur.lzmun.com/picgo/20200323114500.jpg
-    descr: '按快门的陈王'
+  #- title: RSS Feed
+    #link: https://itypen.app/atom.xml
+    #avatar: https://imgur.lzmun.com/2021/09/19/512x512bb.jpeg_itp
+    #descr: 'iTypen.APP'
   #- title: Instagram
     #link: https://www.instagram.com/aio.kr/
     #avatar: https://imgur.lzmun.com/picgo/20200323114755.jpg

@@ -44,8 +44,15 @@
                 </div>
               </div>
             </a>
+            <% } %>
           </div>
-          <% } %>
+        </section>
+        <% } %>
+        <% if( (theme.subscription_link.use === true) && (page.current === 1) && (is_home()) ) { %>
+        <section id="index-links index-subscription-link">
+          <div class="mdui-row-lg-3 mdui-row-md-3 mdui-row-sm-3 mdui-row-xs-1" style="padding-bottom: 10px;">
+            
+          </div>
         </section>
         <% } %>
         <section id="index-post-entry">

@@ -4,6 +4,15 @@ title: 关于
 abbrlink: 5c4e
 date: 2019-07-02 00:00:00
 ---
+<h2 style="text-align: center !important;">
+iTypen｜<span>A</span>io's <span>P</span>hotographies & <span>P</span>osts
+</h2>
+
+<style>
+  h2 span {
+    color: #77C99D;
+  }
+</style>
 
 ## 关于我
 
@@ -12,8 +21,6 @@ date: 2019-07-02 00:00:00
 器材党/摄影师/写手/永远是学生。
 
 > Always believe that something wonderful is about to happen.
-
-陈王，2000 年，出生于广西柳州。目前就读于 [南宁师范大学](https://www.nnnu.edu.cn) 文化产业管理专业。
 
 小时候的理想是成为一名程序员，用技术改变世界。直到上高中我选择了文科。
 
@@ -33,19 +40,13 @@ date: 2019-07-02 00:00:00
 
 对我个人而言，如果一件事没有记录，那这件事终将在记忆中被遗忘，进而找不到他存在的任何证据。我在这里写下的文字，是我存在的最好的证明。
 
-本博客采用 [Hexo](https://hexo.io/zh-cn/) 驱动，托管在 Github Pages，评论系统通过 [Valine](https://valine.js.org/) 托管在 [LeanCloud](https://www.leancloud.cn/)。
+本博客采用 [Hexo](https://hexo.io/zh-cn/) 驱动，托管在 [Netlify](https://www.netlify.com/) ，评论系统通过 [Valine](https://valine.js.org/) 托管在 [LeanCloud](https://www.leancloud.cn/)。
 
 ## 在其他地方找到我
 
-**微博：** [@按快门的陈王](https://weibo.com/5645101000/)
+**500px** [https://500px.me/aiokr](https://500px.me/aiokr)
 
-**豆瓣：** [https://www.douban.com/people/132240589/](https://www.douban.com/people/132240589/)
-
-**ShutterStock:** [https://www.shutterstock.com/zh/g/aiokr](https://www.shutterstock.com/zh/g/aiokr)
-
-**500px:** [https://500px.me/aiokr](https://500px.me/aiokr)
-
-**Email:** aiokr#outlook.com
+**Unsplash** [aiokr chen (@aiokr) | Unsplash Photo Community](https://unsplash.com/@aiokr)
 
 ## Events
 

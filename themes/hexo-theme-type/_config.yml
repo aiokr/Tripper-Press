@@ -84,8 +84,12 @@ social_link:
     switch: false
     src: https://imgur.lzmun.com/picgo/20200324090429.jpg
   wechat_public: 
-    switch: false
+    switch: true
     src: https://open.weixin.qq.com/qr/code?username=itypen
+
+# 订阅链接
+subscription_link:
+  use: true
 
 # ---------------------------------------------------------------
 # Posts Settings 文章设置
