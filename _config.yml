@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: iTypen.APP
-subtitle: aio's Photographies & Posts
-description: 从镜头里看世界
+title: 瞬间 Press
+subtitle: Take Photo Think Seriously
+description: 拿起相机，认真思考
 keywords: 
   - photography
   - photo
@@ -17,7 +17,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://itypen.app/
+url: https://xyz.photup.art/
 root: /
 permalink: :year/:abbrlink/
 permalink_defaults:
