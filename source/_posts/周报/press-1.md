@@ -31,7 +31,7 @@ date: 2022-03-21 11:35:34
 
 imgg 是一个可以将任意 sms 内容转换成为图片的工具，不用担心在 APP 上截图会泄漏隐私。生成的图片的样式很像 Poet.so，不过 Poet.so 只能生成推特的分享图。
 
-![](imgur.lzmun.com/picgo/after2022/imggggg-export-2.png_itp)
+![](//imgur.lzmun.com/picgo/after2022/imggggg-export-2.png_itp)
 
 ### 金十数据
 
@@ -39,7 +39,7 @@ imgg 是一个可以将任意 sms 内容转换成为图片的工具，不用担�
 
 一个一句话新闻网站
 
-![](imgur.lzmun.com/picgo/after2022/Untitled.png_itp)
+![](//imgur.lzmun.com/picgo/after2022/Untitled.png_itp)
 
 ---
 
