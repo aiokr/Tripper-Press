@@ -148,7 +148,7 @@ feed:
   content_limit: 140
   content_limit_delim: " "
   order_by: -date
-  icon: https://imgur.lzmun.com/picgo/20190625163454.jpg
+  icon: https://imgur.lzmun.com/picgo/after2022/presslogo.png_itp
   template: ./source/atom.xml
 
 # Deployment
