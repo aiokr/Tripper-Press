@@ -107,12 +107,14 @@
   <script>
   </script>
   <% if(theme.comment.use == 'gitment') { %>
-  <link rel="stylesheet" href="/css/gitment.css">
-  <script src="/js/gitment.js"></script>
-  <script src="/js/gitment-theme.js"></script>
+    <link rel="stylesheet" href="/css/gitment.css">
+    <script src="/js/gitment.js"></script>
+    <script src="/js/gitment-theme.js"></script>
   <% } else if ( theme.comment.use == 'valine') { %>
-  <script data-pjax src="//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
-  <script data-pjax src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <script data-pjax src="//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+    <script data-pjax src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <% } else if (theme.comment.use == 'waline') { %>
+    <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
   <% } %>
   <% if(theme.google_analytics.use == 'default') { %>
   <!-- Google Analytics -->

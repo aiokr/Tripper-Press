@@ -111,28 +111,28 @@ highlight:
 # ---------------------------------------------------------------
 
 # Comment 评论
-# Use gitment | valine | disqus | disqusjs | gitalk
+# Use gitment | valine | disqus | disqusjs | gitalk | waline
 # disqusjs 参考 https://github.com/SukkaW/DisqusJS 进行部署
 comment:
-  use: disqusjs
+  use: waline
   gitment:
     owner:
     repo:
     client_id:
     client_secret:
   valine:
-    appid: 0kSi0u9r40XN3MswJG34Sj6K-gzGzoHsz
-    appkey: 0etVoCn0nhOS5RSYOenq0sl6
+    appid: 
+    appkey: 
   disqus:
     src: 
     # such as: https://xxx.disqus.com/embed.js
   disqusjs:
-    shortname: itpnblog
-    siteName: aiokr's blog
-    api: disqus-proxy.disqusapi.workers.dev
-    apikey: ACUkOYE4R9hPhjn287JNMXWzlvdAGpIKLH4Kn8AITuclBETPKnU2j996mGXXxgnD
-    title: :title
-    admin: aiokr
+    shortname: 
+    siteName: 
+    api: 
+    apikey: 
+    title: 
+    admin: 
   gitalk:
     clientID: 
     clientSecret: 
@@ -140,6 +140,8 @@ comment:
     owner: 
     admin: 
     distractionFreeMode: 
+  waline:
+    serverurl: https://waline-comment-2gbapy7s91078d9b-1251909904.ap-guangzhou.app.tcloudbase.com/waline/
 
 # Busuanzi Count 不蒜子计数
 busuanzi: false

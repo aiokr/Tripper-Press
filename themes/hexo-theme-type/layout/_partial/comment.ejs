@@ -96,6 +96,18 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
     Disqus.</a></noscript>
+<!--waline-->
+<% } else if (theme.comment.use == 'waline') { %>
+  <div id="waline"></div>
+  <script>
+    Waline({
+      el: '#waline',
+      serverURL: '<%= theme.comment.waline.serverurl %>',
+      path: '<%= page.permalink %>',
+      dark: 'auto',
+      uploadImage: false
+    });
+  </script>
 <% } else if (theme.comment.use == 'disqusjs') { %>
 <!--disqusjs-->
 <link rel="stylesheet" href="/disqusjs/disqusjs.css">
