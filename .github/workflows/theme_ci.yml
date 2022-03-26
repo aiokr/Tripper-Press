@@ -25,12 +25,17 @@ jobs:
         mkdir package
         cd package
         git clone https://github.com/aiokr/hexo-theme-type.git
+        echo clone finished
         cd hexo-theme-type
         cp -r .git ..
-        cd ..
+        echo copy git files finished
+        rm -rf *
+        cd ../..
+        cp -r hexo-theme-type package
+        cd package
+        sudo cp -r .git /hexo-theme-type
+        cd hexo-theme-type
         tree
-        cp -r ./hexo-theme-type ./package/hexo-theme-type
-        cp -r .git hexo-theme-type
         git config --global push.default matching
         git config --global user.email "hiaiokr@gmail.com"
         git config --global user.name "aiokr"
