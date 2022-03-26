@@ -39,6 +39,7 @@ jobs:
         git config --global push.default matching
         git config --global user.email "hiaiokr@gmail.com"
         git config --global user.name "aiokr"
+        git checkout auto-package
         git add --all .
           git commit -m "Auto package by aiokr"
-          git push --force "https://${{secrets.action_key}}@github.com/aiokr/hexo-theme-type.git" master
+          git push --force "https://${{secrets.action_key}}@github.com/aiokr/hexo-theme-type.git" auto-package
