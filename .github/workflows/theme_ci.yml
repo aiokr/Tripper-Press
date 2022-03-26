@@ -22,4 +22,22 @@ jobs:
         python-version: 3.7
     - name: list all files
       run: |
+        cd themes/hexo-theme-type
         ls
+    - name: clear configuration files
+      run: |
+        import os
+        import yaml
+        class Yamlutil:
+        def clear_yaml(self):
+        with open(os.getcwd()+"/_config.yaml",mode='w',encoding='utf-8') as f:
+            f.truncate()
+    - name: package theme folder
+      run: |
+        git init
+        git config --global push.default matching
+        git config --global user.email "hiaiokr@gmail.com"
+        git config --global user.name "aiokr"
+        git add --all .
+          git commit -m "Auto package by aiokr"
+          git push --force "https://${{secrets.action_key}}@github.com/aiokr/hexo-theme-type.git" master
