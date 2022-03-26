@@ -26,7 +26,6 @@ jobs:
         ls
     - name: clear configuration files
       run: |
-        import os
         import yaml
         class Yamlutil:
         def clear_yaml(self):
