@@ -25,27 +25,34 @@ jobs:
         mkdir package
         cd package
         git clone https://github.com/aiokr/hexo-theme-type.git
-        echo clone finished
+        echo [clone successed]
         cd hexo-theme-type
-        cp -r .git ..
-        echo copy git files finished
-        rm -rf *
-        rm -rf .git
+        echo [come into hexo theme git folder]
+        sudo chmod -R 777 .git
+        sudo cp -r .git ..
+        sudo rm -rf *
+        sudo rm -rf .git/index.lock
+        echo [copy git files and clean folder]
+        sudo rm -rf .git
+        echo [clean git files in hexo theme git folder]
         cd ..
-        ls -a
-        sudo cp -r .git /hexo-theme-type
-        echo copy git files again
-        rm -rf .git
+        echo [come into package folder]
+        sudo cp -r .git hexo-theme-type
+        echo [copy git files back]
         cd hexo-theme-type
-        git checkout auto-package
-        echo change branch
+        echo [come into theme folder]
+        sudo git checkout auto-package
+        echo [change branches]
         cd ../..
-        cp -r hexo-theme-type package
+        echo [come into 'themes' folder]
+        sudo cp -r hexo-theme-type package
+        cd package
+        cd hexo-theme-type
         tree
-        cd package/hexo-theme-type
-        git config --global push.default matching
-        git config --global user.email "hiaiokr@gmail.com"
-        git config --global user.name "aiokr"
-        git add -A
-        git commit -m "Auto package by aiokr"
-        git push --force "https://${{secrets.action_key}}@github.com/aiokr/hexo-theme-type.git" auto-package
+        sudo rm -rf .git/index.lock
+        sudo git config --global push.default matching
+        sudo git config --global user.email "hiaiokr@gmail.com"
+        sudo git config --global user.name "aiokr"
+        sudo git add -A
+        sudo git commit -m "Auto package by aiokr"
+        sudo git push --force "https://${{secrets.action_key}}@github.com/aiokr/hexo-theme-type.git" auto-package
