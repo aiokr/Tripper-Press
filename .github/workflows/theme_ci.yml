@@ -48,6 +48,7 @@ jobs:
         sudo cp -r hexo-theme-type package
         cd package
         cd hexo-theme-type
+        rm -rf _config.yml
         tree
         sudo rm -rf .git/index.lock
         sudo git config --global push.default matching
