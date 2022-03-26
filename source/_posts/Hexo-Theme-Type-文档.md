@@ -45,6 +45,16 @@ theme: next
 
 随后，将**主题配置文件模板** `_config.template.yml` 文件更名为 `_config.yml`。并根据下文内容进行配置。使用**主题配置文件模板**，有助于在更新主题时，避免需要重新配置**主题配置文件**。
 
+接下来需要安装主题需要使用的依赖
+
+```bash
+npm install lodash hexo-symbols-count-time --save
+```
+
+其中，lodash 为主题的归档功能需要使用的依赖，在 Hexo 5.0.0 中，[Hexo 移除了内置的 lodash 函数](https://blog.skk.moe/post/hexo-5/#全局变量中不再包含-Lodash)，因此需要额外安装 lodash。
+
+hexo-symbols-count-time 是主题的文章计数功能需要使用的依赖。
+
 # 主题设定
 
 打开**主题配置文件**，根据下文内容逐项配置主题。
