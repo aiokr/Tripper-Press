@@ -35,7 +35,8 @@ header:
   img: https://imgur.lzmun.com/picgo/20200504100314.jpg
   title_color: '#fff'
 
-drawer_header: //imgur.lzmun.com/picgo/20200405182517.jpg
+# drawer_header: //imgur.lzmun.com/picgo/20200405182517.jpg
+# drawer was removed
 
 # Header Links
 search_btn: true
@@ -71,7 +72,7 @@ icp:
 cdn: 
   use: 
   upyun: 
-    src: ./images/upyun.png
+    src: 
 
 # ---------------------------------------------------------------
 # Index Settings 首页设置
@@ -79,7 +80,9 @@ cdn:
 
 # Social link 社交链接
 social_link:
+  # 
   use: true
+  # 在这里开启微信二维码
   wechat_personal: 
     switch: false
     src: https://imgur.lzmun.com/picgo/20200324090429.jpg
