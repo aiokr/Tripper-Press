@@ -26,13 +26,11 @@ jobs:
         ls
     - name: clear configuration files
       run: |
-        import yaml
-        class Yamlutil:
-        def clear_yaml(self):
-        with open(os.getcwd()+"/_config.yaml",mode='w',encoding='utf-8') as f:
-            f.truncate()
+        rm _config.yml
+        ls
     - name: package theme folder
       run: |
+        ls
         git init
         git config --global push.default matching
         git config --global user.email "hiaiokr@gmail.com"
