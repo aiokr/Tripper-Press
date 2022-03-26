@@ -16,20 +16,11 @@ jobs:
       uses: actions/checkout@v1
       with:
         submodules: true
-    - name: Set up Python 3.7
-      uses: actions/setup-python@v1
-      with:
-        python-version: 3.7
-    - name: list all files
+    - name: pacakge theme
       run: |
         cd themes/hexo-theme-type
         ls
-    - name: clear configuration files
-      run: |
         rm _config.yml
-        ls
-    - name: package theme folder
-      run: |
         ls
         git init
         git config --global push.default matching
