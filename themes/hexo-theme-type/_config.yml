@@ -64,6 +64,7 @@ nav:
 # ---------------------------------------------------------------
 
 start_time: 2016
+# 'count' need run 'npm install hexo-symbols-count-time --save'
 count: true
 icp: 
 

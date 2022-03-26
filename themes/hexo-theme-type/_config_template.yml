@@ -60,8 +60,9 @@ nav:
 # Footer Settings 页脚设置
 # ---------------------------------------------------------------
 
-start_time:
-count: true
+start_time: 
+# 'count' need run 'npm install hexo-symbols-count-time --save'
+count: false
 icp: 
 
 # CDN LOGO
