@@ -1,0 +1,46 @@
+---
+title: '瞬间 Press #4'
+author: aiokr
+date: 2022-03-27 11:12:24
+categories: 瞬间 Press
+abbrlink:
+---
+
+# 瞬间 Press #4
+
+# 📖 Recently Read
+
+[Google 新推出的色彩空间 HCT 是什么？ - 知乎](https://www.zhihu.com/question/519665064/answer/2371252393)
+
+![Google HCT 色彩空间](https://res.craft.do/user/full/6367a3db-ff61-7d7f-f527-c574e14d0a2a/doc/53F069FE-6D0B-4D57-AFA8-7559BD4FC9E5/ECBCDC0A-DBBD-4B73-A771-AF16D7031CF0_2/Cr5UPasLT4EMRyBYxiS5Chcbz6nbJ3MlxyoF06X91aYz/Image)
+
+简而言之，随着 Material You 发布的 HCT色彩空间，解决了HSL色彩空间表达明度时的不足，渐变过渡也更自然。
+
+[差旅出行可以住得更舒适：星级酒店常旅客入门 - 少数派](https://sspai.com/post/72199)
+
+高端连锁酒店的相关内容，希望自己有朝一日能用上。
+
+[养成好习惯01：放下手机，远离屏幕 - 少数派](https://sspai.com/post/71545)
+
+> App Store 中，效率类 App 排行常年稳居第一的是「Forest 专注森林」，一款旨在让你控制自己在规定时间内不玩手机的软件。效率类手机软件通过让用户不使用手机从而提高效率，多么讽刺。
+
+对我而言，养成好习惯的首要条件就是，在一定的时间内只专注于一件事。如果同时要做很多的事情，可能最后一件事都做不好。
+
+[一个标签建议技巧 I.A.R.P | flomo 101](https://help.flomoapp.com/thinking/no-classification/iarp.html)
+
+> I.A.R.P 是一组缩写，即：
+> Inbox（收件箱）：我会将所有临时性的，还未消化的内容放置于此，定期来进行归档、整理或者删除。可以当做大脑的缓存，避免记录的时候纠结放在哪里。
+> Area（领域）：这是最重要的概念，即日常你需要精进的「领域」，比如健康就是一个领域，而跑步则是项目；写作是一个领域，而写一篇公众号文章则是一个项目；
+> Resource（资源）：对应到卢曼的 Zettelkasten 方法中，更像是永久笔记。一般来说是兴趣、主题、资产等内容。注意是自己消化过的内容，而非机械的收藏。
+> Project（项目）：是指一个将要发生的独立事件，并且这个事件不是一次性就能完成的，至少需要多个动作才能完成。比如要写一本书，需要整理资料，罗列提纲，撰写内容，联系出版社。类似生活中还有组织一次旅游，录制一期播客等。
+
+一种管理分类管理标签的方式，按着这个方式我对我的 flomo 标签进行了一些归类，效果要使用一段时间之后再试试看。
+
+# 💡Recommend
+
+[QRBTF 参数化二维码生成器](https://qrbtf.com/)
+
+![QRBTF 界面](https://res.craft.do/user/full/6367a3db-ff61-7d7f-f527-c574e14d0a2a/doc/53F069FE-6D0B-4D57-AFA8-7559BD4FC9E5/08121AF6-33A8-42AD-898C-44E18A7B2A23_2/FPMpBaZdsoJ23txqupMjg0baHzLuefJD7ON07apYDqMz/Image.png)
+
+一个参数化二维码生成器，可以生成很多种不同样式的二维码。
+
