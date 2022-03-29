@@ -1,9 +1,9 @@
 ---
 title: '瞬间 Press #4'
 author: aiokr
-date: 2022-03-27 11:12:24
 categories: 瞬间 Press
-abbrlink:
+abbrlink: '4257'
+date: 2022-03-27 11:12:24
 ---
 
 # 瞬间 Press #4
