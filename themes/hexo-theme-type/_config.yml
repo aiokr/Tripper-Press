@@ -19,7 +19,9 @@ apple_icon:
 # ---------------------------------------------------------------
 
 # Schemes
-schemes: column
+# Use column ｜ m3
+schemes: m3
+
 
 # Random Pictures
 random_pic_switch: true
@@ -54,9 +56,6 @@ nav:
   友链:
     link: /links.html
     icon: link
-  作品集:
-    link: https://photup.xyz
-    icon: gesture
 
 # Materiac ICON from https://www.mdui.org/docs/material_icon
 
