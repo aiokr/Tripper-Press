@@ -53,9 +53,6 @@ nav:
   关于:
     link: /about.html
     icon: person
-  友链:
-    link: /links.html
-    icon: link
 
 # Materiac ICON from https://www.mdui.org/docs/material_icon
 
