@@ -85,7 +85,8 @@ apple_icon:
 
 ```yaml
 # Schemes
-schemes: column（此项目暂未被使用）
+schemes: column
+schemes: m3
 
 # Random Pictures
 random_pic_switch: true
@@ -93,7 +94,7 @@ random_pics: 19
 random_thumbnail: ../img/random/randompic-
 ```
 
-- **Schemes**: 样式分支（此项目暂未被使用，请勿修改）
+- **Schemes**: 样式分支，可选 column（普通样式设计）、m3（Material Design 3 风格设计）
 - **random_pic_switch**: 布尔值，开启或关闭随机文章头图
 - **random_pics**: 数值，随机文章头图的张数
 - **random_thumbnail**: 随机文章头图的地址
