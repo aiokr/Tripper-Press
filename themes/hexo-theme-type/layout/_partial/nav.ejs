@@ -34,7 +34,10 @@
 <div class="itp-float-bar">
   <% if (page.layout !=='post' ){ %>
   <% for (var i in theme.nav) { %>
-  <a class="itp-float-bar-item" href="<%- theme.nav[i].link %>">
+  <a class="itp-float-nav-icon itp-float-bar-item" href="<%- theme.nav[i].link %>">
+    <i class="mdui-icon material-icons"><%- theme.nav[i].icon %></i>
+  </a>
+  <a class="itp-float-nav-text itp-float-bar-item" href="<%- theme.nav[i].link %>">
     <%- i %>
   </a>
   <% } %>
