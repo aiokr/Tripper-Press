@@ -7,6 +7,7 @@
   },
   "scripts": {
     "generate": "hexo g",
+    "vercel": "bash vercel.sh",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "publish": "npm run clean && npm run deploy",

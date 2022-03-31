@@ -1,0 +1,2 @@
+hexo clean
+hexo generate
