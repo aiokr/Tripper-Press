@@ -19,10 +19,30 @@ var appDaily = {
     } else {
       this.googleSearch($ipt.value.trim());
     }
-
-    return false; header
+    return false;
+    header
   },
 };
+
+//点击底部弹出图层
+$(function () {
+  $("#open_comment").click(function () {
+    $(".itp-comment-layer").addClass("itp-float-layer-pull-up");
+    $(".itp-float-layer-bg").removeClass("layer-bg-nodisplay");
+  })
+  $("#open_toc").click(function () {
+    $(".itp-toc-layer").addClass("itp-float-layer-pull-up");
+    $(".itp-float-layer-bg").removeClass("layer-bg-nodisplay");
+  })
+  $("#close_btn,#close_layer").click(function () {
+    $(".itp-comment-layer,.itp-toc-layer").removeClass("itp-float-layer-pull-up");
+    $(".itp-float-layer-bg").addClass("layer-bg-nodisplay");
+  })
+});
+
+$(".itp-layer-toc-text").replaceWith(function () {
+  return "<div class ='itp-layer-toc-text' id='close_btn'>" + this.innerHTML + "</div>";
+});
 
 //滚动影响 toc 透明度
 var whetherChange = 0;
@@ -82,8 +102,7 @@ $('[data-fancybox="gallery"]').fancybox({
   buttons: [
     "close",
   ],
-  baseTpl:
-    '<div class="fancybox-container" role="dialog" tabindex="-1">' +
+  baseTpl: '<div class="fancybox-container" role="dialog" tabindex="-1">' +
     '<div class="fancybox-bg"></div>' +
     '<div class="fancybox-inner">' +
     '<div class="fancybox-infobar">' +

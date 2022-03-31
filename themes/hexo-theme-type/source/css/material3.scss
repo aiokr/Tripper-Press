@@ -98,19 +98,79 @@
     }
 }
 
+//浮动弹窗
+.itp-float-layer {
+    z-index: 1100;
+    width: 100vw;
+    border-radius: 12px 12px 0 0;
+    height: 90vh;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-evenly;
+    -webkit-justify-content: space-evenly;
+    //颜色 透明 模糊
+    background-color: $deep-grey;
+    backdrop-filter: saturate(180%) blur(18px) !important;
+    -webkit-backdrop-filter: saturate(180%) blur(18px) !important;
+    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .2);
+    //定位
+    display: flex !important;
+    position: fixed !important;
+    bottom: -90vh; //非常重要
+    //动画
+    -webkit-transition: all .2s cubic-bezier(.4, 0, .2, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+    transition: all .2s cubic-bezier(.4, 0, .2, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+    transition: all .2s cubic-bezier(.4, 0, .2, 1), box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+    transition: all .2s cubic-bezier(.4, 0, .2, 1), box-shadow .2s cubic-bezier(.4, 0, 1, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+    //阴影
+    -webkit-box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+    box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+    //最小尺寸 816px 大屏幕设备
+    @media screen and (min-width: 816px) {
+        display: none !important;
+    }
+    //最大尺寸 816px 中等屏幕设备
+    @media screen and (max-width: 816px) {
+        display: flex !important;
+    }
+}
+
+.itp-float-layer-bg {
+    background-color: #00000077;
+    /*当弹窗显示时，屏幕滚动时，弹窗始终保持位置固定在屏幕正中，不随屏幕滚动而变化位置*/
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px 0 0 0px;
+    /*设置弹窗位于遮罩的上方*/
+    z-index: 1050;
+    /*开始时隐藏弹窗*/
+}
+
+.layer-bg-nodisplay {
+    display: none;
+}
+
+.itp-float-layer-pull-up {
+    bottom: 0;
+    -webkit-transition: all .2s cubic-bezier(.4, 0, .2, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+    transition: all .2s cubic-bezier(.4, 0, .2, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+    transition: all .2s cubic-bezier(.4, 0, .2, 1), box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+    transition: all .2s cubic-bezier(.4, 0, .2, 1), box-shadow .2s cubic-bezier(.4, 0, 1, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+}
+
 //浮动导航
 $float-height: 58px;
 .itp-float-bar {
-    z-index: 4000;
+    z-index: 1000;
     height: $float-height;
     width: 100vw;
     border-radius: 12px 12px 0 0;
     display: -webkit-flex;
-    /* Safari */
-    -webkit-justify-content: space-around;
-    /* Safari 6.1+ */
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    -webkit-justify-content: space-evenly;
     //颜色 透明 模糊
     background: linear-gradient(120deg, $gradient-main-color-opt, $gradient-sub-color-opt);
     backdrop-filter: saturate(180%) blur(18px) !important;

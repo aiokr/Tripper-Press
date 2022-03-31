@@ -1,8 +1,15 @@
+<% var toc = toc(page.content, {
+  class: 'itp-layer-toc',
+  id: 'close_btn',
+  list_number: false,
+  max_depth: 2,
+  min_depth: 1,
+}) %>
 <%- partial('_partial/drawer') %>
 <header id="header" class="itp-header noprn">
   <div id="appbar-index" class="mdui-appbar mdui-appbar-fixed itp-appbar_index mdui-shadow-0">
     <div id="toolbar-index" class="mdui-toolbar mdui-shadow-0" style="justify-content: center;">
-      <% if (theme.schemes =='column' ){ %>
+      <% if (theme.schemes=='column' ){ %>
       <a class="mdui-btn mdui-btn-icon itp-drawer-btn itp-header-actions_menu" style="color: #fff" data-fancybox data-src="#nav_menu" href="javascript:;"><i class="mdui-icon material-icons">menu</i></a>
       <% } %>
       <a href="<%= url_for() %>" class="itp-header-title mdui-typo-title">
@@ -23,12 +30,39 @@
     </div>
   </div>
 </header>
-<% if (theme.schemes =='m3' ){ %>
+<% if (theme.schemes=='m3' ){ %>
 <div class="itp-float-bar">
+  <% if (page.layout !=='post' ){ %>
   <% for (var i in theme.nav) { %>
   <a class="itp-float-bar-item" href="<%- theme.nav[i].link %>">
     <%- i %>
   </a>
   <% } %>
+  <%} else if (page.layout =='post' ){ %>
+  <a class="itp-float-bar-item" href="javascript:history.go(-1)">
+    <i class="mdui-icon material-icons">arrow_back</i>
+  </a>
+  <a class="itp-float-bar-item" href="javascript:scroll(0,0)">
+    <i class="mdui-icon material-icons">arrow_upward</i>
+  </a>
+  <a class="itp-float-bar-item" id="open_comment">
+    <i class="mdui-icon material-icons">bookmark_border</i>
+  </a>
+  <a class="itp-float-bar-item" id="open_toc">
+    <i class="mdui-icon material-icons">format_align_left</i>
+  </a>
+  <% } %>
 </div>
+<div class="itp-float-layer itp-comment-layer">
+  <a class="itp-float-layer-close-btn" id="close_btn">
+    关闭评论
+  </a>
+</div>
+<div class="itp-float-layer itp-toc-layer">
+  <a class="itp-float-layer-close-btn" id="close_btn">
+    关闭目录
+  </a>
+  <%-(toc) %>
+</div>
+<div class="itp-float-layer-bg layer-bg-nodisplay" id="close_layer"></div>
 <% } %>

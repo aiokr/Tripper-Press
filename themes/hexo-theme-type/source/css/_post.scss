@@ -243,12 +243,6 @@ img.mdui-col {
     top: 0;
 }
 
-@media screen and (max-width: 1024px) {
-    .itp-toc {
-        display: none;
-    }
-}
-
 .article {
     @import './itypen-md';
 }

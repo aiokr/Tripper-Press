@@ -64,6 +64,10 @@ body ::-webkit-selection {
     display: inline;
 }
 
+.display-block {
+    display: block !important;
+}
+
 .toc-display {
     display: block;
 }
