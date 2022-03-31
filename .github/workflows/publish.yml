@@ -12,6 +12,21 @@ jobs:
   publish_ITPN:
     runs-on: ubuntu-latest
     steps:
+      - uses: mohuishou/notion-blog-actions/notion@main
+        with:
+          token: ${{ secrets.NOTION_TOKEN }}
+          token_v2: ${{ secrets.NOTION_TOKEN_V2 }}
+          space_id: "photup"
+          database_id: 1f6c6324c3274060a599088934e98f78
+          output: "./tmp/"
+      - name: "migrate image"
+        uses: mohuishou/notion-blog-actions/migrate@main
+        with:
+          input: "./tmp/*.md"
+      - name: "cp md files"
+        run: |
+          cp -f tmp/*.md source/_posts/notion/
+          rm -rf tmp
       - name: Checkout
         uses: actions/checkout@v1
         with:
