@@ -42,18 +42,23 @@
     </span>
   </a>
   <% } %>
+  <div class="itp-float-bar-spacer"></div>
+  <a class="itp-float-bar-item itp-float-bar-item-bottom">
+    <span class="material-icons-outlined">format_align_left</span>
+  </a>
   <%} else if (page.layout =='post' ){ %>
   <a class="itp-float-bar-item" href="<%= url_for() %>">
     <span class="material-icons-outlined">home</span>
-  </a>
-  <a class="itp-float-bar-item" href="javascript:scroll(0,0)">
-    <span class="material-icons-outlined">arrow_upward</span>
   </a>
   <a class="itp-float-bar-item" href="#comment">
     <span class="material-icons-outlined">textsms</span>
   </a>
   <a class="itp-float-bar-item" id="open_toc">
     <span class="material-icons-outlined">format_align_left</span>
+  </a>
+  <div class="itp-float-bar-spacer"></div>
+  <a class="itp-float-bar-item" href="javascript:scroll(0,0)">
+    <span class="material-icons-outlined">arrow_upward</span>
   </a>
   <% } %>
 
