@@ -1,4 +1,5 @@
 <% if (theme.schemes =='m3' ){ %>
+<% if (page.archive !== true) { %>
 <div class="mdui-container itp-m3-cover-box">
   <div class="mdui-row">
     <div class="mdui-col-md-2 mdui-col-xs-down"></div>
@@ -28,6 +29,7 @@
     <div class="mdui-col-md-2 mdui-col-xs-down"></div>
   </div>
 </div>
+<% } %>
 <% } else if (theme.schemes =='column' ) { %>
 <div class="itp-cover noprn">
   <div class="itp-cover-img">
