@@ -5,6 +5,7 @@
   max_depth: 2,
   min_depth: 1,
 }) %>
+<% if (theme.schemes=='column' ){ %>
 <%- partial('_partial/drawer') %>
 <header id="header" class="itp-header noprn">
   <div id="appbar-index" class="mdui-appbar mdui-appbar-fixed itp-appbar_index mdui-shadow-0">
@@ -30,15 +31,13 @@
     </div>
   </div>
 </header>
+<% } %>
 <% if (theme.schemes=='m3' ){ %>
 <div class="itp-float-bar">
   <% if (page.layout !=='post' ){ %>
   <% for (var i in theme.nav) { %>
-  <a class="itp-float-nav-icon itp-float-bar-item" href="<%- theme.nav[i].link %>">
+  <a class="itp-float-bar-item" href="<%- theme.nav[i].link %>">
     <i class="mdui-icon material-icons"><%- theme.nav[i].icon %></i>
-  </a>
-  <a class="itp-float-nav-text itp-float-bar-item" href="<%- theme.nav[i].link %>">
-    <%- i %>
   </a>
   <% } %>
   <%} else if (page.layout =='post' ){ %>
