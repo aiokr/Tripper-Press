@@ -142,7 +142,7 @@ comment:
     admin: 
     distractionFreeMode: 
   waline:
-    serverurl: https://waline-comment-2gbapy7s91078d9b-1251909904.ap-guangzhou.app.tcloudbase.com/waline/
+    serverurl: https://waline-server-repo.vercel.app/
 
 # Busuanzi Count 不蒜子计数
 busuanzi: false
