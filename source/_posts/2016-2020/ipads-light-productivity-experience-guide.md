@@ -1,9 +1,6 @@
 ---
 tags:
-  - iPad
-  - iOS
-  - 生产力
-  - 笔记
+  - 测评
 categories: 随笔
 title: iPad 轻度生产力体验指北
 abbrlink: '4e65'

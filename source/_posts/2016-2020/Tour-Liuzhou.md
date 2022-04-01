@@ -1,8 +1,7 @@
 ---
 title: 巡礼 柳州
 tags:
-  - 巡礼
-  - 柳州
+  - 课程笔记
 categories: 随笔
 cover: 'https://imgur.lzmun.com/picgo/20191015130824.jpg'
 style: cover

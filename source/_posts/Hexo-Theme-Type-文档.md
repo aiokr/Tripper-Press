@@ -4,7 +4,7 @@ author: aiokr
 permalink: 'type-docs/'
 abbrlink: '8998'
 date: 2022-03-26 10:28:28
-tags:
+tags: hexo-theme-type
 categories:
 ---
 

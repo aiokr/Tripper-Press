@@ -1,9 +1,7 @@
 ---
 title: 千与千寻
 tags:
-  - 电影
-  - 宫崎骏
-  - 观后感
+  - 观影笔记
 categories:
   - 随笔
 cover: 'https://imgur.lzmun.com/picgo/20190623003809.png_itp'

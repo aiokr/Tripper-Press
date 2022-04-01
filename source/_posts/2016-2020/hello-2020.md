@@ -1,8 +1,6 @@
 ---
 title: 庚子鼠年，你好
 tags:
-  - 新年快乐
-  - 2020寒假
 categories: 随笔
 cover: 'https://imgur.lzmun.com/picgo/20200125133656.jpg'
 style: smart

@@ -1,7 +1,6 @@
 ---
 title: 城市记忆
 tags:
-  - 城市记忆
 categories:
   - 项目
 cover: 'https://imgur.lzmun.com/picgo/20200126001748.jpg'

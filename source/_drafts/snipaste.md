@@ -2,11 +2,8 @@
 title: 三年磨一剑的截图工具 | Snipaste
 date: 2018-07-29 11:59:00
 tags: 
-    - APP
-    - 软件
-    - 截图
-    - 工具
-categories: 软件
+    - 测评
+categories: 
 ---
 
 ## 引言

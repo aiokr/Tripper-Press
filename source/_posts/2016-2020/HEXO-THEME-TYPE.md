@@ -1,10 +1,7 @@
 ---
 title: 宣布 TYPE
 cover: 'https://imgur.lzmun.com/picgo/20200128145845.jpg'
-tags:
-  - hexo
-  - hexo-theme-type
-  - hexo主题
+tags: hexo-theme-type
 style: smart
 categories: 项目
 abbrlink: '1798'

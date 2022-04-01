@@ -1,12 +1,10 @@
 ---
 title: type example
 author: aiokr
-tags: TYPE
+tags: hexo-theme-type
 categories: 项目
 abbrlink: example
 permalink: example/
-noindex: true
-noachieve: true
 blur: true
 date: 2021-09-16 18:22:45
 cover: https://imgur.lzmun.com/picgo/20200203214953.jpeg_/fw/1280

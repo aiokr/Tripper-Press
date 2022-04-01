@@ -1,9 +1,7 @@
 ---
 title: 为自己的生存作出思考 | 1982 夏娃义务
 tags:
-  - 游戏
   - 测评
-  - 随手
 categories: 随笔
 abbrlink: 93b9
 date: 2018-09-10 00:00:00

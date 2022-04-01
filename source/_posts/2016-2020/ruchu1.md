@@ -1,7 +1,6 @@
 ---
 title: 你有多久没有好好读过一本书了
 categories: 读立写生
-tag: 随笔
 cover: 'https://imgur.lzmun.com/picgo/20190425212431.jpg_itp'
 style: cover
 abbrlink: ecd5

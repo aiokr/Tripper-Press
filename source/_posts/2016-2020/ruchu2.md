@@ -1,7 +1,6 @@
 ---
 title: 世界总在不断地新陈代谢
 categories: 读立写生
-tag: 随笔
 cover: 'https://imgur.lzmun.com/picgo/20190502204745.jpg_itp'
 style: cover
 abbrlink: 4d2e

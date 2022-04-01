@@ -1,7 +1,7 @@
 ---
 title: 西方经济学复习笔记
 tags:
-  - 西方经济学
+  - 课程笔记
   - 笔记
 categories: 笔记
 translate_title: review-notes-of-western-economics

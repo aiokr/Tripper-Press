@@ -2,10 +2,9 @@
 title: 关于会场摄影的一些东西
 tags:
   - 摄影
-  - 会场摄影
-  - 摄影笔记
+  - 笔记
 categories:
-  - - 摄影
+  - 摄影
 cover: 'https://imgur.lzmun.com/picgo/20190530210500.jpg_itp'
 abbrlink: 67c8
 date: 2019-05-30 18:53:42

@@ -2,7 +2,6 @@
 date: 2018-09-27 00:00:00
 tags:
     - LGBT
-category: 随手
 title: 这个世界上本没有柜子
 categories: 随笔
 ---

@@ -3,7 +3,6 @@ layout: post
 title: 模联改变我们，我们改变世界！ —— LGMUNC2016
 tags:
   - 模联
-  - 随笔
 categories: 随笔
 copyright: true
 translate_title: the-model-changes-us-we-change-world-——-lgmunc2016

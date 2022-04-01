@@ -1,7 +1,6 @@
 ---
 title: 写在 2 月 6 日之后
 date: 2020-02-07 12:16:29
-tags: 随笔
 categories: moment
 ---
 

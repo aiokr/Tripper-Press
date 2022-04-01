@@ -2,7 +2,6 @@
 title: 专业分流之后
 date: 2019-06-30 12:12:26
 tags: 
-- 随笔
 categories: 随笔
 cover: https://imgur.lzmun.com/picgo/20190701105533.jpg_itp
 ---

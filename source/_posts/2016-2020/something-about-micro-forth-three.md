@@ -2,8 +2,6 @@
 title: 关于 M43 的一些碎碎念
 tags:
   - 摄影
-  - 随笔
-  - 摄影笔记
 categories:
   - - 随笔
 abbrlink: '5549'

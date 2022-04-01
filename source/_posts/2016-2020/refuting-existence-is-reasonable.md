@@ -1,9 +1,5 @@
 ---
 title: 驳斥 存在即合理
-tags:
-  - 辩论
-  - 观点
-  - 逻辑
 categories: 读立写生
 abbrlink: 1b89
 date: 2019-06-25 18:12:47

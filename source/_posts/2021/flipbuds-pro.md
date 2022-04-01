@@ -1,8 +1,8 @@
 ---
 title: 新玩意：小米 FlipBuds Pro 降噪耳机
 author: aiokr
-tags: 新玩意
-categories: 拔草日记
+tags: 测评
+categories: 新玩意
 cover: 'https://imgur.lzmun.com/2021/09/09/11628164603_.pic_hd.jpg_itp'
 abbrlink: mi-flipbuds-pro
 date: 2021-09-09 18:38:32

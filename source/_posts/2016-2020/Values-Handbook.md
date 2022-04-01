@@ -3,7 +3,6 @@ layout: post
 title: 价值观手册
 cover: 'https://imgur.lzmun.com/picgo/20200309191318.jpg'
 categories: 读立写生
-tag: 价值观
 style: smart
 abbrlink: 3df
 date: 2020-01-10 20:13:00

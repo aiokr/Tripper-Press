@@ -1,7 +1,6 @@
 ---
 title: 中秋 月圆夜
 tags:
-  - 随笔
 categories: 随笔
 abbrlink: 9eb6
 date: 2018-09-24 23:23:39
