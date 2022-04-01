@@ -237,6 +237,8 @@ $toggle_screen: 1024px;
 //文章
 .itp-m3-post {}
 
+
+/*
 .copyright-icon-box {
     .copyright-icon {
         width: 10rem;
@@ -267,8 +269,14 @@ $toggle_screen: 1024px;
         border-width: 1.2rem;
     }
 }
+*/
 
 .itp-m3-post-info_area {
+    background: url('../img/copyright_black_24dp.svg');
+    background-position: right -45px top -35px;
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-clip: padding-box;
     margin: 65px 0 65px 0;
     padding: 22px;
     border-radius: 12px;
