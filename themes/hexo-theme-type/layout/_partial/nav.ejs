@@ -54,12 +54,14 @@
     <i class="mdui-icon material-icons">format_align_left</i>
   </a>
   <% } %>
+
+  <div class="itp-float-layer itp-toc-layer">
+    <a class="itp-float-layer-close-btn" id="close_btn">
+      关闭目录
+    </a>
+    <%-(toc) %>
+  </div>
+
+  <div class="itp-float-layer-bg layer-bg-nodisplay" id="close_layer"></div>
 </div>
-<div class="itp-float-layer itp-toc-layer">
-  <a class="itp-float-layer-close-btn" id="close_btn">
-    关闭目录
-  </a>
-  <%-(toc) %>
-</div>
-<div class="itp-float-layer-bg layer-bg-nodisplay" id="close_layer"></div>
 <% } %>

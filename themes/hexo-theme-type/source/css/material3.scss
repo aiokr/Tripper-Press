@@ -66,7 +66,7 @@
     }
     //最大尺寸 816px 中等屏幕设备
     @media screen and (max-width: 816px) {
-        padding: 120px 64px 64px 64px;
+        padding: 92px 48px 60px 48px;
         .itp-m3-cover-avatar {
             img {
                 max-height: 64px;
@@ -103,12 +103,12 @@
 }
 
 //浮动弹窗
-.itp-toc-layer {
+.itp-float-layer {
+    z-index: 1400;
     @media screen and (min-width: 816px) {
         display: none;
     }
     @media screen and (max-width: 816px) {
-        z-index: 1100;
         width: 100vw;
         border-radius: 12px 12px 0 0;
         height: 90vh;
@@ -125,7 +125,7 @@
         //定位
         display: flex !important;
         position: fixed !important;
-        bottom: -90vh; //非常重要
+        bottom: -90vh; //开始时不现实弹窗
         //动画
         -webkit-transition: all .2s cubic-bezier(.4, 0, .2, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
         transition: all .2s cubic-bezier(.4, 0, .2, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
@@ -134,36 +134,32 @@
         //阴影
         -webkit-box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
         box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
-        //最小尺寸 816px 大屏幕设备
-        @media screen and (min-width: 816px) {
-            display: none !important;
-        }
-        //最大尺寸 816px 中等屏幕设备
-        @media screen and (max-width: 816px) {
-            display: flex !important;
-        }
     }
-    .itp-float-layer-bg {
-        background-color: #00000077;
-        /*当弹窗显示时，屏幕滚动时，弹窗始终保持位置固定在屏幕正中，不随屏幕滚动而变化位置*/
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        margin: 0px 0 0 0px;
-        /*设置弹窗位于遮罩的上方*/
-        z-index: 1050;
-        /*开始时隐藏弹窗*/
-    }
-    .layer-bg-nodisplay {
-        display: none;
-    }
-    .itp-float-layer-pull-up {
-        bottom: 0;
-        -webkit-transition: all .2s cubic-bezier(.4, 0, .2, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
-        transition: all .2s cubic-bezier(.4, 0, .2, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
-        transition: all .2s cubic-bezier(.4, 0, .2, 1), box-shadow .2s cubic-bezier(.4, 0, 1, 1);
-        transition: all .2s cubic-bezier(.4, 0, .2, 1), box-shadow .2s cubic-bezier(.4, 0, 1, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
-    }
+}
+
+.itp-float-layer-bg {
+    background-color: #00000077;
+    /*当弹窗显示时，屏幕滚动时，弹窗始终保持位置固定在屏幕正中，不随屏幕滚动而变化位置*/
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px 0 0 0px;
+    bottom: 0;
+    /*设置弹窗位于遮罩的上方*/
+    z-index: 1050;
+}
+
+.layer-bg-nodisplay {
+    display: none;
+}
+
+.itp-float-layer-pull-up {
+    bottom: 0;
+    display: flex;
+    -webkit-transition: all .2s cubic-bezier(.4, 0, .2, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+    transition: all .2s cubic-bezier(.4, 0, .2, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+    transition: all .2s cubic-bezier(.4, 0, .2, 1), box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+    transition: all .2s cubic-bezier(.4, 0, .2, 1), box-shadow .2s cubic-bezier(.4, 0, 1, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
 }
 
 //浮动导航
@@ -175,11 +171,10 @@
 
 .itp-float-bar {
     @media screen and (min-width: 816px) {
-        z-index: auto;
+        z-index: 1000;
         width: 100px;
         height: 100vh;
         max-width: none;
-        background-color: #ffffff00;
         border-radius: 0;
         left: 0px;
         display: flex;
@@ -189,7 +184,7 @@
     }
     @media screen and (max-width: 816px) {
         z-index: 1000;
-        height: 58px;
+        height: 54px;
         width: 100vw;
         border-radius: 12px 12px 0 0;
         display: -webkit-flex;
@@ -205,7 +200,7 @@
         box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
     }
     //颜色 透明 模糊 动画
-    background: linear-gradient(120deg, $gradient-main-color-opt, $gradient-sub-color-opt);
+    background-color: #333333b7;
     backdrop-filter: saturate(180%) blur(18px) !important;
     -webkit-backdrop-filter: saturate(180%) blur(18px) !important;
     -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, .2);
@@ -216,26 +211,27 @@
             height: 50px;
             width: 50px;
             justify-self: center;
-            background-color: #fff;
+            background-color: #33333300;
+            color: #fff;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 12px 25px;
+            margin: 10px 25px;
         }
         @media screen and (max-width: 816px) {
-            line-height: 58px;
-            width: 58px;
+            line-height: 54px;
+            width: 54px;
             color: #fff;
             text-align: center; //水平居中
             background-color: rgba(0, 0, 0, 0);
         }
-        .itp-float-bar-item:hover {
-            background: rgba(225, 225, 225, 0.2);
-            cursor: pointer;
-            -webkit-transition: all .2s cubic-bezier(.4, 0, .2, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
-            transition: all .2s cubic-bezier(.4, 0, .2, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
-            transition: all .2s cubic-bezier(.4, 0, .2, 1), box-shadow .2s cubic-bezier(.4, 0, 1, 1);
-            transition: all .2s cubic-bezier(.4, 0, .2, 1), box-shadow .2s cubic-bezier(.4, 0, 1, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
-        }
+    }
+    .itp-float-bar-item:hover {
+        background: rgba(225, 225, 225, 0.2);
+        cursor: pointer;
+        -webkit-transition: all .2s cubic-bezier(.4, 0, .2, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+        transition: all .2s cubic-bezier(.4, 0, .2, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+        transition: all .2s cubic-bezier(.4, 0, .2, 1), box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+        transition: all .2s cubic-bezier(.4, 0, .2, 1), box-shadow .2s cubic-bezier(.4, 0, 1, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
     }
 }

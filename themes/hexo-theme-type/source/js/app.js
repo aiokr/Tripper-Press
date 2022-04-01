@@ -26,10 +26,6 @@ var appDaily = {
 
 //点击底部弹出图层
 $(function () {
-  $("#open_comment").click(function () {
-    $(".itp-comment-layer").addClass("itp-float-layer-pull-up");
-    $(".itp-float-layer-bg").removeClass("layer-bg-nodisplay");
-  })
   $("#open_toc").click(function () {
     $(".itp-toc-layer").addClass("itp-float-layer-pull-up");
     $(".itp-float-layer-bg").removeClass("layer-bg-nodisplay");
