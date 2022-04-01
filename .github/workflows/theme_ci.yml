@@ -2,11 +2,11 @@ name: Hexo-Theme-Type auto generate
 
 on:
   push:
-    branches:
-      - master/themes/hexo-theme-type
+    paths:
+      - 'themes/hexo-theme-type'
   pull_request:
-    branches:
-      - master/themes/hexo-theme-type
+    paths:
+      - 'themes/hexo-theme-type'
 
 jobs:
   theme_generate:
