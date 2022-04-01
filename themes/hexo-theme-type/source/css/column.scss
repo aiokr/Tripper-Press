@@ -14,13 +14,13 @@
     z-index: -100;
 }
 
-@media screen and (min-width: 816px) {
+@media screen and (max-width: 816px) {
     .itp-right-col {
         display: none;
     }
 }
 
-#post-toc {
+#column-toc {
     opacity: 0.2;
     display: block;
     padding: 45px 0 0 0;
@@ -30,7 +30,7 @@
     }
 }
 
-#post-toc.itp-toc-pull-up {
+#column-toc.itp-toc-pull-up {
     opacity: 0.8;
 }
 

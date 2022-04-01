@@ -49,11 +49,11 @@ cover = 240
 window.onscroll = function () {
   var howFar = document.documentElement.scrollTop || document.body.scrollTop;
   if (howFar > cover & whetherChange == 0) {
-    $("#post-toc").addClass("itp-toc-pull-up");
+    $("#column-toc").addClass("itp-toc-pull-up");
     whetherChange = 1;
   };
   if (howFar <= cover & whetherChange == 1) {
-    $("#post-toc").removeClass("itp-toc-pull-up");
+    $("#column-toc").removeClass("itp-toc-pull-up");
     whetherChange = 0;
   }
 };
@@ -68,7 +68,7 @@ $(".toc-child li").replaceWith(function () {
   return "<li class='mdui-menu-item'>" + this.innerHTML + "</li>";
 });
 
-$(".itp-post-toc ol").replaceWith(function () {
+$(".itp-column-toc ol").replaceWith(function () {
   return "<ul class='mdui-menu mdui-menu-cascade itp-toc-menu' id='toc'>" + this.innerHTML + "</ul>";
 });
 
