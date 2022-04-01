@@ -1,5 +1,6 @@
 <% if (theme.schemes =='m3' ){ %>
-<% if (page.archive !== true) { %>
+<% if (is_archive() | is_category() | is_tag()) { %>
+<% } else { %>
 <div class="mdui-container itp-m3-cover-box">
   <div class="mdui-row">
     <div class="mdui-col-md-2 mdui-col-xs-down"></div>

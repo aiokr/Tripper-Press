@@ -121,7 +121,8 @@ body ::-webkit-selection {
     color: #767676;
 }
 
-.mdui-chip-title-link {
+.mdui-chip-title-link,
+.mdui-chip-title-none-link {
     display: inline-block;
     height: 32px;
     padding-right: 12px;
