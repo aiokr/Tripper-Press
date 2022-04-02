@@ -1,7 +1,7 @@
 ---
 title: '瞬间 Press #4'
 author: aiokr
-categories: 瞬间 Press
+categories: 瞬间周报
 abbrlink: '4257'
 date: 2022-03-27 11:12:24
 ---

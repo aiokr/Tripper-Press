@@ -1,7 +1,7 @@
 ---
 title: '瞬间 Press #1 过程总是有意义的'
 author: aiokr
-categories: 瞬间 Press
+categories: 瞬间周报
 abbrlink: a9cf
 date: 2022-03-21 11:35:34
 ---

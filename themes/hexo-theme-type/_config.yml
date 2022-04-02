@@ -24,7 +24,7 @@ schemes: m3
 
 
 # Random Pictures
-random_pic_switch: true
+random_pic_switch: false
 random_pics: 19
 random_thumbnail: https://cdn.jsdelivr.net/gh/aiokr/hexo-theme-type-random_pics@v1.0.0/randompic-
 # random_thumbnail: ../img/random/randompic-
