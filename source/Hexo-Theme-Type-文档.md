@@ -1,11 +1,8 @@
 ---
 title: Hexo-Theme-Type 文档
 author: aiokr
-permalink: 'type-docs/'
+permalink: 'type/'
 abbrlink: '8998'
-date: 2022-03-26 10:28:28
-tags: hexo-theme-type
-categories:
 ---
 
 # 简介
