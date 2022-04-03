@@ -1,8 +1,9 @@
 <img src="https://imgur.lzmun.com/picgo/20200124123627.jpg" alt="logo" width="72" height="72" align="right" />
 
-# iTypen.APP - aio's blog
+# Tripper.Press 瞬间 Press
 
-> Always believe that something wonderful is about to happen.
+> 拿起相机，认真思考。
+> Take Photo, Think Seriously
 
 ## 许可证信息
 
