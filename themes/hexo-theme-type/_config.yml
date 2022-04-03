@@ -54,7 +54,7 @@ nav:
     link: /links/
     icon: group
   关于:
-    link: /about.html
+    link: /about/
     icon: person
 
 # Materiac ICON from https://www.mdui.org/docs/material_icon
