@@ -47,9 +47,6 @@ nav:
   归档: 
     link: /archives/
     icon:  move_to_inbox
-  Type:
-    link: /type/
-    icon: newspaper
   链接:
     link: /links/
     icon: group
