@@ -25,7 +25,7 @@ MBTI: ESTP-T（我每次进行16型人格测试，都能得到不同的结果，
 
 ## 友情链接
 
-[友情链接](/links.html)
+**[友情链接](/links/)**
 你可以点击这个链接来与我交换友情链接：[申请表单](https://itypen.feishu.cn/share/base/shrcnkpW6LUVDgnEhifZi4a7xJe)
 
 ## 关于本站
