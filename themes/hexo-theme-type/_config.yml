@@ -91,7 +91,7 @@ social_link:
 
 # 订阅链接
 subscription_link:
-  use: true
+  use: false
 
 # ---------------------------------------------------------------
 # Posts Settings 文章设置

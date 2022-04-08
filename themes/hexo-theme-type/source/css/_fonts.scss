@@ -20,12 +20,6 @@
     /* iOS 4.1- */
 }
 
-@font-face {
-    font-family: 'Roboto Slab';
-    font-display: swap;
-    src: url('/fonts/RobotoSlab-regular.ttf');
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 .itp-gallery-title,
 .itp-gallery-subtitle,
@@ -48,7 +42,7 @@
 .itp-gallery-info .title,
 .itp-post-entry-excerpt,
 .footer-info {
-    font-family: "Roboto Slab","Noto Serif SC",serif,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,pingfang sc,source han sans sc,noto sans cjk sc,sarasa gothic sc,microsoft yahei,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    font-family: "Roboto Slab", "Noto Serif SC", serif, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, pingfang sc, source han sans sc, noto sans cjk sc, sarasa gothic sc, microsoft yahei, sans-serif, Apple Color Emoji, Segoe UI Emoji;
 }
 
 .article,
@@ -65,5 +59,5 @@
 .tags-link,
 .category-link,
 .v {
-    font-family: "Roboto Slab","Noto Serif SC",serif,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,pingfang sc,source han sans sc,noto sans cjk sc,sarasa gothic sc,microsoft yahei,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    font-family: "Roboto Slab", "Noto Serif SC", serif, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, pingfang sc, source han sans sc, noto sans cjk sc, sarasa gothic sc, microsoft yahei, sans-serif, Apple Color Emoji, Segoe UI Emoji;
 }
