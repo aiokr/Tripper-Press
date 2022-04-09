@@ -4,7 +4,7 @@
     <div class="mdui-col-md-8 mdui-col-xs-12">
       <% if (site.data.gallery) { %>
       <% for (var a in site.data.gallery) { %>
-      <div class="itp-m3-card-gallery" id="<%= a %>">
+      <div class="itp-m3-card" id="<%= a %>">
         <div class="itp-gallery-info">
           <div class="meta" id="date"><%= site.data.gallery[a].date %></div>
           <div class="title share<%= a %>"><%= a %></div>
