@@ -4,10 +4,10 @@
     <div class="mdui-col-md-8 mdui-col-xs-12">
       <% if (site.data.gallery) { %>
       <% for (var a in site.data.gallery) { %>
-      <div class="itp-m3-card-gallery">
+      <div class="itp-m3-card-gallery" id="<%= a %>">
         <div class="itp-gallery-info">
           <div class="meta" id="date"><%= site.data.gallery[a].date %></div>
-          <div class="title"><%= a %></div>
+          <div class="title share<%= a %>"><%= a %></div>
           <div class="meta"><%- site.data.gallery[a].descr %></div>
         </div>
         <div class="itp-gallery-image_area">
@@ -23,12 +23,30 @@
           </div>
         </div>
       </div>
+      <script>
+        document.querySelector('.share<%= a %>').addEventListener('click', shareSite)
+        function shareSite() {
+          navigator.share({
+              title: '<%= a %>',
+              text: '<%- site.data.gallery[a].descr %>',
+              url: '<%- url_for(page.path) %>#<%= a %>',
+            })
+            .then(() => {
+              console.log('Share completed successfuly')
+            })
+            .catch((error) => {
+              console.log(`share failed: ${error}`)
+            });
+        }
+      </script>
       <% } %>
       <% } %>
     </div>
     <div class="mdui-col-md-2 mdui-col-xs-down"> </div>
   </div>
 </div>
+
+
 
 <style>
   body {

@@ -1,3 +1,4 @@
+@import './_customize';
 //COVER
 @media screen and (max-width: 1024px) {
     .itp-gallery-content {
@@ -30,13 +31,13 @@
 
 .itp-gallery-info {
     @media screen and (min-width: 1024px) {
-        padding: 42px 54px 32px 54px;
+        padding: 42px 54px 32px 16px;
         .title {
             font-size: 28px;
         }
     }
     @media screen and (max-width: 1024px) {
-        padding: 28px 32px 16px 32px;
+        padding: 28px 32px 24px 16px;
         .title {
             font-size: 24px;
         }
@@ -49,6 +50,17 @@
         color: #767676;
         line-height: 20px;
     }
+    .share-btn {
+        background-color: #f4f4f4;
+        color: $deep-grey !important;
+        padding: 6px;
+        border-radius: 5px;
+        padding: 6px 12px;
+        line-height: 20px;
+        font-size: 14px;
+        display: inline-block;
+    }
+    .share-btn:hover {}
 }
 
 .itp-gallery-img {
