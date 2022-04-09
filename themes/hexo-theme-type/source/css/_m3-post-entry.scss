@@ -65,22 +65,7 @@
     .category {
         z-index: 1;
         position: relative;
-        .archive {
-            background-color: #f4f4f4;
-        }
-        a.archive {
-            font-weight: 600;
-        }
         .tags {}
-        a {
-            color: $deep-grey !important;
-            padding: 6px;
-            border-radius: 5px;
-            padding: 6px 12px;
-            line-height: 20px;
-            font-size: 14px;
-            display: inline-block;
-        }
     }
 }
 

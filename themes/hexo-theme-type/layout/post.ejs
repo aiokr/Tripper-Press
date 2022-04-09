@@ -83,11 +83,15 @@
       <div class="itp-m3-post-info_area">
         <div class="info_area-category">
           <% if (page.categories && page.categories.length) { %>
-          <%- list_categories(page.categories, { show_count: false, style: 'category-link' }) %>
+          <% page.categories.each(function(categories){ %>
+          <a href="<%= config.root %>categories/<%= categories.name %>/" rel="categories" class="itp-m3-chip-color">
+            <%- categories.name %>
+          </a>
+          <% }); %>
           <% } %>
           <% if (page.tags && page.tags.length) { %>
           <% page.tags.each(function(tag){ %>
-          <a href="<%= config.root %>tags/<%= tag.name %>/" rel="tag" class="tags-link">
+          <a href="<%= config.root %>tags/<%= tag.name %>/" rel="tag" class="itp-m3-chip-normal">
             #<%- tag.name %>
           </a>
           <% }); %>

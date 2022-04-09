@@ -1,6 +1,7 @@
 @import './_customize';
 @import './_m3-post-entry';
 @import './_shareimg';
+@import './_m3-components/_m3-chip';
 $toggle_screen: 1024px;
 //COVER
 @media screen and (max-width: $toggle_screen) {
@@ -60,9 +61,6 @@ $toggle_screen: 1024px;
 }
 
 .info-area {
-    .category-link {
-        color: #fff;
-    }
     //最小尺寸 $toggle_screen 大屏幕设备
     @media screen and (min-width: $toggle_screen) {
         padding: 96px 64px 64px 96px;
@@ -306,23 +304,6 @@ $toggle_screen: 1024px;
     background-color: #f5f5f5;
     .info_area-category {
         a {
-            color: #fff !important;
-            padding: 6px;
-            border-radius: 5px;
-            padding: 6px 12px;
-            line-height: 20px;
-            display: inline-block;
-            font-size: 14px;
-        }
-        .category-link {
-            background: linear-gradient(120deg, $gradient-main-color-opt, $gradient-sub-color-opt);
-            opacity: 0.8;
-            font-weight: 600;
-        }
-        .tags-link {
-            background-color: #bababa;
-            font-weight: 400;
-            opacity: 0.8;
         }
     }
 }
