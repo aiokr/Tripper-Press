@@ -1,3 +1,4 @@
+@import './_customize';
 .itp-gallery-img {}
 
 @media screen and (min-width: 1024px) {
@@ -27,6 +28,10 @@
     background-size: cover;
 }
 
+.itp-gallery2-tile-cover {
+  background-color: #EAEAEA;
+}
+
 .itp-gallery-info-tile {
     display: flex;
     justify-content: center;
@@ -34,8 +39,8 @@
 }
 
 .itp-gallery-info {
-    padding: 35px 15px 0 15px;
-    color: white;
+    padding: 75px 15px 0 15px;
+    color: $deep-grey;
     .title {
         font-size: 28px;
         font-weight: 600;

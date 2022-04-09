@@ -4,10 +4,10 @@
     <% for (var a in site.data.gallery) { %>
     <div class="mdui-col">
       <% if (site.data.gallery[a].cover) { %>
-      <div class="mdui-grid-tile itp-gallery2-tile itp-gallery-img lazy-bg share<%= a %>"  id="<%= a %>" data-src="<%- site.data.gallery[a].cover %>">
+      <div class="mdui-grid-tile itp-gallery2-tile itp-gallery2-tile-cover itp-gallery-img lazy-bg share<%= a %>"  id="<%= a %>" data-src="<%- site.data.gallery[a].cover %>">
       </div>
       <%} else { %>
-      <div class="mdui-grid-tile itp-gallery2-tile share<%= a %>">
+      <div class="mdui-grid-tile itp-gallery2-tile itp-gallery2-tile-cover share<%= a %>">
         <div class="itp-gallery-info-tile">
           <div class="itp-gallery-info">
             <div class="title" id="<%= a %>"><%= a %></div>
