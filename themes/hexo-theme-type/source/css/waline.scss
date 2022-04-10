@@ -170,6 +170,17 @@
             }
         }
     }
+    .vclose {
+        align-items: center;
+        display: block;
+        border: none;
+        opacity: 0.8;
+        border-radius: 6px;
+        color: #ffffff00;
+        width: 54px;
+        font-size: 14px;
+        margin: 0 0 0 6px;
+    }
     .display {
         visibility: visible;
         display: flex;

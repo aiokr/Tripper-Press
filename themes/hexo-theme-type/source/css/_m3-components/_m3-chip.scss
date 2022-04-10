@@ -1,6 +1,7 @@
 @import '../_customize';
 // 小标签
-[class*=itp-m3-chip-] {
+[class*=itp-m3-chip-],
+.itp-m3-chip {
     color: #fff !important;
     opacity: 0.8;
     border-radius: 5px;
@@ -22,15 +23,14 @@
 
 //首页归档
 .itp-m3-chip-bold {
-    display: inline-block;
     background-color: #f4f4f4;
     color: $deep-grey !important;
     font-weight: 600;
 }
 
 //页内标签 归档页
-.itp-m3-chip-normal {
-    display: inline-block;
+.itp-m3-chip-normal,
+.itp-m3-chip {
     background-color: #bababa;
     font-weight: 400;
 }
