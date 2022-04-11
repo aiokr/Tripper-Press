@@ -10,6 +10,15 @@
     margin: 0 auto;
 }
 
+.post-entry {
+    @media screen and (min-width: 1024px) {
+        max-width: 100%;
+    }
+    @media screen and (max-width: 1024px) {
+        width: 92% !important;
+    }
+}
+
 .itp-m3-card-hover:hover {
     transform: translateY(-5px);
     box-shadow: 1px 10px 30px 0 rgb(0 0 0 / 10%);
@@ -56,6 +65,4 @@
     }
 }
 
-.itp-m3-card-content {
-    
-}
+.itp-m3-card-content {}

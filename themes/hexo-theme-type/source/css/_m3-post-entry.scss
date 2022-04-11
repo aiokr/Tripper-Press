@@ -1,7 +1,3 @@
-
-
-
-
 .post-entry-link {
     position: absolute;
     top: 0;
@@ -16,10 +12,10 @@
 
 .itp-m3-post-entry-cover {
     @media screen and (min-width: 1024px) {
-        height: 233px;
+        height: 322px;
     }
     @media screen and (max-width: 1024px) {
-        height: 180px;
+        height: 233px;
     }
     background-position: center;
     background-size: cover;
