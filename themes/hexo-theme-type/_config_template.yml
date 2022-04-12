@@ -55,6 +55,13 @@ nav:
 #    link: /links.html
 #    icon: link
 
+# Cover Links
+cover_links:
+  - title: Tripper.Press
+    link: https://tripper.press/
+    avatar: //imgur.lzmun.com/picgo/after2022/presslogo.png_avatar
+    descr: 'Tripper Press'
+
 # Materiac ICON from https://www.mdui.org/docs/material_icon
 
 # ---------------------------------------------------------------
