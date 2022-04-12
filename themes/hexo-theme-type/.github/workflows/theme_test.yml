@@ -30,9 +30,13 @@ jobs:
         npm install
         sudo cp -v ./node_modules/hexo-theme-type/_config_test.yml ./_config.type.yml
         sudo cp -v ./node_modules/hexo-theme-type/assets/_config.yml ./_config.yml
-        git config --global user.email "hiaiokr+photup@gmai.com"
-        git config --global user.name "aiokr"
         hexo g
-        hexo d
         cd public
         tree
+        git init
+        git config --global push.default matching
+        git config --global user.email "hiaiokr@gmail.com"
+        git config --global user.name "aiokr"
+        git add --all .
+        git commit -m "Auto Builder of Type Live Preivew"
+        git push --force "https://${{secrets.THEME_LIVE_PREIVEW}}@github.com/photup/type-live-preivew.git" master
