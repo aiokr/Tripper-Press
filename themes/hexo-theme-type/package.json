@@ -1,18 +1,24 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
-  "private": true,
-  "hexo": {
-    "version": "5.4.1"
-  },
+  "name": "hexo-theme-type",
+  "version": "0.3.1",
+  "description": "a simple hexo theme",
+  "main": "index.js",
   "scripts": {
-    "generate": "hexo g",
-    "vercel": "bash vercel.sh",
-    "clean": "hexo clean",
-    "deploy": "hexo deploy",
-    "publish": "npm run clean && npm run deploy",
-    "dev": "hexo s"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aiokr/hexo-theme-type.git"
+  },
+  "keywords": [
+    "hexo"
+  ],
+  "author": "aiokr",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/aiokr/hexo-theme-type/issues"
+  },
+  "homepage": "https://github.com/aiokr/hexo-theme-type#readme",
   "dependencies": {
     "hexo": "^5.4.0",
     "hexo-abbrlink": "^2.2.1",
@@ -24,15 +30,11 @@
     "hexo-generator-search": "^2.4.3",
     "hexo-generator-sitemap": "^2.1.0",
     "hexo-generator-tag": "^1.0.0",
-    "hexo-helper-qrcode": "^1.0.2",
     "hexo-renderer-dartsass": "^0.1.2",
     "hexo-renderer-ejs": "^1.0.0",
     "hexo-renderer-marked": "^5.0.0",
     "hexo-server": "^2.0.0",
     "hexo-symbols-count-time": "^0.7.1",
     "lodash": "^4.17.21"
-  },
-  "devDependencies": {
-    "eslint-plugin-you-dont-need-lodash-underscore": "^6.12.0"
   }
 }
