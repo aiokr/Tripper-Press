@@ -48,9 +48,6 @@ nav:
   归档: 
     link: /archives/
     icon:  move_to_inbox
-  相册:
-    link: /gallery/
-    icon: image
   关于:
     link: /about/
     icon: person
@@ -61,10 +58,10 @@ cover_links:
     link: https://unsplash.com/@aiokr
     avatar: https://imgur.lzmun.com/picgo/20200323114326.jpg
     descr: '@aiokr'
-  - title: 500px
-    link: https://500px.com/vcg-aiokr
-    avatar: https://imgur.lzmun.com/picgo/20200323114235.jpg
-    descr: 'aiokr'
+  - title: Links
+    link: /links/
+  - title: Gallery
+    link: /gallery/
   - title: RSS Feed
     link: /atom.xml
     avatar: https://imgur.lzmun.com/2021/09/19/512x512bb.jpeg_itp
