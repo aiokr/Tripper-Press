@@ -13,6 +13,6 @@ aiokr｜摄影｜航拍｜剪辑｜永远是学生
 
 本仓库采用双重许可证授权模式。
 
-本仓库 [/source/](https://github.com/aiokr/iTypen-Hexo/tree/master/source) 文件夹下的内容，原作者保留所有权利，禁止二次分发、禁止演绎。
+本仓库 [/themes/hexo-theme-type/](https://github.com/aiokr/iTypen-Hexo/tree/master/source) 文件夹下的内容，以 [MIT](https://choosealicense.com/licenses/mit/) 协议分发。
 
-本仓库除 [/source/](https://github.com/aiokr/iTypen-Hexo/tree/master/source) 文件夹下的内容，以 [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/) 协议分发。
+本仓库其他文件夹下的内容，作者**保留所有权利，禁止分享、禁止演绎**。
