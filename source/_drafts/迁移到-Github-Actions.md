@@ -3,7 +3,7 @@ title: 迁移到 Github Actions
 date: 2020-02-11 00:33:56
 tags:
 - 博客
-- GitHub Actions
+- 'GitHub Actions'
 - 持续集成
 - 技术
 categories: 笔记
