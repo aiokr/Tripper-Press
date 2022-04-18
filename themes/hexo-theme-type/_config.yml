@@ -167,14 +167,16 @@ busuanzi: false
 # cloudflare-workers-async-google-analytics
 # if use is default, it will use analytics.js
 # if use is cf_async, look at the https://github.com/SukkaW/cloudflare-workers-async-google-analytics to learn more
+# if use is gtag，will use Google GA 4 id gtag.js 
 # 如果 use 项选择 default，将使用 analytics.js 文件接入谷歌分析
-# 如果 use 项目选择 cf_async，请浏览 https://github.com/SukkaW/cloudflare-workers-async-google-analytics 进行配置
-
-google_analytics:
-  # use: default
-  use: cf_async
-  ga_id: UA-141010711-2
-  ga_api: https://async-google-analytics.disqusapi.workers.dev/
+# 如果 use 项选择 cf_async，请浏览 https://github.com/SukkaW/cloudflare-workers-async-google-analytics 进行配置
+# 如果 use 项选择 gtag，将使用 Google 全局网站代码 (gtag.js) 接入谷歌分析
+# Use: default | cf_async | gtag
+google_analytics: 
+  use: gtag
+  ga_id: 
+  ga_api: 
+  gtag_id: G-HFH67WJVKQ
 
 # chart.js
 # https://www.chartjs.org/
