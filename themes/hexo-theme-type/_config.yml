@@ -58,6 +58,8 @@ cover_links:
     link: /links/
   - title: Gallery
     link: /gallery/
+  - title: Type docs
+    link: /type/
   - title: RSS Feed
     link: /atom.xml
     descr: 'iTypen.APP'
