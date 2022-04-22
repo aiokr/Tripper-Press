@@ -85,11 +85,11 @@ count: true
 icp: 
 
 # CDN LOGO
-# Use upyun
+# Use upyun | vercel
 cdn: 
-  use: 
-  upyun: 
-    src: 
+  use: vercel
+  upyun: '../img/upyun.png'
+  vercel: '../img/vercel-logotype-dark.svg'
 
 # ---------------------------------------------------------------
 # Posts Settings 文章设置
