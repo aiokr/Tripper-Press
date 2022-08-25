@@ -1,10 +1,11 @@
 ---
 title: 新玩意：PGYTech OneMo 背包
-date: 2022-03-13
 author: aiokr
 tags:
   - 摄影
 categories: 新玩意
+abbrlink: 8f44
+date: 2022-03-13 00:00:00
 ---
 tags: 摄影，新玩意
 title：新玩意：PGYTech OneMo 背包
