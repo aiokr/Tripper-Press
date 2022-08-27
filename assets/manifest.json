@@ -1,0 +1,15 @@
+{
+  "name": "Tripper Press",
+  "short_name": "Tripper Press",
+  "start_url": ".",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "https://imgur.lzmun.com/picgo/after2022/presslogo.png_RetinaiPad",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ],
+  "lang": "zh-CN",
+  "background_color": "#ffffff"
+}

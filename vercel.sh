@@ -1,2 +1,3 @@
-hexo clean
-hexo generate
+npm run clean
+npm run generate
+cp -r assets/manifest.json public/manifest.json
