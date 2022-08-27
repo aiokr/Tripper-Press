@@ -144,7 +144,7 @@ comment:
     admin: 
     distractionFreeMode: 
   waline:
-    serverurl: https://waline-server-repo.vercel.app/
+    serverurl: https://comment.tripper.press/
 
 # Busuanzi Count 不蒜子计数
 busuanzi: false
