@@ -164,6 +164,11 @@ google_analytics:
   ga_api: 
   gtag_id: G-HFH67WJVKQ
 
+umami_analytics: 
+  use: true
+  id: eff465f3-a4a1-4cfd-a5ab-cbbcb1b32a48
+  src: https://analytics.tripper.press/aioana.js
+
 # chart.js
 # https://www.chartjs.org/
 chart_js:
