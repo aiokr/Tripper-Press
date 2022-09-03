@@ -86,7 +86,7 @@ icp:
 
 # CDN LOGO
 # Use upyun | vercel
-cdn: 
+footer_logo: 
   use: vercel
   upyun: '../img/upyun.png'
   vercel: '../img/vercel-logotype-dark.svg'
@@ -173,6 +173,14 @@ umami_analytics:
 # https://www.chartjs.org/
 chart_js:
   use: false
+
+# ---------------------------------------------------------------
+# Assets CDN Settings 资源托管设置
+# ---------------------------------------------------------------
+
+# Use jsdelivr | self_host
+cdn:
+  use: self_host
 
 # ---------------------------------------------------------------
 # Others Settings 其他功能设置
