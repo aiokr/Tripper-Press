@@ -6,6 +6,8 @@ permalink: 'about/'
 date: 2019-07-02 00:00:00
 ---
 
+<div style="font-size: 36px; font-weight: bold; text-align: center;  background-image: linear-gradient(45deg, #71afdd, #1565c0); background-clip: text;-webkit-background-clip: text; color: transparent;">靡不有初 鲜克有终</div><div style="text-align: right;"  >—— 诗经 · 大雅 · 荡</div>
+
 ## 相关链接
 
 **[友情链接](/links/)**
@@ -14,7 +16,7 @@ date: 2019-07-02 00:00:00
 
 aiokr，摄影/摄像/剪辑，永远是学生
 
-曾经，我的梦想是成为一名程序员，但现在我是一名摄影师，想通过按下快门记录每一个瞬间。
+曾经，我的梦想是成为一名程序员；在大学的时候，我的梦想是成为一名摄影师，想通过按下快门记录每一个瞬间。现在的我处于对未来的迷茫之中，但我希望我能认真地过好每一天。
 
 MBTI: ESTP-T（我每次进行16型人格测试，都能得到不同的结果，所以这个结果仅供参考）
 
