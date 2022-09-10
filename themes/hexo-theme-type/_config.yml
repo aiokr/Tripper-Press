@@ -24,7 +24,7 @@ schemes: m3
 
 # Fonts
 # Use LXGW ｜ 
-fonts: LXGW
+fonts: 
 
 # Random Pictures
 random_pic_switch: false
@@ -32,10 +32,13 @@ random_pics: 19
 random_thumbnail: https://cdn.jsdelivr.net/gh/aiokr/hexo-theme-type-random_pics@v1.0.0/randompic-
 # random_thumbnail: ../img/random/randompic-
 
+# Post 
+post_toc: true
+
 # ---------------------------------------------------------------
 # Header and Nav Settings 页眉、导航和封面设置
-# icon list: https://fonts.google.com/icons?selected=Material+Icons&icon.style=Outlined
-# 图标列表可参考: https://fonts.google.com/icons?selected=Material+Icons&icon.style=Outlined
+# icon list: https://fonts.google.com/icons?icon.set=Material+Icons
+# 图标列表可参考: https://fonts.google.com/icons?icon.set=Material+Icons
 # ---------------------------------------------------------------
 
 # Header Cover 首页封面背景图
@@ -51,6 +54,9 @@ nav:
   关于:
     link: /about/
     icon: person
+  链接:
+    link: /links/
+    icon: group
 
 # Cover Links 封面底部链接
 cover_links:

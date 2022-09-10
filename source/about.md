@@ -2,7 +2,7 @@
 layout: post
 title: 关于
 abbrlink: 5c4e
-permalink: 'about/'
+permalink: '/about-archieve/'
 date: 2019-07-02 00:00:00
 ---
 
