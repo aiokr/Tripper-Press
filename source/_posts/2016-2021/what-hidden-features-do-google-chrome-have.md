@@ -1,11 +1,9 @@
 ---
 title: Chrome 浏览器中隐藏的实用功能
-tags: 
-    - Google
-    - Chrome
-    - 浏览器
-date: 2018-09-27 00:00:00
+tags: 软件
 categories: 随笔
+abbrlink: '3e98'
+date: 2018-09-27 00:00:00
 ---
 
 ![](https://imgur.lzmun.com/picgo/chromepic.png)
