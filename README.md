@@ -1,4 +1,4 @@
-<img src="https://imgur.lzmun.com/picgo/20200124123627.jpg" alt="logo" width="72" height="72" align="right" />
+<img src="https://imgur.lzmun.com/picgo/after2022/202209101335136.png_itp" alt="logo" width="72" height="72" align="right" />
 
 # Tripper.Press 瞬间 Press
 
@@ -7,7 +7,11 @@
 
 ## 关于我
 
-aiokr｜摄影｜航拍｜剪辑｜永远是学生
+Komorebi
+
+永远是学生｜永远有所爱
+
+![repobeats](https://repobeats.axiom.co/api/embed/1191c01fafe6f30923b847addcda819c0323c152.svg "Repobeats analytics image")
 
 ## 许可证信息
 
