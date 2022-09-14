@@ -3,10 +3,10 @@ name: Hexo-Theme-Type auto generate
 on:
   push:
     paths:
-      - 'themes/**'
+      - 'themes'
   pull_request:
     paths:
-      - 'themes/**'
+      - 'themes'
 
 jobs:
   theme_generate:
