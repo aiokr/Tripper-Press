@@ -1,3 +1,4 @@
-#!/bin/sh
-chmod +x .
-hexo generate
+npm install
+npm run clean
+npm run generate
+cp -r assets/manifest.json public/manifest.json
