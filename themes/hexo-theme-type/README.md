@@ -5,8 +5,6 @@ permalink: /type-readme/
 ---
 <img src="./hexo-theme-type-logo.png" alt="logo" width="72" height="72" align="right" />
 
-[toc]
-
 # Hexo Theme Type
 
 <p style="text-align:center;" align="center">
