@@ -5,6 +5,24 @@ permalink: /type-readme/
 ---
 <img src="./hexo-theme-type-logo.png" alt="logo" width="72" height="72" align="right" />
 
+- [Hexo Theme Type](#hexo-theme-type)
+  - [🔨 安装使用](#-安装使用)
+    - [使用 npm 安装（推荐）](#使用-npm-安装推荐)
+    - [使用 git 安装](#使用-git-安装)
+  - [📖 文档](#-文档)
+  - [💡 快速指南](#-快速指南)
+    - [主题设定](#主题设定)
+    - [独立页面](#独立页面)
+      - [创建文章样式的独立页面](#创建文章样式的独立页面)
+      - [创建照片墙页面](#创建照片墙页面)
+      - [创建关于页面 β](#创建关于页面-β)
+      - [创建其他样式页面](#创建其他样式页面)
+  - [🗒 许可证](#-许可证)
+    - [HEXO 相关](#hexo-相关)
+    - [评论系统](#评论系统)
+    - [其他](#其他)
+  - [✨ Star 历史趋势](#-star-历史趋势)
+
 # Hexo Theme Type
 
 <p style="text-align:center;" align="center">
@@ -23,7 +41,7 @@ permalink: /type-readme/
 
 ![Snipaste_2022-04-13_13-40-13](https://imgur.lzmun.com/picgo/after2022/Snipaste_2022-04-13_13-40-13.png_itp)
 
-[中文文档](https://tripper.press/type-docs/)  [效果预览](https://tripper.press/)  [实时预览](https://photup.github.io/type-live-preivew/)
+[中文文档](https://tripper.press/type-readme/#💡-快速指南)  [效果预览](https://tripper.press/)  [实时预览](https://photup.github.io/type-live-preivew/)
 
 本仓库经由 Github Action 自动打包生成，实时生成的文件在 [auto-package 分支](https://github.com/aiokr/hexo-theme-type/tree/auto-package)，定期会合并到主分支。
 
@@ -72,6 +90,10 @@ theme: type
 本项目的文档正在逐步完善中，详情请阅读 [GitHub · Where software is built](https://github.com/aiokr/hexo-theme-type/wiki)
 
 ## 💡 快速指南
+
+### 主题设定
+
+[主题设定](https://tripper.press/type/theme_settings.html)
 
 ### 独立页面
 
@@ -206,5 +228,7 @@ hexo-theme-type 还使用/依赖了这些开源项目
 ## ✨ Star 历史趋势
 
 ![Star](https://starchart.cc/aiokr/hexo-theme-type.svg)
+
+---
 
 [^1]: 站点配置文件即 Hexo 根目录的 `_config.yml` 文件
