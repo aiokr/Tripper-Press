@@ -30,7 +30,10 @@
     "hexo-renderer-markdown-it": "^6.1.0",
     "hexo-server": "^3.0.0",
     "hexo-symbols-count-time": "^0.7.1",
-    "lodash": "^4.17.21"
+    "install": "^0.13.0",
+    "lodash": "^4.17.21",
+    "markdown-it-imsize": "^2.0.1",
+    "markdown-it-task-lists": "^2.1.1"
   },
   "devDependencies": {
     "eslint-plugin-you-dont-need-lodash-underscore": "^6.12.0"

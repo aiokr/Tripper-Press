@@ -166,20 +166,30 @@ markdown:
     breaks: true
     linkify: true
     typographer: true
-    quotes: '“”‘’'
+    quotes: '『』「」'
   enable_rules:
   disable_rules:
   plugins:
+    # 内置插件
+    - markdown-it-abbr
+    - markdown-it-footnote
+    - markdown-it-ins #+下划线+
+    - markdown-it-mark #==高亮==
+    - markdown-it-sub #~下标~
+    - markdown-it-sup #^上标^
+    ## 外部安装插件
+    - markdown-it-task-lists # - [ ] 
+    - markdown-it-imsize #![test](image.png =100x200) #![test](image.png =100x) #![test](image.png =x200)
   anchors:
     level: 2
     collisionSuffix: ''
-    permalink: false
+    permalink: true
     permalinkClass: 'header-anchor'
     permalinkSide: 'left'
     permalinkSymbol: '¶'
-    case: 0
+    case: 2
     separator: '-'
   images:
-    lazyload: false
+    lazyload: true
     prepend_root: false
     post_asset: false
