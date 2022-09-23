@@ -22,3 +22,5 @@ categories: 一日一技
 亲测，云枫的声音是比较好听的。
 
 ![20220923133559-2022-09-23](https://imgur.lzmun.com/picgo/after2022/20220923133559-2022-09-23.png_itp =x300)
+
+<audio controls src="https://imgur.lzmun.com/meida/2022-09-23%2005_54_47.mp3"></audio>
