@@ -3,7 +3,8 @@ name: Hexo-Theme-Type auto generate
 on:
   push:
     paths:
-      - 'themes/hexo-theme-type'
+      - 'themes/**'
+      - '.github/**'
 
 jobs:
   theme_generate:
