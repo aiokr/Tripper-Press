@@ -1,17 +1,18 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
+  "name": "tripper-press-site",
+  "version": "0.1.0",
   "private": true,
   "hexo": {
-    "version": "6.3.0"
+    "version": "6.0.0"
   },
   "scripts": {
-    "generate": "hexo g",
+    "generate": "hexo generate",
     "vercel": "bash vercel.sh",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "publish": "npm run clean && npm run deploy",
-    "dev": "hexo s"
+    "dev": "hexo server",
+    "server": "hexo server"
   },
   "dependencies": {
     "hexo": "^6.0.0",
