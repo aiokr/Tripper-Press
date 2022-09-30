@@ -62,6 +62,9 @@ nav:
   归档: 
     link: /archives/
     icon:  move_to_inbox
+  影像:
+    link: /gallery/
+    icon: camera
   关于:
     link: /about/
     icon: person
@@ -74,7 +77,7 @@ cover_links:
   - title: Gallery
     link: /gallery/
   - title: Type docs
-    link: /type/
+    link: /type-readme/
   - title: RSS Feed
     link: /atom.xml
     descr: 'iTypen.APP'
@@ -89,6 +92,13 @@ social_link:
   wechat_public: 
     switch: true
     src: https://open.weixin.qq.com/qr/code?username=itypen
+
+pagination: 
+  use:
+  prev:
+    img: 'https://imgur.lzmun.com/picgo/after2022/6DD1FBC3-AD8A-4340-842D-6ACF531F8291_1_105_c.jpeg_itp'
+  next:
+    img: 'https://imgur.lzmun.com/picgo/after2022/6DD1FBC3-AD8A-4340-842D-6ACF531F8291_1_105_c.jpeg_itp'
 
 # ---------------------------------------------------------------
 # Footer Settings 页脚设置
