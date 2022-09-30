@@ -93,13 +93,6 @@ social_link:
     switch: true
     src: https://open.weixin.qq.com/qr/code?username=itypen
 
-pagination: 
-  use:
-  prev:
-    img: 'https://imgur.lzmun.com/picgo/after2022/6DD1FBC3-AD8A-4340-842D-6ACF531F8291_1_105_c.jpeg_itp'
-  next:
-    img: 'https://imgur.lzmun.com/picgo/after2022/6DD1FBC3-AD8A-4340-842D-6ACF531F8291_1_105_c.jpeg_itp'
-
 # ---------------------------------------------------------------
 # Footer Settings 页脚设置
 # ---------------------------------------------------------------
