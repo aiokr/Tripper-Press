@@ -1,0 +1,53 @@
+name: Sync Tripper Posts
+
+on:
+  push:
+    paths:
+      - 'source/_posts/**'
+      - '.github/**'
+jobs:
+  sync_posts:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+      with:
+        submodules: true
+    - name: sync posts
+      run: |
+        sudo apt-get install tree
+        cd /source/_posts
+        mkdir package
+        cd package
+        git clone https://github.com/aiokr/Tripper-Posts.git
+        echo [clone successed]
+        cd Tripper-Posts
+        echo [come into post git folder]
+        sudo chmod -R 777 .git
+        sudo cp -r .git ..
+        sudo rm -rf *
+        sudo rm -rf .git/index.lock
+        echo [copy git files and clean folder]
+        sudo rm -rf .git
+        echo [clean git files in folder]
+        cd ..
+        echo [come into package folder]
+        sudo cp -r .git Tripper-Posts
+        echo [copy git files back]
+        cd Tripper-Posts
+        echo [come into theme folder]
+        sudo git checkout auto-package
+        echo [change branches]
+        cd ../..
+        echo [come into 'themes' folder]
+        sudo cp -r Tripper-Posts package
+        cd package
+        cd Tripper-Posts
+        tree
+        sudo rm -rf .git/index.lock
+        sudo git config --global push.default matching
+        sudo git config --global user.email "hiaiokr@gmail.com"
+        sudo git config --global user.name "aiokr"
+        sudo git add -A
+        sudo git commit -m "Auto package by aiokr"
+        sudo git push --force "https://${{secrets.action_key}}@github.com/aiokr/hexo-theme-type.git" auto-package
