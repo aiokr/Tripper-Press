@@ -22,5 +22,5 @@ jobs:
         sudo git config --global user.email "hiaiokr@gmail.com"
         sudo git config --global user.name "aiokr"
         sudo git add -A
-        sudo git commit -m "Auto package by aiokr"
-        sudo git push --force "https://${{secrets.action_key}}@github.com/aiokr/hexo-theme-type.git" auto-package
+        sudo git commit -m "Sync Posts by aiokr"
+        sudo git push --force "https://${{secrets.action_key}}@github.com/aiokr/Tripper-Posts.git" master
