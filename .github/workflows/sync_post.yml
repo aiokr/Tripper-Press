@@ -16,35 +16,8 @@ jobs:
     - name: sync posts
       run: |
         sudo apt-get install tree
-        cd /source/_posts
-        mkdir package
-        cd package
-        git clone https://github.com/aiokr/Tripper-Posts.git
-        echo [clone successed]
-        cd Tripper-Posts
-        echo [come into post git folder]
-        sudo chmod -R 777 .git
-        sudo cp -r .git ..
-        sudo rm -rf *
-        sudo rm -rf .git/index.lock
-        echo [copy git files and clean folder]
-        sudo rm -rf .git
-        echo [clean git files in folder]
-        cd ..
-        echo [come into package folder]
-        sudo cp -r .git Tripper-Posts
-        echo [copy git files back]
-        cd Tripper-Posts
-        echo [come into theme folder]
-        sudo git checkout auto-package
-        echo [change branches]
-        cd ../..
-        echo [come into 'themes' folder]
-        sudo cp -r Tripper-Posts package
-        cd package
-        cd Tripper-Posts
-        tree
-        sudo rm -rf .git/index.lock
+        cd source/_posts
+        sudo git init
         sudo git config --global push.default matching
         sudo git config --global user.email "hiaiokr@gmail.com"
         sudo git config --global user.name "aiokr"
