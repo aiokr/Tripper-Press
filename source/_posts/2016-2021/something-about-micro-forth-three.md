@@ -3,7 +3,7 @@ title: 关于 M43 的一些碎碎念
 tags:
   - 摄影
 categories:
-  - - 随笔
+  -  随笔
 abbrlink: '5549'
 date: 2019-04-02 20:44:09
 cover:

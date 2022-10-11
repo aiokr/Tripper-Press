@@ -5,7 +5,7 @@ tags:
   - 视频
   - 摄影
 categories:
-  - 视频
+  - 明度光影
 cover: 'https://imgur.lzmun.com/picgo/20190611000730.jpg_itp'
 abbrlink: 34ea
 date: 2019-06-11 00:06:15
