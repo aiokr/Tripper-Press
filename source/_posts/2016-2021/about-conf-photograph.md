@@ -4,7 +4,7 @@ tags:
   - 摄影
   - 笔记
 categories:
-  - 摄影
+  - 笔记
 cover: 'https://imgur.lzmun.com/picgo/20190530210500.jpg_itp'
 abbrlink: 67c8
 date: 2019-05-30 18:53:42

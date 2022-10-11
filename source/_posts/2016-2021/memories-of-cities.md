@@ -2,7 +2,7 @@
 title: 城市记忆
 tags:
 categories:
-  - 项目
+  - 读立写生
 cover: 'https://imgur.lzmun.com/picgo/20200126001748.jpg'
 style: smart
 excerpt: 城市的记忆是市政府做出宣传的响亮口号，是游客对他的第一印象，更是市民对他的归属感，是乡愁。
