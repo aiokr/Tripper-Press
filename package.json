@@ -11,7 +11,7 @@
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "publish": "npm run clean && npm run deploy",
-    "dev": "hexo server",
+    "dev": "bash dev.sh",
     "server": "hexo server"
   },
   "dependencies": {

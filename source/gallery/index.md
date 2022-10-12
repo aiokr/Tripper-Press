@@ -1,4 +1,4 @@
 ---
-layout: gallery2
+layout: gallery
 title: 照片集
 ---
