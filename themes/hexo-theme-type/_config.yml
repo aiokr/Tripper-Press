@@ -37,6 +37,10 @@ schemes: m3
 # Use LXGW ｜ 
 fonts: 
 
+# Header Links Style 导航链接样式
+# Use text ｜ icon
+nav_style: text
+
 # Random Pictures
 random_pic_switch: false
 random_pics: 19
