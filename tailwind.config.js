@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/**/*.{html,js,ejs,css}","./themes/**/*.{html,js,ejs,css}"],
+  content: ["./public/**/*.{html,js,ejs,css}", "./themes/**/*.{html,js,ejs,css}"],
   theme: {
     spacing: {
       '1': '8px',
@@ -16,6 +16,9 @@ module.exports = {
     extend: {
       colors: {
         tblack: '#222831',
+      },
+      corePlugins: {
+        preflight: false,
       },
       boxShadow: {
         'itp': '1px 10px 30px 0 rgb(0 0 0 / 10%)',
