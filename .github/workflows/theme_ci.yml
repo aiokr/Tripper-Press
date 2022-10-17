@@ -16,7 +16,8 @@ jobs:
         submodules: true
     - name: pacakge theme
       run: |
-        sudo apt-get install tree
+        npm install -D tailwindcss
+        npx tailwindcss -i ./themes/hexo-theme-type/source/css/input.css -o ./themes/hexo-theme-type/source/css/tailwind.css --minify
         cd themes/hexo-theme-type
         rm _config.yml
         cd ..
@@ -25,29 +26,28 @@ jobs:
         git clone https://github.com/aiokr/hexo-theme-type.git
         echo [clone successed]
         cd hexo-theme-type
-        echo [come into hexo theme git folder]
+        echo [come into git folder]
         sudo chmod -R 777 .git
         sudo cp -r .git ..
         sudo rm -rf *
         sudo rm -rf .git/index.lock
         echo [copy git files and clean folder]
         sudo rm -rf .git
-        echo [clean git files in hexo theme git folder]
+        echo [clean git files in git folder]
         cd ..
         echo [come into package folder]
         sudo cp -r .git hexo-theme-type
-        echo [copy git files back]
+        echo [copy git files backup]
         cd hexo-theme-type
         echo [come into theme folder]
         sudo git checkout auto-package
         echo [change branches]
         cd ../..
-        echo [come into 'themes' folder]
+        echo [come into themes folder]
         sudo cp -r hexo-theme-type package
         cd package
         cd hexo-theme-type
         rm -rf _config.yml
-        tree
         sudo rm -rf .git/index.lock
         sudo git config --global push.default matching
         sudo git config --global user.email "hiaiokr@gmail.com"
