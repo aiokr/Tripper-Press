@@ -1,3 +1,4 @@
+<!-- learn from https://hughsite.com/post/hexo-modify-theme.html -->
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
   <% var dateCursor %>
   <% page.posts.each(function (post) { %>
@@ -8,17 +9,17 @@
   <% if (post.style == 'moment') { %>
   <% } else if (post.noachieve == true) { %>
   <% } else { %>
-  <div class="h-auto px-3 py-1 hover:bg-gray-200 transition-all">
+  <div class="h-auto px-3 py-1 hover:bg-gray-200 rounded transition-all">
     <a href="<%= url_for(post.path) %>" class="flex items-center">
       <i class="mdui-list-item-icon mdui-icon material-icons">
         bookmarks
       </i>
       <div class="px-3">
         <div class="post-title"><%= post.title %></div>
-        <span class="text-sm leading-4 text-gray-400"><%= date(post.date, "MM-DD") %></span> ·
+        <span class="text-sm leading-4 text-gray-400"><%= date(post.date, "YYYY-MM-DD") %></span>
         <% post.categories.each(function(categories){ %>
         <span class="text-sm leading-4 text-gray-400" rel="tag">
-          <%- categories.name %>
+          · <%- categories.name %>
         </span>
         <% }); %>
       </div>
