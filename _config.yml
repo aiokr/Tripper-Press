@@ -151,6 +151,40 @@ feed:
   icon: https://imgur.lzmun.com/picgo/after2022/presslogo.png_itp
   template: ./source/atom.xml
 
+## Hexo-minify Default Config Options
+minify:
+  js:
+    enable: true
+    ## 详细配置: https://github.com/mishoo/UglifyJS
+    options:
+  css:
+    enable: false
+    ## 详细配置: https://github.com/clean-css/clean-css#compatibility-modes
+    options:
+  html:
+    enable: true
+    ## 详细配置: https://github.com/kangax/html-minifier#options-quick-reference
+    options: 
+      minifyJS: true # Compressed JavaScript
+      minifyCSS: true # CSS Compressed
+      removeComments: true # Remove the comments
+      collapseWhitespace: true # Delete any extra space
+      removeAttributeQuotes: true # Delete attribute quotes
+  # + 1.2.0 版本新增
+  postcss:
+    enable: true
+    ## 详细配置: https://github.com/postcss/autoprefixer#options
+    ## 注意Hexo-minify仅内置了autoprefixer插件
+    ## 受Hexo限制，目前无法实现自定义postcss插件
+    options: 
+      # JavaScript 数组写法
+      # overrideBrowserslist: ['> 1%', 'last 2 versions', 'not dead']
+      # YAML 数组写法
+      overrideBrowserslist: 
+        - '> 1%' # 特殊符号需要使用'或"
+        - last 2 versions
+        - not dead
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
