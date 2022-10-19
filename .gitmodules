@@ -1,0 +1,3 @@
+[submodule "hexo-theme-type"]
+        path = themes/hexo-theme-type
+        url = https://github.com/aiokr/hexo-theme-type.git
