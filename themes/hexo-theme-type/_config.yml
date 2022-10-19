@@ -108,11 +108,14 @@ count: true
 icp: 
 
 # CDN LOGO
-# Use upyun | vercel
+# Use upyun | vercel | self
 footer_logo: 
-  use: vercel
+  use: self
   upyun: '../img/upyun.png'
   vercel: '../img/vercel-logotype-dark.svg'
+  self:
+    link: '../about/'
+    src: 'https://imgur.lzmun.com/picgo/after2022/202209101335136.png_itp'
 
 # ---------------------------------------------------------------
 # Posts Settings 文章设置
