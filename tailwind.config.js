@@ -2,9 +2,6 @@
 module.exports = {
   content: ["./public/**/*.{html,js,ejs,css}", "./themes/**/*.{html,js,ejs,css}"],
   theme: {
-    maxWidth: {
-      container: '92%',
-    },
     spacing: {
       '1': '8px',
       '2': '12px',
