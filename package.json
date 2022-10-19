@@ -13,7 +13,7 @@
     "publish": "npm run tailwind && npm run clean && npm run deploy",
     "dev": "bash dev.sh",
     "taildev": "npx tailwindcss -i ./themes/hexo-theme-type/source/css/input.css -o ./themes/hexo-theme-type/source/css/tailwind.css --watch",
-    "tailbuild": "npx tailwindcss -i ./themes/hexo-theme-type/source/css/input.css -o ./themes/hexo-theme-type/source/css/tailwind.css --minify",
+    "tailbuild": "npx tailwindcss -i ./themes/hexo-theme-type/source/css/input.css -o ./themes/hexo-theme-type/source/css/tailwind.css",
     "server": "hexo server"
   },
   "dependencies": {
