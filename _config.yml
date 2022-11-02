@@ -136,7 +136,7 @@ node_sass:
 
 search:
   path: search.xml
-  field: all
+  field: post
   content: true
 
 feed:

@@ -121,9 +121,8 @@
           <div class="itp-m3-chip-color-list">
             <%- list_categories(page.categories, {
                   show_count: false,
-                  class: '',
-                  style: 'none',
-                  separator: ''
+                  separator: '',
+                  style: 'none'
                 }) %>
           </div>
           <% } %>
@@ -131,6 +130,7 @@
           <div class="itp-m3-chip-normal-list">
             <%- list_tags(page.tags,{
                   show_count: false,
+                  separator: '',
                   style: 'none',
                 }) %>
           </div>
@@ -153,6 +153,3 @@
 </div>
 <% } %>
 <!--<%- partial('_partial/shareimg') %>-->
-<style>
-  .itp-m3-chip-color-list {}
-</style>
