@@ -96,6 +96,7 @@ plugin:
   - hexo-generator-feed
   - hexo-generator-search
   - hexo-blog-encrypt
+  - hexo-algoliasearch
 theme: hexo-theme-type
 
 # Security
@@ -138,6 +139,17 @@ search:
   path: search.xml
   field: post
   content: true
+
+algolia:
+  appId: "5KD46FHE8V"
+  apiKey: "fe3eb1d9aad1e948f177c0cca2ac98cc"
+  adminApiKey: "97e90a56840d15c0bd942db3056e737c"
+  chunkSize: 5000
+  indexName: "tripper-hexo"
+  fields:
+    - title
+    - permalink
+    - date
 
 feed:
   type: atom
