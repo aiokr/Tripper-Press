@@ -13,6 +13,13 @@ module.exports = {
     container: {
       center: true,
     },
+    screens: {
+      'xs': '600px',
+      'sm': '640px',
+      'md': '1024px',
+      'lg': '1440px',
+      'xl': '1920px',
+    },
     extend: {
       colors: {
         tblack: '#222831',
