@@ -31,7 +31,6 @@
   $(function() {
     $("a.lazy-bg").lazyload();
   });
-
   function changeimg() {
     var imgLink = event.target.getAttribute('rel');
     $(".pic-area").css("background-image", "url(" + imgLink + ")");
@@ -41,6 +40,11 @@
   <style>
     body {
       background-color: #fff;
+    }
+
+    .content-area {
+
+      padding: 16px;
     }
 
     @media (max-width: 768px) {
