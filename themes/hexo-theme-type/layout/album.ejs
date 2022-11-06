@@ -1,7 +1,7 @@
 <div class="content-area post-album pjax-area">
   <div class="grid grid-cols-3 gap-2">
     <div class="pic-area">
-      <div class="pic-item" style="background-image:url('<%- page.cover || theme.header.img %>');">
+      <div id="imgbox" class="pic-item" style="background-image:url('<%- page.cover || theme.header.img %>');">
       </div>
       <div class="album-list flex gap-2">
         <% for (var i in page.photos) { %>
@@ -39,10 +39,10 @@
   $(function() {
     $("a.lazy-bg").lazyload();
   });
-
+  var imageBox = document.getElementById("imgbox");
   function changeimg() {
     var imgLink = event.target.getAttribute('rel');
-    $(".pic-item").css("background-image", "url(" + imgLink + ")");
+    imageBox.style.backgroundImage = "url(" + imgLink + ")";
   }
 </script>
 <section class="pjax-area">

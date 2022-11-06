@@ -1,3 +1,7 @@
+---
+layout: whiteboard
+permalink: '/about/'
+---
 <div class="content-area about-content-area pjax-area">
   <section class="info grid">
     <div class="header-blank"></div>
@@ -31,16 +35,39 @@
   <section class="findme grid">
     <div class="about-title">find me at</div>
     <div class="about-item social-link">
-      <div class="social-link-item"><iconpark-icon name="github"></iconpark-icon><a class="highlight" href="https://github.com/aiokr" target="_blank">GITHUB</a></div>
-      <div class="social-link-item"><iconpark-icon name="comment"></iconpark-icon><a class="highlight" href="https://jike.city/photup" target="_blank">Jike</a></div>
-      <div class="social-link-item"><iconpark-icon name="twitter"></iconpark-icon><a class="highlight" href="https://twitter.com/skomobi" target="_blank">Twitter</a></div>
-      <div class="social-link-item"><iconpark-icon name="ig"></iconpark-icon><a class="highlight" href="https://www.instagram.com/skomobi/" target="_blank">Instergram</a></div>
-      <div class="social-link-item"><iconpark-icon name="unsplash"></iconpark-icon><a class="highlight" href="https://unsplash.com/@aiokr" target="_blank">Unsplash</a></div>
+      <div class="social-link-item">
+        <iconpark-icon name="github"></iconpark-icon><a class="highlight" href="https://github.com/aiokr" target="_blank">GITHUB</a>
+      </div>
+      <div class="social-link-item">
+        <iconpark-icon name="comment"></iconpark-icon><a class="highlight" href="https://jike.city/photup" target="_blank">Jike</a>
+      </div>
+      <div class="social-link-item">
+        <iconpark-icon name="twitter"></iconpark-icon><a class="highlight" href="https://twitter.com/skomobi" target="_blank">Twitter</a>
+      </div>
+      <div class="social-link-item">
+        <iconpark-icon name="ig"></iconpark-icon><a class="highlight" href="https://www.instagram.com/skomobi/" target="_blank">Instergram</a>
+      </div>
+      <div class="social-link-item">
+        <iconpark-icon name="unsplash"></iconpark-icon><a class="highlight" href="https://unsplash.com/@aiokr" target="_blank">Unsplash</a>
+      </div>
     </div>
   </section><img class="logo nofancy" src="https://imgur.lzmun.com/picgo/after2022/202209101335136.png_itp" />
 </div>
 <div class="itp-m3-card itp-m3-post-comment_area" id="comment">
-  <%- partial('_partial/comment') %>
+  <div id="waline"></div>
+  <script>
+    Waline({
+      el: '#waline',
+      serverURL: 'https://comment.tripper.press/',
+      path: '/about/index.html',
+      dark: 'auto',
+      uploadImage: false,
+      wordLimit: [5, 200],
+      emoji: [
+        'https://imgur.lzmun.com/press_assets/emojis/bili'
+      ],
+    });
+  </script>
 </div>
 <style>
   body {
