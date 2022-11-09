@@ -135,6 +135,11 @@ highlight:
 
 # Copyright
 
+# 独立页面设置
+
+photography_page:
+  slogan: The moments when I pressed the shutter, the moments are forever.
+
 
 # ---------------------------------------------------------------
 # Third Party Services Settings 第三方服务设置
