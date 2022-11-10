@@ -19,9 +19,6 @@
         <span class="album-subtitle">
           <%= page.excerpt %>
         </span>
-        <div class="album-article article">
-          <%- page.content %>
-        </div>
       </div>
       <div class="album-info-btm">
         <% if ( page.location ){ %>
@@ -31,6 +28,10 @@
         <% } %>
       </div>
     </div>
+  </div>
+
+  <div class="album-article article">
+    <%- page.content %>
   </div>
   <div class="album-comment">
     <%- partial('_partial/comment') %>
