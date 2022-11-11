@@ -1,3 +1,8 @@
+---
+title: 主题设置
+date: 2022-04-19
+permalink: /type/getstart/
+---
 # 主题设定
 
 ## 设置「图标」

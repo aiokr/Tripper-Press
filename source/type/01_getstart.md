@@ -1,6 +1,7 @@
 ---
 title: 快速开始
 date: 2022-04-19
+permalink: /type/getstart/
 ---
 
 # 快速开始

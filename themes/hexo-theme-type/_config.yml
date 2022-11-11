@@ -14,7 +14,7 @@ ver: 0.4.5
 # ICON Settings 图标设置
 # ---------------------------------------------------------------
 
-favicon: https://imgur.lzmun.com/picgo/after2022/tripper.svg
+favicon: https://imgur.lzmun.com/picgo/after2022/presslogo.png_avatar
 avatar: https://imgur.lzmun.com/picgo/after2022/presslogo.png_itp
 apple_icon:
   # iPhone 57x57 
@@ -87,6 +87,8 @@ cover_links:
   - title: RSS Feed
     link: /atom.xml
     descr: 'iTypen.APP'
+  - title: Search
+    link: /search/
 
 # Social link 社交链接
 social_link:
@@ -96,7 +98,7 @@ social_link:
     switch: false
     src: https://imgur.lzmun.com/picgo/20200324090429.jpg
   wechat_public: 
-    switch: true
+    switch: false
     src: https://open.weixin.qq.com/qr/code?username=itypen
 
 # ---------------------------------------------------------------
@@ -138,7 +140,8 @@ highlight:
 # 独立页面设置
 
 photography_page:
-  slogan: The moments when I pressed the shutter, the moments are forever.
+  slogan: true
+  slogan_descr: 'The moments when I pressed the shutter, the moments are forever.'
 
 
 # ---------------------------------------------------------------
