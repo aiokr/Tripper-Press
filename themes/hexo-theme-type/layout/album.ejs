@@ -34,7 +34,7 @@
     <div class="album-article article">
       <%- page.content %>
     </div>
-    <div class="album-comment">
+    <div id="comment" class="album-comment">
       <%- partial('_partial/comment') %>
     </div>
   </div>
@@ -58,9 +58,8 @@
       padding: 12px 0;
       max-width: 800px;
       margin: 0 auto;
+      padding-top: 70px;
     }
-
-    .album-comment .v {}
 
     @media (max-width: 768px) {
       .content-area {
