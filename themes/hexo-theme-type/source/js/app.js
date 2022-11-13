@@ -110,4 +110,14 @@ $(".itp-mag-content img").each(function () {
   $(this).wrap(element);
 })
 
+//首次加载首页时，执行的脚本
+window.onload = function () {
+  $("div.lazy").lazyload();
+  $("a.lazy").lazyload();
+  NProgress.start();
+  NProgress.set(0.4);
+  NProgress.done();
+};
+
+
 console.log(`${'\n'} %c  Hexo-Theme-Type  %c  https://github.com/aiokr/hexo-theme-type  ${'\n'}`, 'color: #fff; background: #030307; padding:5px 0;', 'color: #fff; background: #71afdd; padding:5px 0;');
