@@ -146,9 +146,9 @@
   <% } %>
   <%} else if (theme.schemes =='m3' ){ %>
   <% if(theme.cdn.use == 'jsdelivr') { %>
-  <script src="//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.noStyle.js"></script>
+  <script data-pjax src="//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.noStyle.js"></script>
   <% } else if ( theme.cdn.use == 'self_host') { %>
-  <script src="/js/Waline.noStyle.js"></script>
+  <script data-pjax src="/js/Waline.noStyle.js"></script>
   <% } %>
   <%- css('css/waline') %>
   <% } %>
