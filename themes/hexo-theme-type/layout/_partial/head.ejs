@@ -53,9 +53,9 @@
   <meta name="apple-mobile-web-app-title" content="<%= config.title %>">
   <!-- 是否启用 WebApp 全屏模式 -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <link rel="apple-touch-startup-image" href="/assets/ splash-assets.png" media="(max-device-width: 700px)>
+  <link rel="apple-touch-startup-image" href="/assets/ splash-assets.png" media="(max-device-width: 700px)">
   <!-- 禁止数字识自动别为电话号码 -->
-  <meta name=" format-detection" content="telephone=no" />
+  <meta name="format-detection" content="telephone=no" />
   <link rel="shortcut icon" href="<%- url_for(config.favicon || theme.favicon) %>">
   <!--Apple iOS Safari ICON-->
   <link rel="apple-touch-icon" sizes="57x57" href="<%= theme.apple_icon.iphone %>" />
@@ -140,7 +140,7 @@
   <% } else if (theme.comment.use == 'waline') { %>
   <% if (theme.schemes =='column' ){ %>
   <% if(theme.cdn.use == 'jsdelivr') { %>
-  <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
+  <script data-pjax src="//cdn.jsdelivr.net/npm/@waline/client"></script>
   <% } else if ( theme.cdn.use == 'self_host') { %>
   <script data-pjax src='/js/walline-client.js'></script>
   <% } %>

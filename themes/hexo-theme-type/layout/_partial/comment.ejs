@@ -100,7 +100,7 @@
 <!--waline-->
 <% } else if (theme.comment.use == 'waline') { %>
 <div id="waline"></div>
-<script>
+<script data-pjax>
   Waline({
     el: '#waline',
     serverURL: '<%= theme.comment.waline.serverurl %>',
