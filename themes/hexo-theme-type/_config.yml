@@ -152,7 +152,7 @@ photography_page:
 # Use gitment | valine | disqus | disqusjs | gitalk | waline
 # disqusjs 参考 https://github.com/SukkaW/DisqusJS 进行部署
 comment:
-  use: waline
+  use: 
   gitment:
     owner:
     repo:
