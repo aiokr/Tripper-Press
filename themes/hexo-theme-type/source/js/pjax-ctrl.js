@@ -10,9 +10,11 @@ var pjax = new Pjax({
   cacheBust: false,
   scrollRestoration: true,
 })
+var Comment = document.querySelector("#comment");
 document.addEventListener('pjax:send', function () {
   NProgress.start();
   NProgress.set(0.4);
+  pjax.refresh(Comment);
 })
 // PJAX 完成之后的操作
 document.addEventListener('pjax:complete', function () {

@@ -149,35 +149,13 @@ photography_page:
 # ---------------------------------------------------------------
 
 # Comment 评论
-# Use gitment | valine | disqus | disqusjs | gitalk | waline
+# Use 
 # disqusjs 参考 https://github.com/SukkaW/DisqusJS 进行部署
 comment:
-  use: 
-  gitment:
-    owner:
-    repo:
-    client_id:
-    client_secret:
-  valine:
-    appid: 
-    appkey: 
-  disqus:
-    src: 
-    # such as: https://xxx.disqus.com/embed.js
-  disqusjs:
-    shortname: 
-    siteName: 
-    api: 
-    apikey: 
-    title: 
-    admin: 
-  gitalk:
-    clientID: 
-    clientSecret: 
-    repo: 
-    owner: 
-    admin: 
-    distractionFreeMode: 
+  use: waline
+  cusdis:
+    host:
+    app_id: f72a62c5-d240-4ab2-a094-fdda5a919029
   waline:
     serverurl: https://comment.tripper.press/
 

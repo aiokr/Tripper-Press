@@ -34,9 +34,11 @@
     <div class="album-article article">
       <%- page.content %>
     </div>
+    <% if ( theme.comment.use ) { %>
     <div id="comment" class="album-comment">
       <%- partial('_partial/comment') %>
     </div>
+    <% } %>
   </div>
   <script>
     var imageBox = document.getElementById("imgbox");
