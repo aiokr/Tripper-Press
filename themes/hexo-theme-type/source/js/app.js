@@ -100,14 +100,6 @@ $(".itp-column-toc ol").replaceWith(function () {
 
 */
 
-$('.categories .archive-link23').replaceWith(function () {
-  return (
-    "<div class='mdui-chip'><span class='mdui-chip-title'>" +
-    this.innerHTML +
-    '</span></div>'
-  );
-});
-
 $('img')
   .not(
     'footer img,.drawer-img, .mdui-card-header-avatar,.itp-mag-content img,.itp-post-author-avatar img,.itp-post-gallery img,.vavatar img,.nofancy'

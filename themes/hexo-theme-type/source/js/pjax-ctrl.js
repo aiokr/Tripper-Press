@@ -9,8 +9,19 @@ var pjax = new Pjax({
     'div.itp-float-bar',
     'script[data-pjax]',
   ],
+  switches: {
+    title: Pjax.switches.outerHTML, // default behavior
+    'section.pjax-area': function (oldEl, newEl, options) {
+      // this is identical to the default behavior
+      oldEl.outerHTML = newEl.outerHTML;
+      this.onSwitch();
+    },
+    '#comment': Pjax.switches.sideBySide,
+  },
   cacheBust: false,
-  scrollRestoration: true,
+  scrollRestoration: false,
+  scrollTo: 0,
+  debug: false,
 });
 var CommentArea = document.querySelector('#comment');
 document.addEventListener('pjax:send', function () {
