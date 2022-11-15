@@ -4,9 +4,6 @@
 <script data-pjax src="https://cusdis.com/js/cusdis.es.js"></script>
 
 <% } else if (theme.comment.use == 'waline') { %>
-<!--Waline-->
-<script src="/js/waline_v2.js"></script>
-<link rel="stylesheet" href="/css/waline.css" />
 <div id="waline"></div>
 <script>
   Waline.init({
@@ -25,6 +22,19 @@
 <style>
   button[title="表情包"] {
     display: none;
+  }
+
+  .wl-panel {
+    border-radius: 3px !important;
+  }
+
+  .wl-btn {
+    border-radius: 3px !important;
+  }
+
+  .wl-power {
+    text-align: center;
+    opacity: 0.3;
   }
 </style>
 <% } %>

@@ -118,10 +118,11 @@
   <script src="/js/jquery.min.js"></script>
   <% } %>
   <!--Comment-->
-  <% if(is_post() | is_page()) {%>
-  <% if(theme.comment.use == '') { %>
-
-  <% } %>
+  <% if(theme.comment.use == 'none') { %>
+  <% } else if (theme.comment.use == 'waline') { %>
+  <!--Waline-->
+  <script src="/js/waline.js"></script>
+  <link rel="stylesheet" href="/css/waline.css" />
   <% } %>
   <!--Vercel Audiences Analytics-->
   <% if(theme.vercel_analytics.use == true) { %>
