@@ -111,7 +111,7 @@ encrypt: # hexo-blog-encrypt
   wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
 
 lazyload:
-  enable: true 
+  enable: false 
   onlypost: false
   loadingImg: /images/lazyload.jpg
 
@@ -162,6 +162,43 @@ feed:
   order_by: -date
   icon: https://imgur.lzmun.com/picgo/after2022/presslogo.png_itp
   template: ./source/atom.xml
+
+jsonContent:
+  meta: true
+  keywords: false # language name option
+  dateFormat: undefined # format string
+  pages:
+    title: true
+    slug: true
+    date: true
+    updated: true
+    comments: true
+    path: true
+    link: true
+    permalink: true
+    excerpt: true
+    keywords: true # but only if root keywords option language was set
+    text: true
+    raw: false
+    content: false
+    photos: true
+  posts:
+    title: true
+    slug: true
+    date: true
+    updated: true
+    comments: true
+    path: true
+    link: true
+    permalink: true
+    excerpt: true
+    keywords: true # but only if root keywords option language was set
+    text: true
+    raw: false
+    content: false
+    categories: true
+    tags: true
+    photos: true
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

@@ -168,9 +168,7 @@
     justify-content: space-evenly;
     -webkit-justify-content: space-evenly;
     //颜色 透明 模糊
-    background-color: $deep-grey;
-    backdrop-filter: saturate(180%) blur(18px) !important;
-    -webkit-backdrop-filter: saturate(180%) blur(18px) !important;
+    background-color: #424242;
     -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
     //定位

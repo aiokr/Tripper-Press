@@ -32,7 +32,7 @@ function scrollto(comment) {
 }
 
 //点击底部弹出图层
-$(function () {
+function OpenToc() {
   $('#open_toc').click(function () {
     $('.itp-toc-layer').addClass('itp-float-layer-pull-up');
     $('.itp-float-layer-bg').removeClass('layer-bg-nodisplay');
@@ -43,11 +43,11 @@ $(function () {
     );
     $('.itp-float-layer-bg').addClass('layer-bg-nodisplay');
   });
-});
+}
 
 $('.itp-layer-toc-text').replaceWith(function () {
   return (
-    "<div class ='itp-layer-toc-text' id='close_btn'>" +
+    "<div class ='itp-layer-toc-text' id='close_btn' style='color: #fff;'>" +
     this.innerHTML +
     '</div>'
   );
