@@ -118,9 +118,11 @@
   <% } %>
   <!--Comment-->
   <% if(theme.comment.use == 'none') { %>
+  <% } else if (theme.comment.use == 'cusdis') { %>
+  <script src="https://cusdis.com/js/cusdis.es.js" defer></script>
   <% } else if (theme.comment.use == 'waline') { %>
   <!--Waline-->
-  <script src="/js/waline.js"></script>
+  <script src="/js/waline.js" defer></script>
   <link rel="stylesheet" href="/css/waline.css" />
   <% } %>
   <!--Vercel Audiences Analytics-->
