@@ -135,7 +135,7 @@
   <% } %>
   <% if(theme.google_analytics.use == 'default') { %>
   <!-- Google Analytics -->
-  <script>
+  <script async>
     (function(i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
       i[r] = i[r] || function() {
@@ -190,19 +190,9 @@
   <% } %>
   <% } %>
   <% } %>
-  <% if (theme.pwa == true){ %>
+  <% if (theme.pwa.use == true){ %>
   <link rel="manifest" href="/manifest.json">
-  <script>
-    // Google 官方给出的加载方式
-    // 你也可以用 if (navigator.serviceWorker)
-    if ('serviceWorker' in navigator) {
-      // 为了保证首屏渲染性能，在页面 onload 完之后注册 Service Worker
-      // 不使用 window.onload 以避免冲突
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/service-worker.js');
-      });
-    }
-  </script>
+  <meta name="theme-color" content="<%= theme.pwa.theme_color %>">
   <% } %>
   <!-- Google Search Advanced
   https://developers.google.com/search/docs/advanced/structured-data/search-gallery

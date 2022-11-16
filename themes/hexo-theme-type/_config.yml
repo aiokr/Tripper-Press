@@ -216,7 +216,9 @@ cdn:
 # PWA 尚是一个实验性功能，不建议您启用。
 # 如果需要启用，需要手动创立 manifest.json 文件，并在生成网站是复制到 public 目录下。
 # 暂时没有提供 service-worker.js 文件
-pwa: true
+pwa: 
+  use: true
+  theme_color: '#71afdd'
 
 # Google 搜索增强
 # 使得您的搜索结果呈现主题概览
