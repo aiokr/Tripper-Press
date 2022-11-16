@@ -123,9 +123,6 @@ $('.itp-mag-content img').each(function () {
 window.onload = function () {
   $('div.lazy').lazyload();
   $('a.lazy').lazyload();
-  NProgress.start();
-  NProgress.set(0.4);
-  NProgress.done();
 };
 
 console.log(
