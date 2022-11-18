@@ -14,8 +14,8 @@ ver: 0.4.5
 # ICON Settings 图标设置
 # ---------------------------------------------------------------
 
-favicon: https://imgur.lzmun.com/picgo/after2022/tripper2white.png_itp
-avatar: https://imgur.lzmun.com/picgo/after2022/tripper2color.png_itp
+favicon: https://imgur.lzmun.com/picgo/after2022/tripper2whitefull.png_itp
+avatar: https://imgur.lzmun.com/picgo/after2022/tripper2colorfull.png_itp
 apple_icon:
   # iPhone 57x57 
   iphone: https://imgur.lzmun.com/picgo/after2022/tripper2color.png_iPhone
@@ -101,7 +101,7 @@ cover_links:
 
 # Social link 社交链接
 social_link:
-  use: false
+  use: true
   # 微信二维码 显示在首页封面卡片底部
   wechat_personal: 
   # 微信个人号
