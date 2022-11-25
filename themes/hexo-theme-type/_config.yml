@@ -6,7 +6,7 @@
 # Hexo-Theme-Type 是一个尚在开发过程中的主题，当「主题配置文件」有修改时，您可能需要重新在这里配置所有的选项。
 # 当「主题配置文件」有修改时，会修改版本号的第二位数。
 # 您不应当编辑这个参数
-ver: 0.4.5
+ver: 0.4.6
 # ---------------------------------------------------------------
 # ---------------------------------------------------------------
 
@@ -14,8 +14,8 @@ ver: 0.4.5
 # ICON Settings 图标设置
 # ---------------------------------------------------------------
 
-favicon: https://imgur.lzmun.com/picgo/after2022/tripper2whitefull.png_itp
-avatar: https://imgur.lzmun.com/picgo/after2022/tripper2colorfull.png_itp
+favicon: https://imgur.lzmun.com/picgo/after2022/tripper2whitefull.png_avatar
+avatar: https://imgur.lzmun.com/picgo/after2022/tripper2colorfull.png_avatar
 apple_icon:
   # iPhone 57x57 
   iphone: https://imgur.lzmun.com/picgo/after2022/tripper2color.png_iPhone
@@ -42,7 +42,8 @@ fonts:
 
 # Color
 color:
-  main_color: '#71afdd'
+  main_color: '#71AFDD'
+  sub_color: '#6CD9CE'
   main_black: '#222831'
 
 # Header Links Style 导航链接样式
@@ -87,12 +88,13 @@ nav:
     link: /links/
     icon: people
 
-# Cover Links 封面底部链接
+# Cover Links 封面卡片底部链接
+cover_links_switch: true
 cover_links:
   - title: Gallery
     link: /gallery/
   - title: Type docs
-    link: /type-readme/
+    link: /type/
   - title: RSS Feed
     link: /atom.xml
     descr: 'iTypen.APP'
@@ -101,7 +103,6 @@ cover_links:
 
 # Social link 社交链接
 social_link:
-  use: true
   # 微信二维码 显示在首页封面卡片底部
   wechat_personal: 
   # 微信个人号
@@ -130,7 +131,7 @@ footer_logo:
   vercel: '../img/vercel-logotype-dark.svg'
   self:
     link: '../about/'
-    src: 'https://imgur.lzmun.com/picgo/after2022/202209101335136.png_itp'
+    src: 'https://imgur.lzmun.com/picgo/after2022/tripper2whitefull.png_avatar'
 
 # ---------------------------------------------------------------
 # Posts Settings 文章设置
@@ -168,7 +169,7 @@ comment:
   use: waline
   cusdis:
     host:
-    app_id: f72a62c5-d240-4ab2-a094-fdda5a919029
+    app_id: 
   waline:
     serverurl: https://comment.tripper.press/
 
@@ -201,12 +202,12 @@ google_analytics:
 # umami Analytics
 umami_analytics: 
   use: false
-  id: eff465f3-a4a1-4cfd-a5ab-cbbcb1b32a48
-  src: https://analytics.tripper.press/aioana.js
+  id: 
+  src: 
 
 # Vercel Audiences Analytics
 vercel_analytics:
-  use: true
+  use: false
 
 # chart.js
 # https://www.chartjs.org/

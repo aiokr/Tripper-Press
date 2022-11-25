@@ -7,9 +7,9 @@ permalink: '/about/'
     <section class="info grid">
       <div class="header-blank"></div>
       <div class="header-info">
-        <div style="font-weight:500; font-size: 40px; color: #222831;">Hey,</div>
-        <div style="font-weight:500; padding: 0; font-size: 40px; color: #222831;">I am <mark>aiokr</mark></div>
-        <div style="font-weight:400; padding: 12px 0; font-size: 18px; color: #222831;">Always a student / Photographer / Blogger</div>
+        <div style="font-weight:500; font-size: 40px;">Hey,</div>
+        <div style="font-weight:500; padding: 0; font-size: 40px;">I am <mark>aiokr</mark></div>
+        <div style="font-weight:400; padding: 12px 0; font-size: 18px;">Always a student / Photographer / Blogger</div>
       </div>
     </section>
     <section class="iam grid">
@@ -17,7 +17,7 @@ permalink: '/about/'
       <div class="about-item">
         <p>Matrix Writer of <a href="https://sspai.com/u/aiokr/posts" target="_blank" class="text-[#71afdd]">SSPAI</a></p>
         <p>Contributor of <a href="https://unsplash.com/@aiokr" target="_blank" class="text-[#71afdd]">Unsplash</a></p>
-        <p>A<a href="https://weibo.com/u/6986283843" target="_blank" class="text-[#71afdd]"> Photography Self Media </a>manager</p>
+        <p>A<a href="https://weibo.com/u/6986283843" target="_blank" class="text-[#71afdd]"> Photography Self Media </a>Manager</p>
       </div>
     </section>
     <section class="aboutme grid">
@@ -28,7 +28,8 @@ permalink: '/about/'
         <p style="opacity: 0.7;">你可以在
           <a href="https://weibo.com/u/6986283843" target="_blank" class="text-[#71afdd]"> 微博@按下瞬间 </a>
           <a href="https://www.xiaohongshu.com/user/profile/5ed67a3d000000000101fff1" target="_blank" class="text-[#71afdd]"> 小红书@按下瞬间 </a>
-          看到我的作品</p>
+          看到我的作品
+        </p>
     </section>
     <section class="aboutpress grid">
       <div class="about-title">about<br><span style="font-size:16px ;">Tripper.press</span></div>
@@ -64,6 +65,10 @@ permalink: '/about/'
       color: #222831aa;
     }
 
+    .header-info {
+      color: #222831;
+    }
+
     .about-content-area {
       padding-top: 60px;
       max-width: 700px;
@@ -83,7 +88,8 @@ permalink: '/about/'
 
     mark {
       background-color: #0000;
-      color: var(--main-black);;
+      color: var(--main-black);
+      ;
     }
 
     mark {
@@ -220,6 +226,25 @@ permalink: '/about/'
       font-size: 18px;
       padding-right: 2px;
       color: #222831aa;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #000 !important;
+        color: #ffffffaa;
+      }
+
+      .header-info {
+      color: #ffffff;
+    }
+
+      .social-link-item a {
+        color: #bdbdbd;
+      }
+
+      iconpark-icon {
+        color: #bdbdbd;
+      }
     }
   </style>
 </section>

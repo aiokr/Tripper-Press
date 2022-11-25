@@ -1,7 +1,7 @@
 ---
 title: 主题设置
 date: 2022-04-19
-permalink: /type/getstart/
+permalink: /type/theme-settings/
 ---
 # 主题设定
 
